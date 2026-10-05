@@ -1,0 +1,25 @@
+{
+  "aggregations": [
+    "q2 from raw q4 sums",
+    "q1 from raw q4 sums"
+  ],
+  "canonical_partition": "uniform q4",
+  "evaluator_source_bundle_sha256": "8ab05e6522aa64782966852ef24660b539ca018c2ac51067844957a68d113976",
+  "implementation": "NumPy tensor contractions, local Cox-de Boor recursion, and numpy.polynomial.legendre.leggauss(8); no production MFA or knot-span balance header is imported",
+  "model_manifest_sha256": "07d18dedf7f56da30c3406094c1a70de88df6ac71586bdab910e041966a79c20",
+  "production_comparison": null,
+  "quadrature_order": 8,
+  "role": "postfit_crosscheck_only",
+  "rows_sha256": "04766a6711134af2d9d1665880b4766f993d3a58e2438e9b9dfc14f2b6de3d34",
+  "schema": "pimfa.ramped_cavity.gl8_crosscheck_run.v1",
+  "shift_fraction": 0.025,
+  "shifted_partition": "x internal lines +shift; y internal lines -shift",
+  "status": "pass",
+  "summary_sha256": "e23a9090408db9aa98a8247d4a15e73776f0a5ce42b8dc83927584e708f473b9",
+  "time_count": 200,
+  "time_max": 9.985,
+  "time_min": 0.045,
+  "time_policy": "explicit canonical physical times; no generated default",
+  "times_file": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/results/ramped_cavity_gl4_v4/protected_control_v4_20260805b/sealed_midpoint_times_v4.txt",
+  "times_file_sha256": "950d143c9675302b044b52e5d5360ade83f8f3139ef0fd004303f0d97753f5e7"
+}

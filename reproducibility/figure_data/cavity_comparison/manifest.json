@@ -1,0 +1,92 @@
+[
+  {
+    "path": "reference_fine_step_00010.txt",
+    "role": "fine_reference",
+    "time": 0.01,
+    "sha256": "786375e1adafdc755a607f6378e68233e02f854b0ebc7012970f9a14b06eecb4"
+  },
+  {
+    "path": "reference_matched_step_00010.txt",
+    "role": "matched_reference",
+    "time": 0.01,
+    "sha256": "4e5153e07fb7ceb03d6bac4e71adc6317770d1b9192e2e8d0a29e2185c27f293"
+  },
+  {
+    "path": "coarse_0001.txt",
+    "role": "coarse_observation",
+    "time": 0.01,
+    "sha256": "c976a1fc45248204608d053df3f06677ad52038503c92df3de95c2d738127d6c"
+  },
+  {
+    "path": "reference_fine_step_02500.txt",
+    "role": "fine_reference",
+    "time": 2.5,
+    "sha256": "457359d8fb34b65cdd544de85e687e9c8dc1f5635c236d86b9e3a6eafcc3348c"
+  },
+  {
+    "path": "reference_matched_step_02500.txt",
+    "role": "matched_reference",
+    "time": 2.5,
+    "sha256": "1e038306d7e650dc8f5b256fe3b5febad921987fc7545e4ab50b8dc251dd8a20"
+  },
+  {
+    "path": "coarse_0250.txt",
+    "role": "coarse_observation",
+    "time": 2.5,
+    "sha256": "50987fee62875b862f35195c1d858d2376143d734ffecb1ab80eeb3408499cd6"
+  },
+  {
+    "path": "reference_fine_step_05000.txt",
+    "role": "fine_reference",
+    "time": 5.0,
+    "sha256": "dd306693286646454b8eeda1882627faf873da11e86fab2075bba63cafaf760c"
+  },
+  {
+    "path": "reference_matched_step_05000.txt",
+    "role": "matched_reference",
+    "time": 5.0,
+    "sha256": "c6e20ca7ec28e6756cef0d62080224dab6454a3f43a8cd17ac50e37fd6a50be2"
+  },
+  {
+    "path": "coarse_0500.txt",
+    "role": "coarse_observation",
+    "time": 5.0,
+    "sha256": "14faf4da1eafde7acfdaa20a385e5ed509eccdf3c7fdfa964b3f13b6695f2c7e"
+  },
+  {
+    "path": "reference_fine_step_07500.txt",
+    "role": "fine_reference",
+    "time": 7.5,
+    "sha256": "dbd6f51467821f8992fd2ad2a22f610e8259133db92534f3a78ccb05115f5acc"
+  },
+  {
+    "path": "reference_matched_step_07500.txt",
+    "role": "matched_reference",
+    "time": 7.5,
+    "sha256": "6af568f6c14a836abf10cb78221944c6ec59b26c6eaebc21ab1f33fdd85eb2a8"
+  },
+  {
+    "path": "coarse_0750.txt",
+    "role": "coarse_observation",
+    "time": 7.5,
+    "sha256": "5dd51928883d42392a4d0c41a2f80a9cab357cb0ca67e61ee295928d61db1268"
+  },
+  {
+    "path": "reference_fine_step_10000.txt",
+    "role": "fine_reference",
+    "time": 10.0,
+    "sha256": "127ac37b32c3a639895c3118b39e780bc6ff6fd1559d88c9619f693d05a88e4e"
+  },
+  {
+    "path": "reference_matched_step_10000.txt",
+    "role": "matched_reference",
+    "time": 10.0,
+    "sha256": "7d8f745937f23faab25248845ec95c7fa7a188dd8f108e305be4d47e0560f2c6"
+  },
+  {
+    "path": "coarse_1000.txt",
+    "role": "coarse_observation",
+    "time": 10.0,
+    "sha256": "5e686ac8c51506f85389986ebe407b09d61f5dd1920a795f8b59cfda12eec28f"
+  }
+]

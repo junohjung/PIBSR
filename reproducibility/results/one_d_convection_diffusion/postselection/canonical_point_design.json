@@ -1,0 +1,22 @@
+{
+  "balance_gl4_points_per_time": 236,
+  "balance_gl8_points_per_time": 472,
+  "counts": {
+    "0": 24000,
+    "1": 23541,
+    "2": 94164,
+    "3": 59,
+    "4": 798,
+    "5": 118,
+    "6": 1596,
+    "7": 188800,
+    "8": 800,
+    "9": 94400
+  },
+  "generator": "canonical V12 run_postselection.make_evaluation_points",
+  "gl2_shape_t_x": [
+    798,
+    118
+  ],
+  "points_sha256": "7cf0d3a5b5705d69d90f387c71b5dd13dd1248233ffe333f91e2a8063cdd87f5"
+}

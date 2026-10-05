@@ -1,0 +1,65 @@
+{
+  "array_contract_sha256": {
+    "forcing_basis_coarse_rms": "bb3e5f0a2bb962bd3e7013ed8728111ba30ba145638c950673f05bdfdcd9f1fb",
+    "forcing_combo_coarse_rms_u": "12a04b8a44e3ccf3315af056ffe7fde3e86360b88d9539d96add23f8846bda10",
+    "forcing_combo_coarse_rms_v": "a720e91e83fb8800da4c4773b3f6b1fa434928469086f5b15cfc9bc2d4d71e11",
+    "forcing_domain_integral_uv": "e56706e4ba31c0923a4b9fab94f14db8c567882cb9bcb88b69f127bbd5620417",
+    "forcing_envelope": "8810392652c30bd5f3921ba5756a3afdff0b5368f14d8717deb4a6b8b1a36c17",
+    "forcing_modal_coeff_u": "5ad35be3e04fdcfe5539a1bcd89bdff03c74a497506447ce6dfa56e3b6dba1c0",
+    "forcing_modal_coeff_v": "a893dabee416d1c6436ea425f42dc500e0a8e0dbb26b8eb677eb381a035ca01b",
+    "forcing_modes": "9f8b21d68bd14874c17a1d984a44ba93f5104e63dfed7941dc152d5ccc00b941",
+    "forcing_raw_coeff_u": "178a3fcff8047fd1801b28690f058e91c47518e9aa9aa989784e6ea4c006008d",
+    "forcing_raw_coeff_v": "025ca86e27e5821f0f1f982f362fa011993cfd24688f698490cdd2f4b49b6f98"
+  },
+  "artifact": "burgers_exact_coarse_defined_forcing_realization",
+  "contract": "continuous forcing normalized only on the original 39x39 interior",
+  "npz": {
+    "path": "forcing_realization.npz",
+    "sha256": "c7e8a7271270e068824cb03c9d40a03036b86f522c6d284f028191b161fba69a"
+  },
+  "parameters": {
+    "active_times": [
+      0.1,
+      1.5
+    ],
+    "coarse_cells": [
+      40,
+      40
+    ],
+    "domain": [
+      0.0,
+      2.0,
+      0.0,
+      2.0
+    ],
+    "dt_out": 0.01,
+    "interval_count": 200,
+    "modes": [
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "ramp_fraction": 0.15,
+    "rho": 0.85,
+    "rhs_rms_amplitude": [
+      0.2,
+      0.16
+    ],
+    "seed": 1234
+  },
+  "published_generator_sha256": "aca87d645aaa44577083437e617e36dc42d97a7d500e513b05da2d7d940e5fc3",
+  "schema_version": 1
+}

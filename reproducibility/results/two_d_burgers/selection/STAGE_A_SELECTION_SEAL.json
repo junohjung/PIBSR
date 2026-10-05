@@ -1,0 +1,83 @@
+{
+  "addendum_freeze_sha256": "5fcdd96e3c28af3660be0350b5c1ad3c2a24c1434f08b292d0771d80627bdbfe",
+  "candidate_gamma_literals": [
+    "0.01",
+    "0.03",
+    "0.1"
+  ],
+  "canonical_role": "reporting_only_not_used_for_selection",
+  "classified_candidates_sha256": "cf473d65ae4a8a193fa61c524203f959ce35ea5a8b7823df51fe3731ba97fc68",
+  "compatibility_manifest_sha256": "81ac124a8ccedfd38d121092394be7f8b1c11e4b8997c5e932a7996407ef8ae5",
+  "compatibility_seal_sha256": "d1954d08519226d73acd64a4aa65903a3986de085a8f50f6989df499048f15ca",
+  "continuation_requires_a_separate_prefrozen_protocol": true,
+  "created_utc": "2026-08-20T11:48:43.763356+00:00",
+  "fallback_or_retuning_authorized": false,
+  "model_decode_or_solver_or_optimizer_executed": false,
+  "positive_hybrid_selected": true,
+  "postselection_reference_access_authorized": false,
+  "reference_or_final_or_refined_opened": false,
+  "schema": "pimfa-burgers-v5-stage-a-serialization-addendum-selection-v2",
+  "selected": {
+    "eligibility_guard": {
+      "checks": {
+        "geometric_material_effect_matched": true,
+        "u_noninferior_matched": true,
+        "v_noninferior_matched": true
+      },
+      "component_ratios": {
+        "u": 0.9880144143667284,
+        "v": 0.974848555704232
+      },
+      "floating_point_tolerance": 1.4210854715202004e-14,
+      "geometric_means": {
+        "candidate": 0.026452894215929494,
+        "matched": 0.026953984766673753
+      },
+      "geometric_ratio": 0.9814094073628842,
+      "geometric_ratio_limit": 0.99,
+      "passed": true
+    },
+    "eligible": true,
+    "gamma": 0.03,
+    "gamma_literal": "0.03",
+    "matched_stage_a_gl4_metric": {
+      "maximum_flux_direct_mismatch": 1.7520707107365752e-16,
+      "q1_u_raw_time_rms": 0.1152558583607504,
+      "q1_v_raw_time_rms": 0.0538366402238939,
+      "q2_u_time_rms": 0.05674464443384765,
+      "q2_v_time_rms": 0.04360558920200937,
+      "q4_u_time_rms": 0.03129799605353979,
+      "q4_v_time_rms": 0.02321290134867634
+    },
+    "model_label": "gamma_0p03",
+    "model_record": {
+      "path": "historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/results/burgers_bc_corrected_v4_continuation_v1/gamma_family/gamma_0p03/approx.mfa",
+      "role": "V4-eligible positive gamma=0.03",
+      "sha256": "82e77d900580baad58d2638a3b3a5f473517c36741f39ef0125b681c25da1c19"
+    },
+    "stage_a_gl4_metric": {
+      "maximum_flux_direct_mismatch": 1.3877787807814457e-16,
+      "q1_u_raw_time_rms": 0.11383106484957588,
+      "q1_v_raw_time_rms": 0.05215056561784858,
+      "q2_u_time_rms": 0.0559800472017374,
+      "q2_v_time_rms": 0.04246494331491602,
+      "q4_u_time_rms": 0.030922871241690294,
+      "q4_v_time_rms": 0.02262906335346195
+    }
+  },
+  "selection_rule": {
+    "canonical_role": "reporting-only",
+    "execution_requires_independently_reviewed_addendum_freeze_and_compatibility_seal": true,
+    "floating_point_tolerance": 1.4210854715202004e-14,
+    "positive_gamma_literals": [
+      "0.01",
+      "0.03",
+      "0.1"
+    ],
+    "q4_component_ratio_limit": 1.0,
+    "q4_geometric_ratio_limit": 0.99,
+    "rule": "minimum intervention: choose the numerically smallest fixed positive gamma whose Stage-A GL4 q4 u and v metrics are each noninferior to the matched gamma=0 control and whose q4 geometric-mean ratio to that control is <=0.99; seal a null if none passes"
+  },
+  "stage_b_authorized": false,
+  "status": "POSITIVE_SELECTED"
+}

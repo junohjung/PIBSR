@@ -1,0 +1,458 @@
+{
+  "audit": [
+    {
+      "admissible": true,
+      "candidate_id": "gl4_conservative_only__gamma_0p01",
+      "family": "gl4_conservative_only",
+      "gamma": 0.01,
+      "geometric_mean_aligned_physics_ratio": 0.18943585683532058,
+      "objective_aligned_physics_components": [
+        "operator_mass_ratio",
+        "operator_xmom_ratio",
+        "operator_ymom_ratio"
+      ],
+      "off_objective_physics_components": [
+        "strong_xmom_ratio",
+        "strong_ymom_ratio",
+        "strong_div_ratio"
+      ],
+      "reasons": [],
+      "worst_aligned_physics_ratio": 0.9803605199172134,
+      "worst_off_objective_physics_ratio": 1.014380849517403
+    },
+    {
+      "admissible": true,
+      "candidate_id": "gl4_conservative_only__gamma_0p02",
+      "family": "gl4_conservative_only",
+      "gamma": 0.02,
+      "geometric_mean_aligned_physics_ratio": 0.13378752364729618,
+      "objective_aligned_physics_components": [
+        "operator_mass_ratio",
+        "operator_xmom_ratio",
+        "operator_ymom_ratio"
+      ],
+      "off_objective_physics_components": [
+        "strong_xmom_ratio",
+        "strong_ymom_ratio",
+        "strong_div_ratio"
+      ],
+      "reasons": [],
+      "worst_aligned_physics_ratio": 0.9628335041017205,
+      "worst_off_objective_physics_ratio": 1.0248468449935368
+    },
+    {
+      "admissible": false,
+      "candidate_id": "gl4_conservative_only__gamma_0p03",
+      "family": "gl4_conservative_only",
+      "gamma": 0.03,
+      "geometric_mean_aligned_physics_ratio": 0.14209332403017114,
+      "objective_aligned_physics_components": [
+        "operator_mass_ratio",
+        "operator_xmom_ratio",
+        "operator_ymom_ratio"
+      ],
+      "off_objective_physics_components": [
+        "strong_xmom_ratio",
+        "strong_ymom_ratio",
+        "strong_div_ratio"
+      ],
+      "reasons": [
+        "trace_individual_mixed_max_ratio_guard"
+      ],
+      "worst_aligned_physics_ratio": 0.9451349210292369,
+      "worst_off_objective_physics_ratio": 1.036045810056966
+    },
+    {
+      "admissible": false,
+      "candidate_id": "gl4_conservative_only__gamma_0p04",
+      "family": "gl4_conservative_only",
+      "gamma": 0.04,
+      "geometric_mean_aligned_physics_ratio": 0.1276149920164069,
+      "objective_aligned_physics_components": [
+        "operator_mass_ratio",
+        "operator_xmom_ratio",
+        "operator_ymom_ratio"
+      ],
+      "off_objective_physics_components": [
+        "strong_xmom_ratio",
+        "strong_ymom_ratio",
+        "strong_div_ratio"
+      ],
+      "reasons": [
+        "trace_individual_mixed_max_ratio_guard"
+      ],
+      "worst_aligned_physics_ratio": 0.9285311807382791,
+      "worst_off_objective_physics_ratio": 1.0334063078343279
+    },
+    {
+      "admissible": true,
+      "candidate_id": "gl4_hybrid__gamma_0p01",
+      "family": "gl4_hybrid",
+      "gamma": 0.01,
+      "geometric_mean_aligned_physics_ratio": 0.332763761260823,
+      "objective_aligned_physics_components": [
+        "strong_xmom_ratio",
+        "strong_ymom_ratio",
+        "strong_div_ratio",
+        "operator_mass_ratio",
+        "operator_xmom_ratio",
+        "operator_ymom_ratio"
+      ],
+      "off_objective_physics_components": [],
+      "reasons": [],
+      "worst_aligned_physics_ratio": 0.9937669011581469,
+      "worst_off_objective_physics_ratio": null
+    },
+    {
+      "admissible": true,
+      "candidate_id": "gl4_hybrid__gamma_0p02",
+      "family": "gl4_hybrid",
+      "gamma": 0.02,
+      "geometric_mean_aligned_physics_ratio": 0.25441806753221224,
+      "objective_aligned_physics_components": [
+        "strong_xmom_ratio",
+        "strong_ymom_ratio",
+        "strong_div_ratio",
+        "operator_mass_ratio",
+        "operator_xmom_ratio",
+        "operator_ymom_ratio"
+      ],
+      "off_objective_physics_components": [],
+      "reasons": [],
+      "worst_aligned_physics_ratio": 0.9859781433524675,
+      "worst_off_objective_physics_ratio": null
+    },
+    {
+      "admissible": true,
+      "candidate_id": "gl4_hybrid__gamma_0p03",
+      "family": "gl4_hybrid",
+      "gamma": 0.03,
+      "geometric_mean_aligned_physics_ratio": 0.2446904255487846,
+      "objective_aligned_physics_components": [
+        "strong_xmom_ratio",
+        "strong_ymom_ratio",
+        "strong_div_ratio",
+        "operator_mass_ratio",
+        "operator_xmom_ratio",
+        "operator_ymom_ratio"
+      ],
+      "off_objective_physics_components": [],
+      "reasons": [],
+      "worst_aligned_physics_ratio": 0.9785576417766573,
+      "worst_off_objective_physics_ratio": null
+    },
+    {
+      "admissible": true,
+      "candidate_id": "gl4_hybrid__gamma_0p04",
+      "family": "gl4_hybrid",
+      "gamma": 0.04,
+      "geometric_mean_aligned_physics_ratio": 0.23959598342878805,
+      "objective_aligned_physics_components": [
+        "strong_xmom_ratio",
+        "strong_ymom_ratio",
+        "strong_div_ratio",
+        "operator_mass_ratio",
+        "operator_xmom_ratio",
+        "operator_ymom_ratio"
+      ],
+      "off_objective_physics_components": [],
+      "reasons": [],
+      "worst_aligned_physics_ratio": 0.9709933217940947,
+      "worst_off_objective_physics_ratio": null
+    },
+    {
+      "admissible": true,
+      "candidate_id": "strong_only__gamma_0p01",
+      "family": "strong_only",
+      "gamma": 0.01,
+      "geometric_mean_aligned_physics_ratio": 0.2949419266312959,
+      "objective_aligned_physics_components": [
+        "strong_xmom_ratio",
+        "strong_ymom_ratio",
+        "strong_div_ratio"
+      ],
+      "off_objective_physics_components": [
+        "operator_mass_ratio",
+        "operator_xmom_ratio",
+        "operator_ymom_ratio"
+      ],
+      "reasons": [],
+      "worst_aligned_physics_ratio": 0.9831625948652578,
+      "worst_off_objective_physics_ratio": 1.0012326563626854
+    },
+    {
+      "admissible": true,
+      "candidate_id": "strong_only__gamma_0p02",
+      "family": "strong_only",
+      "gamma": 0.02,
+      "geometric_mean_aligned_physics_ratio": 0.2711332189963454,
+      "objective_aligned_physics_components": [
+        "strong_xmom_ratio",
+        "strong_ymom_ratio",
+        "strong_div_ratio"
+      ],
+      "off_objective_physics_components": [
+        "operator_mass_ratio",
+        "operator_xmom_ratio",
+        "operator_ymom_ratio"
+      ],
+      "reasons": [],
+      "worst_aligned_physics_ratio": 0.9683833819220665,
+      "worst_off_objective_physics_ratio": 1.002718956111206
+    },
+    {
+      "admissible": true,
+      "candidate_id": "strong_only__gamma_0p03",
+      "family": "strong_only",
+      "gamma": 0.03,
+      "geometric_mean_aligned_physics_ratio": 0.2672220751748308,
+      "objective_aligned_physics_components": [
+        "strong_xmom_ratio",
+        "strong_ymom_ratio",
+        "strong_div_ratio"
+      ],
+      "off_objective_physics_components": [
+        "operator_mass_ratio",
+        "operator_xmom_ratio",
+        "operator_ymom_ratio"
+      ],
+      "reasons": [],
+      "worst_aligned_physics_ratio": 0.9531105441833005,
+      "worst_off_objective_physics_ratio": 1.004172218849366
+    },
+    {
+      "admissible": false,
+      "candidate_id": "strong_only__gamma_0p04",
+      "family": "strong_only",
+      "gamma": 0.04,
+      "geometric_mean_aligned_physics_ratio": 0.2632167740547788,
+      "objective_aligned_physics_components": [
+        "strong_xmom_ratio",
+        "strong_ymom_ratio",
+        "strong_div_ratio"
+      ],
+      "off_objective_physics_components": [
+        "operator_mass_ratio",
+        "operator_xmom_ratio",
+        "operator_ymom_ratio"
+      ],
+      "reasons": [
+        "velocity_v_ratio_guard"
+      ],
+      "worst_aligned_physics_ratio": 0.9384667327482545,
+      "worst_off_objective_physics_ratio": 1.0054292327040857
+    },
+    {
+      "admissible": false,
+      "candidate_id": "trapezoid_hybrid__gamma_0p01",
+      "family": "trapezoid_hybrid",
+      "gamma": 0.01,
+      "geometric_mean_aligned_physics_ratio": 0.3804094303172894,
+      "objective_aligned_physics_components": [
+        "strong_xmom_ratio",
+        "strong_ymom_ratio",
+        "strong_div_ratio",
+        "operator_mass_ratio",
+        "operator_xmom_ratio",
+        "operator_ymom_ratio"
+      ],
+      "off_objective_physics_components": [],
+      "reasons": [
+        "optimizer_termination_ineligible"
+      ],
+      "worst_aligned_physics_ratio": 0.9994825418395549,
+      "worst_off_objective_physics_ratio": null
+    },
+    {
+      "admissible": false,
+      "candidate_id": "trapezoid_hybrid__gamma_0p02",
+      "family": "trapezoid_hybrid",
+      "gamma": 0.02,
+      "geometric_mean_aligned_physics_ratio": 0.3682108515191946,
+      "objective_aligned_physics_components": [
+        "strong_xmom_ratio",
+        "strong_ymom_ratio",
+        "strong_div_ratio",
+        "operator_mass_ratio",
+        "operator_xmom_ratio",
+        "operator_ymom_ratio"
+      ],
+      "off_objective_physics_components": [],
+      "reasons": [
+        "optimizer_termination_ineligible",
+        "trace_individual_mixed_max_ratio_guard"
+      ],
+      "worst_aligned_physics_ratio": 0.9990505520004661,
+      "worst_off_objective_physics_ratio": null
+    },
+    {
+      "admissible": false,
+      "candidate_id": "trapezoid_hybrid__gamma_0p03",
+      "family": "trapezoid_hybrid",
+      "gamma": 0.03,
+      "geometric_mean_aligned_physics_ratio": 0.3575437311885517,
+      "objective_aligned_physics_components": [
+        "strong_xmom_ratio",
+        "strong_ymom_ratio",
+        "strong_div_ratio",
+        "operator_mass_ratio",
+        "operator_xmom_ratio",
+        "operator_ymom_ratio"
+      ],
+      "off_objective_physics_components": [],
+      "reasons": [
+        "optimizer_termination_ineligible"
+      ],
+      "worst_aligned_physics_ratio": 0.9985347714654149,
+      "worst_off_objective_physics_ratio": null
+    },
+    {
+      "admissible": false,
+      "candidate_id": "trapezoid_hybrid__gamma_0p04",
+      "family": "trapezoid_hybrid",
+      "gamma": 0.04,
+      "geometric_mean_aligned_physics_ratio": 0.33112764652956816,
+      "objective_aligned_physics_components": [
+        "strong_xmom_ratio",
+        "strong_ymom_ratio",
+        "strong_div_ratio",
+        "operator_mass_ratio",
+        "operator_xmom_ratio",
+        "operator_ymom_ratio"
+      ],
+      "off_objective_physics_components": [],
+      "reasons": [
+        "optimizer_termination_ineligible"
+      ],
+      "worst_aligned_physics_ratio": 0.9980046107026,
+      "worst_off_objective_physics_ratio": null
+    }
+  ],
+  "created_utc": "2026-08-05T06:16:20.304479+00:00",
+  "design_sha256": "9bf6ce20dcb1ac94098d53671c4ed062553c76cf6fb4fe8c5ebcb1bf1d418e1d",
+  "information_boundary": {
+    "final_test_values_used": false,
+    "gl8_used": false,
+    "higher_resolution_values_used": false,
+    "sealed_values_used": false,
+    "validation_roles_only": true
+  },
+  "near_tie": {
+    "absolute_tolerance": 1e-12,
+    "relative_tolerance": 1e-10
+  },
+  "normalization_path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/results/ramped_cavity_gl4_v4/campaign_v4/normalization_v4.json",
+  "normalization_sha256": "6f7070d3b7a03cff98a17b2f354f9e95c53d53a191760b64cf0c72b22f0646d6",
+  "protected_gl8_gate": {
+    "component_count": 3,
+    "component_ratio_max": 1.0,
+    "geometric_mean_max": 0.9,
+    "minimum_components_at_or_below_0p90": 2,
+    "status": "registered_without_protected_values"
+  },
+  "protocol_sha256": "1f1526660b10cf5946bccd6732a9d19f53a8f9fc448b3de9060a9c05c2f60341",
+  "schema": "pimfa.cmame.ramped_cavity_gl4_family_selection.v4",
+  "sealed_information_opened": false,
+  "selected": {
+    "gl4_conservative_only": {
+      "candidate_id": "gl4_conservative_only__gamma_0p02",
+      "checkpoint": {
+        "path": "stage_b/gl4_conservative_only__gamma_0p02/final_coefficients_v1.txt",
+        "sha256": "42fe5ede028ff1d3c3663dfdac316125b6d3a132600923155e5762cac0c28a50"
+      },
+      "eligible_termination": true,
+      "gamma": 0.02,
+      "geometric_mean_aligned_physics_ratio": 0.13378752364729618,
+      "objective_aligned_physics_components": [
+        "operator_mass_ratio",
+        "operator_xmom_ratio",
+        "operator_ymom_ratio"
+      ],
+      "off_objective_physics_components": [
+        "strong_xmom_ratio",
+        "strong_ymom_ratio",
+        "strong_div_ratio"
+      ],
+      "training_noninert": {
+        "accepted_updates": 1442,
+        "coefficient_payload_differs_from_stage_a": true,
+        "coefficient_step_l2": 1.420838753661258,
+        "final_objective": 3.4675617796530976e-06,
+        "final_projected_gradient": 9.076144811640007e-10,
+        "initial_objective": 3.5143544455233236e-06,
+        "initial_projected_gradient": 1.7213737161375642e-08,
+        "relative_coefficient_l2_change": 0.057478424197291475,
+        "relative_objective_decrease": 0.013314725818231508
+      },
+      "worst_aligned_physics_ratio": 0.9628335041017205
+    },
+    "gl4_hybrid": {
+      "candidate_id": "gl4_hybrid__gamma_0p04",
+      "checkpoint": {
+        "path": "stage_b/gl4_hybrid__gamma_0p04/final_coefficients_v1.txt",
+        "sha256": "f770ca1417adc5992e200499338cd7111676f0cd05f7b37c3ff9214b873fba5c"
+      },
+      "eligible_termination": true,
+      "gamma": 0.04,
+      "geometric_mean_aligned_physics_ratio": 0.23959598342878805,
+      "objective_aligned_physics_components": [
+        "strong_xmom_ratio",
+        "strong_ymom_ratio",
+        "strong_div_ratio",
+        "operator_mass_ratio",
+        "operator_xmom_ratio",
+        "operator_ymom_ratio"
+      ],
+      "off_objective_physics_components": [],
+      "training_noninert": {
+        "accepted_updates": 1910,
+        "coefficient_payload_differs_from_stage_a": true,
+        "coefficient_step_l2": 2.2341869772840965,
+        "final_objective": 3.4915801451253706e-06,
+        "final_projected_gradient": 9.324348321907966e-10,
+        "initial_objective": 3.5832633562198594e-06,
+        "initial_projected_gradient": 1.7314160077885887e-08,
+        "relative_coefficient_l2_change": 0.090381506335951,
+        "relative_objective_decrease": 0.025586512064580524
+      },
+      "worst_aligned_physics_ratio": 0.9709933217940947
+    },
+    "strong_only": {
+      "candidate_id": "strong_only__gamma_0p03",
+      "checkpoint": {
+        "path": "stage_b/strong_only__gamma_0p03/final_coefficients_v1.txt",
+        "sha256": "5ffd220edf673326c76ddf304ae42396ded117bea75356fdd0a5e77b87109549"
+      },
+      "eligible_termination": true,
+      "gamma": 0.03,
+      "geometric_mean_aligned_physics_ratio": 0.2672220751748308,
+      "objective_aligned_physics_components": [
+        "strong_xmom_ratio",
+        "strong_ymom_ratio",
+        "strong_div_ratio"
+      ],
+      "off_objective_physics_components": [
+        "operator_mass_ratio",
+        "operator_xmom_ratio",
+        "operator_ymom_ratio"
+      ],
+      "training_noninert": {
+        "accepted_updates": 1703,
+        "coefficient_payload_differs_from_stage_a": true,
+        "coefficient_step_l2": 1.9464295201027269,
+        "final_objective": 3.479463514662036e-06,
+        "final_projected_gradient": 9.865550598675554e-10,
+        "initial_objective": 3.5488089008715917e-06,
+        "initial_projected_gradient": 7.822465013257455e-09,
+        "relative_coefficient_l2_change": 0.07874060398360148,
+        "relative_objective_decrease": 0.01954046784331617
+      },
+      "worst_aligned_physics_ratio": 0.9531105441833005
+    },
+    "trapezoid_hybrid": null
+  },
+  "selection_rule": "objective-aligned physics ranking among guard-eligible candidates: near-tie worst aligned ratio, near-tie aligned geometric mean, gamma, candidate_id",
+  "status": "validation_only_selection_complete",
+  "validation_metrics_path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/results/ramped_cavity_gl4_v4/campaign_v4/validation_only_metrics_v4.json",
+  "validation_metrics_sha256": "2700f1d85d39df2a1be64e4dd19166947fbf1a6c6a04e46bacb4c93e677842fa"
+}

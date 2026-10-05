@@ -1,0 +1,547 @@
+{
+  "absolute_metrics": {
+    "matched_strong_gamma_i0": {
+      "common_fd_vs_analytic_spline_self_consistency": {
+        "fine": {
+          "reference_vector_rms": 0.1967804967032621,
+          "relative_vector_l2": 0.0059858558857858275,
+          "vector_rmse": 0.00117789969439908,
+          "x_rmse": 0.0006548474273659463,
+          "y_rmse": 0.0009790927111043403
+        },
+        "midpoint": {
+          "reference_vector_rms": 0.12816997303342842,
+          "relative_vector_l2": 0.1758291293666927,
+          "vector_rmse": 0.0225360147694202,
+          "x_rmse": 0.018746503174648547,
+          "y_rmse": 0.01250762089329611
+        }
+      },
+      "fine_common_fd_gradient": {
+        "reference_vector_rms": 0.13319836508498548,
+        "relative_vector_l2": 1.198138673300285,
+        "vector_rmse": 0.15959011242869153,
+        "x_rmse": 0.11313584637668754,
+        "y_rmse": 0.11255791509100087
+      },
+      "fine_gradient_spatial_masks": {
+        "central_0p05_0p95": {
+          "point_count_per_time": 32041,
+          "reference_vector_rms": 0.12371990576058478,
+          "relative_vector_l2": 0.2293723447225445,
+          "vector_rmse": 0.028377924873157576,
+          "x_rmse": 0.018826892559817354,
+          "y_rmse": 0.021233340214098898
+        },
+        "crop_0p025_0p975": {
+          "point_count_per_time": 36481,
+          "reference_vector_rms": 0.13207163911015254,
+          "relative_vector_l2": 0.4241395785608821,
+          "vector_rmse": 0.056016809352025014,
+          "x_rmse": 0.04219093009354299,
+          "y_rmse": 0.03684845109123158
+        },
+        "full_interior_0p005_0p995": {
+          "point_count_per_time": 39601,
+          "reference_vector_rms": 0.13319836508498548,
+          "relative_vector_l2": 1.1981386733002852,
+          "vector_rmse": 0.15959011242869153,
+          "x_rmse": 0.11313584637668754,
+          "y_rmse": 0.11255791509100087
+        },
+        "offnode_20x20_locations": {
+          "point_count_per_time": 400,
+          "reference_vector_rms": 0.13324909753730155,
+          "relative_vector_l2": 0.8666055553394696,
+          "vector_rmse": 0.11547440816979636,
+          "x_rmse": 0.08876046880862767,
+          "y_rmse": 0.07386418698555726
+        }
+      },
+      "midpoint_common_fd_gradient": {
+        "reference_vector_rms": 0.11604462045133379,
+        "relative_vector_l2": 0.1280564741814338,
+        "vector_rmse": 0.014860264942720509,
+        "x_rmse": 0.01090231051946923,
+        "y_rmse": 0.010097875989777192
+      },
+      "midpoint_gauge_aligned_pressure": {
+        "reference_rms": 0.012790228248804556,
+        "relative_l2": 0.20776836445455374,
+        "rmse": 0.002657404804254562
+      }
+    },
+    "selected_gl4_hybrid": {
+      "common_fd_vs_analytic_spline_self_consistency": {
+        "fine": {
+          "reference_vector_rms": 0.1764147036402235,
+          "relative_vector_l2": 0.004538037326826401,
+          "vector_rmse": 0.0008005765101203516,
+          "x_rmse": 0.0004281395070007373,
+          "y_rmse": 0.0006764756544781541
+        },
+        "midpoint": {
+          "reference_vector_rms": 0.1271136188753932,
+          "relative_vector_l2": 0.13405395020035202,
+          "vector_rmse": 0.017040082734508483,
+          "x_rmse": 0.012964527577672174,
+          "y_rmse": 0.011058274923633964
+        }
+      },
+      "fine_common_fd_gradient": {
+        "reference_vector_rms": 0.13319836508498548,
+        "relative_vector_l2": 0.8983866959634559,
+        "vector_rmse": 0.11966363911643428,
+        "x_rmse": 0.07882467442299766,
+        "y_rmse": 0.09003364498173244
+      },
+      "fine_gradient_spatial_masks": {
+        "central_0p05_0p95": {
+          "point_count_per_time": 32041,
+          "reference_vector_rms": 0.12371990576058478,
+          "relative_vector_l2": 0.23369477686337978,
+          "vector_rmse": 0.028912695770278232,
+          "x_rmse": 0.02124697360911575,
+          "y_rmse": 0.01960892881210506
+        },
+        "crop_0p025_0p975": {
+          "point_count_per_time": 36481,
+          "reference_vector_rms": 0.13207163911015254,
+          "relative_vector_l2": 0.3665620267772703,
+          "vector_rmse": 0.04841244771201372,
+          "x_rmse": 0.03593312119976874,
+          "y_rmse": 0.03244342605692551
+        },
+        "full_interior_0p005_0p995": {
+          "point_count_per_time": 39601,
+          "reference_vector_rms": 0.13319836508498548,
+          "relative_vector_l2": 0.8983866959634561,
+          "vector_rmse": 0.11966363911643428,
+          "x_rmse": 0.07882467442299766,
+          "y_rmse": 0.09003364498173246
+        },
+        "offnode_20x20_locations": {
+          "point_count_per_time": 400,
+          "reference_vector_rms": 0.13324909753730155,
+          "relative_vector_l2": 0.6665380847898564,
+          "vector_rmse": 0.08881559827248975,
+          "x_rmse": 0.06635216139615585,
+          "y_rmse": 0.05903898012803718
+        }
+      },
+      "midpoint_common_fd_gradient": {
+        "reference_vector_rms": 0.11604462045133379,
+        "relative_vector_l2": 0.13553933649892955,
+        "vector_rmse": 0.015728610860243894,
+        "x_rmse": 0.012738886575508337,
+        "y_rmse": 0.00922550640394963
+      },
+      "midpoint_gauge_aligned_pressure": {
+        "reference_rms": 0.012790228248804556,
+        "relative_l2": 0.16923277481743768,
+        "rmse": 0.0021645258170935717
+      }
+    }
+  },
+  "diagnostic_contract": {
+    "fine_pressure_gradient": {
+      "operator": "same second-order centered finite difference applied to each pressure field",
+      "reference_frames": "five pre-fixed 201x201 higher-resolution Figure-14 frames",
+      "sample_count": 198005,
+      "spacing": 0.005,
+      "times": [
+        0.01,
+        2.5,
+        5.0,
+        7.5,
+        10.0
+      ]
+    },
+    "midpoint_pressure_gradient_crosscheck": {
+      "operator": "same second-order centered finite difference applied to each pressure field",
+      "reference_frames": "200 sealed 20x20 fully off-node midpoint frames",
+      "sample_count": 64800,
+      "spacing": 0.05
+    },
+    "pressure_field": {
+      "coordinate_sha256": "f23c82fc44ce5e656f1b71a57304d4cb62462cdf1955aeb2cb6fcd7b5329bc44",
+      "coordinates": "sealed fully off-node 20x20 midpoint grid at 200 sealed times",
+      "gauge_alignment": "independent arithmetic spatial mean subtraction for each role at each time",
+      "sample_count": 80000
+    }
+  },
+  "hybrid_vs_matched": {
+    "directional_consistency": {
+      "fine_gradient_hybrid_better_time_count": 4,
+      "fine_gradient_time_count": 5,
+      "midpoint_gradient_hybrid_better_time_count": 64,
+      "midpoint_gradient_time_count": 200,
+      "pressure_hybrid_better_time_count": 192,
+      "pressure_time_count": 200
+    },
+    "fine_common_fd_gradient": {
+      "hybrid_over_matched": {
+        "relative_vector_l2": 0.7498186278294822,
+        "vector_rmse": 0.7498186278294822,
+        "x_rmse": 0.6967259002999783,
+        "y_rmse": 0.799887283883519
+      },
+      "hybrid_vs_matched_percent_change": {
+        "relative_vector_l2": -25.018137217051784,
+        "vector_rmse": -25.018137217051784,
+        "x_rmse": -30.327409970002172,
+        "y_rmse": -20.011271611648095
+      }
+    },
+    "midpoint_common_fd_gradient": {
+      "hybrid_over_matched": {
+        "relative_vector_l2": 1.0584340804736967,
+        "vector_rmse": 1.0584340804736967,
+        "x_rmse": 1.1684575074943397,
+        "y_rmse": 0.9136086057393927
+      },
+      "hybrid_vs_matched_percent_change": {
+        "relative_vector_l2": 5.843408047369669,
+        "vector_rmse": 5.843408047369669,
+        "x_rmse": 16.845750749433975,
+        "y_rmse": -8.639139426060726
+      }
+    },
+    "midpoint_gauge_aligned_pressure": {
+      "hybrid_over_matched": {
+        "relative_l2": 0.8145261924822768,
+        "rmse": 0.8145261924822742
+      },
+      "hybrid_vs_matched_percent_change": {
+        "relative_l2": -18.547380751772323,
+        "rmse": -18.54738075177258
+      }
+    }
+  },
+  "information_boundary": {
+    "checkpoint_modified": false,
+    "claim_scope": "post-selection pressure and resolved finite-difference pressure-gradient diagnostics",
+    "higher_resolution_reference_opened": true,
+    "new_training": false,
+    "optimizer_launched": false,
+    "post_selection_reporting": true,
+    "selection_or_ranking_rerun": false
+  },
+  "interpretation": {
+    "pressure_field": "hybrid pressure-field error is lower and the direction holds at 192 of 200 sealed times",
+    "pressure_gradient": "mixed and scale-dependent: fine-grid error decreases, midpoint-grid error increases",
+    "prohibited_claim": "do not claim general monotone pressure-gradient improvement",
+    "reference_qualification": "higher-resolution numerical reference, not analytic truth or a formal grid-convergence certificate"
+  },
+  "raw_artifact": {
+    "array_count": 40,
+    "arrays": {
+      "fine_reference_fd_grad_x": {
+        "dtype": "float64",
+        "sha256": "0c09ddb239fe68119fba2b4f65b125398c8fa8636cb434ef146930a2acdedd9d",
+        "shape": [
+          198005
+        ]
+      },
+      "fine_reference_fd_grad_y": {
+        "dtype": "float64",
+        "sha256": "34d1b6a693f3661cb4d8463e024debed53c8aa7bb8ae6adb76b5e66418285c4f",
+        "shape": [
+          198005
+        ]
+      },
+      "fine_reference_frame_mean": {
+        "dtype": "float64",
+        "sha256": "bf4654edefaf632429ceea493e084471deb223ea03b914ade8a4f9673574656e",
+        "shape": [
+          5
+        ]
+      },
+      "fine_reference_p": {
+        "dtype": "float64",
+        "sha256": "d1e44e3c3b6345d878d717c541609bfd694aacde5fb8cdc067cc22be37970f08",
+        "shape": [
+          202005
+        ]
+      },
+      "fine_reference_p_aligned": {
+        "dtype": "float64",
+        "sha256": "c57720af5a3a73cd96d293ed9defeaefdb586a3985a33b644266d5044a7de15e",
+        "shape": [
+          202005
+        ]
+      },
+      "fine_xyz": {
+        "dtype": "float64",
+        "sha256": "e0cbc7c14bef6b780363e0260e0d93d687e81e9e09ef82d887df98f8dadb7692",
+        "shape": [
+          202005,
+          3
+        ]
+      },
+      "hybrid_fine_fd_grad_x": {
+        "dtype": "float64",
+        "sha256": "580ce3267beb3927135cb6115c113ce46ab16031b928a1d9e4f99d0b3cb04933",
+        "shape": [
+          198005
+        ]
+      },
+      "hybrid_fine_fd_grad_y": {
+        "dtype": "float64",
+        "sha256": "5487bdc3cb82fbbb29c06cc786563c653958c23d555d8c1c42ad2e7232110224",
+        "shape": [
+          198005
+        ]
+      },
+      "hybrid_fine_frame_mean": {
+        "dtype": "float64",
+        "sha256": "354426e4d63d0d643fdbc1c8f7cc56f3e1c3b1f8721c9f7f668938c4e2d269c2",
+        "shape": [
+          5
+        ]
+      },
+      "hybrid_fine_p": {
+        "dtype": "float64",
+        "sha256": "97316c6da64caca3fee38ec31805cdcedd52dd8ca26527443912e5cc77cc0363",
+        "shape": [
+          202005
+        ]
+      },
+      "hybrid_fine_p_aligned": {
+        "dtype": "float64",
+        "sha256": "12f3093d5f312d55e1c53a96130a9d124fc300ce442bee049e1d886531b3b44f",
+        "shape": [
+          202005
+        ]
+      },
+      "hybrid_fine_p_x_analytic": {
+        "dtype": "float64",
+        "sha256": "47bb079d368e85cbc4e6140d88f5419cc56065535a3be179dd3545686ea277a5",
+        "shape": [
+          202005
+        ]
+      },
+      "hybrid_fine_p_y_analytic": {
+        "dtype": "float64",
+        "sha256": "5a8bdf19f46d23872b912354f4f4a30582c1e5b3b927988ce10eee7ba868964d",
+        "shape": [
+          202005
+        ]
+      },
+      "hybrid_midpoint_fd_grad_x": {
+        "dtype": "float64",
+        "sha256": "062acfd2d77fde42bf0b00a1aa74eb656783509cd1a92b2de1ee169411f52d21",
+        "shape": [
+          64800
+        ]
+      },
+      "hybrid_midpoint_fd_grad_y": {
+        "dtype": "float64",
+        "sha256": "b3ca3560532ff957377f9a14bc52f15841373fc28d991f7415d259bed70451ad",
+        "shape": [
+          64800
+        ]
+      },
+      "hybrid_midpoint_frame_mean": {
+        "dtype": "float64",
+        "sha256": "f1b88cecfb2c5b2471db964c6ccc94383e082ce0d2079e60d1c813d91b1d91d5",
+        "shape": [
+          200
+        ]
+      },
+      "hybrid_midpoint_p": {
+        "dtype": "float64",
+        "sha256": "19a062a49b6ee988e06dd9baeef984d08a6f2cf6b608964e3f2aa61d428e0e87",
+        "shape": [
+          80000
+        ]
+      },
+      "hybrid_midpoint_p_aligned": {
+        "dtype": "float64",
+        "sha256": "a1c16a6aae4790140f32a0cd63d9552b2dfa2e5c34f1db460f4a301b2f6a88c7",
+        "shape": [
+          80000
+        ]
+      },
+      "hybrid_midpoint_p_x_analytic": {
+        "dtype": "float64",
+        "sha256": "1bc3808f3b4164cb90446e4ccdb978727c03bac929d231b88ef77a982fca6335",
+        "shape": [
+          80000
+        ]
+      },
+      "hybrid_midpoint_p_y_analytic": {
+        "dtype": "float64",
+        "sha256": "128021a920462f6719c48a0f1c5ef6f11f637e269838893b7dde2c00ca2fc4a7",
+        "shape": [
+          80000
+        ]
+      },
+      "matched_fine_fd_grad_x": {
+        "dtype": "float64",
+        "sha256": "4fe3f563218d960876e9e142eb6ac29a2f4c038ae889d9c92c5e167c34ceafa7",
+        "shape": [
+          198005
+        ]
+      },
+      "matched_fine_fd_grad_y": {
+        "dtype": "float64",
+        "sha256": "d095ff5944ba9e03063401a6359a9fca23f4d7718e8240a5b5e249a056e9cf46",
+        "shape": [
+          198005
+        ]
+      },
+      "matched_fine_frame_mean": {
+        "dtype": "float64",
+        "sha256": "c13ecdb3adcde4e0790a561d74ef73131a60c8d43d523957e1624033f4217f9f",
+        "shape": [
+          5
+        ]
+      },
+      "matched_fine_p": {
+        "dtype": "float64",
+        "sha256": "4680e06b1365bc10b6009091ce8d7bc8cdbdb11a55545229c5573489b34c23ed",
+        "shape": [
+          202005
+        ]
+      },
+      "matched_fine_p_aligned": {
+        "dtype": "float64",
+        "sha256": "947ad073e710109605fb243c7d8115f4f823013efd751ad6310d293914adb255",
+        "shape": [
+          202005
+        ]
+      },
+      "matched_fine_p_x_analytic": {
+        "dtype": "float64",
+        "sha256": "6324158c6479aa2427337f92e7d19796bf6edd3a3c74023ae5f6f2649f98079c",
+        "shape": [
+          202005
+        ]
+      },
+      "matched_fine_p_y_analytic": {
+        "dtype": "float64",
+        "sha256": "af1b836362f40e374de3d66f468c41b30b0aece71dc34c04dcc2e0253523ae18",
+        "shape": [
+          202005
+        ]
+      },
+      "matched_midpoint_fd_grad_x": {
+        "dtype": "float64",
+        "sha256": "b9a773e9ae503a3593ab5748c39f516d43c4baaf06b7d7e55d73644996c4cfb4",
+        "shape": [
+          64800
+        ]
+      },
+      "matched_midpoint_fd_grad_y": {
+        "dtype": "float64",
+        "sha256": "5dbe052475faa7d0afa71792edff0b6b45efc1eed653ef3e4f2cf2ead7d8c826",
+        "shape": [
+          64800
+        ]
+      },
+      "matched_midpoint_frame_mean": {
+        "dtype": "float64",
+        "sha256": "913f0672236fd17f9aa2a6390a345b5dd11a4e6dc3338c7bbbb3dd49fba40d2c",
+        "shape": [
+          200
+        ]
+      },
+      "matched_midpoint_p": {
+        "dtype": "float64",
+        "sha256": "01c9415e3461243b0b51691913cb85feb0daa770b4e50f734dc430443fdade10",
+        "shape": [
+          80000
+        ]
+      },
+      "matched_midpoint_p_aligned": {
+        "dtype": "float64",
+        "sha256": "8126040ef30449e210ab836fa7f2f163cb865bf27b045dbd07b742a977b87ccc",
+        "shape": [
+          80000
+        ]
+      },
+      "matched_midpoint_p_x_analytic": {
+        "dtype": "float64",
+        "sha256": "f0091d8861295a9540406f0dc99e50719342b0f53d5ac57ed94aef26547bfb14",
+        "shape": [
+          80000
+        ]
+      },
+      "matched_midpoint_p_y_analytic": {
+        "dtype": "float64",
+        "sha256": "5f570b6f85a140b65ec6e608e790072aa765c78c93182288192ff438c350fde8",
+        "shape": [
+          80000
+        ]
+      },
+      "midpoint_reference_fd_grad_x": {
+        "dtype": "float64",
+        "sha256": "6719e8a1d0857aa3e595804197f35aed8aeffc07e1870efe7deb2bd1c016b231",
+        "shape": [
+          64800
+        ]
+      },
+      "midpoint_reference_fd_grad_y": {
+        "dtype": "float64",
+        "sha256": "dec27e3807e4ef3046311a64ffafa7838d871d4b870c2116d9d02753f8f4f36b",
+        "shape": [
+          64800
+        ]
+      },
+      "midpoint_reference_frame_mean": {
+        "dtype": "float64",
+        "sha256": "5a76fa23a87949b7977447e07fba5e746fde5f11d4649199f720dc60b8003a75",
+        "shape": [
+          200
+        ]
+      },
+      "midpoint_reference_p": {
+        "dtype": "float64",
+        "sha256": "1ffa9d5bc554bd39de49e462bb38eb0dca127e44abfd7a59b2b6a4b8026bffce",
+        "shape": [
+          80000
+        ]
+      },
+      "midpoint_reference_p_aligned": {
+        "dtype": "float64",
+        "sha256": "66e2232df124e280cf6d0e0d4e97353f8a362f266692373cf2184fd4481a589e",
+        "shape": [
+          80000
+        ]
+      },
+      "midpoint_xyz": {
+        "dtype": "float64",
+        "sha256": "f23c82fc44ce5e656f1b71a57304d4cb62462cdf1955aeb2cb6fcd7b5329bc44",
+        "shape": [
+          80000,
+          3
+        ]
+      }
+    },
+    "path": "RAW_PRESSURE_DIAGNOSTICS.npz",
+    "sha256": "06e624de07f27fb7e5fc6ecd10f791b794536bc6eba2f84875dbeba21160537d"
+  },
+  "replay": {
+    "all_raw_arrays_bitwise_equal": true,
+    "all_scalar_metrics_exactly_equal": true,
+    "each_model_evaluated_twice": true
+  },
+  "roles": {
+    "matched_strong_gamma_i0": {
+      "candidate_id": "strong_only__gamma_0p02",
+      "checkpoint_sha256": "ae299d4f9d3837846eedb71d28011bd0b80ae822bcf5c145e8b942b86f28984f",
+      "gamma_I": 0.0,
+      "gamma_S": 0.02
+    },
+    "selected_gl4_hybrid": {
+      "candidate_id": "gl4_hybrid__gamma_0p04",
+      "checkpoint_sha256": "f770ca1417adc5992e200499338cd7111676f0cd05f7b37c3ff9214b873fba5c",
+      "gamma_I": 0.02,
+      "gamma_S": 0.02
+    },
+    "strong_weights_exactly_equal": true
+  },
+  "schema": "pimfa.ramped_cavity_pressure_reference_diagnostics.v1",
+  "status": "COMPLETE_POSTSELECTION_REPORTING_ONLY"
+}

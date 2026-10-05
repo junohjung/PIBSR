@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "case": "package_wide_verification",
+  "metrics": {
+    "burgers_strong_max_relative_directional_discrepancy": 6.62102174302237e-11,
+    "navier_stokes_strong_max_relative_directional_discrepancy": 4.163148931222559e-12,
+    "burgers_balance_max_direct_flux_closure_discrepancy": 1.8908485888147197e-16,
+    "cavity_cross_implementation_max_absolute_difference": 1.1275702593849246e-16,
+    "physical_derivative_max_scaled_centered_difference_discrepancy": 6.00253668991968e-09
+  },
+  "packaged_sources": {
+    "burgers_strong_directional_gradient": "results/verification/burgers_strong_directional_gradient.log",
+    "navier_stokes_strong_directional_gradient_historical": "results/verification/cavity_strong_directional_gradient_historical.log",
+    "burgers_balance_closure": "results/two_d_burgers/stage_b_interface_compatibility/GL_BALANCE_SUMMARY.json",
+    "cavity_cross_implementation": "results/lid_driven_cavity/protected_gl8_v4/strong_only/run_audit.json",
+    "physical_derivative_checks": "results/two_d_burgers/postselection/POSTSELECTION_SUMMARY.json"
+  },
+  "source_sha256": {
+    "results/verification/burgers_strong_directional_gradient.log": "9af7a7fa970e4ce195aeddf0dc203156280c3da933fa1133a857e9ad883321c5",
+    "results/verification/cavity_strong_directional_gradient_historical.log": "b27afc0ea253f9e54767dff409258190b967074e8a443922bd19bccb81cfa820",
+    "results/two_d_burgers/stage_b_interface_compatibility/GL_BALANCE_SUMMARY.json": "1eb1c304493afe9764d2026cca2baecc77357b0799846928049766c1f5927bf5",
+    "results/lid_driven_cavity/protected_gl8_v4/strong_only/run_audit.json": "b3f08202c98c52ebf0093d7ebeee3dbb8b906592432a912b69d8a9d8dc62ec29",
+    "results/two_d_burgers/postselection/POSTSELECTION_SUMMARY.json": "03a76100b822d4714ee01dff840c60f302ebbc17a78cb4978d846ea76a6ea427"
+  }
+}

@@ -1,0 +1,335 @@
+{
+  "axis_contract": {
+    "q1": {
+      "mass": {
+        "includes_full_pinn_iqr": true,
+        "limits": [
+          -0.015,
+          0.015
+        ],
+        "type": "linear_signed_symmetric",
+        "visible_max_abs": 0.009641761949897597
+      },
+      "x_momentum": {
+        "includes_full_pinn_iqr": true,
+        "limits": [
+          -0.05,
+          0.05
+        ],
+        "type": "linear_signed_symmetric",
+        "visible_max_abs": 0.037450784876751
+      },
+      "y_momentum": {
+        "includes_full_pinn_iqr": true,
+        "limits": [
+          -0.015,
+          0.015
+        ],
+        "type": "linear_signed_symmetric",
+        "visible_max_abs": 0.011403125903637562
+      }
+    },
+    "q4": {
+      "mass": {
+        "includes_full_pinn_iqr": true,
+        "limits": [
+          0.0002,
+          0.015
+        ],
+        "type": "logarithmic_nonnegative_rms",
+        "visible_max": 0.010219907696308018,
+        "visible_min": 0.0002556902658641116
+      },
+      "x_momentum": {
+        "includes_full_pinn_iqr": true,
+        "limits": [
+          0.0008,
+          0.03
+        ],
+        "type": "logarithmic_nonnegative_rms",
+        "visible_max": 0.02067346907927076,
+        "visible_min": 0.0012622755750726301
+      },
+      "y_momentum": {
+        "includes_full_pinn_iqr": true,
+        "limits": [
+          0.0001,
+          0.03
+        ],
+        "type": "logarithmic_nonnegative_rms",
+        "visible_max": 0.021075677490261402,
+        "visible_min": 0.00017328713455347318
+      }
+    }
+  },
+  "caption_draft_contract": {
+    "balanced_braces": true,
+    "complete_caption_command": true,
+    "forbidden_control_characters_absent": true,
+    "required_math_tokens_present": true
+  },
+  "interpretation": {
+    "mass": "Near-zero q=1 mass denominators are not used for relative ranking.",
+    "matched_comparison": "The matched gamma_I=0 control has the same strong weights as the hybrid and supplies a local fixed-strong-weight archived-checkpoint ablation.",
+    "pinn": "The five-seed PINN is contextual across-representation evidence; its architecture and optimizer differ and it did not enter PI-BSR selection.",
+    "q1": "Signed whole-domain q=1 histories are cancellation-sensitive and reporting-only.",
+    "q4": "Regional q=4 histories remain the optimization-relevant PI-BSR evidence.",
+    "selected_strong_comparison": "The gamma_tot=0.03 strong-only endpoint remains an independently validation-selected family comparator, not a fixed-weight ablation."
+  },
+  "main_figure_contract": {
+    "archived_but_not_displayed_roles": [
+      "strong_only"
+    ],
+    "axes_count": 6,
+    "inset_axes_count": 0,
+    "legend_entry_count": 5,
+    "omission_reason": "visually near-redundant but scientifically distinct checkpoint",
+    "panel_order": [
+      "q1_mass",
+      "q1_x_momentum",
+      "q1_y_momentum",
+      "q4_mass",
+      "q4_x_momentum",
+      "q4_y_momentum"
+    ],
+    "ramp_end_time": 0.5,
+    "row_order": [
+      "signed_whole_domain_q1",
+      "nonnegative_regional_q4_rms"
+    ],
+    "visible_components": [
+      "mass",
+      "x_momentum",
+      "y_momentum"
+    ],
+    "visible_contextual_role": "corrected_smooth_ramped_pinn_five_seed_median_iqr",
+    "visible_deterministic_roles": [
+      "stage_a",
+      "matched_strong_gamma_i0",
+      "gl4_hybrid"
+    ]
+  },
+  "metrics": {
+    "deterministic": {
+      "gl4_hybrid": {
+        "q1": {
+          "mass": 7.523826375721583e-06,
+          "x_momentum": 0.003762827850348226,
+          "y_momentum": 0.0005877116270897696
+        },
+        "q4": {
+          "mass": 0.003658774373969478,
+          "x_momentum": 0.0029682163510220626,
+          "y_momentum": 0.0007796489546582735
+        }
+      },
+      "matched_strong_gamma_i0": {
+        "q1": {
+          "mass": 3.900424461961319e-08,
+          "x_momentum": 0.01511832506704895,
+          "y_momentum": 0.0012183815138741825
+        },
+        "q4": {
+          "mass": 0.0038113258344850244,
+          "x_momentum": 0.010961985487895872,
+          "y_momentum": 0.009904101170860302
+        }
+      },
+      "stage_a": {
+        "q1": {
+          "mass": 1.088316509809683e-09,
+          "x_momentum": 0.015877879532884293,
+          "y_momentum": 0.0017388325521985328
+        },
+        "q4": {
+          "mass": 0.0038008733089805987,
+          "x_momentum": 0.01706421708698994,
+          "y_momentum": 0.016685340883494045
+        }
+      },
+      "strong_only": {
+        "q1": {
+          "mass": 4.7915179537610736e-08,
+          "x_momentum": 0.015110839103123587,
+          "y_momentum": 0.0012470037492872121
+        },
+        "q4": {
+          "mass": 0.0038168758166894504,
+          "x_momentum": 0.010934490226241919,
+          "y_momentum": 0.009920839070150334
+        }
+      }
+    },
+    "percent_reductions": {
+      "hybrid_vs_matched_strong_gamma_i0": {
+        "q1": {
+          "mass": -19189.763073473918,
+          "x_momentum": 75.11081529428498,
+          "y_momentum": 51.76292315688726
+        },
+        "q4": {
+          "mass": 4.002582490724227,
+          "x_momentum": 72.92263929468305,
+          "y_momentum": 92.128019078075
+        }
+      },
+      "hybrid_vs_selected_strong_only": {
+        "q1": {
+          "mass": -15602.38585835998,
+          "x_momentum": 75.09848510285305,
+          "y_momentum": 52.87009943428752
+        },
+        "q4": {
+          "mass": 4.142168891863529,
+          "x_momentum": 72.85455206774454,
+          "y_momentum": 92.14130025549886
+        }
+      },
+      "hybrid_vs_stage_a": {
+        "q1": {
+          "mass": -691227.0457541157,
+          "x_momentum": 76.30144603027675,
+          "y_momentum": 66.20079223001186
+        },
+        "q4": {
+          "mass": 3.7385864631523824,
+          "x_momentum": 82.6056107005045,
+          "y_momentum": 95.32734176603164
+        }
+      },
+      "matched_strong_gamma_i0_vs_stage_a": {
+        "q1": {
+          "mass": -3483.906360699607,
+          "x_momentum": 4.783727350130407,
+          "y_momentum": 29.931061370245583
+        },
+        "q4": {
+          "mass": -0.2750032599015739,
+          "x_momentum": 35.76039596769146,
+          "y_momentum": 40.64190093558159
+        }
+      }
+    },
+    "pinn_seedwise_time_rms": {
+      "five_seed_type7_summary": {
+        "q4_spatial_rms_mass": {
+          "median": 0.005998223170569107,
+          "q25": 0.0058907540459320895,
+          "q75": 0.0065047221511161275
+        },
+        "q4_spatial_rms_x_momentum": {
+          "median": 0.0070193392037411146,
+          "q25": 0.006690435535358475,
+          "q75": 0.007452257286102351
+        },
+        "q4_spatial_rms_y_momentum": {
+          "median": 0.005255738063996305,
+          "q25": 0.004967711864268387,
+          "q75": 0.005472473303174033
+        },
+        "signed_q1_mass": {
+          "median": 0.0052585125569074714,
+          "q25": 0.004423179094014072,
+          "q75": 0.00614133653920537
+        },
+        "signed_q1_x_momentum": {
+          "median": 0.0046691841506933465,
+          "q25": 0.004095849946813737,
+          "q75": 0.007902866494900612
+        },
+        "signed_q1_y_momentum": {
+          "median": 0.0061436872259950665,
+          "q25": 0.0058643012124682415,
+          "q75": 0.007839564200249036
+        }
+      },
+      "interpretation": "Median and IQR are computed over the five seedwise time-RMS values, not as the time-RMS of the pointwise median curve.",
+      "per_seed": {
+        "1101": {
+          "q4_spatial_rms_mass": 0.006577057068936749,
+          "q4_spatial_rms_x_momentum": 0.0070193392037411146,
+          "q4_spatial_rms_y_momentum": 0.005472473303174033,
+          "signed_q1_mass": 0.009820546739188436,
+          "signed_q1_x_momentum": 0.0046691841506933465,
+          "signed_q1_y_momentum": 0.00805025413980541
+        },
+        "2202": {
+          "q4_spatial_rms_mass": 0.005602856502882968,
+          "q4_spatial_rms_x_momentum": 0.005779374238118321,
+          "q4_spatial_rms_y_momentum": 0.005255738063996305,
+          "signed_q1_mass": 0.004423179094014072,
+          "signed_q1_x_momentum": 0.0033955229778698448,
+          "signed_q1_y_momentum": 0.007839564200249036
+        },
+        "3303": {
+          "q4_spatial_rms_mass": 0.0065047221511161275,
+          "q4_spatial_rms_x_momentum": 0.0074612195418328415,
+          "q4_spatial_rms_y_momentum": 0.005831645267624098,
+          "signed_q1_mass": 0.004158321083120768,
+          "signed_q1_x_momentum": 0.004095849946813737,
+          "signed_q1_y_momentum": 0.0061436872259950665
+        },
+        "4404": {
+          "q4_spatial_rms_mass": 0.0058907540459320895,
+          "q4_spatial_rms_x_momentum": 0.007452257286102351,
+          "q4_spatial_rms_y_momentum": 0.004967711864268387,
+          "signed_q1_mass": 0.00614133653920537,
+          "signed_q1_x_momentum": 0.00810221745906174,
+          "signed_q1_y_momentum": 0.003990785595618454
+        },
+        "5505": {
+          "q4_spatial_rms_mass": 0.005998223170569107,
+          "q4_spatial_rms_x_momentum": 0.006690435535358475,
+          "q4_spatial_rms_y_momentum": 0.004884560111073393,
+          "signed_q1_mass": 0.0052585125569074714,
+          "signed_q1_x_momentum": 0.007902866494900612,
+          "signed_q1_y_momentum": 0.0058643012124682415
+        }
+      }
+    }
+  },
+  "schema": "pimfa.ramped_cavity_multiscale_balance_figure.v13",
+  "scope": {
+    "caption_draft_latex_corrected": true,
+    "display_only_revision": true,
+    "figure42_pdf_png_byte_identical_to_v11": true,
+    "figure43_archived_not_active": true,
+    "figure43_archived_not_modified": true,
+    "manuscript_tex_or_pdf_modified": false,
+    "mass_panels_merged_into_main_figure": true,
+    "matched_control_archived_gamma_total": 0.02,
+    "matched_control_gamma_i": 0.0,
+    "matched_control_new_evaluation_only": true,
+    "matched_control_optimizer_or_selection_rerun": false,
+    "mutable_stable_paths_excluded_from_replayable_upstream": true,
+    "new_training_decoding_evaluation_optimization_or_selection": false,
+    "new_training_decoding_evaluation_optimization_selection_or_rendering": false,
+    "no_magnified_inset": true,
+    "pinn_contextual_not_selection_comparator": true,
+    "pinn_new_corrected_training_campaign": true,
+    "pinn_pointwise_band": "five-seed type-7 IQR",
+    "pinn_quadrature_metadata_qualification": "Seed 1101/2202 per-seed audit metadata retain the earlier absolute 1e-6 wording and omit later relative-tolerance fields; both pass the stricter absolute threshold, and the campaign-level GL8/GL12 cross-check remains PASS.",
+    "provenance_correction_only": true,
+    "provenance_only_successor": true,
+    "selected_hybrid_gamma_total": 0.04,
+    "selected_pi_bsr_checkpoint_unchanged": true,
+    "selected_strong_checkpoint_archived_but_not_displayed": true,
+    "selected_strong_only_gamma_total": 0.03,
+    "selected_strong_only_retained_separately": true,
+    "stable_figure42_verified_not_reinstalled": true,
+    "stable_pdfs_checked_only_by_nonserialized_preinstall_guard": true,
+    "v10_numeric_tables_byte_identical": true,
+    "v12_numeric_tables_byte_identical": true,
+    "v8_legacy_histories_byte_identical": true,
+    "v9_legacy_upstream_manifest_pinned_as_artifact_not_recursively_replayed": true,
+    "v9_numeric_tables_byte_identical": true,
+    "v9_scientific_contract_unchanged": true,
+    "v9_style_contract_unchanged_except_legend_visual_row_order": true
+  },
+  "status": "COMPLETE_REDUNDANT_DISPLAY_SERIES_REMOVAL",
+  "supplement_figure_contract": {
+    "active": false,
+    "archived_predecessor": "historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/figure_sources/ramped_cavity_whole_domain_q1_figure_v10/Figure43_Ramped_cavity_q4_q1_mass_balance.pdf",
+    "reason": "mass panels merged into active Figure42 v11"
+  }
+}

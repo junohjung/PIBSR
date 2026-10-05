@@ -1,0 +1,445 @@
+{
+  "schema_version": 1,
+  "precision_labels": [
+    "archived_full_precision",
+    "manuscript_rounded"
+  ],
+  "cases": {
+    "one_dimensional_convection_diffusion": {
+      "primary_metrics": {
+        "precision": "manuscript_rounded",
+        "tolerance": {
+          "relative": 0.0005,
+          "absolute": 1e-10
+        },
+        "source": "PIBSR_manuscript_v2.tex:891-922",
+        "values": {
+          "models": {
+            "mfa_data_only": {
+              "midpoint_data_mse": 1.086e-06,
+              "midpoint_pde_mse": 1.862,
+              "analytical_midpoint_relative_l2": 0.02535,
+              "whole_domain_gl8_balance_rms": 0.1196
+            },
+            "pibsr_strong_beta_3e_5": {
+              "midpoint_data_mse": 5.204e-06,
+              "midpoint_pde_mse": 0.2821,
+              "analytical_midpoint_relative_l2": 0.0233,
+              "q4_gl4_balance_mse": 0.006484,
+              "whole_domain_gl8_balance_rms": 0.06673
+            },
+            "pibsr_hybrid_beta_3e_5_gamma_0_1": {
+              "midpoint_data_mse": 5.818e-06,
+              "midpoint_pde_mse": 0.251,
+              "analytical_midpoint_relative_l2": 0.0231,
+              "q4_gl4_balance_mse": 0.004617,
+              "whole_domain_gl8_balance_rms": 0.05624
+            },
+            "pibsr_hybrid_beta_3e_5_gamma_10": {
+              "midpoint_data_mse": 1.152e-05,
+              "midpoint_pde_mse": 0.192,
+              "analytical_midpoint_relative_l2": 0.02219,
+              "q4_gl4_balance_mse": 2.167e-05,
+              "whole_domain_gl8_balance_rms": 0.004075
+            }
+          }
+        }
+      },
+      "analytical_reference_resolution": {
+        "precision": "manuscript_rounded",
+        "tolerance": {
+          "relative": 0.005,
+          "absolute": 1e-12
+        },
+        "source": "PIBSR_manuscript_v2.tex:730",
+        "values": {
+          "doubled_resolution_linf_change": 5.59e-05,
+          "doubled_resolution_relative_l2_change": 1.27e-06
+        }
+      }
+    },
+    "two_dimensional_burgers": {
+      "primary_metrics": {
+        "precision": "manuscript_rounded",
+        "tolerance": {
+          "relative": 0.0005,
+          "absolute": 1e-10
+        },
+        "source": "PIBSR_manuscript_v2.tex:1168-1258",
+        "values": {
+          "models": {
+            "pibsr_strong_beta_0_01_kappa_10": {
+              "q4_gl8_balance_rms_u": 0.0313,
+              "q4_gl8_balance_rms_v": 0.02321,
+              "off_node_strong_rms_u": 0.08088,
+              "off_node_strong_rms_v": 0.06212,
+              "whole_domain_q1_balance_rms_u": 0.1134,
+              "whole_domain_q1_balance_rms_v": 0.05322,
+              "off_node_velocity_relative_l2": 0.2427,
+              "off_node_vorticity_relative_l2": 0.3423,
+              "kinetic_energy_trajectory_relative_l2": 0.1189,
+              "enstrophy_trajectory_relative_l2": 0.05691,
+              "test_velocity_relative_l2": 0.2438,
+              "test_vorticity_relative_l2": 0.3399
+            },
+            "pibsr_hybrid_beta_0_01_kappa_10_gamma_0_03": {
+              "q4_gl8_balance_rms_u": 0.03092,
+              "q4_gl8_balance_rms_v": 0.02263,
+              "off_node_strong_rms_u": 0.08062,
+              "off_node_strong_rms_v": 0.0616,
+              "whole_domain_q1_balance_rms_u": 0.112,
+              "whole_domain_q1_balance_rms_v": 0.05154,
+              "off_node_velocity_relative_l2": 0.2426,
+              "off_node_vorticity_relative_l2": 0.3422,
+              "kinetic_energy_trajectory_relative_l2": 0.1188,
+              "enstrophy_trajectory_relative_l2": 0.05683,
+              "test_velocity_relative_l2": 0.2436,
+              "test_vorticity_relative_l2": 0.3401
+            }
+          }
+        }
+      },
+      "reference_refinement": {
+        "precision": "manuscript_rounded",
+        "tolerance": {
+          "relative": 0.005,
+          "absolute": 1e-13
+        },
+        "source": "PIBSR_suppl_v2.tex:698-720",
+        "values": {
+          "grid_40_to_80_u": 0.00426,
+          "grid_40_to_80_v": 0.0048,
+          "grid_80_to_160_u": 0.000278,
+          "grid_80_to_160_v": 0.000291,
+          "grid_160_to_200_u": 1.15e-05,
+          "grid_160_to_200_v": 1.14e-05,
+          "halved_time_step_max_change": 2.4e-12
+        }
+      }
+    },
+    "lid_driven_cavity": {
+      "primary_metrics": {
+        "precision": "manuscript_rounded",
+        "tolerance": {
+          "relative": 0.0005,
+          "absolute": 1e-10
+        },
+        "source": "PIBSR_suppl_v2.tex:1044-1133",
+        "values": {
+          "models": {
+            "selected_gl4_hybrid": {
+              "canonical_q4_gl8_mass_rms": 0.003659,
+              "canonical_q4_gl8_x_momentum_rms": 0.002968,
+              "canonical_q4_gl8_y_momentum_rms": 0.0007796,
+              "shifted_q4_gl8_mass_rms": 0.003403,
+              "shifted_q4_gl8_x_momentum_rms": 0.002523,
+              "shifted_q4_gl8_y_momentum_rms": 0.001724,
+              "whole_domain_q1_mass_rms": 7.524e-06,
+              "whole_domain_q1_x_momentum_rms": 0.003763,
+              "whole_domain_q1_y_momentum_rms": 0.0005877,
+              "test_u_rmse": 0.0001351,
+              "test_v_rmse": 9.622e-05
+            },
+            "matched_strong_control": {
+              "canonical_q4_gl8_mass_rms": 0.003811,
+              "canonical_q4_gl8_x_momentum_rms": 0.01096,
+              "canonical_q4_gl8_y_momentum_rms": 0.009904,
+              "shifted_q4_gl8_mass_rms": 0.003488,
+              "shifted_q4_gl8_x_momentum_rms": 0.01088,
+              "shifted_q4_gl8_y_momentum_rms": 0.01008,
+              "whole_domain_q1_mass_rms": 3.9e-08,
+              "whole_domain_q1_x_momentum_rms": 0.01512,
+              "whole_domain_q1_y_momentum_rms": 0.001218,
+              "test_u_rmse": 0.0001292,
+              "test_v_rmse": 9.503e-05
+            },
+            "stage_a_canonical_p0": {
+              "canonical_q4_gl8_mass_rms": 0.003801,
+              "canonical_q4_gl8_x_momentum_rms": 0.01706,
+              "canonical_q4_gl8_y_momentum_rms": 0.01669,
+              "shifted_q4_gl8_mass_rms": 0.003485,
+              "shifted_q4_gl8_x_momentum_rms": 0.01761,
+              "shifted_q4_gl8_y_momentum_rms": 0.01675,
+              "whole_domain_q1_mass_rms": 1.088e-09,
+              "whole_domain_q1_x_momentum_rms": 0.01588,
+              "whole_domain_q1_y_momentum_rms": 0.001739,
+              "test_u_rmse": 0.0001274,
+              "test_v_rmse": 9.205e-05
+            }
+          }
+        }
+      },
+      "advective_conservative_metrics": {
+        "precision": "manuscript_rounded",
+        "tolerance": {
+          "relative": 5e-05,
+          "absolute": 1e-08
+        },
+        "source": "PIBSR_suppl_v2.tex:1153-1181",
+        "values": {
+          "matched_strong_control": {
+            "advective_x_rms": 0.108493,
+            "advective_y_rms": 0.065845,
+            "conservative_x_rms": 0.12375,
+            "conservative_y_rms": 0.070516
+          },
+          "selected_gl4_hybrid": {
+            "advective_x_rms": 0.082237,
+            "advective_y_rms": 0.069038,
+            "conservative_x_rms": 0.102451,
+            "conservative_y_rms": 0.073608
+          }
+        }
+      },
+      "pressure_metrics": {
+        "precision": "manuscript_rounded",
+        "tolerance": {
+          "relative": 5e-05,
+          "absolute": 1e-08
+        },
+        "source": "PIBSR_suppl_v2.tex:1466-1493",
+        "values": {
+          "matched_strong_control": {
+            "pressure_rmse": 0.0026574,
+            "pressure_relative_l2": 0.20777,
+            "midpoint_gradient_relative_l2": 0.12806,
+            "fine_gradient_relative_l2": 1.19814
+          },
+          "selected_gl4_hybrid": {
+            "pressure_rmse": 0.0021645,
+            "pressure_relative_l2": 0.16923,
+            "midpoint_gradient_relative_l2": 0.13554,
+            "fine_gradient_relative_l2": 0.89839
+          }
+        }
+      },
+      "stage_a_normalizers_and_selected_weights": {
+        "precision": "archived_full_precision",
+        "tolerance": {
+          "relative": 1e-12,
+          "absolute": 1e-18
+        },
+        "source": "PIBSR_suppl_v2.tex:917-948",
+        "values": {
+          "gamma_s": 0.02,
+          "gamma_i": 0.02,
+          "J_A": 3.445445534826788e-06,
+          "R_A_x": 0.01079047856267909,
+          "R_A_y": 0.01060877437175432,
+          "R_A_c": 0.04461845008268316,
+          "I_A_GL4_m": 1.495013866894594e-05,
+          "I_A_GL4_x": 0.0002992113257408311,
+          "I_A_GL4_y": 0.0002933529704408765,
+          "I_A_TH_m": 0.0001429766575903499,
+          "I_A_TH_x": 0.0006785860542914646,
+          "I_A_TH_y": 0.0002946044606455425,
+          "lambda_x": 2.128694919824047e-06,
+          "lambda_y": 2.165154625213024e-06,
+          "lambda_c": 5.148013177571129e-07,
+          "lambda_I_m": 0.001536416310743473,
+          "lambda_I_x": 7.676727089783005e-05,
+          "lambda_I_y": 7.830033854548832e-05
+        }
+      }
+    }
+  },
+  "verification": {
+    "precision": "manuscript_rounded",
+    "tolerance": {
+      "relative": 0.01,
+      "absolute": 1e-18
+    },
+    "source": "PIBSR_suppl_v2.tex:1505-1546",
+    "values": {
+      "burgers_strong_max_relative_directional_discrepancy": 6.62e-11,
+      "navier_stokes_strong_max_relative_directional_discrepancy": 4.16e-12,
+      "burgers_balance_max_direct_flux_closure_discrepancy": 1.891e-16,
+      "cavity_cross_implementation_max_absolute_difference": 1.13e-16,
+      "physical_derivative_max_scaled_centered_difference_discrepancy": 6.003e-09
+    }
+  },
+  "derived_checks": [
+    {
+      "name": "1D strong midpoint PDE reduction",
+      "operation": "percent_reduction",
+      "baseline": "cases.one_dimensional_convection_diffusion.primary_metrics.values.models.mfa_data_only.midpoint_pde_mse",
+      "candidate": "cases.one_dimensional_convection_diffusion.primary_metrics.values.models.pibsr_strong_beta_3e_5.midpoint_pde_mse",
+      "reported": 84.8,
+      "tolerance_percentage_points": 0.1
+    },
+    {
+      "name": "1D strong analytical error reduction",
+      "operation": "percent_reduction",
+      "baseline": "cases.one_dimensional_convection_diffusion.primary_metrics.values.models.mfa_data_only.analytical_midpoint_relative_l2",
+      "candidate": "cases.one_dimensional_convection_diffusion.primary_metrics.values.models.pibsr_strong_beta_3e_5.analytical_midpoint_relative_l2",
+      "reported": 8.1,
+      "tolerance_percentage_points": 0.1
+    },
+    {
+      "name": "1D hybrid q4 balance reduction",
+      "operation": "percent_reduction",
+      "baseline": "cases.one_dimensional_convection_diffusion.primary_metrics.values.models.pibsr_strong_beta_3e_5.q4_gl4_balance_mse",
+      "candidate": "cases.one_dimensional_convection_diffusion.primary_metrics.values.models.pibsr_hybrid_beta_3e_5_gamma_0_1.q4_gl4_balance_mse",
+      "reported": 28.8,
+      "tolerance_percentage_points": 0.1
+    },
+    {
+      "name": "1D hybrid whole-domain balance reduction",
+      "operation": "percent_reduction",
+      "baseline": "cases.one_dimensional_convection_diffusion.primary_metrics.values.models.pibsr_strong_beta_3e_5.whole_domain_gl8_balance_rms",
+      "candidate": "cases.one_dimensional_convection_diffusion.primary_metrics.values.models.pibsr_hybrid_beta_3e_5_gamma_0_1.whole_domain_gl8_balance_rms",
+      "reported": 15.7,
+      "tolerance_percentage_points": 0.1
+    },
+    {
+      "name": "1D hybrid midpoint data increase",
+      "operation": "percent_change",
+      "baseline": "cases.one_dimensional_convection_diffusion.primary_metrics.values.models.pibsr_strong_beta_3e_5.midpoint_data_mse",
+      "candidate": "cases.one_dimensional_convection_diffusion.primary_metrics.values.models.pibsr_hybrid_beta_3e_5_gamma_0_1.midpoint_data_mse",
+      "reported": 11.8,
+      "tolerance_percentage_points": 0.1
+    },
+    {
+      "name": "Burgers q4 u balance change",
+      "operation": "percent_change",
+      "baseline": "cases.two_dimensional_burgers.primary_metrics.values.models.pibsr_strong_beta_0_01_kappa_10.q4_gl8_balance_rms_u",
+      "candidate": "cases.two_dimensional_burgers.primary_metrics.values.models.pibsr_hybrid_beta_0_01_kappa_10_gamma_0_03.q4_gl8_balance_rms_u",
+      "reported": -1.2,
+      "tolerance_percentage_points": 0.03
+    },
+    {
+      "name": "Burgers q4 v balance change",
+      "operation": "percent_change",
+      "baseline": "cases.two_dimensional_burgers.primary_metrics.values.models.pibsr_strong_beta_0_01_kappa_10.q4_gl8_balance_rms_v",
+      "candidate": "cases.two_dimensional_burgers.primary_metrics.values.models.pibsr_hybrid_beta_0_01_kappa_10_gamma_0_03.q4_gl8_balance_rms_v",
+      "reported": -2.51,
+      "tolerance_percentage_points": 0.03
+    },
+    {
+      "name": "Burgers q4 geometric-mean balance change",
+      "operation": "geometric_mean_percent_change",
+      "baselines": [
+        "cases.two_dimensional_burgers.primary_metrics.values.models.pibsr_strong_beta_0_01_kappa_10.q4_gl8_balance_rms_u",
+        "cases.two_dimensional_burgers.primary_metrics.values.models.pibsr_strong_beta_0_01_kappa_10.q4_gl8_balance_rms_v"
+      ],
+      "candidates": [
+        "cases.two_dimensional_burgers.primary_metrics.values.models.pibsr_hybrid_beta_0_01_kappa_10_gamma_0_03.q4_gl8_balance_rms_u",
+        "cases.two_dimensional_burgers.primary_metrics.values.models.pibsr_hybrid_beta_0_01_kappa_10_gamma_0_03.q4_gl8_balance_rms_v"
+      ],
+      "reported": -1.859,
+      "tolerance_percentage_points": 0.01
+    },
+    {
+      "name": "Burgers q1 u balance change",
+      "operation": "percent_change",
+      "baseline": "cases.two_dimensional_burgers.primary_metrics.values.models.pibsr_strong_beta_0_01_kappa_10.whole_domain_q1_balance_rms_u",
+      "candidate": "cases.two_dimensional_burgers.primary_metrics.values.models.pibsr_hybrid_beta_0_01_kappa_10_gamma_0_03.whole_domain_q1_balance_rms_u",
+      "reported": -1.25,
+      "tolerance_percentage_points": 0.03
+    },
+    {
+      "name": "Burgers q1 v balance change",
+      "operation": "percent_change",
+      "baseline": "cases.two_dimensional_burgers.primary_metrics.values.models.pibsr_strong_beta_0_01_kappa_10.whole_domain_q1_balance_rms_v",
+      "candidate": "cases.two_dimensional_burgers.primary_metrics.values.models.pibsr_hybrid_beta_0_01_kappa_10_gamma_0_03.whole_domain_q1_balance_rms_v",
+      "reported": -3.15,
+      "tolerance_percentage_points": 0.03
+    },
+    {
+      "name": "Cavity canonical q4 mass change",
+      "operation": "percent_change",
+      "baseline": "cases.lid_driven_cavity.primary_metrics.values.models.matched_strong_control.canonical_q4_gl8_mass_rms",
+      "candidate": "cases.lid_driven_cavity.primary_metrics.values.models.selected_gl4_hybrid.canonical_q4_gl8_mass_rms",
+      "reported": -4.0,
+      "tolerance_percentage_points": 0.15
+    },
+    {
+      "name": "Cavity canonical q4 x-momentum change",
+      "operation": "percent_change",
+      "baseline": "cases.lid_driven_cavity.primary_metrics.values.models.matched_strong_control.canonical_q4_gl8_x_momentum_rms",
+      "candidate": "cases.lid_driven_cavity.primary_metrics.values.models.selected_gl4_hybrid.canonical_q4_gl8_x_momentum_rms",
+      "reported": -72.9,
+      "tolerance_percentage_points": 0.15
+    },
+    {
+      "name": "Cavity canonical q4 y-momentum change",
+      "operation": "percent_change",
+      "baseline": "cases.lid_driven_cavity.primary_metrics.values.models.matched_strong_control.canonical_q4_gl8_y_momentum_rms",
+      "candidate": "cases.lid_driven_cavity.primary_metrics.values.models.selected_gl4_hybrid.canonical_q4_gl8_y_momentum_rms",
+      "reported": -92.1,
+      "tolerance_percentage_points": 0.15
+    },
+    {
+      "name": "Cavity shifted q4 x-momentum change",
+      "operation": "percent_change",
+      "baseline": "cases.lid_driven_cavity.primary_metrics.values.models.matched_strong_control.shifted_q4_gl8_x_momentum_rms",
+      "candidate": "cases.lid_driven_cavity.primary_metrics.values.models.selected_gl4_hybrid.shifted_q4_gl8_x_momentum_rms",
+      "reported": -76.8,
+      "tolerance_percentage_points": 0.15
+    },
+    {
+      "name": "Cavity shifted q4 y-momentum change",
+      "operation": "percent_change",
+      "baseline": "cases.lid_driven_cavity.primary_metrics.values.models.matched_strong_control.shifted_q4_gl8_y_momentum_rms",
+      "candidate": "cases.lid_driven_cavity.primary_metrics.values.models.selected_gl4_hybrid.shifted_q4_gl8_y_momentum_rms",
+      "reported": -82.9,
+      "tolerance_percentage_points": 0.15
+    },
+    {
+      "name": "Cavity test u RMSE change",
+      "operation": "percent_change",
+      "baseline": "cases.lid_driven_cavity.primary_metrics.values.models.matched_strong_control.test_u_rmse",
+      "candidate": "cases.lid_driven_cavity.primary_metrics.values.models.selected_gl4_hybrid.test_u_rmse",
+      "reported": 4.6,
+      "tolerance_percentage_points": 0.15
+    },
+    {
+      "name": "Cavity test v RMSE change",
+      "operation": "percent_change",
+      "baseline": "cases.lid_driven_cavity.primary_metrics.values.models.matched_strong_control.test_v_rmse",
+      "candidate": "cases.lid_driven_cavity.primary_metrics.values.models.selected_gl4_hybrid.test_v_rmse",
+      "reported": 1.3,
+      "tolerance_percentage_points": 0.15
+    },
+    {
+      "name": "Cavity whole-domain x-momentum change",
+      "operation": "percent_change",
+      "baseline": "cases.lid_driven_cavity.primary_metrics.values.models.matched_strong_control.whole_domain_q1_x_momentum_rms",
+      "candidate": "cases.lid_driven_cavity.primary_metrics.values.models.selected_gl4_hybrid.whole_domain_q1_x_momentum_rms",
+      "reported": -75.1,
+      "tolerance_percentage_points": 0.15
+    },
+    {
+      "name": "Cavity whole-domain y-momentum change",
+      "operation": "percent_change",
+      "baseline": "cases.lid_driven_cavity.primary_metrics.values.models.matched_strong_control.whole_domain_q1_y_momentum_rms",
+      "candidate": "cases.lid_driven_cavity.primary_metrics.values.models.selected_gl4_hybrid.whole_domain_q1_y_momentum_rms",
+      "reported": -51.8,
+      "tolerance_percentage_points": 0.15
+    },
+    {
+      "name": "Cavity mean-aligned pressure relative L2 change",
+      "operation": "percent_change",
+      "baseline": "cases.lid_driven_cavity.pressure_metrics.values.matched_strong_control.pressure_relative_l2",
+      "candidate": "cases.lid_driven_cavity.pressure_metrics.values.selected_gl4_hybrid.pressure_relative_l2",
+      "reported": -18.55,
+      "tolerance_percentage_points": 0.02
+    },
+    {
+      "name": "Cavity midpoint pressure-gradient change",
+      "operation": "percent_change",
+      "baseline": "cases.lid_driven_cavity.pressure_metrics.values.matched_strong_control.midpoint_gradient_relative_l2",
+      "candidate": "cases.lid_driven_cavity.pressure_metrics.values.selected_gl4_hybrid.midpoint_gradient_relative_l2",
+      "reported": 5.84,
+      "tolerance_percentage_points": 0.02
+    },
+    {
+      "name": "Cavity fine pressure-gradient change",
+      "operation": "percent_change",
+      "baseline": "cases.lid_driven_cavity.pressure_metrics.values.matched_strong_control.fine_gradient_relative_l2",
+      "candidate": "cases.lid_driven_cavity.pressure_metrics.values.selected_gl4_hybrid.fine_gradient_relative_l2",
+      "reported": -25.02,
+      "tolerance_percentage_points": 0.02
+    }
+  ]
+}

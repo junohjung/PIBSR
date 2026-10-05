@@ -1,0 +1,116 @@
+{
+  "balance_design": {
+    "1": {
+      "boundaries": [
+        0.0,
+        1.0
+      ],
+      "boundary_points_per_time": 2,
+      "offsets": [
+        0,
+        148
+      ],
+      "volume_points_per_time": 148,
+      "widths": [
+        1.0
+      ]
+    },
+    "2": {
+      "boundaries": [
+        0.0,
+        0.5,
+        1.0
+      ],
+      "boundary_points_per_time": 3,
+      "offsets": [
+        0,
+        76,
+        152
+      ],
+      "volume_points_per_time": 152,
+      "widths": [
+        0.5,
+        0.5
+      ]
+    },
+    "4": {
+      "boundaries": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "boundary_points_per_time": 5,
+      "offsets": [
+        0,
+        40,
+        80,
+        120,
+        160
+      ],
+      "volume_points_per_time": 160,
+      "widths": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ]
+    }
+  },
+  "diagnostic_parts": [
+    1,
+    2,
+    4
+  ],
+  "information_source": "released low-fidelity coordinates only; no analytical/reference arrays",
+  "midpoint_counts": {
+    "bc_midpoints": 798,
+    "ic_midpoints": 59,
+    "interior_midpoints": 23541
+  },
+  "points_sha256": "ec799ec6e850ad2c58c8bb64be5eba1fa6c7c3568d6ef7a9b22dd7703a399e8e",
+  "quadrature_order": 4,
+  "x_knot_breakpoints": [
+    0.0,
+    0.02702702702702703,
+    0.05405405405405406,
+    0.08108108108108109,
+    0.10810810810810811,
+    0.13513513513513514,
+    0.16216216216216217,
+    0.1891891891891892,
+    0.21621621621621623,
+    0.24324324324324326,
+    0.2702702702702703,
+    0.2972972972972973,
+    0.32432432432432434,
+    0.35135135135135137,
+    0.3783783783783784,
+    0.40540540540540543,
+    0.43243243243243246,
+    0.4594594594594595,
+    0.4864864864864865,
+    0.5135135135135136,
+    0.5405405405405406,
+    0.5675675675675675,
+    0.5945945945945945,
+    0.6216216216216215,
+    0.6486486486486485,
+    0.6756756756756754,
+    0.7027027027027024,
+    0.7297297297297294,
+    0.7567567567567564,
+    0.7837837837837833,
+    0.8108108108108103,
+    0.8378378378378373,
+    0.8648648648648642,
+    0.8918918918918912,
+    0.9189189189189182,
+    0.9459459459459452,
+    0.9729729729729721,
+    1.0
+  ],
+  "x_knot_file": "historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/experiments/one_d_integral_balance_v2/design/x_unique_knots_nctrl40_p3.txt",
+  "x_knot_file_sha256": "cb55d7425d01226dcd5b904939b59354b6a59c83d057ae3e05a493145227e316"
+}

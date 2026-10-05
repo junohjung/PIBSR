@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this software or its reproducibility record, please cite the associated article."
+title: "A Physics-Informed B-Spline Reconstruction of Flow Data"
+type: software
+version: "1.0.0"
+date-released: 2026-09-20
+authors:
+  - family-names: Jung
+    given-names: Junoh
+  - family-names: Lenz
+    given-names: David
+  - family-names: Constantinescu
+    given-names: Emil
+  - family-names: Peterka
+    given-names: Tom

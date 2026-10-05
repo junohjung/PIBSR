@@ -1,0 +1,343 @@
+{
+  "candidate_weights": {
+    "gl4_conservative_only__gamma_0p01": {
+      "candidate_id": "gl4_conservative_only__gamma_0p01",
+      "equal_total_budget_verified": true,
+      "family": "gl4_conservative_only",
+      "gamma": 0.01,
+      "integral_reference_operator": "gl4",
+      "integral_weights": {
+        "mass": 0.0007682081553717362,
+        "xmom": 3.8383635448915026e-05,
+        "ymom": 3.915016927274416e-05
+      },
+      "quadrature": "gl4",
+      "realized_added_physics_at_stage_a": 3.445445534826788e-08,
+      "strong_weights": {
+        "div": 0.0,
+        "xmom": 0.0,
+        "ymom": 0.0
+      },
+      "target_added_physics_at_stage_a": 3.445445534826788e-08
+    },
+    "gl4_conservative_only__gamma_0p02": {
+      "candidate_id": "gl4_conservative_only__gamma_0p02",
+      "equal_total_budget_verified": true,
+      "family": "gl4_conservative_only",
+      "gamma": 0.02,
+      "integral_reference_operator": "gl4",
+      "integral_weights": {
+        "mass": 0.0015364163107434725,
+        "xmom": 7.676727089783005e-05,
+        "ymom": 7.830033854548832e-05
+      },
+      "quadrature": "gl4",
+      "realized_added_physics_at_stage_a": 6.890891069653576e-08,
+      "strong_weights": {
+        "div": 0.0,
+        "xmom": 0.0,
+        "ymom": 0.0
+      },
+      "target_added_physics_at_stage_a": 6.890891069653576e-08
+    },
+    "gl4_conservative_only__gamma_0p03": {
+      "candidate_id": "gl4_conservative_only__gamma_0p03",
+      "equal_total_budget_verified": true,
+      "family": "gl4_conservative_only",
+      "gamma": 0.03,
+      "integral_reference_operator": "gl4",
+      "integral_weights": {
+        "mass": 0.0023046244661152084,
+        "xmom": 0.00011515090634674507,
+        "ymom": 0.00011745050781823247
+      },
+      "quadrature": "gl4",
+      "realized_added_physics_at_stage_a": 1.0336336604480365e-07,
+      "strong_weights": {
+        "div": 0.0,
+        "xmom": 0.0,
+        "ymom": 0.0
+      },
+      "target_added_physics_at_stage_a": 1.0336336604480364e-07
+    },
+    "gl4_conservative_only__gamma_0p04": {
+      "candidate_id": "gl4_conservative_only__gamma_0p04",
+      "equal_total_budget_verified": true,
+      "family": "gl4_conservative_only",
+      "gamma": 0.04,
+      "integral_reference_operator": "gl4",
+      "integral_weights": {
+        "mass": 0.003072832621486945,
+        "xmom": 0.0001535345417956601,
+        "ymom": 0.00015660067709097664
+      },
+      "quadrature": "gl4",
+      "realized_added_physics_at_stage_a": 1.3781782139307152e-07,
+      "strong_weights": {
+        "div": 0.0,
+        "xmom": 0.0,
+        "ymom": 0.0
+      },
+      "target_added_physics_at_stage_a": 1.3781782139307152e-07
+    },
+    "gl4_hybrid__gamma_0p01": {
+      "candidate_id": "gl4_hybrid__gamma_0p01",
+      "equal_total_budget_verified": true,
+      "family": "gl4_hybrid",
+      "gamma": 0.01,
+      "integral_reference_operator": "gl4",
+      "integral_weights": {
+        "mass": 0.0003841040776858681,
+        "xmom": 1.9191817724457513e-05,
+        "ymom": 1.957508463637208e-05
+      },
+      "quadrature": "gl4",
+      "realized_added_physics_at_stage_a": 3.445445534826788e-08,
+      "strong_weights": {
+        "div": 1.2870032943927823e-07,
+        "xmom": 5.321737299560117e-07,
+        "ymom": 5.41288656303256e-07
+      },
+      "target_added_physics_at_stage_a": 3.445445534826788e-08
+    },
+    "gl4_hybrid__gamma_0p02": {
+      "candidate_id": "gl4_hybrid__gamma_0p02",
+      "equal_total_budget_verified": true,
+      "family": "gl4_hybrid",
+      "gamma": 0.02,
+      "integral_reference_operator": "gl4",
+      "integral_weights": {
+        "mass": 0.0007682081553717362,
+        "xmom": 3.8383635448915026e-05,
+        "ymom": 3.915016927274416e-05
+      },
+      "quadrature": "gl4",
+      "realized_added_physics_at_stage_a": 6.890891069653576e-08,
+      "strong_weights": {
+        "div": 2.5740065887855646e-07,
+        "xmom": 1.0643474599120235e-06,
+        "ymom": 1.082577312606512e-06
+      },
+      "target_added_physics_at_stage_a": 6.890891069653576e-08
+    },
+    "gl4_hybrid__gamma_0p03": {
+      "candidate_id": "gl4_hybrid__gamma_0p03",
+      "equal_total_budget_verified": true,
+      "family": "gl4_hybrid",
+      "gamma": 0.03,
+      "integral_reference_operator": "gl4",
+      "integral_weights": {
+        "mass": 0.0011523122330576042,
+        "xmom": 5.7575453173372536e-05,
+        "ymom": 5.872525390911624e-05
+      },
+      "quadrature": "gl4",
+      "realized_added_physics_at_stage_a": 1.0336336604480364e-07,
+      "strong_weights": {
+        "div": 3.8610098831783464e-07,
+        "xmom": 1.5965211898680351e-06,
+        "ymom": 1.623865968909768e-06
+      },
+      "target_added_physics_at_stage_a": 1.0336336604480364e-07
+    },
+    "gl4_hybrid__gamma_0p04": {
+      "candidate_id": "gl4_hybrid__gamma_0p04",
+      "equal_total_budget_verified": true,
+      "family": "gl4_hybrid",
+      "gamma": 0.04,
+      "integral_reference_operator": "gl4",
+      "integral_weights": {
+        "mass": 0.0015364163107434725,
+        "xmom": 7.676727089783005e-05,
+        "ymom": 7.830033854548832e-05
+      },
+      "quadrature": "gl4",
+      "realized_added_physics_at_stage_a": 1.3781782139307152e-07,
+      "strong_weights": {
+        "div": 5.148013177571129e-07,
+        "xmom": 2.128694919824047e-06,
+        "ymom": 2.165154625213024e-06
+      },
+      "target_added_physics_at_stage_a": 1.3781782139307152e-07
+    },
+    "strong_only__gamma_0p01": {
+      "candidate_id": "strong_only__gamma_0p01",
+      "equal_total_budget_verified": true,
+      "family": "strong_only",
+      "gamma": 0.01,
+      "integral_reference_operator": "gl4",
+      "integral_weights": {
+        "mass": 0.0,
+        "xmom": 0.0,
+        "ymom": 0.0
+      },
+      "quadrature": "gl4",
+      "realized_added_physics_at_stage_a": 3.445445534826788e-08,
+      "strong_weights": {
+        "div": 2.5740065887855646e-07,
+        "xmom": 1.0643474599120235e-06,
+        "ymom": 1.082577312606512e-06
+      },
+      "target_added_physics_at_stage_a": 3.445445534826788e-08
+    },
+    "strong_only__gamma_0p02": {
+      "candidate_id": "strong_only__gamma_0p02",
+      "equal_total_budget_verified": true,
+      "family": "strong_only",
+      "gamma": 0.02,
+      "integral_reference_operator": "gl4",
+      "integral_weights": {
+        "mass": 0.0,
+        "xmom": 0.0,
+        "ymom": 0.0
+      },
+      "quadrature": "gl4",
+      "realized_added_physics_at_stage_a": 6.890891069653576e-08,
+      "strong_weights": {
+        "div": 5.148013177571129e-07,
+        "xmom": 2.128694919824047e-06,
+        "ymom": 2.165154625213024e-06
+      },
+      "target_added_physics_at_stage_a": 6.890891069653576e-08
+    },
+    "strong_only__gamma_0p03": {
+      "candidate_id": "strong_only__gamma_0p03",
+      "equal_total_budget_verified": true,
+      "family": "strong_only",
+      "gamma": 0.03,
+      "integral_reference_operator": "gl4",
+      "integral_weights": {
+        "mass": 0.0,
+        "xmom": 0.0,
+        "ymom": 0.0
+      },
+      "quadrature": "gl4",
+      "realized_added_physics_at_stage_a": 1.0336336604480362e-07,
+      "strong_weights": {
+        "div": 7.722019766356693e-07,
+        "xmom": 3.1930423797360702e-06,
+        "ymom": 3.247731937819536e-06
+      },
+      "target_added_physics_at_stage_a": 1.0336336604480364e-07
+    },
+    "strong_only__gamma_0p04": {
+      "candidate_id": "strong_only__gamma_0p04",
+      "equal_total_budget_verified": true,
+      "family": "strong_only",
+      "gamma": 0.04,
+      "integral_reference_operator": "gl4",
+      "integral_weights": {
+        "mass": 0.0,
+        "xmom": 0.0,
+        "ymom": 0.0
+      },
+      "quadrature": "gl4",
+      "realized_added_physics_at_stage_a": 1.3781782139307152e-07,
+      "strong_weights": {
+        "div": 1.0296026355142259e-06,
+        "xmom": 4.257389839648094e-06,
+        "ymom": 4.330309250426048e-06
+      },
+      "target_added_physics_at_stage_a": 1.3781782139307152e-07
+    },
+    "trapezoid_hybrid__gamma_0p01": {
+      "candidate_id": "trapezoid_hybrid__gamma_0p01",
+      "equal_total_budget_verified": true,
+      "family": "trapezoid_hybrid",
+      "gamma": 0.01,
+      "integral_reference_operator": "trapezoid",
+      "integral_weights": {
+        "mass": 4.016326386062401e-05,
+        "xmom": 8.462315410691962e-06,
+        "ymom": 1.9491928982094996e-05
+      },
+      "quadrature": "trapezoid",
+      "realized_added_physics_at_stage_a": 3.445445534826788e-08,
+      "strong_weights": {
+        "div": 1.2870032943927823e-07,
+        "xmom": 5.321737299560117e-07,
+        "ymom": 5.41288656303256e-07
+      },
+      "target_added_physics_at_stage_a": 3.445445534826788e-08
+    },
+    "trapezoid_hybrid__gamma_0p02": {
+      "candidate_id": "trapezoid_hybrid__gamma_0p02",
+      "equal_total_budget_verified": true,
+      "family": "trapezoid_hybrid",
+      "gamma": 0.02,
+      "integral_reference_operator": "trapezoid",
+      "integral_weights": {
+        "mass": 8.032652772124802e-05,
+        "xmom": 1.6924630821383925e-05,
+        "ymom": 3.898385796418999e-05
+      },
+      "quadrature": "trapezoid",
+      "realized_added_physics_at_stage_a": 6.890891069653576e-08,
+      "strong_weights": {
+        "div": 2.5740065887855646e-07,
+        "xmom": 1.0643474599120235e-06,
+        "ymom": 1.082577312606512e-06
+      },
+      "target_added_physics_at_stage_a": 6.890891069653576e-08
+    },
+    "trapezoid_hybrid__gamma_0p03": {
+      "candidate_id": "trapezoid_hybrid__gamma_0p03",
+      "equal_total_budget_verified": true,
+      "family": "trapezoid_hybrid",
+      "gamma": 0.03,
+      "integral_reference_operator": "trapezoid",
+      "integral_weights": {
+        "mass": 0.00012048979158187202,
+        "xmom": 2.538694623207589e-05,
+        "ymom": 5.847578694628499e-05
+      },
+      "quadrature": "trapezoid",
+      "realized_added_physics_at_stage_a": 1.0336336604480362e-07,
+      "strong_weights": {
+        "div": 3.8610098831783464e-07,
+        "xmom": 1.5965211898680351e-06,
+        "ymom": 1.623865968909768e-06
+      },
+      "target_added_physics_at_stage_a": 1.0336336604480364e-07
+    },
+    "trapezoid_hybrid__gamma_0p04": {
+      "candidate_id": "trapezoid_hybrid__gamma_0p04",
+      "equal_total_budget_verified": true,
+      "family": "trapezoid_hybrid",
+      "gamma": 0.04,
+      "integral_reference_operator": "trapezoid",
+      "integral_weights": {
+        "mass": 0.00016065305544249605,
+        "xmom": 3.384926164276785e-05,
+        "ymom": 7.796771592837998e-05
+      },
+      "quadrature": "trapezoid",
+      "realized_added_physics_at_stage_a": 1.3781782139307152e-07,
+      "strong_weights": {
+        "div": 5.148013177571129e-07,
+        "xmom": 2.128694919824047e-06,
+        "ymom": 2.165154625213024e-06
+      },
+      "target_added_physics_at_stage_a": 1.3781782139307152e-07
+    }
+  },
+  "created_utc": "2026-08-04T23:44:14.724921+00:00",
+  "design_sha256": "9bf6ce20dcb1ac94098d53671c4ed062553c76cf6fb4fe8c5ebcb1bf1d418e1d",
+  "information_boundary": {
+    "final_test_values_used": false,
+    "gl8_used": false,
+    "higher_resolution_values_used": false,
+    "sealed_values_used": false,
+    "training_roles_only": true,
+    "validation_values_used": false
+  },
+  "local_stage_a_checkpoint_path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/results/ramped_cavity_gl4_v4/campaign_v4/stage_a/shared_stage_a_initializer_v1.txt",
+  "local_stage_a_checkpoint_sha256": "79b572cb9b02507a056a127e97871853f8aa4661925c88c46e2d33e5e779c592",
+  "protocol_sha256": "1f1526660b10cf5946bccd6732a9d19f53a8f9fc448b3de9060a9c05c2f60341",
+  "schema": "pimfa.cmame.ramped_cavity_gl4_normalization.v4",
+  "source_stage_a_checkpoint_path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/results/ramped_cavity_gl4_v3/campaign_v3/stage_a/shared_stage_a_initializer_v1.txt",
+  "source_stage_a_checkpoint_sha256": "79b572cb9b02507a056a127e97871853f8aa4661925c88c46e2d33e5e779c592",
+  "source_stage_a_metrics_path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/results/ramped_cavity_gl4_v3/campaign_v3/stage_a_metrics_v3.json",
+  "source_stage_a_metrics_sha256": "8cf33433020274d246048e032ccb50419288d4e32e10462c3578c375c7448304",
+  "status": "frozen_from_v3_training_only_stage_a_before_v4_stage_b"
+}

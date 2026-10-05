@@ -1,0 +1,56 @@
+{
+  "balance": {
+    "1": {
+      "aggregate_minus_q1_max_abs": 0.0,
+      "aggregate_minus_q1_rms": 0.0,
+      "normalized_all_mse": 0.001888611974767091,
+      "normalized_all_rms": 0.04345816349970499,
+      "normalized_fit_mse": 0.0018942918174383418,
+      "normalized_validation_mse": 0.0018911348145586179,
+      "raw_all_mse": 0.001888611974767091,
+      "raw_all_rms": 0.04345816349970499,
+      "raw_global_max_abs": 0.07342298334907038,
+      "raw_global_time_rms": 0.04345816349970499
+    },
+    "2": {
+      "aggregate_minus_q1_max_abs": 6.38378239159465e-16,
+      "aggregate_minus_q1_rms": 1.2925331375742873e-16,
+      "normalized_all_mse": 0.0023885066598444745,
+      "normalized_all_rms": 0.04887235066829172,
+      "normalized_fit_mse": 0.0023958413895861317,
+      "normalized_validation_mse": 0.0023913391867708992,
+      "raw_all_mse": 0.0011942533299222373,
+      "raw_all_rms": 0.03455797057007597,
+      "raw_global_max_abs": 0.07342298334907027,
+      "raw_global_time_rms": 0.04345816349970499
+    },
+    "4": {
+      "aggregate_minus_q1_max_abs": 5.48172618408671e-16,
+      "aggregate_minus_q1_rms": 1.534878268331388e-16,
+      "normalized_all_mse": 0.002740831345418128,
+      "normalized_all_rms": 0.052352949729868405,
+      "normalized_fit_mse": 0.002748150719426808,
+      "normalized_validation_mse": 0.0027459936424996797,
+      "raw_all_mse": 0.000685207836354532,
+      "raw_all_rms": 0.026176474864934202,
+      "raw_global_max_abs": 0.07342298334907037,
+      "raw_global_time_rms": 0.04345816349970499
+    }
+  },
+  "checkpoint_sha256": "90774064a6e1b7a0109fa1e151beac180521156881588fceacbae2b70a69df82",
+  "decoded_sha256": "7179d82e6780369f675dd597b6d59bc732f5abb048bd7d7e4ff2312594b58d46",
+  "finite": true,
+  "label": "gamma_0.3",
+  "midpoint": {
+    "low_fidelity_data_mse": 6.817018622585969e-06,
+    "strong_form_pde_mse": 0.22015070308466442
+  },
+  "trace": {
+    "admissible": true,
+    "bc_mse": 6.0270665862721485e-05,
+    "bc_rms": 0.0077634184392393465,
+    "ic_mse": 3.700072137810773e-05,
+    "ic_rms": 0.006082821826924387,
+    "threshold": 0.008975259646866029
+  }
+}

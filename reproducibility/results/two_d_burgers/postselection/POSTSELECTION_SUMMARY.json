@@ -1,0 +1,765 @@
+{
+  "authorization_is_not_evidence_of_success": true,
+  "authorization_sha256": "56af29e96446663b87cc88bfec611a0ca61647c3056302ec7121d3cbe1f40bc0",
+  "canonical_reporting_only": true,
+  "comparison_rows": 19,
+  "data_only_and_reg_mfa_table_context_only": true,
+  "evaluation": {
+    "physical_derivative_self_checks": {
+      "canonical": {
+        "max_scaled_error": 5.847171524742123e-09,
+        "rms_scaled_error": 1.8343887809625316e-09,
+        "step": 1e-05
+      },
+      "data_only_mfa": {
+        "max_scaled_error": 5.919832068990161e-09,
+        "rms_scaled_error": 2.2605087339924054e-09,
+        "step": 1e-05
+      },
+      "matched_gamma0": {
+        "max_scaled_error": 5.848245665518448e-09,
+        "rms_scaled_error": 1.835985240840997e-09,
+        "step": 1e-05
+      },
+      "reg_mfa_alpha_1e-8": {
+        "max_scaled_error": 6.00253668991968e-09,
+        "rms_scaled_error": 2.227533650317182e-09,
+        "step": 1e-05
+      },
+      "selected": {
+        "max_scaled_error": 5.849553619263759e-09,
+        "rms_scaled_error": 1.8348297099326974e-09,
+        "step": 1e-05
+      }
+    },
+    "reference_frame_set_digest": "617e953c470a6135708d1dc07854db57cac570fca20ee4983a75d452c241648d",
+    "reference_interpolation_sensitivity": {
+      "final_role_omega_quintic_vs_cubic_relative_l2": 0.01211013767697921,
+      "test_a_field_linear_vs_cubic_relative_l2": 0.01650632242477814,
+      "test_a_omega_quintic_vs_cubic_relative_l2": 0.009672531252955497,
+      "test_b_enstrophy_quintic_vs_cubic_relative_l2": 0.0007423853949625991,
+      "test_b_omega_quintic_vs_cubic_relative_l2": 0.01575407953361885
+    },
+    "test_a_points_sha256": "d12c4f0bd49323306a9241fadfbcf257af02d271dab53341c112ffbabedfd139",
+    "test_b_points_sha256": "6d3373c3d792fb80f380c0d655fad9665917218882b92ed1530dd5db3b948c3b",
+    "transient_decoder_output_sha256": {
+      "canonical": {
+        "final_role": "abe2cd57dbb8dc543225ac27a1c8e41665e65e81dec08bc2ab2ff4c95ea1366f",
+        "test_a": "70d73b57ae128c0ea97405b0b90a0538c81e68d9cce5c2fac1a640d0c2716dd1",
+        "test_b": "8ab4c034c9ec327e4c33dd0a5e55e1a5e799beff2b18175484dce654547f06cd"
+      },
+      "data_only_mfa": {
+        "final_role": "8cd4f1ab3912fc00b35303cc31459f165051b957ea395d69d5d3f88f8a578346",
+        "test_a": "88984c29363db386f5cec9500a9b2097dcd0427fd2de95642c93339e324690f9",
+        "test_b": "b176a317724143f1277a40dc8122854704a5ada594657f844f442c7f21e1bf83"
+      },
+      "matched_gamma0": {
+        "final_role": "f3aa10aaa5f8173d946991e79dfd5b3982efb3f1713f46dc9ab8d885f52a6619",
+        "test_a": "05df8b3d91397d7bf399ee9f55ff3fcdcb8506df8f4e3659c4eb6a3e49c7e063",
+        "test_b": "3ddf355c241ca11bc441a1d95c683242123be23494d8938d65bea2e906d1b226"
+      },
+      "reg_mfa_alpha_1e-8": {
+        "final_role": "b2e87fdb8541744827b5e8ca4f2f368eae8a3eff4044cb1f3325818caf4f5136",
+        "test_a": "c7b8e1c18ef331082a08b6c2f8fcf4a190e5d3953aba9c5e8114959ed192c15d",
+        "test_b": "766d780554dc161f82c6731b9fb0850ec19f1411916c8d783d1dfaf562bc2d16"
+      },
+      "selected": {
+        "final_role": "41d0ac2e30c7341b72333ec29ed626965f8c272f52f97333e939651bdc66c5c7",
+        "test_a": "51879f6d210ff46915eef8a9008feae71c0e4e9956e1fe8a9206d3fcd1b974d6",
+        "test_b": "eba844a3f141fdcd8a300a75645c6a2b178a28974b2aab9aa472846efe0f3805"
+      }
+    }
+  },
+  "fallback_performed": false,
+  "final_design": {
+    "final_test_indices_sha256": "0f14282de5f5f776bb2b059142d108a812cc44f0b78185e579c991fc167fbc6f",
+    "final_test_xyz_sha256": "8d62d27a351ad99d06d3171c17f2046feb0d072df8b83cd8b24f335da15b9a44",
+    "keys_opened": [
+      "final_test_indices",
+      "final_test_xyz"
+    ],
+    "observed_values_opened": false
+  },
+  "fixed_contract": {
+    "canonical_role": "reporting_only",
+    "compact_reference": {
+      "compact_file_hash_field": "output_sha256",
+      "frame_count": 201,
+      "grid": [
+        41,
+        41
+      ],
+      "source_grid": [
+        201,
+        201
+      ],
+      "source_hash_role": "provenance_only"
+    },
+    "data_only_reg_role": "table_only_context",
+    "derivative_self_check_limit": 5e-06,
+    "figure_panels": [
+      "kinetic_energy",
+      "enstrophy",
+      "sealed_Design_B_GL8_q4_u",
+      "sealed_Design_B_GL8_q4_v"
+    ],
+    "final_role": {
+      "allowed_design_npz_keys": [
+        "final_test_indices",
+        "final_test_xyz"
+      ],
+      "forbidden_key": "final_test_observed_values",
+      "indices_sha256": "0f14282de5f5f776bb2b059142d108a812cc44f0b78185e579c991fc167fbc6f",
+      "point_count": 30674,
+      "xyz_sha256": "8d62d27a351ad99d06d3171c17f2046feb0d072df8b83cd8b24f335da15b9a44"
+    },
+    "flux_direct_and_quadrature_limit": 1e-10,
+    "interpretation": {
+      "balance_claim_against_matched_only": true,
+      "canonical_reporting_only": true,
+      "field_mechanics_improvement_requires_below_matched_and_reg_mfa": true,
+      "no_composite_score": true,
+      "residual_is_not_accuracy": true
+    },
+    "metrics": [
+      "component_relative_l2_field_error",
+      "vector_relative_l2_field_error",
+      "vorticity_relative_l2_error",
+      "strong_residual_rms",
+      "kinetic_energy_trajectory_relative_l2",
+      "kinetic_energy_normalized_max_error",
+      "enstrophy_trajectory_relative_l2",
+      "enstrophy_normalized_max_error",
+      "final_role_component_vector_vorticity_errors",
+      "sealed_design_b_gl8_q4_u_v",
+      "sealed_design_b_q2_q1_context",
+      "legacy_global_integrated_equation_defect_time_rms",
+      "reference_interpolation_sensitivity"
+    ],
+    "model_order": [
+      "data_only_mfa",
+      "reg_mfa_alpha_1e-8",
+      "canonical",
+      "matched_gamma0",
+      "selected"
+    ],
+    "models": {
+      "canonical": {
+        "path": "historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/results/burgers_bc_corrected_v4_continuation_v1/replay/canonical_kappa1_gamma0/approx.mfa",
+        "role": "reporting_only",
+        "sha256": "cad82426b5f288fb916ed89a67fe387913b0980526b61132301f410681eb54cc"
+      },
+      "data_only_mfa": {
+        "path": "historical_source/Revisions/CMAME_minor_revision_v2_20260731/results/burgers_offgrid_qoi/frozen_models/data_only_mfa/approx.mfa",
+        "role": "table_only_context",
+        "sha256": "e955bc9ea9aa9495191c55061122b3525263f32963a637f49aa8850e4c2f24c1"
+      },
+      "matched_gamma0": {
+        "path": "historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/results/burgers_bc_corrected_v4_continuation_v1/gamma_family/gamma_0/approx.mfa",
+        "role": "sole_primary_comparator",
+        "sha256": "66796615bc2b481eb134603410129183b03ac52855842e39d6d4787a40b905b5"
+      },
+      "reg_mfa_alpha_1e-8": {
+        "path": "historical_source/Revisions/CMAME_minor_revision_v2_20260731/results/burgers_offgrid_qoi/frozen_models/reg_mfa_alpha_1e-8/approx.mfa",
+        "role": "field_accuracy_context",
+        "sha256": "3d0e9c80602a5e950046ee0a90708b29bcf0adff2a9f194a25e703627dd16144"
+      },
+      "selected": {
+        "beta": "0.01",
+        "gamma": "0.03",
+        "kappa": "10",
+        "path": "historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/results/burgers_bc_corrected_v4_continuation_v1/gamma_family/gamma_0p03/approx.mfa",
+        "role": "fixed_hybrid",
+        "sha256": "82e77d900580baad58d2638a3b3a5f473517c36741f39ef0125b681c25da1c19"
+      }
+    },
+    "no_fallback_or_retuning": true,
+    "one_shot": true,
+    "output_tables": {
+      "final_test_metrics.tsv": "5 models x fixed final metrics",
+      "mechanics_trajectories.tsv": "6 roles x 41 times",
+      "postselection_comparisons.tsv": "fixed metric rows without composite score",
+      "reference_metrics.tsv": "5 models x fixed metric families",
+      "sealed_design_b_trajectories.tsv": "copied exact 1200 rows"
+    },
+    "plot_contract": {
+      "files": [
+        "BURGERS_V5_POSTSELECTION_FOUR_PANEL.pdf",
+        "BURGERS_V5_POSTSELECTION_FOUR_PANEL.png",
+        "PLOT_AUDIT.json"
+      ],
+      "mplconfigdir": "historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/results/burgers_bc_corrected_v5_postselection_access_authorization_v1/mplconfig",
+      "postselection_tree_remains_immutable": true,
+      "result_root": "historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/results/burgers_bc_corrected_v5_postselection_access_authorization_v1/plots"
+    },
+    "primary_comparator": "matched_gamma0",
+    "sealed_design_b_reused_without_gl_recomputation": true,
+    "test_a": {
+      "point_count": 320000,
+      "shape": [
+        200,
+        40,
+        40
+      ]
+    },
+    "test_b": {
+      "point_count": 262400,
+      "shape": [
+        41,
+        40,
+        40,
+        4
+      ]
+    }
+  },
+  "model_structure": {
+    "common_structure": {
+      "dom_dim": 3,
+      "fields": [
+        {
+          "degree": [
+            3,
+            3,
+            3
+          ],
+          "knots": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.037037037037037035,
+              0.07407407407407407,
+              0.1111111111111111,
+              0.14814814814814814,
+              0.18518518518518517,
+              0.2222222222222222,
+              0.25925925925925924,
+              0.2962962962962963,
+              0.3333333333333333,
+              0.37037037037037035,
+              0.4074074074074074,
+              0.4444444444444444,
+              0.48148148148148145,
+              0.5185185185185185,
+              0.5555555555555556,
+              0.5925925925925926,
+              0.6296296296296295,
+              0.6666666666666665,
+              0.7037037037037035,
+              0.7407407407407405,
+              0.7777777777777775,
+              0.8148148148148144,
+              0.8518518518518514,
+              0.8888888888888884,
+              0.9259259259259254,
+              0.9629629629629624,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.037037037037037035,
+              0.07407407407407407,
+              0.1111111111111111,
+              0.14814814814814814,
+              0.18518518518518517,
+              0.2222222222222222,
+              0.25925925925925924,
+              0.2962962962962963,
+              0.3333333333333333,
+              0.37037037037037035,
+              0.4074074074074074,
+              0.4444444444444444,
+              0.48148148148148145,
+              0.5185185185185185,
+              0.5555555555555556,
+              0.5925925925925926,
+              0.6296296296296295,
+              0.6666666666666665,
+              0.7037037037037035,
+              0.7407407407407405,
+              0.7777777777777775,
+              0.8148148148148144,
+              0.8518518518518514,
+              0.8888888888888884,
+              0.9259259259259254,
+              0.9629629629629624,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.037037037037037035,
+              0.07407407407407407,
+              0.1111111111111111,
+              0.14814814814814814,
+              0.18518518518518517,
+              0.2222222222222222,
+              0.25925925925925924,
+              0.2962962962962963,
+              0.3333333333333333,
+              0.37037037037037035,
+              0.4074074074074074,
+              0.4444444444444444,
+              0.48148148148148145,
+              0.5185185185185185,
+              0.5555555555555556,
+              0.5925925925925926,
+              0.6296296296296295,
+              0.6666666666666665,
+              0.7037037037037035,
+              0.7407407407407405,
+              0.7777777777777775,
+              0.8148148148148144,
+              0.8518518518518514,
+              0.8888888888888884,
+              0.9259259259259254,
+              0.9629629629629624,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ]
+          ],
+          "nctrl": [
+            30,
+            30,
+            30
+          ],
+          "unit_weights": true
+        },
+        {
+          "degree": [
+            3,
+            3,
+            3
+          ],
+          "knots": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.037037037037037035,
+              0.07407407407407407,
+              0.1111111111111111,
+              0.14814814814814814,
+              0.18518518518518517,
+              0.2222222222222222,
+              0.25925925925925924,
+              0.2962962962962963,
+              0.3333333333333333,
+              0.37037037037037035,
+              0.4074074074074074,
+              0.4444444444444444,
+              0.48148148148148145,
+              0.5185185185185185,
+              0.5555555555555556,
+              0.5925925925925926,
+              0.6296296296296295,
+              0.6666666666666665,
+              0.7037037037037035,
+              0.7407407407407405,
+              0.7777777777777775,
+              0.8148148148148144,
+              0.8518518518518514,
+              0.8888888888888884,
+              0.9259259259259254,
+              0.9629629629629624,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.037037037037037035,
+              0.07407407407407407,
+              0.1111111111111111,
+              0.14814814814814814,
+              0.18518518518518517,
+              0.2222222222222222,
+              0.25925925925925924,
+              0.2962962962962963,
+              0.3333333333333333,
+              0.37037037037037035,
+              0.4074074074074074,
+              0.4444444444444444,
+              0.48148148148148145,
+              0.5185185185185185,
+              0.5555555555555556,
+              0.5925925925925926,
+              0.6296296296296295,
+              0.6666666666666665,
+              0.7037037037037035,
+              0.7407407407407405,
+              0.7777777777777775,
+              0.8148148148148144,
+              0.8518518518518514,
+              0.8888888888888884,
+              0.9259259259259254,
+              0.9629629629629624,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.037037037037037035,
+              0.07407407407407407,
+              0.1111111111111111,
+              0.14814814814814814,
+              0.18518518518518517,
+              0.2222222222222222,
+              0.25925925925925924,
+              0.2962962962962963,
+              0.3333333333333333,
+              0.37037037037037035,
+              0.4074074074074074,
+              0.4444444444444444,
+              0.48148148148148145,
+              0.5185185185185185,
+              0.5555555555555556,
+              0.5925925925925926,
+              0.6296296296296295,
+              0.6666666666666665,
+              0.7037037037037035,
+              0.7407407407407405,
+              0.7777777777777775,
+              0.8148148148148144,
+              0.8518518518518514,
+              0.8888888888888884,
+              0.9259259259259254,
+              0.9629629629629624,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ]
+          ],
+          "nctrl": [
+            30,
+            30,
+            30
+          ],
+          "unit_weights": true
+        }
+      ],
+      "nvars": 2,
+      "physical_lower": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "physical_upper": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "pt_dim": 5,
+      "schema": "pimfa-burgers-model-structure-v1"
+    },
+    "records": {
+      "canonical": {
+        "inspector_output_sha256": "f2936f228f652bbbb6ff8a53edffb8b2ce03c38d69df243218ff8f248dd7fb12",
+        "model_sha256": "cad82426b5f288fb916ed89a67fe387913b0980526b61132301f410681eb54cc"
+      },
+      "data_only_mfa": {
+        "inspector_output_sha256": "f2936f228f652bbbb6ff8a53edffb8b2ce03c38d69df243218ff8f248dd7fb12",
+        "model_sha256": "e955bc9ea9aa9495191c55061122b3525263f32963a637f49aa8850e4c2f24c1"
+      },
+      "matched_gamma0": {
+        "inspector_output_sha256": "f2936f228f652bbbb6ff8a53edffb8b2ce03c38d69df243218ff8f248dd7fb12",
+        "model_sha256": "66796615bc2b481eb134603410129183b03ac52855842e39d6d4787a40b905b5"
+      },
+      "reg_mfa_alpha_1e-8": {
+        "inspector_output_sha256": "f2936f228f652bbbb6ff8a53edffb8b2ce03c38d69df243218ff8f248dd7fb12",
+        "model_sha256": "3d0e9c80602a5e950046ee0a90708b29bcf0adff2a9f194a25e703627dd16144"
+      },
+      "selected": {
+        "inspector_output_sha256": "f2936f228f652bbbb6ff8a53edffb8b2ce03c38d69df243218ff8f248dd7fb12",
+        "model_sha256": "82e77d900580baad58d2638a3b3a5f473517c36741f39ef0125b681c25da1c19"
+      }
+    }
+  },
+  "models": {
+    "canonical": {
+      "path": "historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/results/burgers_bc_corrected_v4_continuation_v1/replay/canonical_kappa1_gamma0/approx.mfa",
+      "sha256": "cad82426b5f288fb916ed89a67fe387913b0980526b61132301f410681eb54cc"
+    },
+    "data_only_mfa": {
+      "path": "historical_source/Revisions/CMAME_minor_revision_v2_20260731/results/burgers_offgrid_qoi/frozen_models/data_only_mfa/approx.mfa",
+      "sha256": "e955bc9ea9aa9495191c55061122b3525263f32963a637f49aa8850e4c2f24c1"
+    },
+    "matched_gamma0": {
+      "path": "historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/results/burgers_bc_corrected_v4_continuation_v1/gamma_family/gamma_0/approx.mfa",
+      "sha256": "66796615bc2b481eb134603410129183b03ac52855842e39d6d4787a40b905b5"
+    },
+    "reg_mfa_alpha_1e-8": {
+      "path": "historical_source/Revisions/CMAME_minor_revision_v2_20260731/results/burgers_offgrid_qoi/frozen_models/reg_mfa_alpha_1e-8/approx.mfa",
+      "sha256": "3d0e9c80602a5e950046ee0a90708b29bcf0adff2a9f194a25e703627dd16144"
+    },
+    "selected": {
+      "path": "historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/results/burgers_bc_corrected_v4_continuation_v1/gamma_family/gamma_0p03/approx.mfa",
+      "sha256": "82e77d900580baad58d2638a3b3a5f473517c36741f39ef0125b681c25da1c19"
+    }
+  },
+  "no_composite_score": true,
+  "primary_comparator": "matched_gamma0",
+  "reference_bundle": {
+    "corrected_output_sha256_semantics": true,
+    "frame_count": 201,
+    "frame_numeric_values_parsed": false,
+    "frame_set_sha256": "617e953c470a6135708d1dc07854db57cac570fca20ee4983a75d452c241648d",
+    "manifest": "historical_source/Revisions/PIBSR_research_archive/data/2d_burgers/reference/preparation_manifest.json",
+    "manifest_sha256": "c8213f2cb627db842b4a584134ebe8241d5ead3880af815912f72a7ab347faab",
+    "root": "historical_source/Revisions/PIBSR_research_archive/data/2d_burgers/reference",
+    "times": [
+      0.0,
+      0.01,
+      0.02,
+      0.03,
+      0.04,
+      0.05,
+      0.06,
+      0.07,
+      0.08,
+      0.09,
+      0.1,
+      0.11,
+      0.12,
+      0.13,
+      0.14,
+      0.15,
+      0.16,
+      0.17,
+      0.18,
+      0.19,
+      0.2,
+      0.21,
+      0.22,
+      0.23,
+      0.24,
+      0.25,
+      0.26,
+      0.27,
+      0.28,
+      0.29,
+      0.3,
+      0.31,
+      0.32,
+      0.33,
+      0.34,
+      0.35000000000000003,
+      0.36,
+      0.37,
+      0.38,
+      0.39,
+      0.4,
+      0.41000000000000003,
+      0.42,
+      0.43,
+      0.44,
+      0.45,
+      0.46,
+      0.47000000000000003,
+      0.48,
+      0.49,
+      0.5,
+      0.51,
+      0.52,
+      0.53,
+      0.54,
+      0.55,
+      0.56,
+      0.5700000000000001,
+      0.58,
+      0.59,
+      0.6,
+      0.61,
+      0.62,
+      0.63,
+      0.64,
+      0.65,
+      0.66,
+      0.67,
+      0.68,
+      0.6900000000000001,
+      0.7000000000000001,
+      0.71,
+      0.72,
+      0.73,
+      0.74,
+      0.75,
+      0.76,
+      0.77,
+      0.78,
+      0.79,
+      0.8,
+      0.81,
+      0.8200000000000001,
+      0.8300000000000001,
+      0.84,
+      0.85,
+      0.86,
+      0.87,
+      0.88,
+      0.89,
+      0.9,
+      0.91,
+      0.92,
+      0.93,
+      0.9400000000000001,
+      0.9500000000000001,
+      0.96,
+      0.97,
+      0.98,
+      0.99,
+      1.0,
+      1.01,
+      1.02,
+      1.03,
+      1.04,
+      1.05,
+      1.06,
+      1.07,
+      1.08,
+      1.09,
+      1.1,
+      1.11,
+      1.12,
+      1.1300000000000001,
+      1.1400000000000001,
+      1.1500000000000001,
+      1.16,
+      1.17,
+      1.18,
+      1.19,
+      1.2,
+      1.21,
+      1.22,
+      1.23,
+      1.24,
+      1.25,
+      1.26,
+      1.27,
+      1.28,
+      1.29,
+      1.3,
+      1.31,
+      1.32,
+      1.33,
+      1.34,
+      1.35,
+      1.36,
+      1.37,
+      1.3800000000000001,
+      1.3900000000000001,
+      1.4000000000000001,
+      1.41,
+      1.42,
+      1.43,
+      1.44,
+      1.45,
+      1.46,
+      1.47,
+      1.48,
+      1.49,
+      1.5,
+      1.51,
+      1.52,
+      1.53,
+      1.54,
+      1.55,
+      1.56,
+      1.57,
+      1.58,
+      1.59,
+      1.6,
+      1.61,
+      1.62,
+      1.6300000000000001,
+      1.6400000000000001,
+      1.6500000000000001,
+      1.6600000000000001,
+      1.67,
+      1.68,
+      1.69,
+      1.7,
+      1.71,
+      1.72,
+      1.73,
+      1.74,
+      1.75,
+      1.76,
+      1.77,
+      1.78,
+      1.79,
+      1.8,
+      1.81,
+      1.82,
+      1.83,
+      1.84,
+      1.85,
+      1.86,
+      1.87,
+      1.8800000000000001,
+      1.8900000000000001,
+      1.9000000000000001,
+      1.9100000000000001,
+      1.92,
+      1.93,
+      1.94,
+      1.95,
+      1.96,
+      1.97,
+      1.98,
+      1.99,
+      2.0
+    ],
+    "times_sha256": "d25586beb1aba7c91d338f455132e3c4478f031e3a4033e806e6d2e0564f0ace"
+  },
+  "retuning_performed": false,
+  "schema": "pimfa-burgers-v5-postselection-summary-v1",
+  "sealed_design_b": {
+    "blocks": {
+      "path": "historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/results/burgers_bc_corrected_v5_stage_b_interface_compatibility_continuation_v2/stage_b_design_b/GL_BALANCE_BLOCKS.tsv",
+      "sha256": "bb594e4f31928b6f306370d3b67ac7c25967ed3acb0371aa36132f69b027ef50"
+    },
+    "gate": {
+      "path": "historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/results/burgers_bc_corrected_v5_stage_b_interface_compatibility_continuation_v2/stage_b_design_b/STAGE_B_GATE.json",
+      "sha256": "30e755925f602ed151049c509f15d0aa5e87a26f02d3a61b6edf1470aafdca21"
+    },
+    "manifest": {
+      "path": "historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/results/burgers_bc_corrected_v5_stage_b_interface_compatibility_continuation_v2/stage_b_design_b/STAGE_B_MANIFEST.tsv",
+      "sha256": "0a2356db373705304826137050c715d29af209d2f28ccef357b0bab74063e236"
+    },
+    "summary": {
+      "path": "historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/results/burgers_bc_corrected_v5_stage_b_interface_compatibility_continuation_v2/stage_b_design_b/GL_BALANCE_SUMMARY.json",
+      "sha256": "860710ac802158556d4b9ef16649c91b9e862093e56be16a4e870b608eae5241"
+    },
+    "trajectories": {
+      "path": "historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/results/burgers_bc_corrected_v5_stage_b_interface_compatibility_continuation_v2/stage_b_design_b/GL_BALANCE_TRAJECTORIES.tsv",
+      "sha256": "79b8d50f8e736096c8655d56d1f23f9b27d81881cc0295a5546a6f9cc401121c"
+    }
+  },
+  "sealed_design_b_recomputed": false
+}

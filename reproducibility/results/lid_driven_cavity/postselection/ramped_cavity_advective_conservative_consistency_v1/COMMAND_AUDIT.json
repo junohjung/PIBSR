@@ -1,0 +1,25 @@
+{
+  "interpreter": "historical_source/miniconda3/envs/myenv1/bin/python3.12",
+  "interpreter_sha256": "9606c46f10e75c3b17def5b09587b98c8e7f64ddf540d69bb72e989eb07c81d8",
+  "numpy_version": "2.2.1",
+  "python_version": "3.12.8 | packaged by Anaconda, Inc. | (main, Dec 11 2024, 10:37:40) [Clang 14.0.6 ]",
+  "schema": "pimfa.ramped_cavity_advective_conservative_consistency.v1.command_audit",
+  "scientific_actions": [
+    "hash-verify and replay the upstream matched/hybrid field diagnostics",
+    "decode two frozen spline checkpoints",
+    "evaluate both checkpoint jets twice on 80,000 frozen off-node points",
+    "construct advective and conservative momentum residuals",
+    "verify the product-rule identity pointwise",
+    "write append-only reporting artifacts"
+  ],
+  "shell_used_by_driver": false,
+  "status": "PASS",
+  "thread_environment": {
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "training_optimizer_selection_actions": []
+}

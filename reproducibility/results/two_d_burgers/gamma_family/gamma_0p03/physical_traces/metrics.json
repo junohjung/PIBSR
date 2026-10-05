@@ -1,0 +1,264 @@
+{
+  "absolute_trace_guards": {
+    "candidate": {
+      "checks": {
+        "nodal_bc_bottom_u": {
+          "limit": 0.001,
+          "mse": 3.1092817677107066e-07,
+          "normalized_rms": 0.0005226890011787666,
+          "observed_component_range": 1.0668090191,
+          "passed": true
+        },
+        "nodal_bc_bottom_v": {
+          "limit": 0.001,
+          "mse": 1.5090703556487345e-07,
+          "normalized_rms": 0.0004567952269552495,
+          "observed_component_range": 0.8504194543,
+          "passed": true
+        },
+        "nodal_bc_left_u": {
+          "limit": 0.001,
+          "mse": 1.5539609542511734e-07,
+          "normalized_rms": 0.0003695161058546821,
+          "observed_component_range": 1.0668090191,
+          "passed": true
+        },
+        "nodal_bc_left_v": {
+          "limit": 0.001,
+          "mse": 1.8490120400646283e-07,
+          "normalized_rms": 0.0005056344817031261,
+          "observed_component_range": 0.8504194543,
+          "passed": true
+        },
+        "nodal_bc_right_u": {
+          "limit": 0.001,
+          "mse": 2.5523678316855186e-07,
+          "normalized_rms": 0.00047357083952736037,
+          "observed_component_range": 1.0668090191,
+          "passed": true
+        },
+        "nodal_bc_right_v": {
+          "limit": 0.001,
+          "mse": 1.675322287920138e-07,
+          "normalized_rms": 0.0004813001494337389,
+          "observed_component_range": 0.8504194543,
+          "passed": true
+        },
+        "nodal_bc_top_u": {
+          "limit": 0.001,
+          "mse": 1.1657647085617178e-07,
+          "normalized_rms": 0.0003200506939322324,
+          "observed_component_range": 1.0668090191,
+          "passed": true
+        },
+        "nodal_bc_top_v": {
+          "limit": 0.001,
+          "mse": 2.04343402396355e-07,
+          "normalized_rms": 0.0005315536731134293,
+          "observed_component_range": 0.8504194543,
+          "passed": true
+        },
+        "nodal_ic_u": {
+          "limit": 0.001,
+          "mse": 9.77254431716764e-08,
+          "normalized_rms": 0.000293033414485901,
+          "observed_component_range": 1.0668090191,
+          "passed": true
+        },
+        "nodal_ic_v": {
+          "limit": 0.001,
+          "mse": 6.348653702156847e-08,
+          "normalized_rms": 0.00029628361342970904,
+          "observed_component_range": 0.8504194543,
+          "passed": true
+        },
+        "offnode_bc_bottom_u": {
+          "limit": 0.001,
+          "mse": 3.2230907265562044e-07,
+          "normalized_rms": 0.0005321690174855617,
+          "observed_component_range": 1.0668090191,
+          "passed": true
+        },
+        "offnode_bc_bottom_v": {
+          "limit": 0.001,
+          "mse": 1.570244969902946e-07,
+          "normalized_rms": 0.0004659620194797872,
+          "observed_component_range": 0.8504194543,
+          "passed": true
+        },
+        "offnode_bc_left_u": {
+          "limit": 0.001,
+          "mse": 1.613100152756686e-07,
+          "normalized_rms": 0.0003764818010719097,
+          "observed_component_range": 1.0668090191,
+          "passed": true
+        },
+        "offnode_bc_left_v": {
+          "limit": 0.001,
+          "mse": 1.9295035069539665e-07,
+          "normalized_rms": 0.0005165229223989437,
+          "observed_component_range": 0.8504194543,
+          "passed": true
+        },
+        "offnode_bc_right_u": {
+          "limit": 0.001,
+          "mse": 2.644040723979973e-07,
+          "normalized_rms": 0.00048200039183578626,
+          "observed_component_range": 1.0668090191,
+          "passed": true
+        },
+        "offnode_bc_right_v": {
+          "limit": 0.001,
+          "mse": 1.743376931450981e-07,
+          "normalized_rms": 0.0004909784843842959,
+          "observed_component_range": 0.8504194543,
+          "passed": true
+        },
+        "offnode_bc_top_u": {
+          "limit": 0.001,
+          "mse": 1.2094819161297467e-07,
+          "normalized_rms": 0.0003259965552395205,
+          "observed_component_range": 1.0668090191,
+          "passed": true
+        },
+        "offnode_bc_top_v": {
+          "limit": 0.001,
+          "mse": 2.1315965269478096e-07,
+          "normalized_rms": 0.0005428993421166512,
+          "observed_component_range": 0.8504194543,
+          "passed": true
+        },
+        "offnode_ic_u": {
+          "limit": 0.001,
+          "mse": 1.0354719560531489e-07,
+          "normalized_rms": 0.00030163552701235896,
+          "observed_component_range": 1.0668090191,
+          "passed": true
+        },
+        "offnode_ic_v": {
+          "limit": 0.001,
+          "mse": 6.762429470399141e-08,
+          "normalized_rms": 0.0003057864152480921,
+          "observed_component_range": 0.8504194543,
+          "passed": true
+        }
+      },
+      "passed": true
+    }
+  },
+  "decoder": "historical_source/Revisions/CMAME_minor_revision_v4_20260803/experiments/burgers_endpoint_replay_v2/frozen_tools/trace_decode_offgrid",
+  "decoder_sha256": "5a4c14305967c5b0e677a77bc940b0d95a78d138fd57edf56a99a124c98dd210",
+  "design": {
+    "counts": {
+      "matrix_agreement_nodal_bc_rows": 32964,
+      "nodal_bc_per_face": 8241,
+      "nodal_bc_rows": 32964,
+      "nodal_bc_unique_physical_space_time_points": 32160,
+      "nodal_ic": 1681,
+      "offnode_bc_per_face": 8000,
+      "offnode_bc_rows": 32000,
+      "offnode_ic": 1600
+    },
+    "face_order": [
+      "bottom",
+      "left",
+      "right",
+      "top"
+    ],
+    "ic_target_array_sha256": {
+      "nodal": "aa3fbfd53f6eae445e9c1fd202dd7c708f5abcda8b19e59848633d98b66b7a50",
+      "offnode": "75d94ace82a198cf3beeadc30209ba299ccd675bcf8c2622a7092ee7edb5788c"
+    },
+    "point_hashes": {
+      "matrix_agreement_nodal_bc": "bfc4b431b25a63c5d74abef44866e24fe48fd429fc9cbca43498d58352482ea6",
+      "nodal_bc_bottom": "adaaa302088295e6919cfefe07247facf73a4a3392b3c396694a2611c631ec0a",
+      "nodal_bc_left": "49216137bbd52cf418a4a07005b14bc8f9e1495e4d752edc1c531487755fe92c",
+      "nodal_bc_right": "4799226eafdfe2a545e597d4c0fdeb4576f02695b52e2c2467b55e782ddb1985",
+      "nodal_bc_top": "a6b013046c64f9e2077db40d29a13a0bf1c4d1f5cddd66bed03fd405d1c03557",
+      "nodal_ic": "a829eb3bbe4443786e7a65ec11bf41e9e65c816ba87c213d6bdd2e1acf023a7d",
+      "offnode_bc_bottom": "7754c514cc58d8424516822c4e7dc96a4c037e86205cf726b5124d6a5d216194",
+      "offnode_bc_left": "f6ddfec73b8128ef375992c2c27df0bc7fb147d7c3adf9b5df2c9644d821887c",
+      "offnode_bc_right": "35c3b1392440510b78f9cf18c32e9f9a6e426d611453dd187656ebfebb5df822",
+      "offnode_bc_top": "e4bbe51acd784635ab8f95a685589cb3ff9fe01e52750cf42c7fe29b996e5d1b",
+      "offnode_ic": "3d24b9345fce1651615595667349de83fe4a008b5f6c5303befddeea0a079940"
+    },
+    "target_generator_source_sha256": "7f9c4607d60ebfb60b87b4afd231495100294cd382226753e28f17d038a236a6",
+    "targets": "prescribed analytic IC and homogeneous four-face BC; no trajectory reference; a separate exact `%f`/float-time 32,964-row coordinate array is used only for BCMatrix equality"
+  },
+  "metrics_mse": {
+    "candidate": {
+      "matrix_agreement_bc_all_u": 2.095343877893205e-07,
+      "matrix_agreement_bc_all_v": 1.769209706785425e-07,
+      "nodal_bc_all_u": 2.0953438155522793e-07,
+      "nodal_bc_all_v": 1.7692096768992627e-07,
+      "nodal_bc_bottom_u": 3.1092817677107066e-07,
+      "nodal_bc_bottom_v": 1.5090703556487345e-07,
+      "nodal_bc_left_u": 1.5539609542511734e-07,
+      "nodal_bc_left_v": 1.8490120400646283e-07,
+      "nodal_bc_right_u": 2.5523678316855186e-07,
+      "nodal_bc_right_v": 1.675322287920138e-07,
+      "nodal_bc_top_u": 1.1657647085617178e-07,
+      "nodal_bc_top_v": 2.04343402396355e-07,
+      "nodal_ic_u": 9.77254431716764e-08,
+      "nodal_ic_v": 6.348653702156847e-08,
+      "offnode_bc_all_u": 2.1724283798556524e-07,
+      "offnode_bc_all_v": 1.843680483813926e-07,
+      "offnode_bc_bottom_u": 3.2230907265562044e-07,
+      "offnode_bc_bottom_v": 1.570244969902946e-07,
+      "offnode_bc_left_u": 1.613100152756686e-07,
+      "offnode_bc_left_v": 1.9295035069539665e-07,
+      "offnode_bc_right_u": 2.644040723979973e-07,
+      "offnode_bc_right_v": 1.743376931450981e-07,
+      "offnode_bc_top_u": 1.2094819161297467e-07,
+      "offnode_bc_top_v": 2.1315965269478096e-07,
+      "offnode_ic_u": 1.0354719560531489e-07,
+      "offnode_ic_v": 6.762429470399141e-08
+    }
+  },
+  "metrics_normalized_rms": {
+    "candidate": {
+      "matrix_agreement_bc_all_u": 0.0004290826706729429,
+      "matrix_agreement_bc_all_v": 0.0004946026855545922,
+      "nodal_bc_all_u": 0.000429082664289883,
+      "nodal_bc_all_v": 0.0004946026813770839,
+      "nodal_bc_bottom_u": 0.0005226890011787666,
+      "nodal_bc_bottom_v": 0.0004567952269552495,
+      "nodal_bc_left_u": 0.0003695161058546821,
+      "nodal_bc_left_v": 0.0005056344817031261,
+      "nodal_bc_right_u": 0.00047357083952736037,
+      "nodal_bc_right_v": 0.0004813001494337389,
+      "nodal_bc_top_u": 0.0003200506939322324,
+      "nodal_bc_top_v": 0.0005315536731134293,
+      "nodal_ic_u": 0.000293033414485901,
+      "nodal_ic_v": 0.00029628361342970904,
+      "offnode_bc_all_u": 0.0004369040345052281,
+      "offnode_bc_all_v": 0.0005049049664937502,
+      "offnode_bc_bottom_u": 0.0005321690174855617,
+      "offnode_bc_bottom_v": 0.0004659620194797872,
+      "offnode_bc_left_u": 0.0003764818010719097,
+      "offnode_bc_left_v": 0.0005165229223989437,
+      "offnode_bc_right_u": 0.00048200039183578626,
+      "offnode_bc_right_v": 0.0004909784843842959,
+      "offnode_bc_top_u": 0.0003259965552395205,
+      "offnode_bc_top_v": 0.0005428993421166512,
+      "offnode_ic_u": 0.00030163552701235896,
+      "offnode_ic_v": 0.0003057864152480921
+    }
+  },
+  "models": {
+    "candidate": {
+      "path": "historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/results/burgers_bc_corrected_v4_continuation_v1/gamma_family/gamma_0p03/approx.mfa",
+      "sha256": "82e77d900580baad58d2638a3b3a5f473517c36741f39ef0125b681c25da1c19"
+    }
+  },
+  "primary_guard": {
+    "limit": 0.001,
+    "observed_component_ranges": {
+      "u": 1.0668090191,
+      "v": 0.8504194543
+    },
+    "rule": "sqrt(MSE)/observed component range <=1e-3 for each IC component/location and each BC face/component/location"
+  },
+  "reference_or_final_or_refined_opened": false,
+  "schema": "pimfa-burgers-bc-corrected-v3-reference-free-traces-v1"
+}

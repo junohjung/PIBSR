@@ -1,0 +1,258 @@
+{
+  "schema_version": 1,
+  "case": "lid_driven_cavity",
+  "metrics": {
+    "within_family_selection": {
+      "candidate_count": 16,
+      "gamma_grid": [
+        0.01,
+        0.02,
+        0.03,
+        0.04
+      ],
+      "gl4_conservative_only": {
+        "candidate_id": "gl4_conservative_only__gamma_0p02",
+        "gamma": 0.02,
+        "worst_aligned_physics_ratio": 0.9628335041017205,
+        "geometric_mean_aligned_physics_ratio": 0.13378752364729618
+      },
+      "gl4_hybrid": {
+        "candidate_id": "gl4_hybrid__gamma_0p04",
+        "gamma": 0.04,
+        "worst_aligned_physics_ratio": 0.9709933217940947,
+        "geometric_mean_aligned_physics_ratio": 0.23959598342878805
+      },
+      "strong_only": {
+        "candidate_id": "strong_only__gamma_0p03",
+        "gamma": 0.03,
+        "worst_aligned_physics_ratio": 0.9531105441833005,
+        "geometric_mean_aligned_physics_ratio": 0.2672220751748308
+      },
+      "trapezoid_hybrid_selected": null,
+      "conservative_gamma_0p03_reasons": [
+        "trace_individual_mixed_max_ratio_guard"
+      ],
+      "strong_only_gamma_0p04_reasons": [
+        "velocity_v_ratio_guard"
+      ]
+    },
+    "matched_reporting_control": {
+      "candidate_id": "strong_only__gamma_0p02",
+      "gamma_s": 0.02,
+      "gamma_i": 0.0,
+      "strong_weights_exactly_equal": true
+    },
+    "gl8_balance": {
+      "stage_a": {
+        "canonical_q4": {
+          "mass": 0.0038008733089805987,
+          "x_momentum": 0.01706421708698994,
+          "y_momentum": 0.016685340883494045
+        },
+        "whole_domain_q1": {
+          "mass": 1.0883165098096833e-09,
+          "x_momentum": 0.015877879532884293,
+          "y_momentum": 0.0017388325521985326
+        },
+        "shifted_q4": {
+          "mass": 0.0034854032140937863,
+          "x_momentum": 0.017608798317007915,
+          "y_momentum": 0.01675149858968294
+        }
+      },
+      "matched_strong_gamma_i0": {
+        "canonical_q4": {
+          "mass": 0.0038113258344850244,
+          "x_momentum": 0.010961985487895872,
+          "y_momentum": 0.009904101170860302
+        },
+        "whole_domain_q1": {
+          "mass": 3.900424461961319e-08,
+          "x_momentum": 0.01511832506704895,
+          "y_momentum": 0.0012183815138741825
+        },
+        "shifted_q4": {
+          "mass": 0.0034877058098980633,
+          "x_momentum": 0.010881864177193263,
+          "y_momentum": 0.010077832528545631
+        }
+      },
+      "selected_gl4_hybrid": {
+        "canonical_q4": {
+          "mass": 0.003658774373969478,
+          "x_momentum": 0.0029682163510220626,
+          "y_momentum": 0.0007796489546582735
+        },
+        "whole_domain_q1": {
+          "mass": 7.523826375721583e-06,
+          "x_momentum": 0.003762827850348226,
+          "y_momentum": 0.0005877116270897697
+        },
+        "shifted_q4": {
+          "mass": 0.0034031839533003555,
+          "x_momentum": 0.002522761468911552,
+          "y_momentum": 0.001723932208246688
+        }
+      },
+      "selected_strong_only": {
+        "canonical_q4": {
+          "mass": 0.0038168758166894504,
+          "x_momentum": 0.010934490226241919,
+          "y_momentum": 0.009920839070150334
+        },
+        "whole_domain_q1": {
+          "mass": 4.7915179537610736e-08,
+          "x_momentum": 0.015110839103123587,
+          "y_momentum": 0.0012470037492872121
+        },
+        "shifted_q4": {
+          "mass": 0.003488589327235425,
+          "x_momentum": 0.010863710188237695,
+          "y_momentum": 0.010100950388383304
+        }
+      }
+    },
+    "field_diagnostics": {
+      "stage_a": {
+        "offnode_strong_rmse": {
+          "divergence": 0.1527615115553018,
+          "x_momentum": 0.10767056781348791,
+          "y_momentum": 0.10245719894599656
+        },
+        "velocity_rmse": {
+          "u": 0.00012742267585184733,
+          "v": 9.204717449257765e-05
+        }
+      },
+      "matched_strong_gamma_i0": {
+        "offnode_strong_rmse": {
+          "divergence": 0.151621428214052,
+          "x_momentum": 0.10849330422835393,
+          "y_momentum": 0.06584510958438217
+        },
+        "velocity_rmse": {
+          "u": 0.00012919538315528885,
+          "v": 9.502907224041854e-05
+        }
+      },
+      "selected_gl4_hybrid": {
+        "offnode_strong_rmse": {
+          "divergence": 0.15244510934442188,
+          "x_momentum": 0.08223666904922224,
+          "y_momentum": 0.06903795334337472
+        },
+        "velocity_rmse": {
+          "u": 0.00013511730526941042,
+          "v": 9.62195067187759e-05
+        }
+      },
+      "selected_hybrid_vs_stage_a": {
+        "offnode_strong_ratio": {
+          "divergence": 0.9979287831885234,
+          "x_momentum": 0.7637803971803744,
+          "y_momentum": 0.6738223770860986
+        },
+        "offnode_strong_percent_change": {
+          "divergence": -0.2071216811476595,
+          "x_momentum": -23.62196028196256,
+          "y_momentum": -32.61776229139014
+        },
+        "velocity_ratio": {
+          "u": 1.0603866569754785,
+          "v": 1.045328194474179
+        }
+      }
+    },
+    "stage_a_normalizers_and_selected_weights": {
+      "gamma_s": 0.02,
+      "gamma_i": 0.02,
+      "stage_a_objective": 3.445445534826788e-06,
+      "stage_a_strong_mse": {
+        "x_momentum": 0.010790478562679085,
+        "y_momentum": 0.010608774371754316,
+        "divergence": 0.04461845008268316
+      },
+      "stage_a_gl4_mse": {
+        "mass": 1.4950138668945944e-05,
+        "x_momentum": 0.00029921132574083114,
+        "y_momentum": 0.00029335297044087645
+      },
+      "stage_a_trapezoid_mse": {
+        "mass": 0.00014297665759034988,
+        "x_momentum": 0.0006785860542914646,
+        "y_momentum": 0.00029460446064554245
+      },
+      "selected_strong_weights": {
+        "x_momentum": 2.128694919824047e-06,
+        "y_momentum": 2.165154625213024e-06,
+        "divergence": 5.148013177571129e-07
+      },
+      "selected_gl4_weights": {
+        "mass": 0.0015364163107434725,
+        "x_momentum": 7.676727089783005e-05,
+        "y_momentum": 7.830033854548832e-05
+      }
+    },
+    "advective_conservative": {
+      "matched_strong_gamma_i0": {
+        "continuity_rmse": 0.151621428214052,
+        "advective_x_rmse": 0.10849330422835393,
+        "advective_y_rmse": 0.06584510958438217,
+        "u_rc_rmse": 0.03647697426974692,
+        "v_rc_rmse": 0.02153675281794297,
+        "conservative_x_rmse": 0.12375037080755087,
+        "conservative_y_rmse": 0.07051571276855292,
+        "identity_x_max_abs": 6.661338147750939e-16,
+        "identity_y_max_abs": 2.220446049250313e-16
+      },
+      "selected_gl4_hybrid": {
+        "continuity_rmse": 0.15244510934442188,
+        "advective_x_rmse": 0.08223666904922224,
+        "advective_y_rmse": 0.06903795334337472,
+        "u_rc_rmse": 0.03630731624321293,
+        "v_rc_rmse": 0.021563451264363064,
+        "conservative_x_rmse": 0.10245078478141029,
+        "conservative_y_rmse": 0.07360780827142324,
+        "identity_x_max_abs": 6.661338147750939e-16,
+        "identity_y_max_abs": 2.220446049250313e-16
+      }
+    },
+    "pressure": {
+      "matched_strong_gamma_i0": {
+        "pressure_rmse": 0.002657404804254562,
+        "pressure_relative_l2": 0.20776836445455374,
+        "midpoint_gradient_vector_rmse": 0.014860264942720509,
+        "midpoint_gradient_relative_l2": 0.1280564741814338,
+        "fine_gradient_vector_rmse": 0.15959011242869153,
+        "fine_gradient_relative_l2": 1.198138673300285
+      },
+      "selected_gl4_hybrid": {
+        "pressure_rmse": 0.0021645258170935717,
+        "pressure_relative_l2": 0.16923277481743768,
+        "midpoint_gradient_vector_rmse": 0.015728610860243894,
+        "midpoint_gradient_relative_l2": 0.13553933649892955,
+        "fine_gradient_vector_rmse": 0.11966363911643428,
+        "fine_gradient_relative_l2": 0.8983866959634559
+      },
+      "directional_counts": {
+        "pressure_hybrid_better_time_count": 192,
+        "pressure_time_count": 200,
+        "midpoint_gradient_hybrid_better_time_count": 64,
+        "midpoint_gradient_time_count": 200,
+        "fine_gradient_hybrid_better_time_count": 4,
+        "fine_gradient_time_count": 5
+      }
+    }
+  },
+  "packaged_sources": {
+    "within_family_selection": "results/lid_driven_cavity/family_selection_v4.json",
+    "stage_a_selected_and_strong_gl8": "results/lid_driven_cavity/protected_gl8_v4",
+    "matched_gl8": "results/lid_driven_cavity/postselection/ramped_cavity_matched_strong_control_gl8_reporting_v1/independent_python/gl8_summary.tsv",
+    "field_diagnostics": "results/lid_driven_cavity/postselection/ramped_cavity_matched_strong_field_diagnostics_v1",
+    "stage_a_comparison": "results/lid_driven_cavity/stage_a_comparison_v4/post_failure_diagnostic_v4.json",
+    "stage_a_metrics": "results/lid_driven_cavity/stage_a_normalizers_v3/stage_a_metrics_v3.json",
+    "normalization": "results/lid_driven_cavity/normalization_v4.json",
+    "advective_conservative": "results/lid_driven_cavity/postselection/ramped_cavity_advective_conservative_consistency_v1",
+    "pressure": "results/lid_driven_cavity/postselection/ramped_cavity_pressure_reference_diagnostics_v1"
+  }
+}

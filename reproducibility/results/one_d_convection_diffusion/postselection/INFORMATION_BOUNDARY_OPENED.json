@@ -1,0 +1,14 @@
+{
+  "canonical_v12_postselection_path": "historical_source/Revisions/CMAME_minor_revision_v12_corrected_1d_sweep_20260816/experiments/one_d_corrected_sweep_v2/run_postselection.py",
+  "canonical_v12_postselection_sha256": "bb692a8d9dad901198449bfc77e6a704ca914b69c94be8667977b0a505bba20c",
+  "certificate_seal_sha256": "9ead043cf29e68083691cdf2650926f124d54f008e0acad3d0234453139a0fdb",
+  "certificate_summary_sha256": "e21aec42148e98e41ac4957c72b8dc3de1d8548bc691eecb7e58ed953dbae37e",
+  "freeze_sha256": "c58bc4092598a66d892f02e574892b5a4de1efbbdf5bb8c8db3573f424a7c02f",
+  "opened_utc": "2026-08-20T01:08:45.021645+00:00",
+  "reproducibility_seal_sha256": "5160d35a0ec44704bc6c778a3e9430c14777e5612a7a25ced15191cd87c48802",
+  "reproducibility_summary_sha256": "b4514d74c56a01f6e3d0ef5b238d74991eec60edaf5474ec9111cd61d51243d9",
+  "selected_gamma": 0.1,
+  "selection_json_sha256": "eba165f2b5dcb2bc22fbd7a11ef2521cd54f4ed203ff85de228426d032dea0bc",
+  "selection_seal_sha256": "b44541c905997bf073eaf90b34e2ae89d3a5f2c2db1b571f1f99dbf07054827b",
+  "statement": "The reference/canonical-GL8 boundary opened only after the selection, rectangular-SparseQR certificate, and selected-repeat seals all verified."
+}

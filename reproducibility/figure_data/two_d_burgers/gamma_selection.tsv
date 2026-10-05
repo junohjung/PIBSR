@@ -1,0 +1,5 @@
+literal	gamma	design_a_ratio	design_b_ratio	selected	design_b_role
+0	0.0	1.0	1.0	False	prespecified confirmation
+0.01	0.01	0.9936233962980011	0.9936242622457332	False	append-only postselection reporting only
+0.03	0.03	0.9814094073628843	0.9814117884022111	True	prespecified confirmation
+0.10	0.1	0.9415849819297586	0.9415907723140035	False	append-only postselection reporting only

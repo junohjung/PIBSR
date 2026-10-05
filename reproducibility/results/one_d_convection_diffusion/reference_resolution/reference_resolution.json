@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "calculation": "canonical analytical series doubled-resolution check",
+  "source_definition": "Revisions/CMAME_minor_revision_v12_corrected_1d_sweep_20260816/experiments/one_d_corrected_sweep_v2/run_postselection.py:73",
+  "evaluation_archive": "data/one_d_convection_diffusion/selection_archive.npz",
+  "base_modes": 900,
+  "base_quadrature_nodes": 4097,
+  "doubled_modes": 1800,
+  "doubled_quadrature_nodes": 8193,
+  "evaluation_shape_t_x": [
+    400,
+    60
+  ],
+  "doubled_resolution_linf_change": 5.587744842305812e-05,
+  "doubled_resolution_relative_l2_change": 1.2738028006255425e-06
+}

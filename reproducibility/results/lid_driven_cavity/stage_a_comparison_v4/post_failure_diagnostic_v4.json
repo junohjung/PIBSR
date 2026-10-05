@@ -1,0 +1,658 @@
+{
+  "coordinate_equivalence": {
+    "absolute_tolerance": 2e-15,
+    "canonical_reporting_xyz_preserved_bitwise": true,
+    "full_grid_maximum_absolute_difference": 1.1102230246251565e-16,
+    "full_grid_maximum_ulp_difference": 1,
+    "global_index_formula": "time_index*441+local_index",
+    "maximum_permitted_ulp": 1,
+    "model_evaluation_xyz_source": "frozen_reporting_plan_final_test_xyz",
+    "native_xyz_used_for_model_evaluation": false,
+    "raw_coordinate_order_verified": true,
+    "raw_coordinate_token_constancy_required": true,
+    "raw_grid_shape": [
+      441,
+      2
+    ],
+    "selected_axis_mismatch_count": {
+      "t": 0,
+      "x": 13380,
+      "y": 13281
+    },
+    "selected_maximum_absolute_difference": 1.1102230246251565e-16,
+    "selected_maximum_ulp_difference": 1,
+    "selected_point_count": 36230,
+    "selected_row_mismatch_count": 21677,
+    "status": "integer_indexed_equivalent_with_canonical_reporting_xyz"
+  },
+  "counterfactual_seven_condition_assessment": {
+    "all_seven_conditions_counterfactually_satisfied": false,
+    "conditions": {
+      "condition_1_selected_endpoints_converged_before_cap": true,
+      "condition_2_revised_gl8_component_geomean_and_count": true,
+      "condition_3_validation_and_sealed_velocity_each_at_most_1p10": true,
+      "condition_4_trace_mean_and_mixed_individual_guards": true,
+      "condition_5_offnode_strong_no_worsening_and_two_improve_20pct": true,
+      "condition_6_no_partition_worst_ratio_above_1p25": false,
+      "condition_7_vs_strong_balance_10pct_and_velocity_within_5pct": true
+    },
+    "diagnostics": {
+      "gl8_q4_component_max_ratio": 0.9626141353684762,
+      "gl8_q4_components_at_or_below_0p90": 2,
+      "gl8_q4_geometric_mean_ratio_to_stage_a": 0.19852192565690968,
+      "gl8_subconditions": {
+        "at_least_two_components_at_or_below_0p90": true,
+        "each_component_at_most_1p00": true,
+        "geometric_mean_at_most_0p90": true
+      },
+      "offnode_strong_improved_component_count": 2,
+      "q4_geometric_mean_ratio_to_strong_only": 0.27345871517214887,
+      "sealed_velocity_ratios_to_strong_only": {
+        "u": 1.028657702367567,
+        "v": 0.9789158724988946
+      },
+      "trace_individual_mixed_max_ratio_to_stage_a_decision": 1.1434509527387176,
+      "trace_individual_raw_max_ratio_to_stage_a_diagnostic": 1747.8353473216193
+    },
+    "label": "COUNTERFACTUAL_DIAGNOSTIC_NOT_AN_OFFICIAL_GATE_RESULT",
+    "thresholds": {
+      "gl8_q4_component_count_threshold": 0.9,
+      "gl8_q4_each_component_ratio_max": 1.0,
+      "gl8_q4_geometric_mean_ratio_max": 0.9,
+      "gl8_q4_minimum_components_at_or_below_0p90": 2,
+      "offnode_strong_each_ratio_max": 1.0,
+      "offnode_strong_improvement_ratio_max": 0.8,
+      "offnode_strong_minimum_improved_components": 2,
+      "partition_worst_ratio_max": 1.25,
+      "q4_geometric_mean_ratio_to_strong_only_max": 0.9,
+      "trace_individual_mixed_max_ratio_max": 1.25,
+      "trace_mean_each_ratio_max": 1.1,
+      "velocity_ratio_to_strong_only_each_max": 1.05,
+      "velocity_validation_and_sealed_each_ratio_max": 1.1
+    }
+  },
+  "diagnostic_metrics": {
+    "cpp_python_crosscheck": {
+      "criterion": "abs(python-cpp) <= 1e-11 + 1e-9*max(abs(cpp),abs(python))",
+      "failure_count": 0,
+      "status": "pass"
+    },
+    "label": "POST_FAILURE_DIAGNOSTIC_ONLY",
+    "pointwise_metrics": {
+      "gl4_hybrid": {
+        "offnode_strong_rmse": {
+          "divergence": 0.15244510934442188,
+          "x_momentum": 0.08223666904922224,
+          "y_momentum": 0.06903795334337472
+        },
+        "sealed_velocity_rmse": {
+          "component_mean": 0.00011729211323970509,
+          "u": 0.00013511730526941042,
+          "v": 9.62195067187759e-05
+        },
+        "trace_rmse": {
+          "BC_component_mean": 0.0009471398551441117,
+          "BC_u": 0.0013394142506987644,
+          "BC_v": 1.0829378093179851e-05,
+          "IC_component_mean": 1.4692607836243968e-05,
+          "IC_u": 2.0771916807712913e-05,
+          "IC_v": 5.224195562660324e-07
+        }
+      },
+      "stage_a": {
+        "offnode_strong_rmse": {
+          "divergence": 0.1527615115553018,
+          "x_momentum": 0.10767056781348791,
+          "y_momentum": 0.10245719894599656
+        },
+        "sealed_velocity_rmse": {
+          "component_mean": 0.00011115129475924244,
+          "u": 0.00012742267585184733,
+          "v": 9.204717449257765e-05
+        },
+        "trace_rmse": {
+          "BC_component_mean": 0.0009470784966545392,
+          "BC_u": 0.0013393712545864405,
+          "BC_v": 6.195880012253315e-09,
+          "IC_component_mean": 1.479407994307947e-05,
+          "IC_u": 2.0862950855864343e-05,
+          "IC_v": 1.5706318188047072e-06
+        }
+      },
+      "strong_only": {
+        "offnode_strong_rmse": {
+          "divergence": 0.15071497841659032,
+          "x_momentum": 0.1091366528092557,
+          "y_momentum": 0.06684301393594874
+        },
+        "sealed_velocity_rmse": {
+          "component_mean": 0.0001160062865496355,
+          "u": 0.0001313530292520275,
+          "v": 9.829190579283876e-05
+        },
+        "trace_rmse": {
+          "BC_component_mean": 0.0009470781797545572,
+          "BC_u": 0.0013393707942741017,
+          "BC_v": 1.8049923243947614e-07,
+          "IC_component_mean": 1.4705759801839757e-05,
+          "IC_u": 2.07822398388852e-05,
+          "IC_v": 7.85652580893846e-07
+        }
+      }
+    },
+    "selected_endpoints": {
+      "gl4_hybrid": {
+        "candidate_id": "gl4_hybrid__gamma_0p04",
+        "checkpoint_sha256": "f770ca1417adc5992e200499338cd7111676f0cd05f7b37c3ff9214b873fba5c",
+        "gamma": 0.04,
+        "optimizer_positive_claim_eligible": true
+      },
+      "strong_only": {
+        "candidate_id": "strong_only__gamma_0p03",
+        "checkpoint_sha256": "5ffd220edf673326c76ddf304ae42396ded117bea75356fdd0a5e77b87109549",
+        "gamma": 0.03,
+        "optimizer_positive_claim_eligible": true
+      }
+    },
+    "strict_stage3_trace_guard": {
+      "all_components_within_tolerance": false,
+      "components": {
+        "bc": {
+          "absolute_difference": 4.440892098500626e-16,
+          "frozen": 1.0000647871214359,
+          "recomputed": 1.0000647871214363,
+          "tolerance": 5.010323935607181e-12,
+          "within_strict_stage3_tolerance": true
+        },
+        "ic": {
+          "absolute_difference": 1.1102230246251565e-16,
+          "frozen": 0.9931410329519702,
+          "recomputed": 0.9931410329519701,
+          "tolerance": 4.975705164759851e-12,
+          "within_strict_stage3_tolerance": true
+        },
+        "mixed_max": {
+          "absolute_difference": 5.238698363996264e-12,
+          "frozen": 1.1434509527334789,
+          "recomputed": 1.1434509527387176,
+          "tolerance": 5.7272547636935875e-12,
+          "within_strict_stage3_tolerance": true
+        },
+        "raw_max": {
+          "absolute_difference": 1.395285426042392e-05,
+          "frozen": 1747.835333368765,
+          "recomputed": 1747.8353473216193,
+          "tolerance": 8.739186736608095e-09,
+          "within_strict_stage3_tolerance": false
+        }
+      },
+      "criterion": "abs <= 1e-14 + 5e-12*max(abs(frozen),abs(recomputed))",
+      "status": "strict_stage3_trace_guard_would_fail"
+    },
+    "values": {
+      "gl4_hybrid_gl8_q4_ratios_to_stage_a": {
+        "mass": 0.9626141353684762,
+        "x_momentum": 0.1739438929949551,
+        "y_momentum": 0.046726582339683596
+      },
+      "gl4_hybrid_sealed_velocity_rmse": {
+        "u": 0.00013511730526941042,
+        "v": 9.62195067187759e-05
+      },
+      "offnode_strong_ratios_to_stage_a": {
+        "divergence": 0.9979287831885234,
+        "x_momentum": 0.7637803971803744,
+        "y_momentum": 0.6738223770860986
+      },
+      "partition_worst_ratios_to_stage_a": {
+        "q1": 6913.270457541155,
+        "q2": 0.9887647349600667,
+        "q4": 0.9626141353684762,
+        "shifted_q4": 0.9764104019698598
+      },
+      "strong_only_gl8_q4_ratios_to_stage_a": {
+        "mass": 1.0042102186544974,
+        "x_momentum": 0.6407847585681835,
+        "y_momentum": 0.5945841406191774
+      },
+      "strong_only_sealed_velocity_rmse": {
+        "u": 0.0001313530292520275,
+        "v": 9.829190579283876e-05
+      },
+      "trace_individual_mixed_max_ratio_to_stage_a": 1.1434509527387176,
+      "trace_individual_raw_max_ratio_to_stage_a": 1747.8353473216193,
+      "trace_mean_ratios_to_stage_a": {
+        "bc": 1.0000647871214363,
+        "ic": 0.9931410329519701
+      },
+      "velocity_sealed_ratios_to_stage_a": {
+        "u": 1.0603866569754785,
+        "v": 1.045328194474179
+      },
+      "velocity_validation_ratios_to_stage_a": {
+        "u": 1.0336689963295762,
+        "v": 1.043751100325452
+      }
+    }
+  },
+  "failure_binding": {
+    "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/results/ramped_cavity_gl4_v4/protected_one_shot_v4_20260805b/protected_execution_failure_v4.json",
+    "rerun_permitted": false,
+    "sha256": "8ae4330b7e1312de4fcca592dd289c4a06c752d6592988babc563c242ec736fa",
+    "stage": "stage3_materializer",
+    "status": "terminal_failure_rerun_prohibited"
+  },
+  "information_boundary": {
+    "diagnostic_only": true,
+    "failure_record_validated_before_other_runtime_inputs": true,
+    "higher_resolution_values_opened": false,
+    "one_shot_rerun": false,
+    "optimizer_invoked": false,
+    "requested_output_uses_exclusive_create": true,
+    "selection_reopened": false,
+    "strict_writer_invoked": false,
+    "terminal_failure_preserved": true
+  },
+  "input_evidence": {
+    "coefficient_crosschecks": {
+      "gl4_hybrid": {
+        "array_equal_checkpoint_text": true,
+        "checkpoint": {
+          "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/results/ramped_cavity_gl4_v4/campaign_v4/stage_b/gl4_hybrid__gamma_0p04/final_coefficients_v1.txt",
+          "sha256": "f770ca1417adc5992e200499338cd7111676f0cd05f7b37c3ff9214b873fba5c"
+        },
+        "checkpoint_header": "# PIMFA_NS_FINAL_COEFFICIENTS_V1 n=60000",
+        "coefficient_count": 60000,
+        "coefficient_shape": [
+          3,
+          50,
+          20,
+          20
+        ],
+        "coefficients": {
+          "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/results/ramped_cavity_gl4_v4/protected_one_shot_v4_20260805b/roles/gl4_hybrid/model/coefficients.npy",
+          "sha256": "8b2c6fae96e864c0601c0483486c5e60dc1b50d588f2d8a64af825509a202594"
+        },
+        "model_manifest": {
+          "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/results/ramped_cavity_gl4_v4/protected_one_shot_v4_20260805b/roles/gl4_hybrid/model/model.json",
+          "sha256": "36d1cecae40e57b8bf8b5eaf777fb0cb4a4040d831eeb055e4c55dbbccaddc0d"
+        }
+      },
+      "stage_a": {
+        "array_equal_checkpoint_text": true,
+        "checkpoint": {
+          "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/results/ramped_cavity_gl4_v4/campaign_v4/stage_a/shared_stage_a_initializer_v1.txt",
+          "sha256": "79b572cb9b02507a056a127e97871853f8aa4661925c88c46e2d33e5e779c592"
+        },
+        "checkpoint_header": "# PIMFA_NS_INIT_V1 pressure=zero n=60000",
+        "coefficient_count": 60000,
+        "coefficient_shape": [
+          3,
+          50,
+          20,
+          20
+        ],
+        "coefficients": {
+          "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/results/ramped_cavity_gl4_v4/protected_one_shot_v4_20260805b/roles/stage_a/model/coefficients.npy",
+          "sha256": "944da04af12d3e1e329db9480bb9fe208b2a31258f04f3c36b1b1bed2d3a751c"
+        },
+        "model_manifest": {
+          "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/results/ramped_cavity_gl4_v4/protected_one_shot_v4_20260805b/roles/stage_a/model/model.json",
+          "sha256": "fcc2e067c6ef0a0a75c901f4ed6185e52df40f78d32de859e55c2d1b46fa6063"
+        }
+      },
+      "strong_only": {
+        "array_equal_checkpoint_text": true,
+        "checkpoint": {
+          "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/results/ramped_cavity_gl4_v4/campaign_v4/stage_b/strong_only__gamma_0p03/final_coefficients_v1.txt",
+          "sha256": "5ffd220edf673326c76ddf304ae42396ded117bea75356fdd0a5e77b87109549"
+        },
+        "checkpoint_header": "# PIMFA_NS_FINAL_COEFFICIENTS_V1 n=60000",
+        "coefficient_count": 60000,
+        "coefficient_shape": [
+          3,
+          50,
+          20,
+          20
+        ],
+        "coefficients": {
+          "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/results/ramped_cavity_gl4_v4/protected_one_shot_v4_20260805b/roles/strong_only/model/coefficients.npy",
+          "sha256": "d387ea2081f79c4c5e94702de1fe14e57000a9cdc9834c87f0ce7a211ccaa729"
+        },
+        "model_manifest": {
+          "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/results/ramped_cavity_gl4_v4/protected_one_shot_v4_20260805b/roles/strong_only/model/model.json",
+          "sha256": "9176916c8e3303424ffb8179ac5bc65e18342469ae17b9b980fd5bd1909b253a"
+        }
+      }
+    },
+    "coordinate_bindings": {
+      "arrays": {
+        "bc_trace_velocity": {
+          "dtype": "float64",
+          "sha256": "afed5394c35d05beeb4d4ff0d06312debbe6fd4485048bbaf6fb099f50f36171",
+          "shape": [
+            80000,
+            2
+          ]
+        },
+        "bc_trace_xyz": {
+          "dtype": "float64",
+          "sha256": "8db5fb4b6b8624ec2cc6f00d1116234672996aa85b2ae60aa2ca5b0aef782d34",
+          "shape": [
+            80000,
+            3
+          ]
+        },
+        "final_test_indices": {
+          "dtype": "int64",
+          "sha256": "ae4cf17d7e92e1cf7ca1cbb85c2833209bcc668f182d3e16bd8f5485f553b650",
+          "shape": [
+            36230
+          ]
+        },
+        "final_test_xyz": {
+          "dtype": "float64",
+          "sha256": "f2e21516e175fe230c5d3f3cf79dd867e6dc9d36a61f629fbeb24fb164c2e48d",
+          "shape": [
+            36230,
+            3
+          ]
+        },
+        "ic_trace_velocity": {
+          "dtype": "float64",
+          "sha256": "56a43ef88ddfcd0f56f7dd973312c0e73d62f59655c01d7b4e59aaa3be8b3fb6",
+          "shape": [
+            400,
+            2
+          ]
+        },
+        "ic_trace_xyz": {
+          "dtype": "float64",
+          "sha256": "772bd74aca75bec6f523e93ae0815d9ceccfe4fc801433169364a2123b8e5a1f",
+          "shape": [
+            400,
+            3
+          ]
+        },
+        "reference_midpoint_xyz": {
+          "dtype": "float64",
+          "sha256": "f23c82fc44ce5e656f1b71a57304d4cb62462cdf1955aeb2cb6fcd7b5329bc44",
+          "shape": [
+            80000,
+            3
+          ]
+        },
+        "sealed_balance_midpoint_times": {
+          "dtype": "float64",
+          "sha256": "e5ccff32715457df852a62b31bb199e44b6e2a322875da3793fe103609c9bdcd",
+          "shape": [
+            200
+          ]
+        },
+        "stored_times": {
+          "dtype": "float64",
+          "sha256": "1d59118cd59297a196dbb9f2757d1d4be4e7fa9dcd567db89e3a4b8357efd02c",
+          "shape": [
+            1001
+          ]
+        }
+      },
+      "reporting_archive": {
+        "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/data/ramped_cavity/reporting_plan.npz",
+        "sha256": "dcf3fc46acc3af65a26b6e1d0da7310cad74ebcac1be88549a9d7c02373be267"
+      },
+      "reporting_manifest": {
+        "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/data/ramped_cavity/reporting_plan_manifest.json",
+        "sha256": "27eeb1e102578207ba0acc13bbb192b6bc936b57f78999e2a52ee7a2af9d1ee1"
+      },
+      "strong_points_fully_off_node": true,
+      "trace_targets_formula_verified": true
+    },
+    "final_target_derivation": {
+      "canonical_reporting_xyz_sha256": "f2e21516e175fe230c5d3f3cf79dd867e6dc9d36a61f629fbeb24fb164c2e48d",
+      "design_observed_values_used": false,
+      "final_test_indices": {
+        "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/data/ramped_cavity/design/final_test_indices.txt",
+        "sha256": "d9a70f5e00f5bc4d23b49d9e4809a392a2bdf2ac363369f1e168b5bbd0272530"
+      },
+      "low_run_manifest": {
+        "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/data/ramped_cavity/raw/low/run_manifest.json",
+        "sha256": "e8edb10d4a70909beb2094949917853d8a94412b8e845f2e1a61d326f0f86541"
+      },
+      "native_coordinate_bits_used_as_model_points": false,
+      "raw_coordinate_token_sha256": "b8757f090e14e8f1b82ce6a85e4a0a1c55bfde53a2bf152b937e0ae25906085a",
+      "reference_velocity_sha256": "36d9a525d0d1422492727365fde16f3af3f825b9f03f7fcdbbf86730483d6f52",
+      "rows_per_snapshot": 441,
+      "snapshot_hashes_verified": 1001,
+      "target_source": "completed_ramped_low_raw_snapshot_uv_by_integer_row"
+    },
+    "gl8_crosschecks": {
+      "gl4_hybrid": {
+        "cpp_python_crosscheck": {
+          "criterion": "abs(python-cpp) <= 1e-11 + 1e-9*max(abs(cpp),abs(python))",
+          "failure_count": 0,
+          "row_count": 3200,
+          "scalar_comparison_count": 9600,
+          "status": "pass"
+        },
+        "partition_rmse": {
+          "q1": {
+            "mass": 7.523826375721583e-06,
+            "x_momentum": 0.003762827850348226,
+            "y_momentum": 0.0005877116270897697
+          },
+          "q2": {
+            "mass": 0.0012403910514982716,
+            "x_momentum": 0.0029234229690684337,
+            "y_momentum": 0.0009290073961912881
+          },
+          "q4": {
+            "mass": 0.003658774373969478,
+            "x_momentum": 0.0029682163510220626,
+            "y_momentum": 0.0007796489546582735
+          },
+          "shifted_q4": {
+            "mass": 0.0034031839533003555,
+            "x_momentum": 0.002522761468911552,
+            "y_momentum": 0.001723932208246688
+          }
+        },
+        "production_comparison": {
+          "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/results/ramped_cavity_gl4_v4/protected_one_shot_v4_20260805b/roles/gl4_hybrid/independent_python/production_comparison.json",
+          "sha256": "60eff0b7294cfb31c04bb6c4b9fd96674adfae35e4b67692a6fbb4e2ae80ec1e"
+        },
+        "row_counts": {
+          "aggregate_q1": 200,
+          "aggregate_q2": 800,
+          "canonical_q4": 3200,
+          "shifted_q4": 3200,
+          "total": 7400
+        },
+        "rows": {
+          "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/results/ramped_cavity_gl4_v4/protected_one_shot_v4_20260805b/roles/gl4_hybrid/independent_python/gl8_rows.tsv",
+          "sha256": "c8672d260a74741d251585c5ac139812bac6870c019424beff5f736f389cf7ad"
+        },
+        "summary": {
+          "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/results/ramped_cavity_gl4_v4/protected_one_shot_v4_20260805b/roles/gl4_hybrid/independent_python/gl8_summary.tsv",
+          "sha256": "8de2e23456c748633351a2097a4f2f3f233d9d11f59aa4c9bdf3315ed651a7d0"
+        },
+        "summary_recomputed_equal": true,
+        "summary_row_count": 12
+      },
+      "stage_a": {
+        "cpp_python_crosscheck": {
+          "criterion": "abs(python-cpp) <= 1e-11 + 1e-9*max(abs(cpp),abs(python))",
+          "failure_count": 0,
+          "row_count": 3200,
+          "scalar_comparison_count": 9600,
+          "status": "pass"
+        },
+        "partition_rmse": {
+          "q1": {
+            "mass": 1.0883165098096833e-09,
+            "x_momentum": 0.015877879532884293,
+            "y_momentum": 0.0017388325521985326
+          },
+          "q2": {
+            "mass": 0.001254485528904272,
+            "x_momentum": 0.021139239722510465,
+            "y_momentum": 0.014817243263280216
+          },
+          "q4": {
+            "mass": 0.0038008733089805987,
+            "x_momentum": 0.01706421708698994,
+            "y_momentum": 0.016685340883494045
+          },
+          "shifted_q4": {
+            "mass": 0.0034854032140937863,
+            "x_momentum": 0.017608798317007915,
+            "y_momentum": 0.01675149858968294
+          }
+        },
+        "production_comparison": {
+          "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/results/ramped_cavity_gl4_v4/protected_one_shot_v4_20260805b/roles/stage_a/independent_python/production_comparison.json",
+          "sha256": "043b22d111a03f9f00c9c5fd4b9cbc8fe2160c62e8aa6e3f6d03a149aa8001a1"
+        },
+        "row_counts": {
+          "aggregate_q1": 200,
+          "aggregate_q2": 800,
+          "canonical_q4": 3200,
+          "shifted_q4": 3200,
+          "total": 7400
+        },
+        "rows": {
+          "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/results/ramped_cavity_gl4_v4/protected_one_shot_v4_20260805b/roles/stage_a/independent_python/gl8_rows.tsv",
+          "sha256": "10f5e6b797e0a8537d233690835bd0c4add80fcc016c8b5f89815c815b5218da"
+        },
+        "summary": {
+          "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/results/ramped_cavity_gl4_v4/protected_one_shot_v4_20260805b/roles/stage_a/independent_python/gl8_summary.tsv",
+          "sha256": "663ceda58ecbd2f5207839362cde6ef74af8fd643feddbfe8260238d42a7a638"
+        },
+        "summary_recomputed_equal": true,
+        "summary_row_count": 12
+      },
+      "strong_only": {
+        "cpp_python_crosscheck": {
+          "criterion": "abs(python-cpp) <= 1e-11 + 1e-9*max(abs(cpp),abs(python))",
+          "failure_count": 0,
+          "row_count": 3200,
+          "scalar_comparison_count": 9600,
+          "status": "pass"
+        },
+        "partition_rmse": {
+          "q1": {
+            "mass": 4.7915179537610736e-08,
+            "x_momentum": 0.015110839103123589,
+            "y_momentum": 0.0012470037492872121
+          },
+          "q2": {
+            "mass": 0.0012547105954197326,
+            "x_momentum": 0.01521985273263503,
+            "y_momentum": 0.009155044475156145
+          },
+          "q4": {
+            "mass": 0.0038168758166894504,
+            "x_momentum": 0.010934490226241919,
+            "y_momentum": 0.009920839070150334
+          },
+          "shifted_q4": {
+            "mass": 0.003488589327235425,
+            "x_momentum": 0.010863710188237695,
+            "y_momentum": 0.010100950388383304
+          }
+        },
+        "production_comparison": {
+          "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/results/ramped_cavity_gl4_v4/protected_one_shot_v4_20260805b/roles/strong_only/independent_python/production_comparison.json",
+          "sha256": "c7338ce92393ed27f15788531f4b6987a76f8abc5b43bf9f9a2d237d7024e9fd"
+        },
+        "row_counts": {
+          "aggregate_q1": 200,
+          "aggregate_q2": 800,
+          "canonical_q4": 3200,
+          "shifted_q4": 3200,
+          "total": 7400
+        },
+        "rows": {
+          "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/results/ramped_cavity_gl4_v4/protected_one_shot_v4_20260805b/roles/strong_only/independent_python/gl8_rows.tsv",
+          "sha256": "9b3480013c4e08b9c29fafb1c9478efa848534b4bd55bcca7ea4b6c9ad2a053f"
+        },
+        "summary": {
+          "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/results/ramped_cavity_gl4_v4/protected_one_shot_v4_20260805b/roles/strong_only/independent_python/gl8_summary.tsv",
+          "sha256": "2703a725e38525180222c4fe0486e76728e213a1a377ec8eb050ca13920324c6"
+        },
+        "summary_recomputed_equal": true,
+        "summary_row_count": 12
+      }
+    },
+    "higher_resolution": {
+      "status": "deferred_not_opened",
+      "values_opened": false
+    },
+    "validation_binding": {
+      "artifact": {
+        "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/results/ramped_cavity_gl4_v4/campaign_v4/validation_only_metrics_v4.json",
+        "sha256": "2700f1d85d39df2a1be64e4dd19166947fbf1a6c6a04e46bacb4c93e677842fa"
+      },
+      "frozen_trace_ratios": {
+        "bc": 1.0000647871214359,
+        "ic": 0.9931410329519702,
+        "mixed_max": 1.1434509527334789,
+        "raw_max": 1747.835333368765
+      },
+      "recomputed_trace_ratios": {
+        "bc": 1.0000647871214363,
+        "ic": 0.9931410329519701,
+        "mixed_max": 1.1434509527387176,
+        "raw_max": 1747.8353473216193
+      },
+      "strict_stage3_trace_guard": {
+        "all_components_within_tolerance": false,
+        "components": {
+          "bc": {
+            "absolute_difference": 4.440892098500626e-16,
+            "frozen": 1.0000647871214359,
+            "recomputed": 1.0000647871214363,
+            "tolerance": 5.010323935607181e-12,
+            "within_strict_stage3_tolerance": true
+          },
+          "ic": {
+            "absolute_difference": 1.1102230246251565e-16,
+            "frozen": 0.9931410329519702,
+            "recomputed": 0.9931410329519701,
+            "tolerance": 4.975705164759851e-12,
+            "within_strict_stage3_tolerance": true
+          },
+          "mixed_max": {
+            "absolute_difference": 5.238698363996264e-12,
+            "frozen": 1.1434509527334789,
+            "recomputed": 1.1434509527387176,
+            "tolerance": 5.7272547636935875e-12,
+            "within_strict_stage3_tolerance": true
+          },
+          "raw_max": {
+            "absolute_difference": 1.395285426042392e-05,
+            "frozen": 1747.835333368765,
+            "recomputed": 1747.8353473216193,
+            "tolerance": 8.739186736608095e-09,
+            "within_strict_stage3_tolerance": false
+          }
+        },
+        "criterion": "abs <= 1e-14 + 5e-12*max(abs(frozen),abs(recomputed))",
+        "status": "strict_stage3_trace_guard_would_fail"
+      }
+    }
+  },
+  "official_gate_result_generated": false,
+  "one_shot_rerun": false,
+  "positive_claim_permitted": false,
+  "schema": "pimfa.cmame.ramped_cavity_gl4_post_failure_diagnostic.v4",
+  "source_binding": {
+    "checkpoint_freeze": {
+      "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/results/ramped_cavity_gl4_v4/campaign_v4/checkpoint_freeze_v4.json",
+      "sha256": "cc04dd2ca6b901aeb806d8a80d57860ac7d0b13a5935a650456cacd4871686da"
+    },
+    "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/results/ramped_cavity_gl4_v4/protected_one_shot_v4_20260805b/stage3/protected_metric_sources_v4.json",
+    "sha256": "e52c7d8b901a5c9e2df7a9ee6e63e6798bcb7458da92cf4be8e253498a25b477"
+  },
+  "status": "POST_FAILURE_DIAGNOSTIC_ONLY"
+}

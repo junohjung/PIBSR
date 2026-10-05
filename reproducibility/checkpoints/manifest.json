@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "hash_algorithm": "sha256",
+  "checkpoints": [
+    {
+      "case": "one_d_convection_diffusion",
+      "model": "stage_a_strong_initializer_beta_3e-5",
+      "format": "plain_control_vector",
+      "path": "one_d_convection_diffusion/stage_a_initializer.txt",
+      "bytes": 40000,
+      "sha256": "22d25746cd88d0866ced676fbd4095f73790b8611c84a1497c001b73a34bad86"
+    },
+    {
+      "case": "one_d_convection_diffusion",
+      "model": "matched_strong_gamma_0",
+      "format": "mfa",
+      "path": "one_d_convection_diffusion/gamma_0/approx.mfa",
+      "bytes": 1767373,
+      "sha256": "27c9b0b92ecd6a80d96694ba4f98137a5fe90d4e10d79f5a89b0cbd55203ae7a"
+    },
+    {
+      "case": "one_d_convection_diffusion",
+      "model": "selected_hybrid_gamma_0.1",
+      "format": "mfa",
+      "path": "one_d_convection_diffusion/gamma_0p1/approx.mfa",
+      "bytes": 1767373,
+      "sha256": "5f20a1f2b486b624d9392e39eb95916e647e5cfdbe4297bada1a8c4ff5c30d36"
+    },
+    {
+      "case": "one_d_convection_diffusion",
+      "model": "high_weight_sensitivity_gamma_10",
+      "format": "mfa",
+      "path": "one_d_convection_diffusion/gamma_10/approx.mfa",
+      "bytes": 1767373,
+      "sha256": "fddd0455a4f20a252d2edf28e26126f8c2dd65e8dd5d74e336f12ac5d4648ce4"
+    },
+    {
+      "case": "two_d_burgers",
+      "model": "stage_a_data_only_initializer",
+      "format": "plain_control_vector",
+      "path": "two_d_burgers/stage_a_initializer.txt",
+      "bytes": 1161803,
+      "sha256": "d5f91c2227c1e4d4a9f510f17b1fa5772c9a932cc3a1db1645aa5909f932a97d"
+    },
+    {
+      "case": "two_d_burgers",
+      "model": "matched_strong_beta_0.01_kappa_10_gamma_0",
+      "format": "mfa",
+      "path": "two_d_burgers/matched_kappa_gamma0/approx.mfa",
+      "bytes": 41421593,
+      "sha256": "66796615bc2b481eb134603410129183b03ac52855842e39d6d4787a40b905b5"
+    },
+    {
+      "case": "two_d_burgers",
+      "model": "selected_hybrid_beta_0.01_kappa_10_gamma_0.03",
+      "format": "mfa",
+      "path": "two_d_burgers/gamma_0p03/approx.mfa",
+      "bytes": 41421593,
+      "sha256": "82e77d900580baad58d2638a3b3a5f473517c36741f39ef0125b681c25da1c19"
+    },
+    {
+      "case": "lid_driven_cavity",
+      "model": "stage_a_canonical_zero_pressure_initializer",
+      "format": "plain_control_vector",
+      "path": "lid_driven_cavity/stage_a/shared_stage_a_initializer_v1.txt",
+      "bytes": 922764,
+      "sha256": "79b572cb9b02507a056a127e97871853f8aa4661925c88c46e2d33e5e779c592"
+    },
+    {
+      "case": "lid_driven_cavity",
+      "model": "matched_strong_gamma_s_0.02_gamma_i_0",
+      "format": "plain_control_vector",
+      "path": "lid_driven_cavity/stage_b/strong_only__gamma_0p02/final_coefficients_v1.txt",
+      "bytes": 1327404,
+      "sha256": "ae299d4f9d3837846eedb71d28011bd0b80ae822bcf5c145e8b942b86f28984f"
+    },
+    {
+      "case": "lid_driven_cavity",
+      "model": "selected_gl4_hybrid_gamma_s_0.02_gamma_i_0.02",
+      "format": "plain_control_vector",
+      "path": "lid_driven_cavity/stage_b/gl4_hybrid__gamma_0p04/final_coefficients_v1.txt",
+      "bytes": 1327849,
+      "sha256": "f770ca1417adc5992e200499338cd7111676f0cd05f7b37c3ff9214b873fba5c"
+    }
+  ]
+}

@@ -1,0 +1,247 @@
+{
+  "schema_version": 1,
+  "case_id": "one_dimensional_convection_diffusion",
+  "title": "One-dimensional convection--diffusion",
+  "artifact_directory": "one_d_convection_diffusion",
+  "artifact_paths": {
+    "data": "data/one_d_convection_diffusion",
+    "checkpoints": "checkpoints/one_d_convection_diffusion",
+    "results": "results/one_d_convection_diffusion",
+    "point_sets": "point_sets/one_d_convection_diffusion"
+  },
+  "manuscript_sources": [
+    "PIBSR_manuscript_v2.tex:697-962",
+    "PIBSR_manuscript_v2.tex:1789-1912",
+    "PIBSR_suppl_v2.tex:99-105",
+    "PIBSR_suppl_v2.tex:139-470",
+    "PIBSR_suppl_v2.tex:1548-1558"
+  ],
+  "domain": {
+    "coordinates": [
+      "x",
+      "t"
+    ],
+    "bounds": {
+      "x": [
+        0.0,
+        1.0
+      ],
+      "t": [
+        0.0,
+        0.4
+      ]
+    },
+    "nondimensional": true
+  },
+  "physics": {
+    "equation": "rho_t + a*rho_x = nu*rho_xx",
+    "parameters": {
+      "a": 1.0,
+      "nu": 0.05
+    },
+    "boundary_conditions": {
+      "type": "homogeneous_dirichlet",
+      "rho_at_x0": 0.0,
+      "rho_at_x1": 0.0
+    },
+    "initial_condition": {
+      "formula": "0.5*A_f*(1+tanh((x_f-x)/w))*4*x*(1-x)",
+      "A_f": 0.9,
+      "x_f": 0.65,
+      "w": 0.03,
+      "optimization_target": "first_stored_interpolated_snapshot"
+    }
+  },
+  "observation_generator": {
+    "space_nodes": 15,
+    "integrator": "forward_euler",
+    "solver_time_step": 0.006,
+    "spatial_discretization": {
+      "convection": "second_order_centered",
+      "diffusion": "second_order_centered",
+      "discrete_flux_balance": true
+    },
+    "output": {
+      "space_nodes": 60,
+      "time_nodes": 400,
+      "time_coordinates": "linspace(0,0.4,400)",
+      "time_spacing": 0.0010025062656641604,
+      "endpoint_inclusive": true,
+      "interpolation": "linear_in_space_and_time"
+    },
+    "observation_noise": false
+  },
+  "analytical_reference": {
+    "role": "post_selection_only",
+    "method": "exponential_substitution_and_sine_series",
+    "sine_modes": 900,
+    "coefficient_quadrature_points": 4097,
+    "doubled_resolution_linf_change": 5.59e-05,
+    "doubled_resolution_relative_l2_change": 1.27e-06
+  },
+  "spline": {
+    "degree": [
+      3,
+      3
+    ],
+    "control_lattice": [
+      40,
+      40
+    ],
+    "coefficients_per_field": 1600,
+    "fields": [
+      "rho"
+    ],
+    "knot_type": "open_clamped_uniform_simple_interior",
+    "coordinate_map": "affine_to_unit_interval",
+    "physical_derivative_scaling": true
+  },
+  "point_roles": {
+    "fitting": {
+      "observation_shape": [
+        60,
+        400
+      ],
+      "observation_rows": 24000,
+      "ic_rows": 60,
+      "bc_rows": 800,
+      "pde_rows": 23541,
+      "pde_coordinate_rule": "tensor midpoints of the 59 by 399 observation cells"
+    },
+    "selection": {
+      "strong_midpoint_shape": [
+        59,
+        399
+      ],
+      "strong_midpoint_rows": 23541,
+      "balance_fit_times": 279,
+      "balance_selection_times": 120,
+      "balance_time_sets": "interleaved_and_disjoint"
+    },
+    "post_selection": {
+      "cellwise_gl2_points": 94164,
+      "whole_domain_gl8_times": 400,
+      "analytical_reference_used": true
+    }
+  },
+  "balance": {
+    "fit_partition_q": 4,
+    "fit_quadrature": "GL4",
+    "split_at_nonzero_knot_spans": true,
+    "shared_face_cancellation": true,
+    "report_partition_q": 1,
+    "report_quadrature": "GL8"
+  },
+  "selection": {
+    "strong_form": {
+      "data_weight": 1.0,
+      "tied_weights": [
+        "pde",
+        "ic",
+        "bc"
+      ],
+      "beta_candidates": [
+        0.0,
+        1e-08,
+        3e-08,
+        1e-07,
+        3e-07,
+        1e-06,
+        3e-06,
+        1e-05,
+        3e-05,
+        0.0001,
+        0.0003,
+        0.001,
+        0.003,
+        0.01,
+        0.03,
+        0.1,
+        0.3,
+        1.0,
+        3.0,
+        10.0,
+        30.0,
+        100.0,
+        300.0,
+        1000.0,
+        3000.0,
+        10000.0
+      ],
+      "selected_beta": 3e-05,
+      "trace_relative_limit": 0.01,
+      "trace_absolute_limit": 0.008975,
+      "rule": "log_normalized_pareto_endpoint_chord",
+      "reference_data_used": false
+    },
+    "integral_balance": {
+      "gamma_candidates": [
+        0.0,
+        0.01,
+        0.03,
+        0.1,
+        0.3,
+        1.0,
+        3.0,
+        10.0
+      ],
+      "selected_gamma": 0.1,
+      "weight_formula": "lambda_balance = gamma*J0/I0",
+      "J0": 1.719e-05,
+      "I0": 0.006518,
+      "midpoint_pde_ratio_limit": 1.05,
+      "trace_relative_limit": 0.01,
+      "rule": "pareto_endpoint_chord_with_nearest_ideal_fallback",
+      "fallback_used": true,
+      "reference_data_used": false
+    }
+  },
+  "optimizer": {
+    "name": "full_memory_BFGS",
+    "gradient": "exact",
+    "line_search": "More_Thuente_strong_Wolfe",
+    "line_search_c1": 0.0001,
+    "line_search_c2": 0.01,
+    "strong_form_sweep": {
+      "gradient_infinity_absolute_tolerance": 1e-08,
+      "gradient_infinity_relative_to_initial": 1e-06,
+      "maximum_accepted_updates": 5000
+    },
+    "selected_integral_balance_refit": {
+      "gradient_infinity_absolute_tolerance": 1e-10,
+      "gradient_infinity_relative_to_initial": 1e-08,
+      "maximum_accepted_updates": 10000,
+      "accepted_updates": 258,
+      "final_gradient_infinity_norm": 9.945825975117672e-11
+    },
+    "independent_quadratic_check": "sparse_QR"
+  },
+  "contextual_pinn": {
+    "role": "context_only",
+    "hidden_layers": 5,
+    "width": 64,
+    "activation": "tanh",
+    "parameters": 16897,
+    "seed": 1234,
+    "observation_rows": 8000,
+    "pde_rows": 12000,
+    "ic_rows": 60,
+    "loss_weights": {
+      "data": 0.1,
+      "pde": 100.0,
+      "ic": 100.0,
+      "bc": 100.0
+    },
+    "optimization": {
+      "adam_steps": 500,
+      "pytorch_lbfgs_iterations": 300,
+      "line_search": "strong_Wolfe"
+    }
+  },
+  "expected_model_ids": [
+    "mfa_data_only",
+    "pibsr_strong_beta_3e_5",
+    "pibsr_hybrid_beta_3e_5_gamma_0_1",
+    "pibsr_hybrid_beta_3e_5_gamma_10"
+  ]
+}

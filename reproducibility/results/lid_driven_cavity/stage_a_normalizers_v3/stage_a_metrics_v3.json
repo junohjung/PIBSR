@@ -1,0 +1,53 @@
+{
+  "design_sha256": "8a178e7a7b2775dae66bb3a8593ee7f310be73383540ee9624f9dcb923ea6fdf",
+  "gl4_component_mse": {
+    "mass": 1.4950138668945944e-05,
+    "xmom": 0.00029921132574083114,
+    "ymom": 0.00029335297044087645
+  },
+  "implementation": {
+    "v1_runner_base": {
+      "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/experiments/ramped_cavity_gl4/run_ramped_cavity_gl4.py",
+      "sha256": "7146179f4297405acc9d72378058b948f73b6e19b8ef848eea7d24e192ef9a18"
+    },
+    "v1_stage_a_materializer_base": {
+      "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/experiments/ramped_cavity_gl4/materialize_stage_a_metrics.py",
+      "sha256": "0b29190a6bf52a2ecac59d409cefb3a4123930a90813599b00301f0bedbd917f"
+    },
+    "v3_contract": {
+      "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/experiments/ramped_cavity_gl4_v3/v3_contract.py",
+      "sha256": "7e361a21b30d8137cdc8d8b619fd6fdb026e1585aef44526ba6d71569c4c3787"
+    },
+    "v3_runner": {
+      "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/experiments/ramped_cavity_gl4_v3/run_ramped_cavity_gl4_v3.py",
+      "sha256": "eec0d7f31853de56f7d585aae9a8c54a630c00dee3410e356a2b8e0f162cb709"
+    },
+    "v3_stage_a_materializer": {
+      "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/experiments/ramped_cavity_gl4_v3/materialize_stage_a_metrics_v3.py",
+      "sha256": "139addf6d5c87ca099652f90bc84f511d5175dfc15450998c0d58039ffb8ff0b"
+    }
+  },
+  "information_boundary": {
+    "final_test_values_used": false,
+    "gl8_used": false,
+    "higher_resolution_values_used": false,
+    "sealed_values_used": false,
+    "training_roles_only": true,
+    "validation_values_used": false
+  },
+  "protocol_sha256": "9f8e60c4db23b5f3195f6925cb44fcfc77c2199d5440cde1661d09b5f9a102e4",
+  "schema": "pimfa.cmame.ramped_cavity_gl4_stage_a_metrics.v3",
+  "stage_a_checkpoint_sha256": "79b572cb9b02507a056a127e97871853f8aa4661925c88c46e2d33e5e779c592",
+  "stage_a_objective": 3.445445534826788e-06,
+  "status": "training_only_frozen",
+  "strong_component_mse": {
+    "div": 0.04461845008268316,
+    "xmom": 0.010790478562679085,
+    "ymom": 0.010608774371754316
+  },
+  "trapezoid_component_mse": {
+    "mass": 0.00014297665759034988,
+    "xmom": 0.0006785860542914646,
+    "ymom": 0.00029460446064554245
+  }
+}

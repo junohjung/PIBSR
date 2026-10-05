@@ -1,0 +1,117 @@
+>>> Running 'pde example'
+
+--------- MFA Settings ----------
+pt_dim   = 6	dom_dim    = 3	scalar: false
+geom_deg = 2	vars_deg = 3
+encoding type = fixed
+geom_nctrl = -1	vars_nctrl = {10 10 25}
+regularization = 0, type: N/A
+weighted: false
+parameterization method: domain
+threading: serial
+--------- Data Settings ----------
+input: NS2D, infile: historical_source/Revisions/PIBSR_research_archive/data/navier_stokes_lid_driven_cavity
+num pts    = 0	test pts    = N/A
+NS boundary policy: the 42 x-boundary rows in BCxvarying_ref.txt are time-invariant and repeated at each represented time; pressure affects optimization only when MFA_LAMBDA_BC_P is nonzero.
+NS boundary policy: the 42 y-boundary rows in BCyvarying_ref.txt are time-invariant and repeated at each represented time (80 unique spatial locations after corner deduplication).
+MFA: Adding geometry model
+MFA: Adding variable model 0
+MFA: Adding variable model 1
+MFA: Adding variable model 2
+
+Starting fixed encoding...
+
+MFA: Encoding geometry model (fixed)
+Encoding dimensions all at once
+MFA: Encoding variable model 0 (fixed)
+
+Encoding done.
+
+Final decoding and computing max. error...
+ ->DecodeGrid: serial version
+ ->DecodeGrid: serial version
+ ->DecodeGrid: serial version
+ ->DecodeGrid: serial version
+
+------- Final block results --------
+gid = 0
+Encoding dimensions all at once
+NS data-only initializer: using 206458 of 441441 fit rows from historical_source/Revisions/PIBSR_research_archive/designs/navier_stokes_lid_driven_cavity/initializer_fit_indices.txt
+NS pressure initializer: full pressure data are enabled
+NS data-fit rows: using 126017 of 441441 from historical_source/Revisions/PIBSR_research_archive/designs/navier_stokes_lid_driven_cavity/data_fit_indices.txt
+NS PDE-fit rows: using 126886 of 441441 from historical_source/Revisions/PIBSR_research_archive/designs/navier_stokes_lid_driven_cavity/collocation_fit_indices.txt
+NS data-validation rows: using 35932 of 441441 from historical_source/Revisions/PIBSR_research_archive/designs/navier_stokes_lid_driven_cavity/data_val_indices.txt
+NS PDE-validation rows: using 35935 of 441441 from historical_source/Revisions/PIBSR_research_archive/designs/navier_stokes_lid_driven_cavity/collocation_val_indices.txt
+Saved reusable NS initializer to historical_source/Revisions/PIBSR_research_archive/outputs/navier_stokes_lid_driven_cavity/gradient_check/mfa_data_only_init.txt
+NS directional gradient check 1/5: analytic=-0.0003063667721612864 finite_difference=-0.0003063667731581678 relative_error=9.968813968752599e-13
+NS directional gradient check 2/5: analytic=-1.895795534377347e-05 finite_difference=-1.895795118062453e-05 relative_error=4.163148931222559e-12
+NS directional gradient check 3/5: analytic=-0.0006609797787569881 finite_difference=-0.0006609797757358176 relative_error=3.021170444893195e-12
+NS directional gradient check 4/5: analytic=-3.889217034797019e-05 finite_difference=-3.889217181834577e-05 relative_error=1.470375579105954e-12
+NS directional gradient check 5/5: analytic=0.0005966517891530647 finite_difference=0.0005966517878275053 relative_error=1.325559453868586e-12
+NS directional gradient checks passed
+MFA_GRADIENT_CHECK_ONLY=1: skipping L-BFGS-B optimization
+MFA: Decoding geometry
+MFA: Decoding science variable 0
+MFA: Decoding science variable 1
+MFA: Decoding science variable 2
+
+------- geometry model -------
+# output ctrl pts     = [ 3 3 3 ]
+tot # output ctrl pts = 27
+# output knots        = [ 6 6 6 ]
+-----------------------------
+
+----- science variable models -----
+
+---------- var 0 ----------
+# ouput ctrl pts      = [ 10 10 25 ]
+tot # output ctrl pts = 2500
+# output knots        = [ 14 14 29 ]
+-----------------------------
+range extent          = 1.126588e+00
+max_err               = 3.303823e-01
+normalized max_err    = 2.932594e-01
+sum of squared errors = 1.111150e+02
+RMS error             = 1.586537e-02
+normalized RMS error  = 1.408267e-02
+-----------------------------
+
+---------- var 1 ----------
+# ouput ctrl pts      = [ 10 10 25 ]
+tot # output ctrl pts = 2500
+# output knots        = [ 14 14 29 ]
+-----------------------------
+range extent          = 6.465883e-01
+max_err               = 5.277004e-02
+normalized max_err    = 8.161304e-02
+sum of squared errors = 2.093269e+01
+RMS error             = 6.886146e-03
+normalized RMS error  = 1.064997e-02
+-----------------------------
+
+---------- var 2 ----------
+# ouput ctrl pts      = [ 10 10 25 ]
+tot # output ctrl pts = 2500
+# output knots        = [ 14 14 29 ]
+-----------------------------
+range extent          = 1.116239e+00
+max_err               = 4.524182e-01
+normalized max_err    = 4.053059e-01
+sum of squared errors = 1.594132e+01
+RMS error             = 6.009327e-03
+normalized RMS error  = 5.383549e-03
+-----------------------------
+
+Maximum errors over all science variables:
+max_err                (var 2)    = 4.524182e-01
+normalized max_err     (var 2)    = 4.053059e-01
+sum of squared errors  (var 0)    = 1.111150e+02
+RMS error              (var 0)    = 1.586537e-02
+normalized RMS error   (var 0)    = 1.408267e-02
+
+-----------------------------------
+# input points        = 441441
+compression ratio     = 340.88
+encoding time         = 15.783 s.
+decoding time         = 1.537 s.
+-------------------------------------

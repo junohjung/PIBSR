@@ -1,0 +1,283 @@
+{
+  "schema_version": 1,
+  "case_id": "lid_driven_cavity",
+  "title": "Two-dimensional regularized lid-driven cavity",
+  "artifact_directory": "lid_driven_cavity",
+  "artifact_paths": {
+    "data": "data/lid_driven_cavity",
+    "checkpoints": "checkpoints/lid_driven_cavity",
+    "results": "results/lid_driven_cavity",
+    "point_sets": "point_sets/lid_driven_cavity"
+  },
+  "manuscript_sources": [
+    "PIBSR_manuscript_v2.tex:1311-1675",
+    "PIBSR_manuscript_v2.tex:2124-2338",
+    "PIBSR_suppl_v2.tex:115-128",
+    "PIBSR_suppl_v2.tex:628-679",
+    "PIBSR_suppl_v2.tex:902-1239",
+    "PIBSR_suppl_v2.tex:1355-1597"
+  ],
+  "domain": {
+    "coordinates": [
+      "x",
+      "y",
+      "t"
+    ],
+    "bounds": {
+      "x": [
+        0.0,
+        1.0
+      ],
+      "y": [
+        0.0,
+        1.0
+      ],
+      "t": [
+        0.0,
+        10.0
+      ]
+    },
+    "nondimensional": true
+  },
+  "physics": {
+    "equations": [
+      "u_t + u*u_x + v*u_y + p_x - nu*(u_xx+u_yy) = 0",
+      "v_t + u*v_x + v*v_y + p_y - nu*(v_xx+v_yy) = 0",
+      "u_x + v_y = 0"
+    ],
+    "nu": 0.001,
+    "reynolds_number": 1000,
+    "lid": {
+      "u_formula": "16*x^2*(1-x)^2*g(t)",
+      "v": 0.0,
+      "ramp_formula": "g(t)=10*s^3-15*s^4+6*s^5 for 0<=t<0.5; g(t)=1 for t>=0.5",
+      "s_formula": "s=t/0.5 on the ramp interval",
+      "ramp_end_time": 0.5
+    },
+    "other_walls": "u=v=0",
+    "initial_velocity": "u=v=0"
+  },
+  "observation_generator": {
+    "framework": "Firedrake",
+    "mesh_cells": [
+      20,
+      20
+    ],
+    "elements": "P2_velocity_P1_pressure_Taylor_Hood",
+    "integrator": "backward_Euler",
+    "time_step": 0.01,
+    "stored_times": 1001,
+    "time_interval": [
+      0.0,
+      10.0
+    ]
+  },
+  "higher_resolution_comparison": {
+    "role": "post_selection_only",
+    "mesh_cells": [
+      100,
+      100
+    ],
+    "elements": "P2_velocity_P1_pressure_Taylor_Hood",
+    "integrator": "Crank_Nicolson",
+    "time_step": 0.001,
+    "display_grid": [
+      201,
+      201
+    ],
+    "common_reporting_grid": [
+      21,
+      21
+    ],
+    "pressure_time_centering": "0.5*(p_n+p_n_minus_1)",
+    "pressure_alignment": "zero_spatial_mean_per_time",
+    "formal_convergence_study": false
+  },
+  "spline": {
+    "degree": [
+      3,
+      3,
+      3
+    ],
+    "control_lattice_per_field": [
+      20,
+      20,
+      50
+    ],
+    "coefficients_per_field": 20000,
+    "fields": [
+      "u",
+      "v",
+      "p"
+    ],
+    "total_coefficients": 60000,
+    "spatial_pressure_coefficients": 400,
+    "knot_type": "open_clamped_uniform_simple_interior",
+    "coordinate_map": "affine_to_unit_interval",
+    "physical_derivative_scaling": true
+  },
+  "pressure_supervision": {
+    "pressure_observations": false,
+    "pressure_initial_targets": false,
+    "pressure_boundary_targets": false,
+    "gauge": "soft_spatial_arithmetic_mean_per_time",
+    "gauge_spatial_points": 441,
+    "gauge_times": 1001,
+    "stage_a_initial_pressure": 0.0,
+    "stage_a_pressure_interpretation": "canonical_unidentified_representative",
+    "q4_integral_plus_gauge_rank": 33,
+    "q4_integral_plus_gauge_nullity": 367,
+    "strong_gradient_plus_gauge_rank": 400
+  },
+  "point_roles": {
+    "fitting": {
+      "velocity_data_rows": 126017,
+      "pde_rows": 126886,
+      "ic_rows": 441,
+      "bc_orientation_groups": 2,
+      "bc_rows_per_orientation_group": 42000,
+      "gauge_rows": 1001,
+      "balance_fit_times": 700,
+      "balance_regions": 16,
+      "balance_fit_region_time_rows_per_component": 11200
+    },
+    "selection": {
+      "data_validation_rows": 35932,
+      "pde_validation_rows": 35935,
+      "balance_validation_times": 300,
+      "balance_regions": 16,
+      "balance_validation_region_time_rows_per_component": 4800,
+      "off_grid_ic_points": 400,
+      "off_grid_boundary_points": 80000
+    },
+    "post_selection": {
+      "velocity_test_rows": 36230,
+      "balance_times": 200,
+      "balance_regions": 16,
+      "balance_region_time_rows_per_component": 3200,
+      "advective_conservative_midpoints": 80000,
+      "pressure_reporting_times": 200,
+      "pressure_rank_q_values": [
+        1,
+        20
+      ]
+    }
+  },
+  "point_role_files": {
+    "optimization_balance_fit": "point_sets/lid_driven_cavity/integral_time_roles/integral_time_fit_indices.txt",
+    "optimization_balance_validation": "point_sets/lid_driven_cavity/integral_time_roles/integral_time_validation_indices.txt",
+    "post_selection_reporting_plan": "data/lid_driven_cavity/reporting_plan.npz",
+    "note": "The selected-model refit uses the optimization files above. The reporting plan is an independent coordinate-only post-selection record; its internal 700/300 construction is not an optimizer role assignment."
+  },
+  "stage_a": {
+    "unit_weight_components": [
+      "velocity_data",
+      "velocity_ic",
+      "velocity_bc",
+      "pressure_gauge"
+    ],
+    "strong_form_active": false,
+    "integral_balance_active": false,
+    "pressure_value_targets_active": false
+  },
+  "balance": {
+    "fit_partition_q": 4,
+    "fit_regions": 16,
+    "canonical_separators": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "fit_quadrature": "GL4",
+    "split_at_nonzero_knot_spans": true,
+    "shared_face_cancellation": true,
+    "post_selection_quadrature": "GL8",
+    "shifted_partition": {
+      "x_internal_shift": 0.025,
+      "y_internal_shift": -0.025
+    },
+    "whole_domain_aggregation": "sum_of_16_canonical_q4_rows"
+  },
+  "selection": {
+    "gamma_total_candidates": [
+      0.01,
+      0.02,
+      0.03,
+      0.04
+    ],
+    "selected_family_endpoints": {
+      "strong_only": 0.03,
+      "gl4_integral_only": 0.02,
+      "gl4_hybrid": 0.04,
+      "trapezoidal_hybrid": null
+    },
+    "selected_hybrid_allocation": {
+      "gamma_s": 0.02,
+      "gamma_i": 0.02
+    },
+    "matched_strong_control_allocation": {
+      "gamma_s": 0.02,
+      "gamma_i": 0.0
+    },
+    "ranking": [
+      "minimize_R_max",
+      "minimize_R_geo",
+      "prefer_smaller_gamma_total"
+    ],
+    "guards": {
+      "maximum_accepted_updates_exclusive": 2400,
+      "V_max": 1.1,
+      "T_mean": 1.1,
+      "T_mix": 1.25,
+      "R_max": 1.0,
+      "complementary_physics_ratio": 1.05,
+      "numerically_inert_relative_change": 1e-10
+    },
+    "reference_data_used": false
+  },
+  "optimizer": {
+    "name": "L-BFGS-B",
+    "gradient": "exact",
+    "line_search": "strong_Wolfe",
+    "history_size": 6,
+    "bounds": [
+      -100.0,
+      100.0
+    ],
+    "projected_gradient_tolerance": 1e-09,
+    "maximum_accepted_updates": 2400
+  },
+  "contextual_pinn": {
+    "role": "context_only",
+    "hidden_layers": 6,
+    "width": 108,
+    "activation": "tanh",
+    "parameters": 59619,
+    "velocity_data_rows": 126017,
+    "pde_rows": 126886,
+    "stage_a_union_rows": 206458,
+    "ic_rows": 441,
+    "bc_rows": 80000,
+    "center_pressure_gauge_times": 1001,
+    "pressure_observations": false,
+    "stage_a_updates": 1000,
+    "stage_b_updates": 2000,
+    "stage_a_learning_rate": 0.001,
+    "stage_b_initial_learning_rate": 0.001,
+    "stage_b_halving_interval": 500,
+    "seeds": [
+      1101,
+      2202,
+      3303,
+      4404,
+      5505
+    ]
+  },
+  "expected_model_ids": [
+    "stage_a_canonical_p0",
+    "matched_strong_control",
+    "selected_gl4_hybrid"
+  ]
+}

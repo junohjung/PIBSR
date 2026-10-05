@@ -1,0 +1,10 @@
+{
+  "freeze_sha256": "c58bc4092598a66d892f02e574892b5a4de1efbbdf5bb8c8db3573f424a7c02f",
+  "postselection_information_boundary_may_now_open": false,
+  "reference_boundary_remains_closed_until_certificate_and_repeat_seals_pass": true,
+  "reference_excluded_certificate_stage_may_begin": true,
+  "schema": "pimfa-v14-one-d-selection-seal-v2",
+  "sealed_utc": "2026-08-20T00:53:51.974503+00:00",
+  "selection_json_sha256": "eba165f2b5dcb2bc22fbd7a11ef2521cd54f4ed203ff85de228426d032dea0bc",
+  "selector_candidate_metrics_sha256": "0efe4423464a012223c611e1c2edc0e7c6e5b9bae85b271baf2627c63b41a2a2"
+}

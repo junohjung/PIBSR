@@ -1,0 +1,75 @@
+{
+  "canonical_raw_loss_path": "historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/results/one_d_integral_balance_v2/postselection/canonical_loss_compatibility/strong_only_gamma0.txt",
+  "canonical_raw_loss_sha256": "aa04a692c427532c1f7414eb463c627f805dbe6a8082b3b284fe333959a83a9e",
+  "checkpoint_sha256": "27c9b0b92ecd6a80d96694ba4f98137a5fe90d4e10d79f5a89b0cbd55203ae7a",
+  "decoded_sha256": "509bce7087eb3ae4cad6604724b3f0ae9eeaee2ea09b91b766bbd29febc9d052",
+  "direct_minus_raw": {
+    "bc_mse": 0.0,
+    "data_mse": 1.6940658945086007e-20,
+    "ic_mse": 7.792703114739563e-20,
+    "pde_mse": -5.273559366969494e-16
+  },
+  "direct_training_components": {
+    "bc_mse": 3.216616542081974e-05,
+    "data_mse": 1.0025028265106633e-05,
+    "ic_mse": 2.78879951707552e-05,
+    "pde_mse": 0.23877535262073274
+  },
+  "gl2": {
+    "analytic_relative_l2": 0.023269235104940483,
+    "low_fidelity_data_mse": 6.5225514341411655e-06,
+    "pde_mse": 0.2555541928080989,
+    "point_count": 94164
+  },
+  "global_balance": {
+    "gl4_max_abs": 0.11057998146695847,
+    "gl4_time_rms": 0.0667260225954875,
+    "gl8_max_abs": 0.1105799834174862,
+    "gl8_minus_gl4_rms": 6.762556584947722e-08,
+    "gl8_time_rms": 0.0667260300278033
+  },
+  "label": "strong_only_gamma0",
+  "midpoint": {
+    "analytic_relative_l2": 0.023297673716026836,
+    "low_fidelity_data_mse": 5.203990980740319e-06,
+    "pde_mse": 0.282108897766054
+  },
+  "raw_final_loss": {
+    "bc_mse": 3.216616542081974e-05,
+    "data_mse": 1.0025028265106616e-05,
+    "ic_mse": 2.788799517075512e-05,
+    "last_objective_counter": 1246,
+    "objective_evaluations": 1,
+    "pde_mse": 0.23877535262073327,
+    "physics_sum": 0.23883540678132484,
+    "unweighted_total": 0.23884543180958995
+  },
+  "trace": {
+    "bc_gl2": {
+      "max_abs": 0.01438099939893766,
+      "mse": 3.2236090362497833e-05,
+      "rms": 0.005677683538424613
+    },
+    "bc_midpoint": {
+      "max_abs": 0.014379905242228042,
+      "mse": 3.2236601679130585e-05,
+      "rms": 0.00567772856687695
+    },
+    "ic_gl2": {
+      "max_abs": 0.028987546970546535,
+      "mse": 3.026153887182184e-05,
+      "rms": 0.0055010488883322824
+    },
+    "ic_midpoint": {
+      "max_abs": 0.02353989117594571,
+      "mse": 3.2673393588204e-05,
+      "rms": 0.0057160645192478364
+    }
+  },
+  "train": {
+    "analytic_relative_l2": 0.023416495078561476,
+    "low_fidelity_data_mse": 1.0025028265106633e-05,
+    "low_fidelity_relative_l2": 0.006577048824346791,
+    "pde_mse": 0.23877535262073274
+  }
+}

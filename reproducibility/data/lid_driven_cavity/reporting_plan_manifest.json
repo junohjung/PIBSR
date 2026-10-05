@@ -1,0 +1,111 @@
+{
+  "array_sha256": {
+    "bc_trace_velocity": "afed5394c35d05beeb4d4ff0d06312debbe6fd4485048bbaf6fb099f50f36171",
+    "bc_trace_xyz": "8db5fb4b6b8624ec2cc6f00d1116234672996aa85b2ae60aa2ca5b0aef782d34",
+    "conservative_fit_time_indices": "922ec4c8904d632f322687ae5058b9f260bd171a59eb47aa8566243f6c74ee25",
+    "conservative_validation_time_indices": "83e325ef8851a94948da1b56a5aee93e4248126f3026232bd6de3c27998bc6e3",
+    "final_test_indices": "ae4cf17d7e92e1cf7ca1cbb85c2833209bcc668f182d3e16bd8f5485f553b650",
+    "final_test_xyz": "f2e21516e175fe230c5d3f3cf79dd867e6dc9d36a61f629fbeb24fb164c2e48d",
+    "high_final_test_step_indices": "d489f7f4e801ccc7493cac28c2a8522af4dbeb07fb605b4f6b62181b898eba86",
+    "high_midpoint_step_indices": "ef5bc0a177bfc83037fdb273c682fd7a99c88e3599bbbfc6242ca5ae80b5bf86",
+    "high_reporting_step_indices": "5a438c63b9c1425862a1267ba730b362722d11766a46036cf4c6c479d67a1b8c",
+    "ic_trace_velocity": "56a43ef88ddfcd0f56f7dd973312c0e73d62f59655c01d7b4e59aaa3be8b3fb6",
+    "ic_trace_xyz": "772bd74aca75bec6f523e93ae0815d9ceccfe4fc801433169364a2123b8e5a1f",
+    "reference_midpoint_xyz": "f23c82fc44ce5e656f1b71a57304d4cb62462cdf1955aeb2cb6fcd7b5329bc44",
+    "sealed_balance_midpoint_indices": "9f781aea471079d955ad12c04ed8353800f491449fca9844851fd103032db1d9",
+    "sealed_balance_midpoint_times": "e5ccff32715457df852a62b31bb199e44b6e2a322875da3793fe103609c9bdcd",
+    "stored_times": "1d59118cd59297a196dbb9f2757d1d4be4e7fa9dcd567db89e3a4b8357efd02c",
+    "x_nodes": "f1336b23f4d73d449e199a37d414e44352f1c0bc58d9cfcc100d4ad573b231dd",
+    "y_nodes": "f1336b23f4d73d449e199a37d414e44352f1c0bc58d9cfcc100d4ad573b231dd"
+  },
+  "artifact": "ramped_cavity_coordinate_only_reporting_plan",
+  "construction": {
+    "conservative_time_rule": "SHA-256 rank of positive stored-time indices; first 700 fit, remaining 300 validation",
+    "reference_sampling": "native P2/P1 function evaluation at final-test nodal coordinates and the sealed 20x20 spatial midpoint grid",
+    "reference_values_read": false,
+    "role_rule": "v4 deterministic integer-grid hash; final_test iff key >= 18",
+    "sealed_midpoint_rule": "SHA-256 rank of 1000 temporal cell indices; first 200 selected, then numerically sorted"
+  },
+  "counts": {
+    "bc_trace_velocity": 80000,
+    "bc_trace_xyz": 80000,
+    "conservative_fit_time_indices": 700,
+    "conservative_validation_time_indices": 300,
+    "final_test_indices": 36230,
+    "final_test_xyz": 36230,
+    "high_final_test_step_indices": 1000,
+    "high_midpoint_step_indices": 200,
+    "high_reporting_step_indices": 1200,
+    "ic_trace_velocity": 400,
+    "ic_trace_xyz": 400,
+    "reference_midpoint_xyz": 80000,
+    "sealed_balance_midpoint_indices": 200,
+    "sealed_balance_midpoint_times": 200,
+    "stored_times": 1001,
+    "x_nodes": 21,
+    "y_nodes": 21
+  },
+  "frozen_configuration": {
+    "amendment_sha256": "3eec20499f3491bc5ed98c0f13bed80aa5438e60058f986d41614dfc295183cd",
+    "domain": [
+      [
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0
+      ]
+    ],
+    "high": {
+      "dt": 0.001,
+      "mesh_cells": 100,
+      "name": "high",
+      "output_policy": "hash_locked_native_reference_reporting_coordinates_only",
+      "pressure_degree": 1,
+      "steps": 10000,
+      "theta": 0.5,
+      "time_scheme": "crank_nicolson",
+      "velocity_degree": 2
+    },
+    "low": {
+      "dt": 0.01,
+      "mesh_cells": 20,
+      "name": "low",
+      "output_policy": "all_1001_endpoint_inclusive_vertex_snapshots",
+      "pressure_degree": 1,
+      "steps": 1000,
+      "theta": 1.0,
+      "time_scheme": "backward_euler",
+      "velocity_degree": 2
+    },
+    "pressure_reporting": "per-frame spatial-mean gauge; high CN pressure is interval average",
+    "protocol_id": "CAVITY-RAMPED-GL4-v1-A1",
+    "protocol_sha256": "b1b41e53cc4a06612826d31a1c2e664f65f881b7ab20d9ab00a7538cfa62372e",
+    "ramp_duration": 0.5,
+    "reynolds": 1000.0,
+    "role_construction_uses_reference_values": false,
+    "spatial_lid_profile": "16*x^2*(1-x)^2",
+    "t_end": 10.0,
+    "temporal_lid_profile": "10*s^3-15*s^4+6*s^5 for 0<s<1; 0 before; 1 after",
+    "viscosity": 0.001
+  },
+  "generator_source_sha256": {
+    "generate_ramped_cavity.py": "686859aced9fb6ce1e8f69f06b1c1bf19f42b4493fc7208e0d9c805b204965a3",
+    "preflight.py": "b005d4f05966d91e970c2f780e67d233b8c80091eb4ad0bea125f31be9566c87",
+    "prepare_dynamic_boundaries.py": "83c7130194ea2c957043d25998f0cde994cf4b1ea45d3d309dbb642d78f2d337",
+    "prepare_reporting_plan.py": "2f6579e4b12552b47aaef0e576dc94268e674138301994f731d4a2846303bb79",
+    "ramped_cavity_config.py": "dd8b2e7e7fadeffa9ce0c46e77f01c1a8f7b865ec039ec4efd4f5b6fd7ac266c"
+  },
+  "npz": {
+    "deterministic_zip_timestamp": "1980-01-01T00:00:00",
+    "path": "reporting_plan.npz",
+    "sha256": "dcf3fc46acc3af65a26b6e1d0da7310cad74ebcac1be88549a9d7c02373be267"
+  },
+  "pinned_v4_design_bit_identity": {
+    "design_npz_sha256": "ebab229249bd217d6183fbeaf18d1d7563bd156368299ef736fa714b9d46ae39",
+    "final_test_indices_sha256": "ae4cf17d7e92e1cf7ca1cbb85c2833209bcc668f182d3e16bd8f5485f553b650",
+    "final_test_xyz_sha256": "f2e21516e175fe230c5d3f3cf79dd867e6dc9d36a61f629fbeb24fb164c2e48d"
+  },
+  "schema_version": 1
+}

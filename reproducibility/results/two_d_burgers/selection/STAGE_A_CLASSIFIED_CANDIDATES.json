@@ -1,0 +1,146 @@
+[
+  {
+    "eligibility_guard": {
+      "checks": {
+        "geometric_material_effect_matched": false,
+        "u_noninferior_matched": true,
+        "v_noninferior_matched": true
+      },
+      "component_ratios": {
+        "u": 0.9959186497002868,
+        "v": 0.9913334326733315
+      },
+      "floating_point_tolerance": 1.4210854715202004e-14,
+      "geometric_means": {
+        "candidate": 0.026782109887626956,
+        "matched": 0.026953984766673753
+      },
+      "geometric_ratio": 0.993623396298001,
+      "geometric_ratio_limit": 0.99,
+      "passed": false
+    },
+    "eligible": false,
+    "gamma": 0.01,
+    "gamma_literal": "0.01",
+    "matched_stage_a_gl4_metric": {
+      "maximum_flux_direct_mismatch": 1.7520707107365752e-16,
+      "q1_u_raw_time_rms": 0.1152558583607504,
+      "q1_v_raw_time_rms": 0.0538366402238939,
+      "q2_u_time_rms": 0.05674464443384765,
+      "q2_v_time_rms": 0.04360558920200937,
+      "q4_u_time_rms": 0.03129799605353979,
+      "q4_v_time_rms": 0.02321290134867634
+    },
+    "model_label": "gamma_0p01",
+    "model_record": {
+      "path": "historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/results/burgers_bc_corrected_v4_continuation_v1/gamma_family/gamma_0p01/approx.mfa",
+      "role": "V4-eligible positive gamma=0.01",
+      "sha256": "ff1d280e09ed49f86cac2f4eef895094f00e798d11e22ed1da349c2eb319b553"
+    },
+    "stage_a_gl4_metric": {
+      "maximum_flux_direct_mismatch": 1.7694179454963432e-16,
+      "q1_u_raw_time_rms": 0.11477149888500511,
+      "q1_v_raw_time_rms": 0.053251976258117596,
+      "q2_u_time_rms": 0.056484396408029325,
+      "q2_v_time_rms": 0.04321286555639021,
+      "q4_u_time_rms": 0.031170257967966252,
+      "q4_v_time_rms": 0.023011725176290722
+    }
+  },
+  {
+    "eligibility_guard": {
+      "checks": {
+        "geometric_material_effect_matched": true,
+        "u_noninferior_matched": true,
+        "v_noninferior_matched": true
+      },
+      "component_ratios": {
+        "u": 0.9880144143667284,
+        "v": 0.974848555704232
+      },
+      "floating_point_tolerance": 1.4210854715202004e-14,
+      "geometric_means": {
+        "candidate": 0.026452894215929494,
+        "matched": 0.026953984766673753
+      },
+      "geometric_ratio": 0.9814094073628842,
+      "geometric_ratio_limit": 0.99,
+      "passed": true
+    },
+    "eligible": true,
+    "gamma": 0.03,
+    "gamma_literal": "0.03",
+    "matched_stage_a_gl4_metric": {
+      "maximum_flux_direct_mismatch": 1.7520707107365752e-16,
+      "q1_u_raw_time_rms": 0.1152558583607504,
+      "q1_v_raw_time_rms": 0.0538366402238939,
+      "q2_u_time_rms": 0.05674464443384765,
+      "q2_v_time_rms": 0.04360558920200937,
+      "q4_u_time_rms": 0.03129799605353979,
+      "q4_v_time_rms": 0.02321290134867634
+    },
+    "model_label": "gamma_0p03",
+    "model_record": {
+      "path": "historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/results/burgers_bc_corrected_v4_continuation_v1/gamma_family/gamma_0p03/approx.mfa",
+      "role": "V4-eligible positive gamma=0.03",
+      "sha256": "82e77d900580baad58d2638a3b3a5f473517c36741f39ef0125b681c25da1c19"
+    },
+    "stage_a_gl4_metric": {
+      "maximum_flux_direct_mismatch": 1.3877787807814457e-16,
+      "q1_u_raw_time_rms": 0.11383106484957588,
+      "q1_v_raw_time_rms": 0.05215056561784858,
+      "q2_u_time_rms": 0.0559800472017374,
+      "q2_v_time_rms": 0.04246494331491602,
+      "q4_u_time_rms": 0.030922871241690294,
+      "q4_v_time_rms": 0.02262906335346195
+    }
+  },
+  {
+    "eligibility_guard": {
+      "checks": {
+        "geometric_material_effect_matched": true,
+        "u_noninferior_matched": true,
+        "v_noninferior_matched": true
+      },
+      "component_ratios": {
+        "u": 0.961703872062655,
+        "v": 0.9218869799225503
+      },
+      "floating_point_tolerance": 1.4210854715202004e-14,
+      "geometric_means": {
+        "candidate": 0.025379467259463488,
+        "matched": 0.026953984766673753
+      },
+      "geometric_ratio": 0.9415849819297584,
+      "geometric_ratio_limit": 0.99,
+      "passed": true
+    },
+    "eligible": true,
+    "gamma": 0.1,
+    "gamma_literal": "0.1",
+    "matched_stage_a_gl4_metric": {
+      "maximum_flux_direct_mismatch": 1.7520707107365752e-16,
+      "q1_u_raw_time_rms": 0.1152558583607504,
+      "q1_v_raw_time_rms": 0.0538366402238939,
+      "q2_u_time_rms": 0.05674464443384765,
+      "q2_v_time_rms": 0.04360558920200937,
+      "q4_u_time_rms": 0.03129799605353979,
+      "q4_v_time_rms": 0.02321290134867634
+    },
+    "model_label": "gamma_0p1",
+    "model_record": {
+      "path": "historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/results/burgers_bc_corrected_v4_continuation_v1/gamma_family/gamma_0p1/approx.mfa",
+      "role": "V4-eligible positive gamma=0.1",
+      "sha256": "e62be9ff32e11228a43b18218481ae61f1a974a00f79cfb917aa628b0726bda5"
+    },
+    "stage_a_gl4_metric": {
+      "maximum_flux_direct_mismatch": 1.3444106938820255e-16,
+      "q1_u_raw_time_rms": 0.11072539112261395,
+      "q1_v_raw_time_rms": 0.048653381847162586,
+      "q2_u_time_rms": 0.054303092643616845,
+      "q2_v_time_rms": 0.04006454501843991,
+      "q4_u_time_rms": 0.030099403992490913,
+      "q4_v_time_rms": 0.021399671519571326
+    }
+  }
+]

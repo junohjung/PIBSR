@@ -1,0 +1,574 @@
+{
+  "candidates": [
+    {
+      "candidate_id": "strong_only__gamma_0p01",
+      "checkpoint": {
+        "path": "stage_b/strong_only__gamma_0p01/final_coefficients_v1.txt",
+        "sha256": "1807dfea5d83dcdc45d7ec744edc748806dd62d2a31fa8f6e95a50eac45a8111"
+      },
+      "eligible_termination": true,
+      "family": "strong_only",
+      "gamma": 0.01,
+      "metrics": {
+        "operator_mass_ratio": 1.0012326563626854,
+        "operator_xmom_ratio": 0.6499813713902985,
+        "operator_ymom_ratio": 0.5750159632164986,
+        "strong_div_ratio": 0.9831625948652578,
+        "strong_xmom_ratio": 0.18179146947934388,
+        "strong_ymom_ratio": 0.1435524771700749,
+        "trace_bc_mean_ratio": 0.9999999421171017,
+        "trace_ic_mean_ratio": 0.9944213838692427,
+        "trace_individual_mixed_max_ratio": 0.9999999372863887,
+        "trace_individual_raw_max_ratio": 21.271543825766816,
+        "velocity_u_ratio": 1.0009414227968465,
+        "velocity_v_ratio": 1.007170558453822
+      },
+      "training_noninert": {
+        "accepted_updates": 2184,
+        "coefficient_payload_differs_from_stage_a": true,
+        "coefficient_step_l2": 1.829797625985652,
+        "final_objective": 3.4572654749726533e-06,
+        "final_projected_gradient": 9.313950365165701e-10,
+        "initial_objective": 3.479899990175056e-06,
+        "initial_projected_gradient": 2.6074883377524855e-09,
+        "relative_coefficient_l2_change": 0.07402239266812306,
+        "relative_objective_decrease": 0.006504357960374627
+      }
+    },
+    {
+      "candidate_id": "strong_only__gamma_0p02",
+      "checkpoint": {
+        "path": "stage_b/strong_only__gamma_0p02/final_coefficients_v1.txt",
+        "sha256": "ae299d4f9d3837846eedb71d28011bd0b80ae822bcf5c145e8b942b86f28984f"
+      },
+      "eligible_termination": true,
+      "family": "strong_only",
+      "gamma": 0.02,
+      "metrics": {
+        "operator_mass_ratio": 1.002718956111206,
+        "operator_xmom_ratio": 0.6347578219213478,
+        "operator_ymom_ratio": 0.5817382339310266,
+        "strong_div_ratio": 0.9683833819220665,
+        "strong_xmom_ratio": 0.1687724722485025,
+        "strong_ymom_ratio": 0.12195489886817036,
+        "trace_bc_mean_ratio": 0.9999996024324859,
+        "trace_ic_mean_ratio": 0.9950766709806348,
+        "trace_individual_mixed_max_ratio": 0.9999995966087698,
+        "trace_individual_raw_max_ratio": 23.351327534677466,
+        "velocity_u_ratio": 1.0113476613088714,
+        "velocity_v_ratio": 1.030817111737127
+      },
+      "training_noninert": {
+        "accepted_updates": 2022,
+        "coefficient_payload_differs_from_stage_a": true,
+        "coefficient_step_l2": 1.9314914601807782,
+        "final_objective": 3.4685073104414803e-06,
+        "final_projected_gradient": 8.174190958009462e-10,
+        "initial_objective": 3.5143544455233236e-06,
+        "initial_projected_gradient": 5.214976675504971e-09,
+        "relative_coefficient_l2_change": 0.0781363016708543,
+        "relative_objective_decrease": 0.013045677603818421
+      }
+    },
+    {
+      "candidate_id": "strong_only__gamma_0p03",
+      "checkpoint": {
+        "path": "stage_b/strong_only__gamma_0p03/final_coefficients_v1.txt",
+        "sha256": "5ffd220edf673326c76ddf304ae42396ded117bea75356fdd0a5e77b87109549"
+      },
+      "eligible_termination": true,
+      "family": "strong_only",
+      "gamma": 0.03,
+      "metrics": {
+        "operator_mass_ratio": 1.004172218849366,
+        "operator_xmom_ratio": 0.6330736524057788,
+        "operator_ymom_ratio": 0.5826084297649758,
+        "strong_div_ratio": 0.9531105441833005,
+        "strong_xmom_ratio": 0.16760304496158648,
+        "strong_ymom_ratio": 0.11945155789629035,
+        "trace_bc_mean_ratio": 0.9999996653920628,
+        "trace_ic_mean_ratio": 0.9940300348802004,
+        "trace_individual_mixed_max_ratio": 0.9999996563220708,
+        "trace_individual_raw_max_ratio": 29.132137911307396,
+        "velocity_u_ratio": 1.028724169246252,
+        "velocity_v_ratio": 1.064321923257761
+      },
+      "training_noninert": {
+        "accepted_updates": 1703,
+        "coefficient_payload_differs_from_stage_a": true,
+        "coefficient_step_l2": 1.9464295201027269,
+        "final_objective": 3.479463514662036e-06,
+        "final_projected_gradient": 9.865550598675554e-10,
+        "initial_objective": 3.5488089008715917e-06,
+        "initial_projected_gradient": 7.822465013257455e-09,
+        "relative_coefficient_l2_change": 0.07874060398360148,
+        "relative_objective_decrease": 0.01954046784331617
+      }
+    },
+    {
+      "candidate_id": "strong_only__gamma_0p04",
+      "checkpoint": {
+        "path": "stage_b/strong_only__gamma_0p04/final_coefficients_v1.txt",
+        "sha256": "5a56457422d6c0d1d661337d85d0d7e0cf72271d77f37a62952294bac22ea5cd"
+      },
+      "eligible_termination": true,
+      "family": "strong_only",
+      "gamma": 0.04,
+      "metrics": {
+        "operator_mass_ratio": 1.0054292327040857,
+        "operator_xmom_ratio": 0.6323721248497145,
+        "operator_ymom_ratio": 0.5842086118679293,
+        "strong_div_ratio": 0.9384667327482545,
+        "strong_xmom_ratio": 0.16464338358031688,
+        "strong_ymom_ratio": 0.11802595459724682,
+        "trace_bc_mean_ratio": 1.000000074755295,
+        "trace_ic_mean_ratio": 0.9945028418587821,
+        "trace_individual_mixed_max_ratio": 1.000000068975058,
+        "trace_individual_raw_max_ratio": 23.264161060768824,
+        "velocity_u_ratio": 1.051354899173387,
+        "velocity_v_ratio": 1.1067479321709774
+      },
+      "training_noninert": {
+        "accepted_updates": 1633,
+        "coefficient_payload_differs_from_stage_a": true,
+        "coefficient_step_l2": 1.9635450186400398,
+        "final_objective": 3.4900387428158136e-06,
+        "final_projected_gradient": 9.96991105946629e-10,
+        "initial_objective": 3.5832633562198594e-06,
+        "initial_projected_gradient": 1.0429953351009942e-08,
+        "relative_coefficient_l2_change": 0.07943299211191004,
+        "relative_objective_decrease": 0.026016679249161432
+      }
+    },
+    {
+      "candidate_id": "trapezoid_hybrid__gamma_0p01",
+      "checkpoint": {
+        "path": "stage_b/trapezoid_hybrid__gamma_0p01/final_coefficients_v1.txt",
+        "sha256": "0262413828907ad8fcab233ec27b6a6f275ea24275538a32040f9ee5f872722c"
+      },
+      "eligible_termination": false,
+      "family": "trapezoid_hybrid",
+      "gamma": 0.01,
+      "metrics": {
+        "operator_mass_ratio": 0.9994825418395549,
+        "operator_xmom_ratio": 0.5154967113100487,
+        "operator_ymom_ratio": 0.0846390297713828,
+        "strong_div_ratio": 0.9925736233730591,
+        "strong_xmom_ratio": 0.36194230646399583,
+        "strong_ymom_ratio": 0.19343443064971386,
+        "trace_bc_mean_ratio": 0.9999970226928372,
+        "trace_ic_mean_ratio": 0.9987045840508189,
+        "trace_individual_mixed_max_ratio": 0.9999969891369616,
+        "trace_individual_raw_max_ratio": 56.01003413597255,
+        "velocity_u_ratio": 0.9970452298223133,
+        "velocity_v_ratio": 0.9981306612657844
+      },
+      "training_noninert": {
+        "accepted_updates": 2400,
+        "coefficient_payload_differs_from_stage_a": true,
+        "coefficient_step_l2": 2.2349154103548616,
+        "final_objective": 3.4592331102678796e-06,
+        "final_projected_gradient": 3.46711816786964e-09,
+        "initial_objective": 3.479899990175056e-06,
+        "initial_projected_gradient": 1.6731587791623624e-09,
+        "relative_coefficient_l2_change": 0.09041097427165651,
+        "relative_objective_decrease": 0.005938929269670409
+      }
+    },
+    {
+      "candidate_id": "trapezoid_hybrid__gamma_0p02",
+      "checkpoint": {
+        "path": "stage_b/trapezoid_hybrid__gamma_0p02/final_coefficients_v1.txt",
+        "sha256": "e4464f103ab0fdb1c517d1acd124dd0d6474f56d2fd93f58f7b84c6e8915acdf"
+      },
+      "eligible_termination": false,
+      "family": "trapezoid_hybrid",
+      "gamma": 0.02,
+      "metrics": {
+        "operator_mass_ratio": 0.9990505520004661,
+        "operator_xmom_ratio": 0.44805626546543675,
+        "operator_ymom_ratio": 0.0938304526891896,
+        "strong_div_ratio": 0.9846977584162467,
+        "strong_xmom_ratio": 0.3368699981843767,
+        "strong_ymom_ratio": 0.17887530472007684,
+        "trace_bc_mean_ratio": 0.9999999822688932,
+        "trace_ic_mean_ratio": 1.0063722553503147,
+        "trace_individual_mixed_max_ratio": 1.3176440013026676,
+        "trace_individual_raw_max_ratio": 117.178712038787,
+        "velocity_u_ratio": 1.0012131394624861,
+        "velocity_v_ratio": 1.0076292618727272
+      },
+      "training_noninert": {
+        "accepted_updates": 2400,
+        "coefficient_payload_differs_from_stage_a": true,
+        "coefficient_step_l2": 2.614714247392722,
+        "final_objective": 3.4720381378539415e-06,
+        "final_projected_gradient": 6.2777404189896995e-09,
+        "initial_objective": 3.514354445523324e-06,
+        "initial_projected_gradient": 3.3463175583247247e-09,
+        "relative_coefficient_l2_change": 0.10577530650756106,
+        "relative_objective_decrease": 0.012040990265875485
+      }
+    },
+    {
+      "candidate_id": "trapezoid_hybrid__gamma_0p03",
+      "checkpoint": {
+        "path": "stage_b/trapezoid_hybrid__gamma_0p03/final_coefficients_v1.txt",
+        "sha256": "d9c65073557908e14d279c044c0b2f3cb615845af97fe6405c7253973a7a01ff"
+      },
+      "eligible_termination": false,
+      "family": "trapezoid_hybrid",
+      "gamma": 0.03,
+      "metrics": {
+        "operator_mass_ratio": 0.9985347714654149,
+        "operator_xmom_ratio": 0.42172153229445597,
+        "operator_ymom_ratio": 0.08957724080585751,
+        "strong_div_ratio": 0.9768589448154635,
+        "strong_xmom_ratio": 0.3251611099235815,
+        "strong_ymom_ratio": 0.17436443359313564,
+        "trace_bc_mean_ratio": 1.0000026529956128,
+        "trace_ic_mean_ratio": 0.9927851284486586,
+        "trace_individual_mixed_max_ratio": 1.000002394700034,
+        "trace_individual_raw_max_ratio": 155.37494894409696,
+        "velocity_u_ratio": 1.005448947703756,
+        "velocity_v_ratio": 1.018819350961962
+      },
+      "training_noninert": {
+        "accepted_updates": 2400,
+        "coefficient_payload_differs_from_stage_a": true,
+        "coefficient_step_l2": 2.7374803330926443,
+        "final_objective": 3.48456072703243e-06,
+        "final_projected_gradient": 9.795618256265882e-09,
+        "initial_objective": 3.5488089008715917e-06,
+        "initial_projected_gradient": 5.019476337487084e-09,
+        "relative_coefficient_l2_change": 0.11074166960310447,
+        "relative_objective_decrease": 0.01810415145864359
+      }
+    },
+    {
+      "candidate_id": "trapezoid_hybrid__gamma_0p04",
+      "checkpoint": {
+        "path": "stage_b/trapezoid_hybrid__gamma_0p04/final_coefficients_v1.txt",
+        "sha256": "35217c9933b48eb42d9d4085d374738920197a53fe5c7a30f7204ae452499ad2"
+      },
+      "eligible_termination": false,
+      "family": "trapezoid_hybrid",
+      "gamma": 0.04,
+      "metrics": {
+        "operator_mass_ratio": 0.9980046107026,
+        "operator_xmom_ratio": 0.37969767649507735,
+        "operator_ymom_ratio": 0.08186177154374946,
+        "strong_div_ratio": 0.9653957084648089,
+        "strong_xmom_ratio": 0.2786741247889634,
+        "strong_ymom_ratio": 0.15794977756021822,
+        "trace_bc_mean_ratio": 1.0000008223436996,
+        "trace_ic_mean_ratio": 0.9987140526726939,
+        "trace_individual_mixed_max_ratio": 1.000539134870844,
+        "trace_individual_raw_max_ratio": 243.13413832699743,
+        "velocity_u_ratio": 1.0183044158773233,
+        "velocity_v_ratio": 1.0498560524798888
+      },
+      "training_noninert": {
+        "accepted_updates": 2400,
+        "coefficient_payload_differs_from_stage_a": true,
+        "coefficient_step_l2": 3.0552417567698,
+        "final_objective": 3.4960252006617284e-06,
+        "final_projected_gradient": 7.115419790804391e-09,
+        "initial_objective": 3.5832633562198594e-06,
+        "initial_projected_gradient": 6.6926351166494494e-09,
+        "relative_coefficient_l2_change": 0.12359634847260076,
+        "relative_objective_decrease": 0.024346007224588236
+      }
+    },
+    {
+      "candidate_id": "gl4_conservative_only__gamma_0p01",
+      "checkpoint": {
+        "path": "stage_b/gl4_conservative_only__gamma_0p01/final_coefficients_v1.txt",
+        "sha256": "0cfddde541ccb0bbab64f5f984cafdd867fdd9cfc85e87d69dc95756a7ab3049"
+      },
+      "eligible_termination": true,
+      "family": "gl4_conservative_only",
+      "gamma": 0.01,
+      "metrics": {
+        "operator_mass_ratio": 0.9803605199172134,
+        "operator_xmom_ratio": 0.1263065691346218,
+        "operator_ymom_ratio": 0.054900311418217974,
+        "strong_div_ratio": 1.0024485940181576,
+        "strong_xmom_ratio": 1.014380849517403,
+        "strong_ymom_ratio": 1.0093661536033383,
+        "trace_bc_mean_ratio": 1.0000152279351078,
+        "trace_ic_mean_ratio": 0.9946506436510374,
+        "trace_individual_mixed_max_ratio": 1.0000073090156403,
+        "trace_individual_raw_max_ratio": 860.2975241554263,
+        "velocity_u_ratio": 1.0016316150191658,
+        "velocity_v_ratio": 1.001224928525246
+      },
+      "training_noninert": {
+        "accepted_updates": 1547,
+        "coefficient_payload_differs_from_stage_a": true,
+        "coefficient_step_l2": 1.3637592622599406,
+        "final_objective": 3.4567982977212623e-06,
+        "final_projected_gradient": 9.33319783383204e-10,
+        "initial_objective": 3.479899990175056e-06,
+        "initial_projected_gradient": 8.617705257729646e-09,
+        "relative_coefficient_l2_change": 0.05516933795419991,
+        "relative_objective_decrease": 0.006638608155124474
+      }
+    },
+    {
+      "candidate_id": "gl4_conservative_only__gamma_0p02",
+      "checkpoint": {
+        "path": "stage_b/gl4_conservative_only__gamma_0p02/final_coefficients_v1.txt",
+        "sha256": "42fe5ede028ff1d3c3663dfdac316125b6d3a132600923155e5762cac0c28a50"
+      },
+      "eligible_termination": true,
+      "family": "gl4_conservative_only",
+      "gamma": 0.02,
+      "metrics": {
+        "operator_mass_ratio": 0.9628335041017205,
+        "operator_xmom_ratio": 0.09292285255631534,
+        "operator_ymom_ratio": 0.026765361783431103,
+        "strong_div_ratio": 1.003776925473397,
+        "strong_xmom_ratio": 1.0240790147975185,
+        "strong_ymom_ratio": 1.0248468449935368,
+        "trace_bc_mean_ratio": 1.0000650910911635,
+        "trace_ic_mean_ratio": 0.9913076165909537,
+        "trace_individual_mixed_max_ratio": 1.1520457310115069,
+        "trace_individual_raw_max_ratio": 1760.9729822735092,
+        "velocity_u_ratio": 1.0175858369689674,
+        "velocity_v_ratio": 1.0171988988999066
+      },
+      "training_noninert": {
+        "accepted_updates": 1442,
+        "coefficient_payload_differs_from_stage_a": true,
+        "coefficient_step_l2": 1.420838753661258,
+        "final_objective": 3.4675617796530976e-06,
+        "final_projected_gradient": 9.076144811640007e-10,
+        "initial_objective": 3.5143544455233236e-06,
+        "initial_projected_gradient": 1.7213737161375642e-08,
+        "relative_coefficient_l2_change": 0.057478424197291475,
+        "relative_objective_decrease": 0.013314725818231508
+      }
+    },
+    {
+      "candidate_id": "gl4_conservative_only__gamma_0p03",
+      "checkpoint": {
+        "path": "stage_b/gl4_conservative_only__gamma_0p03/final_coefficients_v1.txt",
+        "sha256": "f7e5dd29d6cca5997eef65dc0c24ddf974cd79ac8ba7a81f4ec3892e39bf5e25"
+      },
+      "eligible_termination": true,
+      "family": "gl4_conservative_only",
+      "gamma": 0.03,
+      "metrics": {
+        "operator_mass_ratio": 0.9451349210292369,
+        "operator_xmom_ratio": 0.09211852677036834,
+        "operator_ymom_ratio": 0.03295188233870997,
+        "strong_div_ratio": 1.0048388623112503,
+        "strong_xmom_ratio": 1.036045810056966,
+        "strong_ymom_ratio": 1.0351316538122375,
+        "trace_bc_mean_ratio": 1.0001492165457941,
+        "trace_ic_mean_ratio": 0.9920897038944165,
+        "trace_individual_mixed_max_ratio": 1.7311167827284448,
+        "trace_individual_raw_max_ratio": 2646.1188141103257,
+        "velocity_u_ratio": 1.04403488759083,
+        "velocity_v_ratio": 1.0429418357091869
+      },
+      "training_noninert": {
+        "accepted_updates": 1187,
+        "coefficient_payload_differs_from_stage_a": true,
+        "coefficient_step_l2": 1.4630108964493187,
+        "final_objective": 3.478017463128154e-06,
+        "final_projected_gradient": 8.199744785718037e-10,
+        "initial_objective": 3.5488089008715917e-06,
+        "initial_projected_gradient": 2.5809769065021637e-08,
+        "relative_coefficient_l2_change": 0.05918445051888124,
+        "relative_objective_decrease": 0.019947943019995067
+      }
+    },
+    {
+      "candidate_id": "gl4_conservative_only__gamma_0p04",
+      "checkpoint": {
+        "path": "stage_b/gl4_conservative_only__gamma_0p04/final_coefficients_v1.txt",
+        "sha256": "0922747f2babd60af0f362323f71808c9ac0caf89a78a52a2b5f2bede9ff67f6"
+      },
+      "eligible_termination": true,
+      "family": "gl4_conservative_only",
+      "gamma": 0.04,
+      "metrics": {
+        "operator_mass_ratio": 0.9285311807382791,
+        "operator_xmom_ratio": 0.08492772486824465,
+        "operator_ymom_ratio": 0.02635476273780089,
+        "strong_div_ratio": 1.0057549746448147,
+        "strong_xmom_ratio": 1.032545715450776,
+        "strong_ymom_ratio": 1.0334063078343279,
+        "trace_bc_mean_ratio": 1.0002618616017587,
+        "trace_ic_mean_ratio": 0.9913545950045851,
+        "trace_individual_mixed_max_ratio": 2.291301702223676,
+        "trace_individual_raw_max_ratio": 3502.39602755222,
+        "velocity_u_ratio": 1.076610724860924,
+        "velocity_v_ratio": 1.0726187672296679
+      },
+      "training_noninert": {
+        "accepted_updates": 1151,
+        "coefficient_payload_differs_from_stage_a": true,
+        "coefficient_step_l2": 1.4611318473322532,
+        "final_objective": 3.488011163967391e-06,
+        "final_projected_gradient": 9.640283214247078e-10,
+        "initial_objective": 3.5832633562198594e-06,
+        "initial_projected_gradient": 3.440580097213708e-08,
+        "relative_coefficient_l2_change": 0.059108435712866184,
+        "relative_objective_decrease": 0.026582526257002217
+      }
+    },
+    {
+      "candidate_id": "gl4_hybrid__gamma_0p01",
+      "checkpoint": {
+        "path": "stage_b/gl4_hybrid__gamma_0p01/final_coefficients_v1.txt",
+        "sha256": "286b22fc53fde15224f0e232dbe3e1bae7dee1e51bae7aad4cbe32411e5281e1"
+      },
+      "eligible_termination": true,
+      "family": "gl4_hybrid",
+      "gamma": 0.01,
+      "metrics": {
+        "operator_mass_ratio": 0.9907906483411618,
+        "operator_xmom_ratio": 0.2515612225157255,
+        "operator_ymom_ratio": 0.08189624450721414,
+        "strong_div_ratio": 0.9937669011581469,
+        "strong_xmom_ratio": 0.3080202193013535,
+        "strong_ymom_ratio": 0.21730154356092723,
+        "trace_bc_mean_ratio": 1.0000032986248049,
+        "trace_ic_mean_ratio": 0.9934748327937942,
+        "trace_individual_mixed_max_ratio": 1.000001503295573,
+        "trace_individual_raw_max_ratio": 409.62536008963025,
+        "velocity_u_ratio": 0.9980159966998706,
+        "velocity_v_ratio": 0.9993185885445747
+      },
+      "training_noninert": {
+        "accepted_updates": 1800,
+        "coefficient_payload_differs_from_stage_a": true,
+        "coefficient_step_l2": 1.8119394392823904,
+        "final_objective": 3.457884662092163e-06,
+        "final_projected_gradient": 9.107644027609023e-10,
+        "initial_objective": 3.479899990175056e-06,
+        "initial_projected_gradient": 4.3447950341668484e-09,
+        "relative_coefficient_l2_change": 0.07329995993036201,
+        "relative_objective_decrease": 0.0063264255136784445
+      }
+    },
+    {
+      "candidate_id": "gl4_hybrid__gamma_0p02",
+      "checkpoint": {
+        "path": "stage_b/gl4_hybrid__gamma_0p02/final_coefficients_v1.txt",
+        "sha256": "3e3c5cc1fe5ff924bb17bf73d9406690966b32f75cd3c08a71b2ba9fbc3b353c"
+      },
+      "eligible_termination": true,
+      "family": "gl4_hybrid",
+      "gamma": 0.02,
+      "metrics": {
+        "operator_mass_ratio": 0.9815663035383261,
+        "operator_xmom_ratio": 0.2044651593544105,
+        "operator_ymom_ratio": 0.0438705890945033,
+        "strong_div_ratio": 0.9859781433524675,
+        "strong_xmom_ratio": 0.22615656049161334,
+        "strong_ymom_ratio": 0.13813343017041008,
+        "trace_bc_mean_ratio": 1.0000244856837317,
+        "trace_ic_mean_ratio": 0.9942389198537195,
+        "trace_individual_mixed_max_ratio": 1.0000120345138486,
+        "trace_individual_raw_max_ratio": 1078.7534572773086,
+        "velocity_u_ratio": 1.0054555305373742,
+        "velocity_v_ratio": 1.0093089477263337
+      },
+      "training_noninert": {
+        "accepted_updates": 2075,
+        "coefficient_payload_differs_from_stage_a": true,
+        "coefficient_step_l2": 2.077445153138714,
+        "final_objective": 3.4691396624195863e-06,
+        "final_projected_gradient": 9.758111340989715e-10,
+        "initial_objective": 3.514354445523324e-06,
+        "initial_projected_gradient": 8.667916714250046e-09,
+        "relative_coefficient_l2_change": 0.08404069318282564,
+        "relative_objective_decrease": 0.01286574356816329
+      }
+    },
+    {
+      "candidate_id": "gl4_hybrid__gamma_0p03",
+      "checkpoint": {
+        "path": "stage_b/gl4_hybrid__gamma_0p03/final_coefficients_v1.txt",
+        "sha256": "e7d5c0d41a5b99f9b8e2d18bb480d04319eb7e7b3a0134b86142630de02a74c3"
+      },
+      "eligible_termination": true,
+      "family": "gl4_hybrid",
+      "gamma": 0.03,
+      "metrics": {
+        "operator_mass_ratio": 0.972948044665266,
+        "operator_xmom_ratio": 0.18103339750705202,
+        "operator_ymom_ratio": 0.04721341498972156,
+        "strong_div_ratio": 0.9785576417766573,
+        "strong_xmom_ratio": 0.20394240879183306,
+        "strong_ymom_ratio": 0.1293284683076635,
+        "trace_bc_mean_ratio": 1.0000382304032425,
+        "trace_ic_mean_ratio": 0.9945443124065516,
+        "trace_individual_mixed_max_ratio": 1.0000189954319951,
+        "trace_individual_raw_max_ratio": 1340.8033124515343,
+        "velocity_u_ratio": 1.017273626990856,
+        "velocity_v_ratio": 1.024225904660686
+      },
+      "training_noninert": {
+        "accepted_updates": 1987,
+        "coefficient_payload_differs_from_stage_a": true,
+        "coefficient_step_l2": 2.1896082206389265,
+        "final_objective": 3.4804018242616265e-06,
+        "final_projected_gradient": 9.34502890920975e-10,
+        "initial_objective": 3.5488089008715917e-06,
+        "initial_projected_gradient": 1.299103839780269e-08,
+        "relative_coefficient_l2_change": 0.08857812317369121,
+        "relative_objective_decrease": 0.019276066567902372
+      }
+    },
+    {
+      "candidate_id": "gl4_hybrid__gamma_0p04",
+      "checkpoint": {
+        "path": "stage_b/gl4_hybrid__gamma_0p04/final_coefficients_v1.txt",
+        "sha256": "f770ca1417adc5992e200499338cd7111676f0cd05f7b37c3ff9214b873fba5c"
+      },
+      "eligible_termination": true,
+      "family": "gl4_hybrid",
+      "gamma": 0.04,
+      "metrics": {
+        "operator_mass_ratio": 0.9644277856695612,
+        "operator_xmom_ratio": 0.17390127215953083,
+        "operator_ymom_ratio": 0.04553540618291972,
+        "strong_div_ratio": 0.9709933217940947,
+        "strong_xmom_ratio": 0.19951856685048858,
+        "strong_ymom_ratio": 0.1278662569259062,
+        "trace_bc_mean_ratio": 1.0000647871214359,
+        "trace_ic_mean_ratio": 0.9931410329519702,
+        "trace_individual_mixed_max_ratio": 1.1434509527334789,
+        "trace_individual_raw_max_ratio": 1747.835333368765,
+        "velocity_u_ratio": 1.0336689963295762,
+        "velocity_v_ratio": 1.043751100325452
+      },
+      "training_noninert": {
+        "accepted_updates": 1910,
+        "coefficient_payload_differs_from_stage_a": true,
+        "coefficient_step_l2": 2.2341869772840965,
+        "final_objective": 3.4915801451253706e-06,
+        "final_projected_gradient": 9.324348321907966e-10,
+        "initial_objective": 3.5832633562198594e-06,
+        "initial_projected_gradient": 1.7314160077885887e-08,
+        "relative_coefficient_l2_change": 0.090381506335951,
+        "relative_objective_decrease": 0.025586512064580524
+      }
+    }
+  ],
+  "information_boundary": {
+    "final_test_values_used": false,
+    "gl8_used": false,
+    "higher_resolution_values_used": false,
+    "sealed_values_used": false,
+    "validation_roles_only": true
+  },
+  "normalization_sha256": "6f7070d3b7a03cff98a17b2f354f9e95c53d53a191760b64cf0c72b22f0646d6",
+  "schema": "pimfa.cmame.ramped_cavity_gl4_validation_metrics.v4",
+  "status": "validation_only_frozen"
+}

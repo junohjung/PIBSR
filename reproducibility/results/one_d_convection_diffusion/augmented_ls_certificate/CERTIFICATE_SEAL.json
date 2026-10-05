@@ -1,0 +1,11 @@
+{
+  "freeze_sha256": "c58bc4092598a66d892f02e574892b5a4de1efbbdf5bb8c8db3573f424a7c02f",
+  "payload_manifest_sha256": "b25184afd67c2571fd5b6ae358f3e536ab98fd3916c17270b0d88a3ba58c7c72",
+  "reference_boundary_may_open": false,
+  "repeat_stage_may_begin": true,
+  "schema": "pimfa-v14-one-d-augmented-ls-certificate-seal-v2",
+  "sealed_utc": "2026-08-20T00:55:05.796035+00:00",
+  "selection_seal_sha256": "b44541c905997bf073eaf90b34e2ae89d3a5f2c2db1b571f1f99dbf07054827b",
+  "status": "PASS",
+  "summary_sha256": "e21aec42148e98e41ac4957c72b8dc3de1d8548bc691eecb7e58ed953dbae37e"
+}

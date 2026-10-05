@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "audits": [
+    {
+      "design": "design.npz",
+      "total_observed_rows": 441441,
+      "counts": {
+        "data_fit_indices": 126017,
+        "collocation_fit_indices": 126886,
+        "data_val_indices": 35932,
+        "collocation_val_indices": 35935,
+        "final_test_indices": 36230,
+        "ic_indices": 441,
+        "bc_indices": 80000
+      },
+      "pairwise_overlap_counts": {
+        "data_fit_indices__collocation_fit_indices": 0,
+        "data_fit_indices__data_val_indices": 0,
+        "data_fit_indices__collocation_val_indices": 0,
+        "data_fit_indices__final_test_indices": 0,
+        "data_fit_indices__ic_indices": 0,
+        "data_fit_indices__bc_indices": 0,
+        "collocation_fit_indices__data_val_indices": 0,
+        "collocation_fit_indices__collocation_val_indices": 0,
+        "collocation_fit_indices__final_test_indices": 0,
+        "collocation_fit_indices__ic_indices": 0,
+        "collocation_fit_indices__bc_indices": 0,
+        "data_val_indices__collocation_val_indices": 0,
+        "data_val_indices__final_test_indices": 0,
+        "data_val_indices__ic_indices": 0,
+        "data_val_indices__bc_indices": 0,
+        "collocation_val_indices__final_test_indices": 0,
+        "collocation_val_indices__ic_indices": 0,
+        "collocation_val_indices__bc_indices": 0,
+        "final_test_indices__ic_indices": 0,
+        "final_test_indices__bc_indices": 0,
+        "ic_indices__bc_indices": 0
+      },
+      "all_observed_rows_partitioned_exactly_once": true,
+      "initializer_fit_count": 206458,
+      "initializer_fit_is_data_fit_union_ic_union_bc": true,
+      "evaluation_midpoint_count": 400000
+    }
+  ]
+}

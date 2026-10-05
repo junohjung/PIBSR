@@ -1,0 +1,126 @@
+{
+  "candidate_id": "gl4_hybrid__gamma_0p04",
+  "elapsed_seconds": 1716.1419327500043,
+  "ended_utc": "2026-08-05T06:00:26.021254+00:00",
+  "family": "gl4_hybrid",
+  "final_checkpoint_path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/results/ramped_cavity_gl4_v4/campaign_v4/stage_b/gl4_hybrid__gamma_0p04/final_coefficients_v1.txt",
+  "final_checkpoint_sha256": "f770ca1417adc5992e200499338cd7111676f0cd05f7b37c3ff9214b873fba5c",
+  "final_state_handshake": {
+    "checkpoint": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/results/ramped_cavity_gl4_v4/campaign_v4/stage_b/gl4_hybrid__gamma_0p04/final_coefficients_v1.txt",
+    "checkpoint_coefficient_l2_recomputed": 24.82167006791242,
+    "checkpoint_path_matches_exactly": true,
+    "checkpoint_sha256": "f770ca1417adc5992e200499338cd7111676f0cd05f7b37c3ff9214b873fba5c",
+    "coefficient_count": 60000,
+    "coefficient_l2": 24.821670067912404,
+    "coefficient_l2_binding_absolute_tolerance": 1e-12,
+    "coefficient_l2_binding_relative_tolerance": 1e-12,
+    "gradient_l2": 1.9591961628249302e-08,
+    "objective": 3.4915801451253706e-06,
+    "objective_matches_final_tsv_exactly": true
+  },
+  "gamma": 0.04,
+  "implementation": {
+    "v1_runner_base": {
+      "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/experiments/ramped_cavity_gl4/run_ramped_cavity_gl4.py",
+      "sha256": "7146179f4297405acc9d72378058b948f73b6e19b8ef848eea7d24e192ef9a18"
+    },
+    "v3_runner_base": {
+      "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/experiments/ramped_cavity_gl4_v3/run_ramped_cavity_gl4_v3.py",
+      "sha256": "eec0d7f31853de56f7d585aae9a8c54a630c00dee3410e356a2b8e0f162cb709"
+    },
+    "v4_contract": {
+      "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/experiments/ramped_cavity_gl4_v4/v4_contract.py",
+      "sha256": "48c30e4643778c37f43cae172f3ce196a636873567d988c39a5f1cdd5a99521a"
+    },
+    "v4_runner": {
+      "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/experiments/ramped_cavity_gl4_v4/run_ramped_cavity_gl4_v4.py",
+      "sha256": "804dbf97a00ffff2a298e1a7a8a2d5fdc894089117ee44944846e196bfdabc7f"
+    }
+  },
+  "initializer_path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/results/ramped_cavity_gl4_v4/campaign_v4/stage_a/shared_stage_a_initializer_v1.txt",
+  "initializer_sha256": "79b572cb9b02507a056a127e97871853f8aa4661925c88c46e2d33e5e779c592",
+  "normalization_path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/results/ramped_cavity_gl4_v4/campaign_v4/normalization_v4.json",
+  "normalization_sha256": "6f7070d3b7a03cff98a17b2f354f9e95c53d53a191760b64cf0c72b22f0646d6",
+  "normalized_weights": {
+    "candidate_id": "gl4_hybrid__gamma_0p04",
+    "equal_total_budget_verified": true,
+    "family": "gl4_hybrid",
+    "gamma": 0.04,
+    "integral_reference_operator": "gl4",
+    "integral_weights": {
+      "mass": 0.0015364163107434725,
+      "xmom": 7.676727089783005e-05,
+      "ymom": 7.830033854548832e-05
+    },
+    "quadrature": "gl4",
+    "realized_added_physics_at_stage_a": 1.3781782139307152e-07,
+    "strong_weights": {
+      "div": 5.148013177571129e-07,
+      "xmom": 2.128694919824047e-06,
+      "ymom": 2.165154625213024e-06
+    },
+    "target_added_physics_at_stage_a": 1.3781782139307152e-07
+  },
+  "optimizer": {
+    "absolute_tolerance": 1e-09,
+    "accepted_update_cap": 2400,
+    "accepted_updates": 1910,
+    "final_projected_gradient": 9.324348321907966e-10,
+    "initial_projected_gradient": 1.7314160077885887e-08,
+    "iterations": 1910,
+    "objective_delta_tolerance": 0.0,
+    "past_objective_values": 0,
+    "positive_claim_eligible": true,
+    "relative_tolerance": 0.0,
+    "termination": "projected_gradient_absolute"
+  },
+  "production_diagnostics": {
+    "column_count": 35,
+    "diagnostic_counts_exact": true,
+    "evaluation_final": 1969,
+    "evaluation_first": 0,
+    "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/results/ramped_cavity_gl4_v4/campaign_v4/stage_b/gl4_hybrid__gamma_0p04/loss_BFGS_navier_stokes_hybrid.tsv",
+    "row_count": 1970,
+    "schema_exact": true,
+    "sha256": "7b32e13350a722847bae3454a316fff972218226e79a6cbcf78e7c863a772d8a"
+  },
+  "quadrature": "gl4",
+  "request_sha256": "21bca25f71bebf5258bdd34cc5483a9f389d2443d8dd07de160fa4aa6beae145",
+  "returncode": 0,
+  "schema": "pimfa.cmame.ramped_cavity_gl4_run.v4",
+  "serialized_model_path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/results/ramped_cavity_gl4_v4/campaign_v4/stage_b/gl4_hybrid__gamma_0p04/approx.mfa",
+  "serialized_model_sha256": "127151828f2b914f9a5ea28108bfbe249f09d3d62b03b5fcd59581884453a66a",
+  "stage_kind": "stage_b",
+  "started_utc": "2026-08-05T05:31:49.870990+00:00",
+  "status": "complete_semantically_validated",
+  "stderr_sha256": "3ceb8edf402ac6ef550b0a94afdf4430b4c7f9e0160228c8fca10aa7d8ee8120",
+  "stdout_sha256": "e3fbfc2bcf2357181b8050d285c996822edddef64549af43e64c718a67aea2f3",
+  "training_endpoint_audit": {
+    "accepted_update_cap": 2400,
+    "accepted_updates": 1910,
+    "coefficient_payload_differs_from_stage_a": true,
+    "coefficient_step_l2": 2.2341869772840965,
+    "final_coefficient_l2": 24.82167006791242,
+    "final_objective": 3.4915801451253706e-06,
+    "final_projected_gradient": 9.324348321907966e-10,
+    "initial_objective": 3.5832633562198594e-06,
+    "initial_projected_gradient": 1.7314160077885887e-08,
+    "initializer_coefficient_l2": 24.71951473102861,
+    "objective_change": -9.168321109448873e-08,
+    "projected_gradient_final_to_initial_ratio": 0.05385388768478164,
+    "relative_coefficient_l2_change": 0.090381506335951,
+    "relative_objective_decrease": 0.025586512064580524,
+    "termination": "projected_gradient_absolute"
+  },
+  "training_noninert_gate": {
+    "passes": true,
+    "relative_coefficient_l2_change_min": 1e-10,
+    "relative_objective_decrease_min": 1e-10,
+    "tests": {
+      "accepted_updates_at_least_one": true,
+      "coefficient_payload_differs_from_stage_a": true,
+      "relative_coefficient_l2_change_at_least_1e_minus_10": true,
+      "relative_objective_decrease_at_least_1e_minus_10": true
+    }
+  }
+}

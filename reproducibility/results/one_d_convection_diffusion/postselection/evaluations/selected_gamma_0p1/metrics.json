@@ -1,0 +1,75 @@
+{
+  "canonical_raw_loss_path": "historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/results/one_d_integral_balance_v2/postselection/canonical_loss_compatibility/selected_gamma_0p1.txt",
+  "canonical_raw_loss_sha256": "221946552c5e9f52a20ad5a5d5d9bb9e3d44005852ea31b1391786972fbe2d3d",
+  "checkpoint_sha256": "5f20a1f2b486b624d9392e39eb95916e647e5cfdbe4297bada1a8c4ff5c30d36",
+  "decoded_sha256": "bb1f6987373c5d0261ab100db6d1b6c6d59036fe9c5663585b8380caeef0d4b6",
+  "direct_minus_raw": {
+    "bc_mse": 6.776263578034403e-21,
+    "data_mse": -1.0164395367051604e-20,
+    "ic_mse": 2.710505431213761e-20,
+    "pde_mse": -5.828670879282072e-16
+  },
+  "direct_training_components": {
+    "bc_mse": 4.31619546718057e-05,
+    "data_mse": 1.1018411876596694e-05,
+    "ic_mse": 2.9840968090406202e-05,
+    "pde_mse": 0.213129603726064
+  },
+  "gl2": {
+    "analytic_relative_l2": 0.023070875246833294,
+    "low_fidelity_data_mse": 7.194192351116544e-06,
+    "pde_mse": 0.2275102299651949,
+    "point_count": 94164
+  },
+  "global_balance": {
+    "gl4_max_abs": 0.09404707280642421,
+    "gl4_time_rms": 0.05623928070883863,
+    "gl8_max_abs": 0.09404707702288884,
+    "gl8_minus_gl4_rms": 6.941036802803827e-08,
+    "gl8_time_rms": 0.05623928674450701
+  },
+  "label": "selected_gamma_0.1",
+  "midpoint": {
+    "analytic_relative_l2": 0.023098214009409725,
+    "low_fidelity_data_mse": 5.817542809984069e-06,
+    "pde_mse": 0.25101243714654337
+  },
+  "raw_final_loss": {
+    "bc_mse": 4.3161954671805695e-05,
+    "data_mse": 1.1018411876596704e-05,
+    "ic_mse": 2.9840968090406175e-05,
+    "last_objective_counter": 1438,
+    "objective_evaluations": 1,
+    "pde_mse": 0.21312960372606457,
+    "physics_sum": 0.2132026066488268,
+    "unweighted_total": 0.21321362506070338
+  },
+  "trace": {
+    "bc_gl2": {
+      "max_abs": 0.01616111527281946,
+      "mse": 4.3256407119342504e-05,
+      "rms": 0.006576960325206661
+    },
+    "bc_midpoint": {
+      "max_abs": 0.016160570879228026,
+      "mse": 4.325711434840052e-05,
+      "rms": 0.006577014090634178
+    },
+    "ic_gl2": {
+      "max_abs": 0.029724389682659183,
+      "mse": 3.224792871439508e-05,
+      "rms": 0.005678725976343204
+    },
+    "ic_midpoint": {
+      "max_abs": 0.02425532031783377,
+      "mse": 3.4671419660860134e-05,
+      "rms": 0.005888244191680584
+    }
+  },
+  "train": {
+    "analytic_relative_l2": 0.02323760049014722,
+    "low_fidelity_data_mse": 1.1018411876596694e-05,
+    "low_fidelity_relative_l2": 0.00689521423424039,
+    "pde_mse": 0.213129603726064
+  }
+}

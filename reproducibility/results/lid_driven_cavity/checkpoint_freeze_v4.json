@@ -1,0 +1,98 @@
+{
+  "created_utc": "2026-08-05T06:17:22.945974+00:00",
+  "frozen_sources": {
+    "execution_design": {
+      "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/experiments/ramped_cavity_gl4_v4/execution_design_v4.json",
+      "sha256": "9bf6ce20dcb1ac94098d53671c4ed062553c76cf6fb4fe8c5ebcb1bf1d418e1d"
+    },
+    "protocol": {
+      "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/protocol/RAMPED_CAVITY_GL4_PROTOCOL_V4_LOW_GAMMA_REFINEMENT.md",
+      "sha256": "1f1526660b10cf5946bccd6732a9d19f53a8f9fc448b3de9060a9c05c2f60341"
+    },
+    "selection_schema": {
+      "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/experiments/ramped_cavity_gl4_v4/family_selection_v4.schema.json",
+      "sha256": "9121d9a315ca13dfa2def276bbc12d918738b8b9f4713b16856432e63ffb59c8"
+    },
+    "selector": {
+      "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/experiments/ramped_cavity_gl4_v4/select_validation_families_v4.py",
+      "sha256": "a02e8afdf87cf27b00153bb53c29079aba6000614cd098d5dc83af885ee5b59f"
+    },
+    "transition_amendment": {
+      "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/protocol/RAMPED_CAVITY_GL4_PROTOCOL_V4_PROTECTED_TRANSITION_AMENDMENT.md",
+      "sha256": "0a01b75441f2b93922c0993094615f774ef711a0756c65a7cbc8e6b026abb6f3"
+    },
+    "transition_implementation": {
+      "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/experiments/ramped_cavity_gl4_v4_protected/freeze_selected_checkpoints_v4.py",
+      "sha256": "13eef5c7600766bbbde342ca2a2d43b4f1a48025a039d10a58993c46e3e08042"
+    },
+    "v4_code_freeze": {
+      "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/experiments/ramped_cavity_gl4_v4/code_freeze_v4.json",
+      "sha256": "7dbdcb748e371be20c7e610bb38775c77bd62070c12161397348a466c2d7b1ae"
+    },
+    "validation_schema": {
+      "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/experiments/ramped_cavity_gl4_v4/validation_metrics_v4.schema.json",
+      "sha256": "8a501c9b62f48041cf644da26d6121e0b7cfd41591135237e47819fa63b2fb40"
+    }
+  },
+  "normalization_artifact": {
+    "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/results/ramped_cavity_gl4_v4/campaign_v4/normalization_v4.json",
+    "sha256": "6f7070d3b7a03cff98a17b2f354f9e95c53d53a191760b64cf0c72b22f0646d6"
+  },
+  "protected_transition": {
+    "authorization": "authorized_for_one_shot_protected_confirmation",
+    "checkpoint_exported": false,
+    "evaluator_launched": false,
+    "final_test_authorized": true,
+    "final_test_values_opened": false,
+    "gl8_authorized": true,
+    "gl8_values_opened": false,
+    "higher_resolution_authorized": true,
+    "higher_resolution_values_opened": false,
+    "optimizer_launched": false,
+    "post_freeze_reselection_permitted": false,
+    "post_freeze_tuning_permitted": false,
+    "protected_configuration_opened": false,
+    "sealed_midpoint_values_opened": false,
+    "sealed_midpoints_authorized": true
+  },
+  "required_comparators": {
+    "gl4_hybrid_non_null": true,
+    "strong_only_non_null": true
+  },
+  "schema": "pimfa.cmame.ramped_cavity_gl4_checkpoint_freeze.v4",
+  "selected": {
+    "gl4_conservative_only": {
+      "candidate_id": "gl4_conservative_only__gamma_0p02",
+      "checkpoint_path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/results/ramped_cavity_gl4_v4/campaign_v4/stage_b/gl4_conservative_only__gamma_0p02/final_coefficients_v1.txt",
+      "checkpoint_sha256": "42fe5ede028ff1d3c3663dfdac316125b6d3a132600923155e5762cac0c28a50",
+      "gamma": 0.02,
+      "optimizer_positive_claim_eligible": true
+    },
+    "gl4_hybrid": {
+      "candidate_id": "gl4_hybrid__gamma_0p04",
+      "checkpoint_path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/results/ramped_cavity_gl4_v4/campaign_v4/stage_b/gl4_hybrid__gamma_0p04/final_coefficients_v1.txt",
+      "checkpoint_sha256": "f770ca1417adc5992e200499338cd7111676f0cd05f7b37c3ff9214b873fba5c",
+      "gamma": 0.04,
+      "optimizer_positive_claim_eligible": true
+    },
+    "strong_only": {
+      "candidate_id": "strong_only__gamma_0p03",
+      "checkpoint_path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/results/ramped_cavity_gl4_v4/campaign_v4/stage_b/strong_only__gamma_0p03/final_coefficients_v1.txt",
+      "checkpoint_sha256": "5ffd220edf673326c76ddf304ae42396ded117bea75356fdd0a5e77b87109549",
+      "gamma": 0.03,
+      "optimizer_positive_claim_eligible": true
+    },
+    "trapezoid_hybrid": null
+  },
+  "selection": {
+    "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/results/ramped_cavity_gl4_v4/campaign_v4/family_selection_v4.json",
+    "sha256": "1c899715b9ca8eeace7d108ac6c1d3dd8054f2df2e7917c358292b90ebfc28c1"
+  },
+  "status": "selected_checkpoints_frozen_protected_evaluation_authorized_not_opened",
+  "validation_artifact": {
+    "candidate_count": 16,
+    "complete_registered_matrix": true,
+    "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/results/ramped_cavity_gl4_v4/campaign_v4/validation_only_metrics_v4.json",
+    "sha256": "2700f1d85d39df2a1be64e4dd19166947fbf1a6c6a04e46bacb4c93e677842fa"
+  }
+}

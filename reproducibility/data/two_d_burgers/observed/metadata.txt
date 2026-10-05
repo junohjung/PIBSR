@@ -1,0 +1,16 @@
+dataset_role=coarse_observed_from_forced_solution
+pde=2d_viscous_coupled_burgers
+Lx=2.0
+Ly=2.0
+nu=0.01
+nx=40
+ny=40
+dx=5.0000000000000003e-02
+dy=5.0000000000000003e-02
+dt=0.0005
+dt_out=0.01
+t_end=2.0
+forcing_in_rhs=1
+obs_noise_std=0.0
+perturb_first_frame=0
+obs_noise_seed=5678

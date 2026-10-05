@@ -1,0 +1,51 @@
+{
+  "aggregations": [
+    "q2 from raw q4 sums",
+    "q1 from raw q4 sums"
+  ],
+  "canonical_partition": "uniform q4",
+  "evaluator_source_bundle_sha256": "8ab05e6522aa64782966852ef24660b539ca018c2ac51067844957a68d113976",
+  "implementation": "NumPy tensor contractions, local Cox-de Boor recursion, and numpy.polynomial.legendre.leggauss(8); no production MFA or knot-span balance header is imported",
+  "model_manifest_sha256": "9176916c8e3303424ffb8179ac5bc65e18342469ae17b9b980fd5bd1909b253a",
+  "production_comparison": {
+    "absolute_tolerance": 1e-11,
+    "components": {
+      "mass": {
+        "failure_count": 0,
+        "maximum_absolute_difference": 9.71445146547012e-17,
+        "maximum_difference_over_tolerance": 8.074971324936833e-06
+      },
+      "x_momentum": {
+        "failure_count": 0,
+        "maximum_absolute_difference": 1.0495077029659683e-16,
+        "maximum_difference_over_tolerance": 1.04543527866516e-05
+      },
+      "y_momentum": {
+        "failure_count": 0,
+        "maximum_absolute_difference": 1.1275702593849246e-16,
+        "maximum_difference_over_tolerance": 6.676478752112162e-06
+      }
+    },
+    "criterion": "abs(python-cpp) <= 1e-11 + 1e-9*max(abs(cpp),abs(python))",
+    "failure_count": 0,
+    "relative_tolerance": 1e-09,
+    "row_count": 3200,
+    "scalar_comparison_count": 9600,
+    "schema": "pimfa.ramped_cavity.gl8_crosscheck_comparison.v1",
+    "status": "pass"
+  },
+  "quadrature_order": 8,
+  "role": "postfit_crosscheck_only",
+  "rows_sha256": "9b3480013c4e08b9c29fafb1c9478efa848534b4bd55bcca7ea4b6c9ad2a053f",
+  "schema": "pimfa.ramped_cavity.gl8_crosscheck_run.v1",
+  "shift_fraction": 0.025,
+  "shifted_partition": "x internal lines +shift; y internal lines -shift",
+  "status": "pass",
+  "summary_sha256": "2703a725e38525180222c4fe0486e76728e213a1a377ec8eb050ca13920324c6",
+  "time_count": 200,
+  "time_max": 9.985,
+  "time_min": 0.045,
+  "time_policy": "explicit canonical physical times; no generated default",
+  "times_file": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/results/ramped_cavity_gl4_v4/protected_control_v4_20260805b/sealed_midpoint_times_v4.txt",
+  "times_file_sha256": "950d143c9675302b044b52e5d5360ade83f8f3139ef0fd004303f0d97753f5e7"
+}

@@ -1,0 +1,8 @@
+{
+  "analytical_exact": 0.0,
+  "data_only_mfa": 0.11964931927316792,
+  "declared_subset_pinn": 0.023585371098234716,
+  "numerical_data": 0.14838496422600647,
+  "selected_pimfa_beta_3e-5": 0.06672762355546082,
+  "selected_strict": 0.06672601714693255
+}

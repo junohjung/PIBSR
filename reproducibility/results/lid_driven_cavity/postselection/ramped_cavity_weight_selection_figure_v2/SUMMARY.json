@@ -1,0 +1,89 @@
+{
+  "candidate_count": 16,
+  "family_order": [
+    "strong_only",
+    "trapezoid_hybrid",
+    "gl4_conservative_only",
+    "gl4_hybrid"
+  ],
+  "figure_contract": {
+    "all_16_candidates_visible": true,
+    "bar_chart": false,
+    "eligible_encoding": "family-colored open marker and line",
+    "ineligible_encoding": "family-colored cross",
+    "panels": [
+      "worst_aligned_validation_ratio",
+      "aligned_geometric_mean_validation_ratio"
+    ],
+    "primary_threshold": 1.0,
+    "selected_encoding": "family-colored star with black edge",
+    "smoothing_or_subsampling": false
+  },
+  "figure_sha256_before_visual_qa": {
+    "pdf": "72aaac4f2ea64875caec841aad0b73135fef5f2b7827697561d2b12691ef01f1",
+    "png": "753edd8bc92a681250136fd63dc6b1095f73b6287fa972173525b7c399c22e4e"
+  },
+  "gamma_grid": [
+    0.01,
+    0.02,
+    0.03,
+    0.04
+  ],
+  "information_boundary": {
+    "final_test_values_used": false,
+    "gl8_used": false,
+    "higher_resolution_values_used": false,
+    "sealed_values_used": false,
+    "validation_roles_only": true
+  },
+  "predecessor": {
+    "coordinate_sha256": "031a12583370a3d852d1671b63a6a87cd9e3956cb47899d6e98bf99d6416dd4f",
+    "coordinates_byte_identical": true,
+    "package": "ramped_cavity_weight_selection_figure_v1"
+  },
+  "replay": {
+    "information_boundary": {
+      "final_test_values_used": false,
+      "gl8_used": false,
+      "higher_resolution_values_used": false,
+      "sealed_values_used": false,
+      "validation_roles_only": true
+    },
+    "max_abs_geometric_mean_replay_delta": 0.0,
+    "max_abs_worst_ratio_replay_delta": 0.0,
+    "selected_candidate_ids": {
+      "gl4_conservative_only": "gl4_conservative_only__gamma_0p02",
+      "gl4_hybrid": "gl4_hybrid__gamma_0p04",
+      "strong_only": "strong_only__gamma_0p03",
+      "trapezoid_hybrid": null
+    },
+    "selection_rule": "objective-aligned physics ranking among guard-eligible candidates: near-tie worst aligned ratio, near-tie aligned geometric mean, gamma, candidate_id"
+  },
+  "reporting_roles": {
+    "gl4_hybrid_gamma_0p04": "predeclared_reported_family_endpoint",
+    "matched_control_reporting_addendum": "postselection_role_did_not_alter_selection",
+    "strong_only_gamma_0p02": "admissible_frozen_candidate_later_reused_for_matched_fixed_weight_reporting_control",
+    "strong_only_gamma_0p03": "historical_validation_selected_family_comparator"
+  },
+  "schema": "pimfa.ramped_cavity_weight_selection_figure.v2",
+  "selected_candidate_ids": {
+    "gl4_conservative_only": "gl4_conservative_only__gamma_0p02",
+    "gl4_hybrid": "gl4_hybrid__gamma_0p04",
+    "strong_only": "strong_only__gamma_0p03",
+    "trapezoid_hybrid": null
+  },
+  "selection_rule": "objective-aligned physics ranking among guard-eligible candidates: near-tie worst aligned ratio, near-tie aligned geometric mean, gamma, candidate_id",
+  "selection_scope": "within_family",
+  "semantic_correction": {
+    "correct_statement": "The admissible strong-only gamma_tot=0.02 checkpoint was later reused for the matched fixed-weight reporting-control role; that reporting addendum did not alter the frozen within-family selection.",
+    "incorrect_v1_implication_removed": "The matched-control reporting role was not itself a new selection candidate, but its strong-only gamma_tot=0.02 checkpoint was an admissible member of the frozen 16-fit grid.",
+    "numeric_or_selection_change": false
+  },
+  "source_revision": "CMAME_minor_revision_v5_ramped_gl4_20260804",
+  "stable_preinstall_guard": {
+    "nonserialized": true,
+    "v1_sha256": "0e59318a6484646c3f5bb7073b6bc6487d10a822aec5d149d8a30c095d75495b"
+  },
+  "status": "COMPLETE_SEMANTIC_CORRECTION_REPORTING_ONLY",
+  "visual_qa": "PASS"
+}

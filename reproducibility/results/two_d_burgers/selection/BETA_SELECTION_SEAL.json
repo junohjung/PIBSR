@@ -1,0 +1,90 @@
+{
+  "beta0": {
+    "checkpoint_sha256": "5c43eb771533617f8581b205594aa17fac03d09165352a24d1c6297a2d467524",
+    "loss_sha256": "3037d4d9e7bf569885ac84cbbb085d0fcb7fa518523681d2c06da4307f510553",
+    "role": "normalization control and selectable null",
+    "validation_coordinates": {
+      "data_component_ratios": {
+        "u": 1.0,
+        "v": 1.0
+      },
+      "data_ratio": 1.0,
+      "normalization_control": "beta=0 common data-only initializer row",
+      "physics_component_ratios": {
+        "u": 1.0,
+        "v": 1.0
+      },
+      "physics_ratio": 1.0,
+      "reference_used": false
+    }
+  },
+  "beta_family_manifest_sha256": "0b6b22c644e3c04e7110673db35e9b8bfc8825ba7019019253c446988cc43fc5",
+  "beta_family_seal_sha256": "d17b509d7e233515cccf3ee747776ca1db4790c3aacd67cb51c835a7fec537c3",
+  "beta_literals": [
+    "0",
+    "0.0001",
+    "0.001",
+    "0.01",
+    "0.03",
+    "0.1",
+    "0.3",
+    "1",
+    "10",
+    "100"
+  ],
+  "classified_json_sha256": "5b0a3b8073ff5ab6ed978e750e9c2a84794c1075af921ea78ddee2b87b3b0372",
+  "classified_tsv_sha256": "7d9eded3eeba575ac35d50f03f79efa387254e33a95b5a0892af9d23d78f1245",
+  "freeze_sha256": "b750e8c4fe22871e20a9927b2b2ab9b2fdcaeb2c7dbffc479e247694c3c9fb68",
+  "hybrid_authorized": false,
+  "interface_token_sha256": "472865640fbfe09ecff2ef31c9d776b4c9eb78bd903cccd1d4cfcceac55c24ce",
+  "offnode_trace_opened": false,
+  "pareto_front_sha256": "19634a05e6069a8c7bd58de44a7a5c5c53ab8e8c23ff70d80c14cb8ffc418cbb",
+  "postselection_reference_access_authorized": false,
+  "reference_or_final_or_refined_opened": false,
+  "replay_required": true,
+  "schema": "pimfa-burgers-bc-corrected-v3-beta-selection-seal-v1",
+  "sealed_utc": "2026-08-20T07:10:03.419453+00:00",
+  "selected": {
+    "beta": 0.01,
+    "beta_literal": "0.01",
+    "checkpoint": "historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/results/burgers_bc_corrected_v3_campaign_v1/beta_family/beta_0p01/approx.mfa",
+    "checkpoint_sha256": "cad82426b5f288fb916ed89a67fe387913b0980526b61132301f410681eb54cc",
+    "loss": "historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/results/burgers_bc_corrected_v3_campaign_v1/beta_family/beta_0p01/loss_BFGS_burger.txt",
+    "loss_sha256": "887faac7d29512d0561283aa7e425656ec10abbd62af497a5a00bd56552209d3",
+    "selector_endpoint_chord_distance": 0.08055499770517521,
+    "selector_log_minmax_data": 0.5935514229821662,
+    "selector_log_minmax_physics": 0.5203705472894261,
+    "validation_coordinates": {
+      "data_component_ratios": {
+        "u": 7.380973383722483,
+        "v": 12.148109122900012
+      },
+      "data_ratio": 9.764541253311247,
+      "normalization_control": "beta=0 common data-only initializer row",
+      "physics_component_ratios": {
+        "u": 0.44262567043128076,
+        "v": 0.3438452047421956
+      },
+      "physics_ratio": 0.3932354375867382,
+      "reference_used": false
+    }
+  },
+  "selection_inputs": {
+    "blockwise_arithmetic_mean": true,
+    "componentwise_beta0_normalization": true,
+    "heldout_data_components": [
+      "valid_data_u",
+      "valid_data_v"
+    ],
+    "heldout_physics_components": [
+      "valid_strong_u",
+      "valid_strong_v"
+    ],
+    "offnode_trace_excluded": true,
+    "positive_candidate_health": "beta_health.passed (finite process plus independent projected-gradient stationarity); no balance/form field exists in the original 14-column stage",
+    "reference_or_final_or_refined_excluded": true
+  },
+  "selection_rule": "prospectively hardened maximum perpendicular distance from the endpoint chord after independent natural-log/min-max scaling of the beta0-normalized held-out data and strong-form validation coordinates",
+  "selection_tie_break": "lower beta for distances equal within rel_tol=1e-12 and abs_tol=1e-15",
+  "status": "BETA_SELECTED_REFERENCE_CLOSED"
+}

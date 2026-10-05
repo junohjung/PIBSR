@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "case": "one_d_convection_diffusion",
+  "metrics": {
+    "selection": {
+      "stage_a_beta": 3e-05,
+      "integral_balance_gamma": 0.1
+    },
+    "integral_weight_selection": {
+      "candidate_gamma": [
+        0.0,
+        0.01,
+        0.03,
+        0.1,
+        0.3,
+        1.0,
+        3.0,
+        10.0
+      ],
+      "eligible_gamma": [
+        0.0,
+        0.01,
+        0.03,
+        0.1,
+        0.3
+      ],
+      "pareto_gamma": [
+        0.0,
+        0.01,
+        0.03,
+        0.1,
+        0.3
+      ],
+      "selected_gamma": 0.1,
+      "selected_data_ratio": 1.1179002483890674,
+      "selected_heldout_balance_ratio": 0.7120256977157001,
+      "selected_ideal_distance": 0.7321792438280668,
+      "trace_guard_rms": 0.008975259646866029,
+      "midpoint_pde_mse_max_ratio_to_gamma0": 1.05,
+      "operator_balance_relative_tolerance": 1e-08,
+      "all_candidates_converged": true,
+      "all_operator_checks_passed": true
+    },
+    "sparse_qr_certificate": {
+      "all_reference_excluded_gates_pass": true,
+      "reference_boundary_remained_closed": true,
+      "certified_gamma": [
+        0.0,
+        0.1
+      ],
+      "gamma_0": {
+        "primary_objective": 1.719009046854634e-05,
+        "primary_raw_gradient_inf": 9.997630911036759e-11,
+        "rows": 49976,
+        "columns": 1600,
+        "nonzeros": 756258,
+        "numerical_rank": 1600,
+        "coefficient_relative_l2": 4.978074505335985e-07,
+        "objective_gap_relative": 8.638843072032335e-11,
+        "qr_kkt_backward_error": 3.062364736731559e-15,
+        "status": "PASS"
+      },
+      "gamma_0p1": {
+        "primary_objective": 1.863368983609601e-05,
+        "primary_raw_gradient_inf": 9.945825975058275e-11,
+        "rows": 49976,
+        "columns": 1600,
+        "nonzeros": 814290,
+        "numerical_rank": 1600,
+        "coefficient_relative_l2": 4.39795885309733e-07,
+        "objective_gap_relative": 6.709063542048219e-11,
+        "qr_kkt_backward_error": 2.9183878734695503e-15,
+        "status": "PASS"
+      }
+    },
+    "analytical_reference_resolution": {
+      "doubled_resolution_linf_change": 5.587744842305812e-05,
+      "doubled_resolution_relative_l2_change": 1.2738028006255425e-06
+    },
+    "models": {
+      "data_only": {
+        "midpoint_data_mse": 1.0859953141783678e-06,
+        "midpoint_pde_mse": 1.8618670311387686,
+        "midpoint_analytic_relative_l2": 0.025350086697459587,
+        "whole_domain_q1_gl8_time_rms": 0.11964931927316792
+      },
+      "matched_strong_gamma_0": {
+        "midpoint_data_mse": 5.203990980740319e-06,
+        "midpoint_pde_mse": 0.282108897766054,
+        "midpoint_analytic_relative_l2": 0.023297673716026836,
+        "balance_validation_q4_gl4_mse": 0.006484350355965379,
+        "whole_domain_q1_gl8_time_rms": 0.0667260300278033
+      },
+      "selected_hybrid_gamma_0p1": {
+        "midpoint_data_mse": 5.817542809984069e-06,
+        "midpoint_pde_mse": 0.25101243714654337,
+        "midpoint_analytic_relative_l2": 0.023098214009409725,
+        "balance_validation_q4_gl4_mse": 0.0046170240864392975,
+        "whole_domain_q1_gl8_time_rms": 0.05623928674450701
+      },
+      "reporting_only_gamma_10": {
+        "eligible": false,
+        "midpoint_data_mse": 1.1516162677052965e-05,
+        "midpoint_pde_mse": 0.19195237536060075,
+        "midpoint_analytic_relative_l2": 0.022186712962424034,
+        "balance_validation_q4_gl4_mse": 2.166691896735748e-05,
+        "whole_domain_q1_gl8_time_rms": 0.004075111828791441
+      }
+    }
+  },
+  "packaged_sources": {
+    "strong_selection": "results/one_d_convection_diffusion/final_postselection/strong_selection_v2/selection.json",
+    "data_only_postselection": "results/one_d_convection_diffusion/final_postselection/strong_selection_v2/postselection_summary.json",
+    "integral_selection": "results/one_d_convection_diffusion/selection/selection.json",
+    "selector_metrics": "results/one_d_convection_diffusion/selection/selector_candidate_metrics.json",
+    "sparse_qr_certificate": "results/one_d_convection_diffusion/augmented_ls_certificate/certificate_summary.json",
+    "analytical_reference_resolution": "results/one_d_convection_diffusion/reference_resolution/reference_resolution.json",
+    "coordinate_compatible_postselection": "results/one_d_convection_diffusion/final_postselection/balance_addendum_v1/canonical_full_metric_tradeoffs.json",
+    "gamma10_reporting": "results/one_d_convection_diffusion/final_postselection/gamma10_reporting_v1/GAMMA10_TABLE_ROW_AUDIT.json"
+  }
+}

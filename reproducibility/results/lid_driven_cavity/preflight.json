@@ -1,0 +1,81 @@
+{
+  "blockers": [],
+  "campaign_config": {
+    "canonical_sha256": "4440bb031d36ed0e7714e52eb7770c55811544e802c7a87f4088ea3721142dbd",
+    "data_tree_sha256": "8165dc3bb955b6aeef867ea5c13294b880050d098f4f7749d8b755954efabec9",
+    "design_manifest_sha256": "c575bf2792726e885837395d3af0366435ddd1420999e9971036284d59276f77",
+    "design_validation_report_sha256": "beae93cd840ef456c5fbc1064588af6ded07d0a584a1119c49a38853fd7af5f3",
+    "input_manifest_sha256": "503c912bb4218d99ab2d43222c19cab7de2f8e46506b66b4e83c24c33bceadd0",
+    "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/results/ramped_cavity_gl4/campaign_config_a2.json",
+    "role_sha256": {
+      "data_fit": "98606b0711810db9b25547cf9069cbc7597b7ebe0a93b582a21b813faa505a5e",
+      "data_validation": "859001230e334636f19eb297d88f46bbf4d86513fc87c277adda3e265c443b86",
+      "initializer_fit": "4ad5bbc36e3854dd3b8556424e69df7b424b75f0d321e69da2d1c147ca96a986",
+      "strong_fit": "98ba24430083d56424f573ee6390dea28cc3d16a9a290cf533abaee32d764c19",
+      "strong_validation": "aca58226a3add342c4d2a69336bb24a790a2c4b2cc700d5b08260e0cec65f042"
+    },
+    "sha256": "8c8b749e8d794d65c8c628b6ee87196195aaee22bee62cfffe75f56394b30875"
+  },
+  "candidate_count": 16,
+  "created_utc": "2026-08-04T23:44:14.696595+00:00",
+  "design": {
+    "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/experiments/ramped_cavity_gl4_v4/execution_design_v4.json",
+    "sha256": "9bf6ce20dcb1ac94098d53671c4ed062553c76cf6fb4fe8c5ebcb1bf1d418e1d"
+  },
+  "fit_count": 16,
+  "implementation": {
+    "v1_runner_base": {
+      "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/experiments/ramped_cavity_gl4/run_ramped_cavity_gl4.py",
+      "sha256": "7146179f4297405acc9d72378058b948f73b6e19b8ef848eea7d24e192ef9a18"
+    },
+    "v3_runner_base": {
+      "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/experiments/ramped_cavity_gl4_v3/run_ramped_cavity_gl4_v3.py",
+      "sha256": "eec0d7f31853de56f7d585aae9a8c54a630c00dee3410e356a2b8e0f162cb709"
+    },
+    "v4_contract": {
+      "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/experiments/ramped_cavity_gl4_v4/v4_contract.py",
+      "sha256": "48c30e4643778c37f43cae172f3ce196a636873567d988c39a5f1cdd5a99521a"
+    },
+    "v4_runner": {
+      "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/experiments/ramped_cavity_gl4_v4/run_ramped_cavity_gl4_v4.py",
+      "sha256": "804dbf97a00ffff2a298e1a7a8a2d5fdc894089117ee44944846e196bfdabc7f"
+    }
+  },
+  "information_boundary": {
+    "final_test_values_loaded": false,
+    "gl8_loaded": false,
+    "higher_resolution_trajectory_loaded": false,
+    "sealed_config_loaded": false,
+    "sealed_midpoints_loaded": false,
+    "validation_values_used_by_optimizer": false,
+    "validation_values_used_for_adaptation_during_matrix": false
+  },
+  "integral_role_counts": {
+    "fit": 700,
+    "validation": 300
+  },
+  "optimizer": {
+    "delta": 0.0,
+    "later_extension_permitted": false,
+    "past": 0,
+    "relative_tolerance": 0.0,
+    "stage_b_absolute_tolerance": 1e-09,
+    "stage_b_accepted_update_cap": 2400
+  },
+  "optimizer_launched": false,
+  "production_flowdata": {
+    "path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/code/mfa_NS/build-v5/examples/pde/flowdata",
+    "sha256": "2742cae8775e58518a2cf81ef813f1898bb20cbe75aa1cf5aae6729d69f4da77"
+  },
+  "protocol_sha256": "1f1526660b10cf5946bccd6732a9d19f53a8f9fc448b3de9060a9c05c2f60341",
+  "schema": "pimfa.cmame.ramped_cavity_gl4_preflight.v4",
+  "stage_a_optimizer_present": false,
+  "stage_a_source": {
+    "checkpoint_path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/results/ramped_cavity_gl4_v3/campaign_v3/stage_a/shared_stage_a_initializer_v1.txt",
+    "checkpoint_sha256": "79b572cb9b02507a056a127e97871853f8aa4661925c88c46e2d33e5e779c592",
+    "local_copy_required": true,
+    "metrics_path": "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/results/ramped_cavity_gl4_v3/campaign_v3/stage_a_metrics_v3.json",
+    "metrics_sha256": "8cf33433020274d246048e032ccb50419288d4e32e10462c3578c375c7448304"
+  },
+  "status": "PASS_EXECUTION_READY"
+}

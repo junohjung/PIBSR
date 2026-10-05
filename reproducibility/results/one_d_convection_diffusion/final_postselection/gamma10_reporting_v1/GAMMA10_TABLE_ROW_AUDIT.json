@@ -1,0 +1,56 @@
+{
+  "claim_boundary": {
+    "accuracy_or_superiority_inference_authorized": false,
+    "manuscript_table_reporting_authorized": true,
+    "must_label_gamma10_ineligible": true,
+    "no_optimization_reselection_or_decoding": true,
+    "selected_gamma_remains": 0.1,
+    "selection_claim_authorized": false,
+    "selector_excluded_analytical_metric_reporting_authorized": true
+  },
+  "display_values": {
+    "B_q1_gl8_rms": "4.075e-3",
+    "D_mid": "1.152e-5",
+    "E_ref_mid": "2.219e-2",
+    "R_mid": "1.920e-1",
+    "V_bal_q4_gl4": "2.167e-5"
+  },
+  "midpoint_grid": {
+    "point_count": 23541,
+    "shape_t_x": [
+      399,
+      59
+    ],
+    "time_major_x_fastest": true
+  },
+  "model": {
+    "bc_guard": 0.008975259646866029,
+    "bc_guard_ratio": 1.300835779364622,
+    "bc_rms": 0.011675338877730812,
+    "beta": 3e-05,
+    "checkpoint_sha256": "fddd0455a4f20a252d2edf28e26126f8c2dd65e8dd5d74e336f12ac5d4648ce4",
+    "eligible": false,
+    "gamma": 10.0,
+    "selected": false,
+    "trace_admissible": false
+  },
+  "reference_reproduction": {
+    "max_abs": 1.3784952996795385e-13,
+    "passed": true,
+    "relative_l2": 1.8112400669930208e-14
+  },
+  "runtime": {
+    "numpy": "2.3.5",
+    "platform": "macOS-15.7.9-arm64-arm-64bit",
+    "python": "3.12.13 (main, Aug  7 2026, 02:15:23) [Clang 22.1.3 ]"
+  },
+  "schema": "pimfa-v14-one-d-gamma10-table-extension-audit-v1",
+  "status": "PASS_REPORTING_ONLY",
+  "values": {
+    "midpoint_analytical_relative_l2": 0.022186712962424034,
+    "midpoint_data_mse": 1.1516162677052965e-05,
+    "midpoint_pde_mse": 0.19195237536060075,
+    "q1_gl8_whole_domain_time_rms": 0.004075111828791441,
+    "q4_gl4_balance_validation_mse": 2.166691896735748e-05
+  }
+}

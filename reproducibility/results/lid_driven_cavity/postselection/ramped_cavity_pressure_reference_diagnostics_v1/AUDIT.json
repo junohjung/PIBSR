@@ -1,0 +1,33 @@
+{
+  "checks": {
+    "all_200_midpoint_file_hashes": true,
+    "all_5_fine_frame_hashes": true,
+    "all_static_input_hashes": true,
+    "common_gradient_operator_applied_to_reference_and_models": true,
+    "higher_resolution_run_complete": true,
+    "independent_high_run_validation_complete": true,
+    "midpoint_coordinates_exactly_equal_frozen_plan": true,
+    "mixed_gradient_direction_preserved": true,
+    "model_interchanges_match_checkpoint_text": true,
+    "training_optimizer_selection_not_invoked": true,
+    "two_pass_raw_array_bitwise_replay": true,
+    "two_pass_scalar_exact_replay": true
+  },
+  "information_boundary": {
+    "checkpoint_modified": false,
+    "claim_scope": "post-selection pressure and resolved finite-difference pressure-gradient diagnostics",
+    "higher_resolution_reference_opened": true,
+    "new_training": false,
+    "optimizer_launched": false,
+    "post_selection_reporting": true,
+    "selection_or_ranking_rerun": false
+  },
+  "sample_counts": {
+    "fine_gradient": 198005,
+    "midpoint_gradient": 64800,
+    "pressure": 80000
+  },
+  "schema": "pimfa.ramped_cavity_pressure_reference_diagnostics.v1.audit",
+  "source_manifest_sha256": "6682392e5ccf1fa782d0afed30833937d61682aa0e3e1bed829bd82fa66a0a18",
+  "status": "PASS"
+}

@@ -1,0 +1,31 @@
+{
+  "axes_count": 6,
+  "axis_contract_exactly_inherited_from_v12": true,
+  "builder_sha256": "654f8018f8aaff68e83bebb201a2e47e233cef1706c164349e183beecef96080",
+  "figure42_pdf_sha256": "aa8f4d72ce7bcdde413fc07c74b1a2626f246dc60164808c91df1d69af39832e",
+  "figure42_png_sha256": "d8e35a357798180dafbb8bde56b884902a258b94774553aeee214b45b83976b2",
+  "figure43_archived_not_modified": true,
+  "full_pinn_iqr_inside_inherited_axis_limits": true,
+  "inset_axes_count": 0,
+  "legend_entry_count": 5,
+  "manuscript_or_supplement_tex_edited_by_builder": false,
+  "numeric_tables_byte_identical_to_v12": {
+    "CAVITY_DETERMINISTIC_Q4_SIGNED_Q1_CURVES.tsv": true,
+    "PINN_AGGREGATE_HISTORIES.tsv": true,
+    "PINN_PER_SEED_HISTORIES.tsv": true
+  },
+  "postinstall_immutable_upstream_replayed_rows": 15,
+  "schema": "pimfa.ramped_cavity_multiscale_balance_figure.audit.v13",
+  "selected_strong_rows_preserved_in_deterministic_tsv": true,
+  "selected_strong_visible": false,
+  "source_and_installed_figure42_byte_identity": true,
+  "status": "PASS",
+  "v12_immutable_artifact_count": 15,
+  "v12_predecessor_status": "COMPLETE/PASS",
+  "visible_contextual_role": "corrected_smooth_ramped_pinn_five_seed_median_iqr",
+  "visible_deterministic_roles": [
+    "stage_a",
+    "matched_strong_gamma_i0",
+    "gl4_hybrid"
+  ]
+}

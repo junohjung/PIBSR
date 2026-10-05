@@ -1,0 +1,327 @@
+{
+  "schema_version": 1,
+  "case_id": "two_dimensional_burgers",
+  "title": "Two-dimensional coupled viscous Burgers equations",
+  "artifact_directory": "two_d_burgers",
+  "artifact_paths": {
+    "data": "data/two_d_burgers",
+    "checkpoints": "checkpoints/two_d_burgers",
+    "results": "results/two_d_burgers",
+    "point_sets": "point_sets/two_d_burgers"
+  },
+  "manuscript_sources": [
+    "PIBSR_manuscript_v2.tex:967-1308",
+    "PIBSR_manuscript_v2.tex:1914-2122",
+    "PIBSR_suppl_v2.tex:107-113",
+    "PIBSR_suppl_v2.tex:494-626",
+    "PIBSR_suppl_v2.tex:682-871",
+    "PIBSR_suppl_v2.tex:1243-1352",
+    "PIBSR_suppl_v2.tex:1548-1558"
+  ],
+  "domain": {
+    "coordinates": [
+      "x",
+      "y",
+      "t"
+    ],
+    "bounds": {
+      "x": [
+        0.0,
+        2.0
+      ],
+      "y": [
+        0.0,
+        2.0
+      ],
+      "t": [
+        0.0,
+        2.0
+      ]
+    },
+    "nondimensional": true
+  },
+  "physics": {
+    "prescribed_equations": [
+      "u_t + u*u_x + v*u_y = nu*(u_xx+u_yy)",
+      "v_t + u*v_x + v*v_y = nu*(v_xx+v_yy)"
+    ],
+    "nu": 0.01,
+    "boundary_conditions": "homogeneous_dirichlet_on_all_four_faces",
+    "initial_condition": {
+      "u_centers": [
+        [
+          0.65,
+          0.85
+        ],
+        [
+          1.05,
+          1.0
+        ]
+      ],
+      "u_widths": [
+        0.16,
+        0.2
+      ],
+      "u_peak": 1.0,
+      "v_centers": [
+        [
+          0.75,
+          1.2
+        ],
+        [
+          1.2,
+          0.8
+        ]
+      ],
+      "v_widths": [
+        0.18,
+        0.18
+      ],
+      "v_peak": 0.8,
+      "boundary_nodes_reset_to_zero": true
+    }
+  },
+  "observation_forcing": {
+    "role": "observation_generator_only",
+    "used_by_reconstruction_operator": false,
+    "constant_on_output_intervals": true,
+    "output_interval": 0.01,
+    "mode_pairs": [
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "normalization_grid_interior_shape": [
+      39,
+      39
+    ],
+    "ar1_correlation": 0.85,
+    "rng": "PCG64",
+    "seed": 1234,
+    "draw_order": "u_initial,v_initial,then_u_and_v_innovations_for_each_interval",
+    "u_amplitude": 0.2,
+    "v_amplitude": 0.16,
+    "envelope": {
+      "type": "raised_cosine",
+      "start": 0.1,
+      "end": 1.5,
+      "ramp_duration": 0.21
+    }
+  },
+  "observation_generator": {
+    "space_nodes": [
+      41,
+      41
+    ],
+    "time_nodes": 201,
+    "integrator": "RK4",
+    "solver_time_step": 0.0005,
+    "output_time_step": 0.01,
+    "spatial_discretization": {
+      "interior": "fourth_order_centered",
+      "adjacent_to_boundary": "second_order_centered"
+    },
+    "boundary_values_imposed_after_each_stage": true,
+    "observation_noise": false
+  },
+  "unforced_reference": {
+    "role": "post_selection_only",
+    "cell_grid": [
+      200,
+      200
+    ],
+    "integrator": "RK4",
+    "solver_time_step": 0.0005,
+    "spatial_discretization": "same_as_observation_generator",
+    "reporting_grid": [
+      41,
+      41
+    ],
+    "reference_interpolation": "cubic"
+  },
+  "spline": {
+    "degree": [
+      3,
+      3,
+      3
+    ],
+    "control_lattice_per_field": [
+      30,
+      30,
+      30
+    ],
+    "coefficients_per_field": 27000,
+    "fields": [
+      "u",
+      "v"
+    ],
+    "total_coefficients": 54000,
+    "knot_type": "open_clamped_uniform_simple_interior",
+    "coordinate_map": "affine_to_unit_interval",
+    "physical_derivative_scaling": true
+  },
+  "point_roles": {
+    "fitting": {
+      "data_rows": 106213,
+      "pde_rows": 106669,
+      "ic_rows": 1681,
+      "ordered_four_face_bc_rows": 32964,
+      "unique_bc_coordinates": 32160,
+      "balance_fit_times": 140
+    },
+    "selection": {
+      "data_validation_rows": 30332,
+      "pde_validation_rows": 30312,
+      "optimizer_balance_validation_times": 60,
+      "balance_weight_selection_times": 200,
+      "balance_weight_selection_design": "sealed_design_a_off_node",
+      "nodal_and_off_node_trace_checks": true
+    },
+    "post_selection": {
+      "balance_confirmation_times": 200,
+      "balance_confirmation_design": "sealed_design_b_off_node",
+      "balance_confirmation_disjoint_from_weight_selection": true,
+      "fully_off_node_shape": [
+        40,
+        40,
+        200
+      ],
+      "fully_off_node_points": 320000,
+      "mechanics_times": 41,
+      "mechanics_points": 262400,
+      "final_nodal_points": 30674
+    }
+  },
+  "balance": {
+    "partition_q": 4,
+    "regions": 16,
+    "fit_quadrature": "GL4",
+    "post_selection_quadrature": "GL8",
+    "shared_face_cancellation": true,
+    "advective_volume_corrections": [
+      "-integral(u*v_y)",
+      "-integral(v*u_x)"
+    ]
+  },
+  "selection": {
+    "strong_form": {
+      "beta_candidates": [
+        0.0,
+        0.0001,
+        0.001,
+        0.01,
+        0.03,
+        0.1,
+        0.3,
+        1.0,
+        10.0,
+        100.0
+      ],
+      "selected_beta": 0.01,
+      "rule": "log_normalized_pareto_endpoint_chord",
+      "reference_data_used": false
+    },
+    "trace": {
+      "kappa_candidates": [
+        1.0,
+        3.0,
+        10.0,
+        30.0
+      ],
+      "selected_kappa": 10.0,
+      "normalized_ic_bc_rms_limit": 0.001
+    },
+    "integral_balance": {
+      "gamma_candidates": [
+        0.0,
+        0.01,
+        0.03,
+        0.1
+      ],
+      "archived_sensitivity_candidates": [
+        0.003,
+        0.3
+      ],
+      "selected_gamma": 0.03,
+      "weight_formula": "lambda_I_c = gamma*J0/(2*I_c0)",
+      "minimum_component_and_geometric_mean_reduction": 0.01,
+      "rule": "smallest_candidate_meeting_all_reductions",
+      "reference_data_used": false
+    }
+  },
+  "optimizer": {
+    "name": "L-BFGS-B",
+    "gradient": "exact",
+    "line_search": "strong_Wolfe",
+    "history_size": 6,
+    "bounds": [
+      -2.0,
+      4.0
+    ],
+    "projected_gradient_tolerance": 1e-08,
+    "selected_hybrid_updates": 126,
+    "selected_hybrid_final_projected_gradient": 8.51e-09
+  },
+  "regularized_mfa": {
+    "role": "same_space_context",
+    "alpha_candidates": [
+      0.0,
+      1e-08,
+      1e-07,
+      1e-06,
+      1e-05,
+      0.0001,
+      0.001,
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "selected_alpha_1": 1e-08,
+    "selected_alpha_2": 1e-08
+  },
+  "contextual_pinn": {
+    "role": "context_only",
+    "hidden_layers": 6,
+    "width": 103,
+    "activation": "tanh",
+    "parameters": 54180,
+    "constraint_treatment": "hard_ic_and_homogeneous_bc",
+    "observation_pool": 106213,
+    "pde_pool": 106669,
+    "ic_pool": 1681,
+    "unique_positive_time_boundary_coordinates": 32000,
+    "stage_a_observation_union": 139894,
+    "observation_minibatch": 512,
+    "residual_minibatch": 1024,
+    "stage_a_adam_updates": 1000,
+    "stage_b_adam_updates": 2000,
+    "learning_rate": 0.001,
+    "physics_weight": 0.01,
+    "seeds": [
+      1101,
+      2202,
+      3303,
+      4404,
+      5505
+    ]
+  },
+  "expected_model_ids": [
+    "pibsr_strong_beta_0_01_kappa_10",
+    "pibsr_hybrid_beta_0_01_kappa_10_gamma_0_03"
+  ]
+}

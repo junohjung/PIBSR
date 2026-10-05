@@ -1,0 +1,92 @@
+{
+  "bc_gl2_rms": {
+    "gamma0": 0.005677683538424613,
+    "relative_change": 0.15838797296398274,
+    "selected": 0.006576960325206661,
+    "selected_over_gamma0": 1.1583879729639828
+  },
+  "bc_midpoint_rms": {
+    "gamma0": 0.00567772856687695,
+    "relative_change": 0.15838825564919223,
+    "selected": 0.006577014090634178,
+    "selected_over_gamma0": 1.1583882556491922
+  },
+  "gl2_analytic_relative_l2": {
+    "gamma0": 0.023269235104940483,
+    "relative_change": -0.008524554297234838,
+    "selected": 0.023070875246833294,
+    "selected_over_gamma0": 0.9914754457027651
+  },
+  "gl2_low_fidelity_data_mse": {
+    "gamma0": 6.5225514341411655e-06,
+    "relative_change": 0.1029721150928439,
+    "selected": 7.194192351116544e-06,
+    "selected_over_gamma0": 1.102972115092844
+  },
+  "gl2_pde_mse": {
+    "gamma0": 0.2555541928080989,
+    "relative_change": -0.10973783108290767,
+    "selected": 0.2275102299651949,
+    "selected_over_gamma0": 0.8902621689170923
+  },
+  "global_balance_gl4_time_rms": {
+    "gamma0": 0.0667260225954875,
+    "relative_change": -0.15716120156333224,
+    "selected": 0.05623928070883863,
+    "selected_over_gamma0": 0.8428387984366678
+  },
+  "global_balance_gl8_time_rms": {
+    "gamma0": 0.0667260300278033,
+    "relative_change": -0.15716120498891786,
+    "selected": 0.05623928674450701,
+    "selected_over_gamma0": 0.8428387950110822
+  },
+  "ic_gl2_rms": {
+    "gamma0": 0.0055010488883322824,
+    "relative_change": 0.03229876549320886,
+    "selected": 0.005678725976343204,
+    "selected_over_gamma0": 1.0322987654932088
+  },
+  "ic_midpoint_rms": {
+    "gamma0": 0.0057160645192478364,
+    "relative_change": 0.030122065951663533,
+    "selected": 0.005888244191680584,
+    "selected_over_gamma0": 1.0301220659516634
+  },
+  "midpoint_analytic_relative_l2": {
+    "gamma0": 0.023297673716026836,
+    "relative_change": -0.008561357200221224,
+    "selected": 0.023098214009409725,
+    "selected_over_gamma0": 0.9914386427997788
+  },
+  "midpoint_low_fidelity_data_mse": {
+    "gamma0": 5.203990980740319e-06,
+    "relative_change": 0.11790024838906735,
+    "selected": 5.817542809984069e-06,
+    "selected_over_gamma0": 1.1179002483890674
+  },
+  "midpoint_pde_mse": {
+    "gamma0": 0.282108897766054,
+    "relative_change": -0.11022857083117665,
+    "selected": 0.25101243714654337,
+    "selected_over_gamma0": 0.8897714291688233
+  },
+  "train_analytic_relative_l2": {
+    "gamma0": 0.023416495078561476,
+    "relative_change": -0.007639682532081442,
+    "selected": 0.02323760049014722,
+    "selected_over_gamma0": 0.9923603174679185
+  },
+  "train_low_fidelity_data_mse": {
+    "gamma0": 1.0025028265106633e-05,
+    "relative_change": 0.09909035518110774,
+    "selected": 1.1018411876596694e-05,
+    "selected_over_gamma0": 1.0990903551811078
+  },
+  "train_pde_mse": {
+    "gamma0": 0.23877535262073274,
+    "relative_change": -0.10740534403232181,
+    "selected": 0.213129603726064,
+    "selected_over_gamma0": 0.8925946559676782
+  }
+}

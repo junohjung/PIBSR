@@ -1,0 +1,19 @@
+{
+  "algorithm": "ascending sha256(salt + ':' + zero-padded-4-digit-index), tie by index",
+  "design_sha256": "9bf6ce20dcb1ac94098d53671c4ed062553c76cf6fb4fe8c5ebcb1bf1d418e1d",
+  "disjoint": true,
+  "exact_positive_time_partition": true,
+  "fit": {
+    "count": 700,
+    "path": "integral_time_fit_indices.txt",
+    "sha256": "97b014e54bb33fbb036f8230850c31bed9ee25586871e82f6ca6665376f84ec8"
+  },
+  "protocol_sha256": "1f1526660b10cf5946bccd6732a9d19f53a8f9fc448b3de9060a9c05c2f60341",
+  "salt": "CAVITY-RAMPED-GL4-v1:integral-time-role",
+  "schema": "pimfa.cmame.ramped_cavity_gl4_integral_roles.v1",
+  "validation": {
+    "count": 300,
+    "path": "integral_time_validation_indices.txt",
+    "sha256": "84ad161cb3d93fe8b4183eb5a7409683922707b06b8cbf4dd11cf603f6accb9e"
+  }
+}

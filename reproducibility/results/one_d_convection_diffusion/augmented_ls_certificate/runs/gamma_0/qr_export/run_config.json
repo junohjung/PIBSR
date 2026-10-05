@@ -1,0 +1,108 @@
+{
+  "checkpoint_sha256": "27c9b0b92ecd6a80d96694ba4f98137a5fe90d4e10d79f5a89b0cbd55203ae7a",
+  "command": [
+    "historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/code/mfa_1d_integral_working/build-v14/examples/pde/flowdata",
+    "-i",
+    "ConDiff1D",
+    "-f",
+    "historical_source/Revisions/CMAME_minor_revision_v12_corrected_1d_sweep_20260816/inputs/one_d_selection_only_v2",
+    "-v",
+    "40",
+    "-v",
+    "40",
+    "-q",
+    "3",
+    "-x",
+    "1"
+  ],
+  "effective_environment": {
+    "MFA_BFGS_GRAD_ABS_FLOOR": "1e+100",
+    "MFA_BFGS_MAX_UPDATES": "0",
+    "MFA_BFGS_REL_GRAD_REDUCTION": "1e-08",
+    "MFA_INITIAL_CTRL_PATH": "historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/results/one_d_integral_balance_v2/selection/candidates/gamma_0/ctrl_vector_BFGS_step_0000.txt",
+    "MFA_INT_DIAGNOSTICS": "1",
+    "MFA_INT_DIRECTIONAL_CHECK": "0",
+    "MFA_INT_DIRECTIONAL_DIRECTIONS": "3",
+    "MFA_INT_DIRECTIONAL_STEP": "9.9999999999999995e-07",
+    "MFA_INT_DIRECTIONAL_TOL": "1e-08",
+    "MFA_INT_FIT_TIME_INDEX_FILE": "historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/experiments/one_d_integral_balance_v2/design/fit_time_indices.txt",
+    "MFA_INT_PARTS_X": "4",
+    "MFA_INT_QUADRATURE": "gl4",
+    "MFA_INT_VALID_TIME_INDEX_FILE": "historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/experiments/one_d_integral_balance_v2/design/validation_time_indices.txt",
+    "MFA_LAMBDA_BC": "3e-5",
+    "MFA_LAMBDA_DATA": "1",
+    "MFA_LAMBDA_IC": "3e-5",
+    "MFA_LAMBDA_INT_BALANCE": "0",
+    "MFA_LAMBDA_PDE": "3e-5",
+    "MFA_QR_CERTIFICATE": "1",
+    "MFA_QR_CERTIFICATE_PREFIX": "augmented_ls",
+    "MFA_QR_PIVOT_THRESHOLD": "9.9999999999999998e-13",
+    "OMP_NUM_THREADS": "1"
+  },
+  "final_control_vector_sha256": "893e06045910b4ed34b1b8e60f4d9565570b0c92d409e227653d3532b8bcd3fb",
+  "flowdata_sha256": "d3efe1184305a0406298657e5fd36fc82d655b36eab634a78c27347def28d8a7",
+  "initializer_sha256": "893e06045910b4ed34b1b8e60f4d9565570b0c92d409e227653d3532b8bcd3fb",
+  "initializer_verification": "byte_identical",
+  "loaded_initializer_sha256": "893e06045910b4ed34b1b8e60f4d9565570b0c92d409e227653d3532b8bcd3fb",
+  "loss_history": {
+    "first": {
+      "base_weighted_objective": 1.719009046854636e-05,
+      "bc_mse": 3.216616542081974e-05,
+      "data_mse": 1.0025028265106616e-05,
+      "ic_mse": 2.788799517075512e-05,
+      "integral_fit_mse": 0.006517775757667094,
+      "integral_validation_mse": 0.006484350355965328,
+      "objective_counter": 0,
+      "pde_mse": 0.23877535262073327,
+      "physics_sum": 0.23883540678132484,
+      "unweighted_total": 0.23884543180958995
+    },
+    "last": {
+      "base_weighted_objective": 1.719009046854636e-05,
+      "bc_mse": 3.216616542081974e-05,
+      "data_mse": 1.0025028265106616e-05,
+      "ic_mse": 2.788799517075512e-05,
+      "integral_fit_mse": 0.006517775757667094,
+      "integral_validation_mse": 0.006484350355965328,
+      "objective_counter": 0,
+      "pde_mse": 0.23877535262073327,
+      "physics_sum": 0.23883540678132484,
+      "unweighted_total": 0.23884543180958995
+    },
+    "objective_evaluations": 1,
+    "schema_columns": 9
+  },
+  "qr_certificate_artifacts": {
+    "augmented_ls_A.mtx": {
+      "bytes": 26059611,
+      "sha256": "cbba0c7a412479aa5f550c24a09b0ff12c1415454aaa28a38cdba12338dfdd30"
+    },
+    "augmented_ls_b.txt": {
+      "bytes": 1488226,
+      "sha256": "23c0818283cad9c0b41097ac1d38ae587bff26686b390835a1f52be0583de917"
+    },
+    "augmented_ls_certificate.txt": {
+      "bytes": 1976,
+      "sha256": "4fd0ee90fa9602b7bb20f151bf2f90215571d97601d32aceed389b492dbf2ba5"
+    },
+    "augmented_ls_qr_coefficients.txt": {
+      "bytes": 45398,
+      "sha256": "b41d1b6d36ddb6f887983b2d4084f8c31bdc3e3951ce9831175f10b7529e3d42"
+    }
+  },
+  "termination": {
+    "accepted_updates": 0,
+    "achieved_gradient_ratio": 1.0,
+    "classified_reason": "gradient_tolerance",
+    "configured_absolute_gradient_floor": 1e+100,
+    "configured_gradient_inf_tolerance": 1e+100,
+    "configured_max_updates": 0,
+    "configured_relative_gradient_reduction": 1e-08,
+    "independently_recomputed_gradient_inf": 9.997630908446306e-11,
+    "initial_gradient_inf": 9.997630908446306e-11,
+    "normalized_stationarity": 9.997630908446305e-119,
+    "optimizer_called": "false",
+    "reported_gradient_inf": 0.0,
+    "solver_status": "Solver not started."
+  }
+}

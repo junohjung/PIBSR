@@ -1,0 +1,55 @@
+{
+  "commands": [
+    {
+      "argv": [
+        "historical_source/miniconda3/envs/myenv1/bin/python3.12",
+        "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/experiments/ramped_cavity_gl8_crosscheck/export_checkpoint_interchange.py",
+        "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/results/ramped_cavity_gl4_v4/campaign_v4/stage_b/strong_only__gamma_0p02/final_coefficients_v1.txt",
+        "historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/results/ramped_cavity_matched_strong_control_gl8_reporting_v1/model",
+        "--expected-checkpoint-sha256",
+        "ae299d4f9d3837846eedb71d28011bd0b80ae822bcf5c145e8b942b86f28984f",
+        "--checkpoint-role",
+        "selected_endpoint"
+      ],
+      "cwd": "historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/results/ramped_cavity_matched_strong_control_gl8_reporting_v1",
+      "returncode": 0,
+      "shell": false,
+      "stderr": "",
+      "stdout": "{\"model_manifest\": \"historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/results/ramped_cavity_matched_strong_control_gl8_reporting_v1/model/model.json\", \"model_manifest_sha256\": \"07d18dedf7f56da30c3406094c1a70de88df6ac71586bdab910e041966a79c20\", \"status\": \"pass\"}\n"
+    },
+    {
+      "argv": [
+        "historical_source/miniconda3/envs/myenv1/bin/python3.12",
+        "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/experiments/ramped_cavity_gl8_crosscheck/evaluate_gl8.py",
+        "historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/results/ramped_cavity_matched_strong_control_gl8_reporting_v1/model",
+        "historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/results/ramped_cavity_matched_strong_control_gl8_reporting_v1/independent_python",
+        "--times-file",
+        "historical_source/Revisions/CMAME_minor_revision_v5_ramped_gl4_20260804/results/ramped_cavity_gl4_v4/protected_control_v4_20260805b/sealed_midpoint_times_v4.txt",
+        "--shift-fraction",
+        "0.025"
+      ],
+      "cwd": "historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/results/ramped_cavity_matched_strong_control_gl8_reporting_v1",
+      "returncode": 0,
+      "shell": false,
+      "stderr": "",
+      "stdout": "{\"status\": \"pass\", \"output\": \"historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/results/ramped_cavity_matched_strong_control_gl8_reporting_v1/independent_python\"}\n"
+    }
+  ],
+  "environment": {
+    "LANG": "C",
+    "LC_ALL": "C",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PATH": "/usr/bin:/bin:/usr/local/bin:/opt/homebrew/bin",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONHASHSEED": "0",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "interpreter": "historical_source/miniconda3/envs/myenv1/bin/python3.12",
+  "interpreter_sha256": "9606c46f10e75c3b17def5b09587b98c8e7f64ddf540d69bb72e989eb07c81d8",
+  "schema": "pimfa.ramped_cavity_matched_strong_control.commands.v1",
+  "shell_used": false,
+  "status": "PASS"
+}

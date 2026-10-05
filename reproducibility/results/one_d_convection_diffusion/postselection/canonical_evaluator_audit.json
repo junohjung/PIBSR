@@ -1,0 +1,12 @@
+{
+  "canonical_functions_reused": [
+    "make_evaluation_points",
+    "analytic_solution",
+    "evaluate_checkpoint"
+  ],
+  "canonical_v12_gl4_uses_released_x_cells": true,
+  "gamma0_selection_q1_gl4_minus_canonical_gl4_rms": 2.3999501861098207e-08,
+  "interpretation": "The GL4 difference is a quadrature-partition cross-check, not an operator-agreement tolerance.",
+  "selected_selection_q1_gl4_minus_canonical_gl4_rms": 2.45630237099653e-08,
+  "selection_q1_uses_exact_model_knot_spans": true
+}

@@ -1,0 +1,143 @@
+{
+  "closure_max_abs": {
+    "acceptance_tolerance": 1e-15,
+    "matched_strong_gamma_i0": {
+      "mass": 6.433215234396411e-19,
+      "x_momentum": 3.469446951953614e-18,
+      "y_momentum": 3.903127820947816e-18
+    },
+    "selected_gl4_hybrid": {
+      "mass": 3.2695471764015993e-19,
+      "x_momentum": 1.734723475976807e-18,
+      "y_momentum": 2.168404344971009e-19
+    },
+    "stage_a": {
+      "mass": 8.180220688108406e-19,
+      "x_momentum": 6.938893903907228e-18,
+      "y_momentum": 5.637851296924623e-18
+    }
+  },
+  "contract": {
+    "archived_total_gamma": {
+      "matched_strong_control": 0.02,
+      "selected_gl4_hybrid": 0.04
+    },
+    "common_initializer_sha256": "79b572cb9b02507a056a127e97871853f8aa4661925c88c46e2d33e5e779c592",
+    "matched_control_candidate_id": "strong_only__gamma_0p02",
+    "matched_integral_weights": {
+      "mass": 0.0,
+      "xmom": 0.0,
+      "ymom": 0.0
+    },
+    "scientific_parameterization": {
+      "matched_strong_control": {
+        "gamma_I": 0.0,
+        "gamma_S": 0.02
+      },
+      "selected_gl4_hybrid": {
+        "gamma_I": 0.02,
+        "gamma_S": 0.02
+      }
+    },
+    "selected_hybrid_candidate_id": "gl4_hybrid__gamma_0p04",
+    "selected_hybrid_integral_weights": {
+      "mass": 0.0015364163107434725,
+      "xmom": 7.676727089783005e-05,
+      "ymom": 7.830033854548832e-05
+    },
+    "status": "PASS",
+    "strong_weights": {
+      "div": 5.148013177571129e-07,
+      "xmom": 2.128694919824047e-06,
+      "ymom": 2.165154625213024e-06
+    },
+    "strong_weights_exactly_equal": true,
+    "terminology_note": "gamma_I=0 is the matched strong-form ablation. Literal archived total gamma=0 would be Stage A and is not this checkpoint."
+  },
+  "display_label_recommended": "PI-BSR (strong-form, gamma_I=0; matched)",
+  "evaluation": {
+    "canonical_partition": "4 by 4",
+    "common_time_count": 200,
+    "implementation": "protected independent Python canonical GL8",
+    "production_cpp_comparison_performed": false,
+    "quadrature_order": 8,
+    "reason_no_production_cpp_comparison": "No archived matched-control production table exists; this is the same hash-pinned independent reporting operator.",
+    "shift_fraction": 0.025,
+    "time_tokens_exactly_match_stage_a_hybrid_and_seal": true
+  },
+  "evaluator_summary_rms_max_abs_difference": 6.617444900424222e-24,
+  "information_boundary": {
+    "higher_resolution_role_opened": false,
+    "new_training": false,
+    "official_protected_gate_rerun": false,
+    "optimizer_launched": false,
+    "sealed_reporting_times_read": true,
+    "selection_rerun": false,
+    "validation_or_reference_field_opened": false
+  },
+  "metrics": {
+    "matched_strong_gamma_i0": {
+      "q1": {
+        "mass": 3.900424461961319e-08,
+        "x_momentum": 0.01511832506704895,
+        "y_momentum": 0.0012183815138741825
+      },
+      "q4": {
+        "mass": 0.0038113258344850244,
+        "x_momentum": 0.010961985487895872,
+        "y_momentum": 0.009904101170860302
+      }
+    },
+    "matched_strong_vs_stage_a_percent_reduction": {
+      "q1": {
+        "mass": -3483.906360699607,
+        "x_momentum": 4.783727350130407,
+        "y_momentum": 29.931061370245583
+      },
+      "q4": {
+        "mass": -0.2750032599015739,
+        "x_momentum": 35.76039596769146,
+        "y_momentum": 40.64190093558159
+      }
+    },
+    "selected_gl4_hybrid": {
+      "q1": {
+        "mass": 7.523826375721583e-06,
+        "x_momentum": 0.003762827850348226,
+        "y_momentum": 0.0005877116270897696
+      },
+      "q4": {
+        "mass": 0.003658774373969478,
+        "x_momentum": 0.0029682163510220626,
+        "y_momentum": 0.0007796489546582735
+      }
+    },
+    "selected_hybrid_vs_matched_strong_percent_reduction": {
+      "q1": {
+        "mass": -19189.763073473918,
+        "x_momentum": 75.11081529428498,
+        "y_momentum": 51.76292315688726
+      },
+      "q4": {
+        "mass": 4.002582490724227,
+        "x_momentum": 72.92263929468305,
+        "y_momentum": 92.128019078075
+      }
+    },
+    "stage_a": {
+      "q1": {
+        "mass": 1.088316509809683e-09,
+        "x_momentum": 0.015877879532884293,
+        "y_momentum": 0.0017388325521985328
+      },
+      "q4": {
+        "mass": 0.0038008733089805987,
+        "x_momentum": 0.01706421708698994,
+        "y_momentum": 0.016685340883494045
+      }
+    }
+  },
+  "role": "matched_strong_gamma_i0",
+  "schema": "pimfa.ramped_cavity_matched_strong_control_gl8_reporting.v1",
+  "status": "COMPLETE_REPORTING_ONLY"
+}

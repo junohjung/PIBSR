@@ -1,0 +1,2449 @@
+{
+  "augmented_rectangular_ls_certificate": {
+    "artifact_prefix": "augmented_ls",
+    "block_order": [
+      "data",
+      "linear_pde",
+      "initial_condition",
+      "boundary_condition",
+      "q4_integral_fit"
+    ],
+    "certificate_payload_manifest_sha256_stored_in_seal": true,
+    "certified_candidates": [
+      "freshly optimized gamma0",
+      "sealed selected gamma"
+    ],
+    "coefficient_count": 1600,
+    "gates": {
+      "bfgs_independently_recomputed_gradient_inf_max": 1e-10,
+      "certificate_primary_raw_gradient_inf_max": 1e-10,
+      "coefficient_relative_l2_max": 0.0001,
+      "direct_solver_success": true,
+      "matrix_and_rhs_finite": true,
+      "primary_gradient_agreement_policy": "relative_difference",
+      "primary_gradient_agreement_relative_max": 1e-08,
+      "qr_kkt_backward_error_max": 1e-10,
+      "relative_objective_gap_max": 1e-06,
+      "selection_metric_relative_difference_max": 0.001
+    },
+    "matrix_rhs_metadata_and_solution_hashes_sealed_after_generation": true,
+    "normal_equations_permitted_only_for_backward_error_evaluation": true,
+    "normal_equations_used_for_solution": false,
+    "positive_gamma_expected_rows": 49976,
+    "primary_kkt_backward_error_policy": "reported for transparency only; BFGS is gated by independently recomputed raw gradient, objective gap, coefficient, and metric agreement",
+    "rank_pivot_threshold": 1e-12,
+    "reference_excluded": true,
+    "required_after_selection_before_repeats_and_reference_opening": true,
+    "required_artifacts": [
+      "augmented_ls_A.mtx",
+      "augmented_ls_b.txt",
+      "augmented_ls_qr_coefficients.txt",
+      "augmented_ls_certificate.txt"
+    ],
+    "required_numerical_rank": 1600,
+    "row_blocks": {
+      "boundary_condition": 800,
+      "data": 24000,
+      "initial_condition": 60,
+      "linear_pde": 24000,
+      "q4_integral_fit": 1116
+    },
+    "row_weighting": {
+      "boundary_condition": "sqrt(lambda_bc/(nBC*nt))",
+      "data": "sqrt(lambda_data/(nx*nt))",
+      "initial_condition": "sqrt(lambda_ic/nx)",
+      "linear_pde": "sqrt(lambda_pde/(nx*nt))",
+      "q4_integral_fit": "sqrt(lambda_I/n_integral_rows) times raw_balance/sqrt(subinterval_length)"
+    },
+    "selection_metrics": [
+      "midpoint_data_mse",
+      "midpoint_pde_mse",
+      "q4_balance_validation_mse",
+      "q1_global_time_rms"
+    ],
+    "solver": "Eigen SparseQR on rectangular A with COLAMD ordering"
+  },
+  "candidate_gamma": [
+    {
+      "literal": "0",
+      "value": 0.0
+    },
+    {
+      "literal": "0.01",
+      "value": 0.01
+    },
+    {
+      "literal": "0.03",
+      "value": 0.03
+    },
+    {
+      "literal": "0.1",
+      "value": 0.1
+    },
+    {
+      "literal": "0.3",
+      "value": 0.3
+    },
+    {
+      "literal": "1",
+      "value": 1.0
+    },
+    {
+      "literal": "3",
+      "value": 3.0
+    },
+    {
+      "literal": "10",
+      "value": 10.0
+    }
+  ],
+  "created_utc": "2026-08-20T00:52:05.495120+00:00",
+  "directional_gradient_check": {
+    "directions": 3,
+    "gamma_for_check": 1.0,
+    "relative_tolerance": 1e-08,
+    "required_before_family": true,
+    "step": 1e-06
+  },
+  "fixed_objective": {
+    "all_candidates_restart_from_identical_selected_beta_control": true,
+    "beta": 3e-05,
+    "gamma_zero_is_freshly_reoptimized": true,
+    "weights": [
+      1.0,
+      3e-05,
+      3e-05,
+      3e-05
+    ]
+  },
+  "information_excluded_until_certificate_and_repeat_seals_pass": [
+    "analytical solution arrays",
+    "analytical relative errors",
+    "canonical V12 GL8 global-balance curves",
+    "PINN predictions",
+    "post-selection GL2 grids"
+  ],
+  "information_excluded_until_selection_sealed": [
+    "analytical solution arrays",
+    "analytical relative errors",
+    "canonical V12 GL8 global-balance curves",
+    "PINN predictions",
+    "post-selection GL2 grids"
+  ],
+  "inputs": {
+    "canonical_v12_common_sha256": "857ad5190d8a0dbffdf41dbe16dfb2f23276027ed693c7dbb348fdd5e6748e2a",
+    "canonical_v12_postselection_sha256": "bb692a8d9dad901198449bfc77e6a704ca914b69c94be8667977b0a505bba20c",
+    "decoder_sha256": "f925ac6a9ed26cd44ad6c528624c72d058e8d1dfa20acacec51fa400ff4df798",
+    "experiment_sources": {
+      "README.md": {
+        "bytes": 6468,
+        "sha256": "d4dd4c97acc7e8f32b782ae1e49552f3c02db69f97f5be9b9f434693d123b556"
+      },
+      "campaign_common.py": {
+        "bytes": 42594,
+        "sha256": "b81a1bfcbd3384c138f109fb6a3ad0f82023c88180efb8197cde38d5507a1d1d"
+      },
+      "design/fit_time_indices.txt": {
+        "bytes": 1041,
+        "sha256": "4b91301246750dfb06c394cae7697920ce57eb2108072e1d81e2b7e88c8fe384"
+      },
+      "design/validation_time_indices.txt": {
+        "bytes": 447,
+        "sha256": "daf23e58620ab86aaba1adba27307ff14dd5bdc478ad0dc40d1e5a724e166649"
+      },
+      "design/x_unique_knots_nctrl40_p3.txt": {
+        "bytes": 912,
+        "sha256": "cb55d7425d01226dcd5b904939b59354b6a59c83d057ae3e05a493145227e316"
+      },
+      "dry_operator_agreement.py": {
+        "bytes": 5284,
+        "sha256": "f74ca74fb83159016830d81f722e9fba8f1bfc09d16e6b743acbcc60388b87f5"
+      },
+      "dry_qr_certificate_integration.py": {
+        "bytes": 6608,
+        "sha256": "68de29d9437576fe3fec4d5ce65f2dd0d1e6843a7bd3b140069dc113938c0bde"
+      },
+      "freeze_campaign.py": {
+        "bytes": 24916,
+        "sha256": "c1a775dcbd5a09695357459daef14fae17d25c6434f5a3ea1fc8c9298a7cc933"
+      },
+      "run_augmented_ls_certificates.py": {
+        "bytes": 22475,
+        "sha256": "c90113f67828b8105b85ce3ef915a7218007237e78e9096239aacab2a505be09"
+      },
+      "run_gamma_family.py": {
+        "bytes": 22919,
+        "sha256": "d3980b5e60130891c76c955481854a9823afaea0826100869763b0b14468e208"
+      },
+      "run_postselection.py": {
+        "bytes": 25235,
+        "sha256": "689cd84a67e009cfaaa1f73f534d75b91d267799e197eaea875fd64af7512f09"
+      },
+      "run_postselection_reproducibility.py": {
+        "bytes": 12020,
+        "sha256": "8ed6eb578c47c42f4856ccf45d1c2d361e27c84b871c488643748a865bf1d8b1"
+      },
+      "select_reference_excluded.py": {
+        "bytes": 14386,
+        "sha256": "bf492eb665535d6f599c8fd4e747f297f5c12140aaf6af25fb61fa624f772e98"
+      },
+      "self_audit.py": {
+        "bytes": 8212,
+        "sha256": "1b50acbcecf44dca8c2f7ce8c9280e5c828469d24a3cc422494707cbba0242da"
+      },
+      "test_campaign_infrastructure.py": {
+        "bytes": 8914,
+        "sha256": "5c5ad2dc8ae2309a0f2153840386c0ff8bbec9e45be6ff31f88c8b54fd9d45e9"
+      }
+    },
+    "flowdata_sha256": "d3efe1184305a0406298657e5fd36fc82d655b36eab634a78c27347def28d8a7",
+    "operator_sources": {
+      "code/mfa_1d_integral_working/examples/pde/flowdata.cpp": {
+        "bytes": 11582,
+        "sha256": "3dd486dc3b180f2fd57ec2cee0bc88890259b0807025acd59daedd98c94774fc"
+      },
+      "code/mfa_1d_integral_working/include/mfa/encode.hpp": {
+        "bytes": 291670,
+        "sha256": "4b827e32728227c84c3e7327124f6c869f785e800366b25fe6b9c57ce6909d12"
+      },
+      "code/mfa_1d_integral_working/include/mfa/scalar_integral_balance.hpp": {
+        "bytes": 35477,
+        "sha256": "a4a54b9a345db621dcd7ef8180b4fe6df136770897314b2f13d7bcc0869d5bfa"
+      },
+      "code/mfa_1d_integral_working/include/mfa/weighted_least_squares_certificate.hpp": {
+        "bytes": 26515,
+        "sha256": "e58469aa6a5f3d9549ba4bdd26545a730781a46e63859af52b8d1716c5cb3c9c"
+      },
+      "code/mfa_1d_integral_working/tests/test_weighted_least_squares_certificate.cpp": {
+        "bytes": 11079,
+        "sha256": "434059551f7a8a6619ca5acc73f34831879885804631be0c6329171b1b6f1447"
+      }
+    },
+    "selected_checkpoint_sha256": "fe7ba3e92bc5163f5709c6c1bc7b590861b010d2fc9b6671485affb45e844342",
+    "selected_control_sha256": "22d25746cd88d0866ced676fbd4095f73790b8611c84a1497c001b73a34bad86",
+    "selected_run_config_sha256": "fbe53b219cfb351f6113dddda469259e6bb57ff17b349dcb405f552233ee7fe8",
+    "selection_input_entries": [
+      {
+        "bytes": 92,
+        "path": "BC.txt",
+        "sha256": "7d4971ade8acd8690dd35c756b79b159e49b0efc53e5d8c96d58bba2c04ccdd4"
+      },
+      {
+        "bytes": 2760,
+        "path": "IC.txt",
+        "sha256": "1504e4c78e9094b0c702c17ede4eed0aadc74608760d2241a5832a2b2a1574b4"
+      },
+      {
+        "bytes": 172151,
+        "path": "selection_archive.npz",
+        "sha256": "60736ad88054e71eac6ce0e650249e54d07d3819ebb2ade121aee6582ee456bf"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0000.txt",
+        "sha256": "1504e4c78e9094b0c702c17ede4eed0aadc74608760d2241a5832a2b2a1574b4"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0001.txt",
+        "sha256": "d3ec1dd4dbe9aa2b8ba9edd76aa5271464fc6cc61e74417507f463a511014784"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0002.txt",
+        "sha256": "dabfaf8d2741dd37ee6d4d8cf3a42674fae4639b9f219b50b6178989e164d1c5"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0003.txt",
+        "sha256": "0fc2074b0ab9f45394e5642cf81588f235958c8f78f24bbb8564f865b869836a"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0004.txt",
+        "sha256": "add16f9e497fb7c8e3af7dfa5c085edb664faa76d4eabec8855e4f115b8d6eac"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0005.txt",
+        "sha256": "bd53722ad9cace7411d01f74aa0c2d18f0bf34be42bf3cc9aedbea9277d9018d"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0006.txt",
+        "sha256": "8650a4c1e347c2ecae8063e5ff81c11adba18b5a07666fa12931c1a436d6e647"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0007.txt",
+        "sha256": "f040cfc715cf1b9c226f78f3bad508912514627023b46a747c3899775517f77e"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0008.txt",
+        "sha256": "9f23b230c9c7d5aaf6bcd44575159ad0dbfece210da5a35be0d3a3a8d8151073"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0009.txt",
+        "sha256": "ca58d49665365604671f168f2329c03d97d458c055e1d3dfa5bd5cdddba42791"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0010.txt",
+        "sha256": "27540d6488f1302fad9261630cd4d111eb70e562bf2333e61dc5c6c24914ce1f"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0011.txt",
+        "sha256": "13da6135132dc04168744c48211215a2ce9569bdcb9631dee1a58b83a859a291"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0012.txt",
+        "sha256": "d4a66a1b31fa4df497aac17be652878978b228dccee8e20f3eba57c7310e1177"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0013.txt",
+        "sha256": "3e1da753d95347454ab820f9dc01e1542389e7a7937cc906e1e8de81c81b4f63"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0014.txt",
+        "sha256": "2e094c42a17c3f05328ee1aa79d4068cbd2f26b749c516e29e10952fd9212b0e"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0015.txt",
+        "sha256": "9bddcb7a2d965bc99ec8c4463a450fba54402973de2a9c5d3f4c1e0317bfc30d"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0016.txt",
+        "sha256": "56b727e1ce58f51f0304a6fee8863adf5b2830876fa86ddd79f58ff232c0f9bc"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0017.txt",
+        "sha256": "58390345140ba8daccbfbce0720fd82ae14cad68834df026d0cb5e9db301fb67"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0018.txt",
+        "sha256": "9d160e48d0b3cac1ab9478e10e8b39f4c7377751791cf7e2a76e3ed2bfe048ae"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0019.txt",
+        "sha256": "0611df3c086fe6ac3a56de07b762ebe5ae1e77f2773e17fe72e276b4a530d087"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0020.txt",
+        "sha256": "44efc39c8b0417955a2de84813718c0b3d798992ea6734c665340b7789ae3405"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0021.txt",
+        "sha256": "1ad4ebb5d49e0e655bb5dbb81a2f1bb17061bf2d5a0bfa9317e6ac06f4a15d86"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0022.txt",
+        "sha256": "82ad6fdfee507666584d21be5286a3cb431c877f99c130c23966e4fbda0a6a70"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0023.txt",
+        "sha256": "85aab7c814b283898ba5594b5af92be7e99dc541b9bf22954dfe67a8cbbf5276"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0024.txt",
+        "sha256": "1da1313f706178f61babfbae3fe358b792626c85398d63b86e433484eeddd2c4"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0025.txt",
+        "sha256": "2ea2b7e9ccaf6b422e81f385e61562df355c169e9374d4e0b6acfe1fd726c114"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0026.txt",
+        "sha256": "8573a69cd41ee1b9bfd30cc5fef942812515e3a08d71c5a3774a6e6831c70351"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0027.txt",
+        "sha256": "eaa84a2f0b381efd994bb0f914b1d74c300b4c92b2f72a147df7dfcb49e417f6"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0028.txt",
+        "sha256": "de3d6e3ac4a5d9789c5885a8cfb6fd061fd92538f13242f68679d9975388e0f2"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0029.txt",
+        "sha256": "d19b35a1f8e651a979fdc30102abca6aa8e36c7eb9978a66574b27544da1530f"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0030.txt",
+        "sha256": "198ab1ca338726e89fd59e02fdf5a03ab4bf6403dc824887fe3899fd5558cf42"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0031.txt",
+        "sha256": "8cdd8022002fa6be9b5f1e0d32907c696567dff11f5910c8d508457fbfb69308"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0032.txt",
+        "sha256": "86924906dff8f30e60bb26901c8e957de8bcdce188669b481a34a951ac0486f7"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0033.txt",
+        "sha256": "37b84802dd927f80b93baca8fbc3e7bb3f6d987d42d7164f994252d235f2b096"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0034.txt",
+        "sha256": "87cc50c76dc93d7273dd7a68f61d6c5d53e74094a289a7e11b02399660fe8de5"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0035.txt",
+        "sha256": "be71b520d45a234c87bf7f19d29cde594f7e1e497d8ed3a6336a0b4856c0f68b"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0036.txt",
+        "sha256": "b1dd245b223b0702baef9f7153ea43aead25a50d2d24cb88a7c81a2183b391e0"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0037.txt",
+        "sha256": "0e11f3dd7633e1700f044a64b1f801fa27ce218fc7c17f6a2c3f3db6be7c80dc"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0038.txt",
+        "sha256": "07fa1f259d8ab50e02984da7aa81b54059c38e4a3f258d30fc97c678df414ef1"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0039.txt",
+        "sha256": "60254afd66a12b238b887908a201731e51cf82528a44654d0c4277f22a61329e"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0040.txt",
+        "sha256": "cc612923b448d7aa5e4ea7f55843dfe5300d9d0df5af9d7639403cfd076d0ee0"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0041.txt",
+        "sha256": "d7ed4660324fa5581e79285d2a3a36eec814614415fb2529b6fcc58fe7073639"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0042.txt",
+        "sha256": "0cda3f3b8bcac8a698c3c8e3645c4acc1f1e287a96b4a25f36f8a28b244485a5"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0043.txt",
+        "sha256": "f144632f6a7d6b9dcf830c297902ff58da070e2d9384286cd9634b8d75c0a7a3"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0044.txt",
+        "sha256": "4cfe9a1c3d136dce0c9f285144d9081e5bb5ca2c966dae6acde597b1430e5f38"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0045.txt",
+        "sha256": "59e577fb29a949ea8049543936be660c9e1c7b6da69dab902dc8774e4c542a58"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0046.txt",
+        "sha256": "58548c029ae2b44f8b098dc407b5e9b10aaf4a481e19b9a88fb088be9bca4a7a"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0047.txt",
+        "sha256": "f17d3d1981572f7cee9cc30136ba5d3dfcfdb6110ae01af4084c50e374850dd2"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0048.txt",
+        "sha256": "ee9ee226977cd296b8cde664924eeb4d4fc76965700a2225cbfaf8588bb48cc2"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0049.txt",
+        "sha256": "3e2aa6da294e76034e530b74a99ebdeca508ee3bebea2f5632038f145dc6f236"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0050.txt",
+        "sha256": "4d6b2072cd1b5b99edd207a6d5c5dad0a5f744fd8f10c601a471609a02aef49a"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0051.txt",
+        "sha256": "6472d78c890c07713a540584f7400aaaba1969bc4afe95ac00a12bbf5562318e"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0052.txt",
+        "sha256": "e2b7ee9f2ebd9de7fd1c3cfff0ff6de491a4d71aaed5222a59af5bfebd43737c"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0053.txt",
+        "sha256": "c1de0b2d06ad9d24390095a377fccbfedca709e7d7110124a09eb3464a8f6aa5"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0054.txt",
+        "sha256": "9633cc6eed565853888bad29c8dc36e18c4088f374c395a8fbcef0e8ade47598"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0055.txt",
+        "sha256": "6097d251e430b607d7e6f911183e127ed67f0d7747dbb538aa52b9374da625b1"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0056.txt",
+        "sha256": "1337ddc4e20c5cc6e5651c3ee17a42eef95f56141a750f5630aba22b9f747f40"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0057.txt",
+        "sha256": "7a8255a4c0c169c5ae59bb26a1c78d7468847a3f63dacab562886ffd5053b623"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0058.txt",
+        "sha256": "179ee71b44e218396e7f71dc69ea2102df0eab255bfa7ceb3b236ab7f10fce15"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0059.txt",
+        "sha256": "e19df599323f8f12a49740b7d65925fb1b871c898c5d8e1719adbe7357e64ec5"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0060.txt",
+        "sha256": "4d29b3356679ad4053b3eb92666ddbf62ddb1d6342c9c8c32ffe337c98ee0dc7"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0061.txt",
+        "sha256": "1f78ab9f9c6cbd57547c123a2aae2362b2a0fc77375af20bba5a17570ee7f842"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0062.txt",
+        "sha256": "52daa596e75762a9466bb8b2363a182dacebe4ef09abcc1f04e6aeeee389d10d"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0063.txt",
+        "sha256": "2bb5c523dc44128fd00b49dc785267cbd16a83dce1dd8951a9e7bff154d1d28b"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0064.txt",
+        "sha256": "ebf4cd83e33fca811a893e8c421851ca3b24037c1fcf27146245cd8178ab233c"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0065.txt",
+        "sha256": "2f791b5847fe247082323ab5328a7e54f9232989c6bc5f894fe4c326247eee4f"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0066.txt",
+        "sha256": "a224d0d536aac9fc255bf83b7aa333e53a72fc0b1eef056949a66c80fe842dee"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0067.txt",
+        "sha256": "22663989621c8fdca2206a18e0f812c6a2d275652d61033c184115da95a7d905"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0068.txt",
+        "sha256": "f3fe627c092ccc27678a33c7bb3b049dc239d3d89c0c695dc232ceb6037d8c3c"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0069.txt",
+        "sha256": "eaa811bcf67c8b7acec934ee96b6a59de3716de243b039eee15b3cd896b798b2"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0070.txt",
+        "sha256": "7dd0f33b8d55c2faf376ab3f002b36404c2f0d818d3d7c45bbdc968a4d7794e4"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0071.txt",
+        "sha256": "7f6e6545a4eb44a6b838de717c66b0942188782b80da360a9ec8c0567a8a30dc"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0072.txt",
+        "sha256": "6632e03b586ffc4c0d0fd5e91b6ff269ae626a14937f7c025f6a49bdfc235806"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0073.txt",
+        "sha256": "c20259353c34cea69492d13d331313b26ed46fabed28fe01731291fa1546c71c"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0074.txt",
+        "sha256": "45f181e7e1a2e5bfd0ad5ddfe68ede0b59e9a9ae8594527d9539b849b3e40048"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0075.txt",
+        "sha256": "dfaae0328fef475ded244dbe3cc08aa0a9a2fe9c814688dffb20f1222c7969d0"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0076.txt",
+        "sha256": "3301325b60e66adeef0c21ea7b0b9387b3111942dd508bc9b9be67497fcae083"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0077.txt",
+        "sha256": "8795d52d4064799410d4e9fbcf889983dba5fc1ab005ba544a74864512266c6d"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0078.txt",
+        "sha256": "d80d64e2751cf90137d291b0591904b6b6dc54544be05ef6baea7f69f559540c"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0079.txt",
+        "sha256": "1588fdaea59f8777d3a738710b77ab7e75f790704471d716d233dd667579009b"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0080.txt",
+        "sha256": "b6bd1807d7f6ce0073080b45e9311c14432d93909240ced25beda91b2cae9514"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0081.txt",
+        "sha256": "09d97500b0ced08e9da21a405e34008f59afe58bd255401838abf5d5d0ba1b5e"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0082.txt",
+        "sha256": "7a9f293611023adccf1adf34c56eca2acf704838a0355f10840e0e2c39a6a281"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0083.txt",
+        "sha256": "a3b0e5ed3c74914240d58f511602de4cc1a917a7229d39d1b4cb2d1edb59f4a5"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0084.txt",
+        "sha256": "6a976e977472a80014bcc0e3c5fa0fd3158c20eab7c0a9c95b0ccddeeabceaef"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0085.txt",
+        "sha256": "ed8956e61f510375506a0dd43c5d22bf26fa4a4efb0f803b4065b17046b7f254"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0086.txt",
+        "sha256": "677d45af9f88cb5a51fd097d22e4177262b4e4da5a31fe4c7bfc058798a64dc1"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0087.txt",
+        "sha256": "f98ea5b13cf57df46e6956e0f121f3302104200c6a2dc8b2b4c6dd61281d71e3"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0088.txt",
+        "sha256": "76ec2a2702e15b4167befd68b8df3ef380a814f167292e27f63fccbfe76015c6"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0089.txt",
+        "sha256": "1ae92c2efd435567381adcb4862d3f946b9a05a3247e2de9f22d15841d45ad59"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0090.txt",
+        "sha256": "8399a9acbd33b360031aaba78428aa9f8d4d1314a1dc37b660809181c3a8b114"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0091.txt",
+        "sha256": "3805c79c21c4da587cb8d2b7c9eebc20756ab7599792a39784e98c887fdc106b"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0092.txt",
+        "sha256": "d7624f4af593a8f9799e5c8e6d1afc533921cf04fe334243927c91f8806ffa40"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0093.txt",
+        "sha256": "638566a16274641aa047af20fa1f8fd3763ab768d70e510256cb74f90b79c2d4"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0094.txt",
+        "sha256": "0d94e5b877a3d7ce9e072b6a7657cdb17cbd6b5b3a18acfe02f4557bc1a829bf"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0095.txt",
+        "sha256": "49fa81291db4271ab53223b907ba31079bf232fc2f2ebd5187524324a1951c0b"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0096.txt",
+        "sha256": "3257952cc186a10ec55b75179f7bdba643c5b90b7822fe70178a6b37c69f3faa"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0097.txt",
+        "sha256": "15c33b3126b920a69f37b2e70ada677f5af91d84b38324ad23346ee9c4a9c817"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0098.txt",
+        "sha256": "efa5e1248aff09e52852a730486b755b16cfb6a495cfb54bcd265ac0ddfab92d"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0099.txt",
+        "sha256": "3f8bbde9fa2c2fe1c6dd51c553cd18e9026a142b362525f50009890b8e51e8aa"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0100.txt",
+        "sha256": "9b2dde715e8ce02f8c689429878b20a0ec1cb0596e0994948a8197ca163c519b"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0101.txt",
+        "sha256": "0becf8e6d97a5006d23a5a0d5090a6e5f71d3eef94496a590b3bf8dde3238c26"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0102.txt",
+        "sha256": "7a2c5b1d7456b2501610c8009944fe7200cc9fb2e0e30dde087ee31270384b6b"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0103.txt",
+        "sha256": "0c3e8889969370516208fec8a747e3592933ec7f109ae4b345b1f9da8658fde7"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0104.txt",
+        "sha256": "eb8e098c1f8acff35bf0b631ac45a231c4368f18e2fb79c338a5ba6a99f3697b"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0105.txt",
+        "sha256": "e04fd775cfb3ef7c1772056937fb9407cd9577613f447a3808e163adb5f27007"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0106.txt",
+        "sha256": "391094d19245bc02c53d5a0f14c3dd18908577007dba5a6b315405e4330fd460"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0107.txt",
+        "sha256": "033fae418e07b402b3965f5a89c642cf6951592de35730b70f54091acb322770"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0108.txt",
+        "sha256": "8f6946238fa0495ba17710e9c75ac067f769873fb9b3a7258189dca5fdd2a320"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0109.txt",
+        "sha256": "5c59b8b26415d805b493680646316187c488662660a49edb8a9804e44f8d6033"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0110.txt",
+        "sha256": "03da004276b8a6f1700928e917d252244678bc5c98ac2c3d98bfed9809593eeb"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0111.txt",
+        "sha256": "f7cbb32257c183e5f90577a6d429a7a3212c67acb88ae7482057f27cd6b61c82"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0112.txt",
+        "sha256": "14caf52ef9d72367ba46d2f557051b5d084c1fe32290e916b6b95525f0a77946"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0113.txt",
+        "sha256": "06b491e044452d01230126efa214fa80f28e123cb7ba2137c495861bf2b15cbe"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0114.txt",
+        "sha256": "6db04f20a8efe54b04fb51f6de1188a0e55138119c2018cd4e9a9ab43861e543"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0115.txt",
+        "sha256": "4132a8e7e4ba15b8721020e7d26c312e1eee580b39bdae803c1cdb2290e76114"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0116.txt",
+        "sha256": "d46a0e56632710c08f1b8931567dc5cc6d50787c75833154d96e5ef91eca3fb1"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0117.txt",
+        "sha256": "c95ffd464bfe855e8b1ab5e582b7d023a17c57bf16ec637d27fb4d20dffdf6d8"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0118.txt",
+        "sha256": "d3ea6d19805432ac9f66cfc8b097d64980eea4f0a0b28d77ef554d3009e788c5"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0119.txt",
+        "sha256": "ff94287109d951315c837adbaa48bf4c76c665103bab9924874d23d821a1b325"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0120.txt",
+        "sha256": "ec9b2f8dbdcf79c64d8e5b71216711a03fb2154f2809f3ea9fc7f37856b1c2b8"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0121.txt",
+        "sha256": "a198812e49d618a2efcfd73831d162e447ab185c3bcef9cc005fcf86e54ddf73"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0122.txt",
+        "sha256": "dfc05d23a61c19e8192ae07aedb56f8ae6258ab6e76c7c1ac6e46605b8f81e29"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0123.txt",
+        "sha256": "c93b15da59d0dc5730fb7823f351b0ad94ddbe36337a3f7e7ca89d0ab61a1c44"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0124.txt",
+        "sha256": "16cbccd8529785011c39ff166c75d6e7a63ab0c498ee6667dbd956b9ec6c57bb"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0125.txt",
+        "sha256": "1789bc0896b688bccf7838de22bc408364b8091adb7c726c81ca5abbfbc8ae29"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0126.txt",
+        "sha256": "e17b9dd2297772d2a44810905ff13cd7aa2f2583ade752bb9a431647fc7ec900"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0127.txt",
+        "sha256": "25f2d34d0458b9a68a028959a6250097ba1888284277f66639310e1290fb9c05"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0128.txt",
+        "sha256": "595748e8d93f0f005af7d9b5f0e5cded113a6e049193714807341770e610cf7c"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0129.txt",
+        "sha256": "c54c45ff586c8e56abc30b08d0a66c2d03e4685f4df56dfac330985c9bf5cea4"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0130.txt",
+        "sha256": "0631964e920c4fc332bc74595a53f2f401c3736dea6e6d26ab98bbe7b5a9d872"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0131.txt",
+        "sha256": "9b466f45e5d48f9c8d43de1eefc6114c7ddcb4486e834c08fae95b0189a5a790"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0132.txt",
+        "sha256": "a42f008a18df6e79f52e34e0b9fa93c974375eb67efe981786d86e3d51611ed9"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0133.txt",
+        "sha256": "7a5d30eb1dfeed498b1ecae17b0ff0b4be312c559278c5d9b6e01d0f3053ae72"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0134.txt",
+        "sha256": "01a13f5509da6da5b888a2948c341c0033fc871f1b3bdc4c9171272f04b0500b"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0135.txt",
+        "sha256": "c4dff755bba4dc54a895610392eb7a36c49acd4ef954fe09ce6756fb181dade6"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0136.txt",
+        "sha256": "cf18a3f6af4aa0a4e8cba0a43133d44993859fd5d6db1d800d25ca624d59a2dc"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0137.txt",
+        "sha256": "a89227809a4c94700cc097a1ae626d909141dfe6fca2252272b3cdafea503bf1"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0138.txt",
+        "sha256": "a5159e1eee9c894dd9c4ab2de0c1d70f48df5075a49ce72db9b8ecf92bd0f1a3"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0139.txt",
+        "sha256": "959f41b1c1d65bae5ac199c91a8112743293bf734d412c4d82320f17ce205e96"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0140.txt",
+        "sha256": "a9643ab339e407e99452d909728fd4d226076c366163ea6a5705de49133fdc75"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0141.txt",
+        "sha256": "2098a2c3b9056cb349575ded947383c0cf776247d1e7967eb92d7c8a0c71c474"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0142.txt",
+        "sha256": "59797392cd38b6db02531f0ba9f86a7ffabc24cd00228c3e2f604f6c988788d5"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0143.txt",
+        "sha256": "65d75738aece52a69f18fe39c609072f8f555d6ec7d6801241f790150eb2b40f"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0144.txt",
+        "sha256": "cf2e12388d930dbaba8a9f528b9f66e3e97fa152b274cc82bb1e81d594659615"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0145.txt",
+        "sha256": "1b6276ef3db8bb720a6c84e467036be1049e838e9c5c4ff5438a1aeaa88f6c19"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0146.txt",
+        "sha256": "84fe43eaa961cc671e797d7eac71f724d5c6c2e5305645d11039f266b60df5f0"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0147.txt",
+        "sha256": "52de3f82c03c88171fa500619def40acc9da5bccbb11e021b5fbd0229871a652"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0148.txt",
+        "sha256": "4f2cd58765afd553aec85e6ea6533a00d3e8e1a5910e6db17a616e308df6454f"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0149.txt",
+        "sha256": "bd422856a6f68de65749e8840571a2905df6d237f64d4fb274af6c0d96542175"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0150.txt",
+        "sha256": "6dcec5dd30b9b5bc24bf026216002834b12d5ac178b79d92199651ea8847e5a9"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0151.txt",
+        "sha256": "d485b045d5c6c8c7e1009d8136a9aea8c43687b8d74843f32b5253f1b6b827eb"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0152.txt",
+        "sha256": "e9718cf2172ca19224fac69a1499eb89c88de911d435959aeb89fd69f9a9c797"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0153.txt",
+        "sha256": "614d404f90a1db8afbd3b92479cd3c77e3e11400aa803f97a33b5ccc8f5dee96"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0154.txt",
+        "sha256": "41cdf6fe0fa1ecc43d349998d0a3214857cf0588e49f953a0d911f8b8fb5f6c4"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0155.txt",
+        "sha256": "f4ab0b36132cecb6cd4198c8726d77001ed96285befd362e1689e9dbc02395b1"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0156.txt",
+        "sha256": "5e583cfbf9c76e31c079a5e0345437cdb18a59ede9519dfc926e934af11eb511"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0157.txt",
+        "sha256": "f6f78e24b77447662a42a78b163e0acba0ae46baf79c742e6b1f81b68bda0a27"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0158.txt",
+        "sha256": "dd1d29fd1d211c95ddff670f9ad1609805c38d4291ec8b01963c3e3041357349"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0159.txt",
+        "sha256": "349cee053919cbd0c72d1540a0d40a81526f70bbd1e781cf0a499b3842455986"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0160.txt",
+        "sha256": "5308e7efefa5f7e9b46acb89e940839b05dffc7cac1b5b3b6a4cdbe6e4bc4004"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0161.txt",
+        "sha256": "8164db71f1af0a8ad6f8ddbe63b64f68396e0ab804a26bb9c8ed140eaa0ab129"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0162.txt",
+        "sha256": "eef323de3c7934684731273edf8a6c07c4fbb2323ae92ea620833607ee271303"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0163.txt",
+        "sha256": "98502b20006aad21acf1f8f38a225fcd55bd6f0267b9330b0a74d4a4a5cc3b04"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0164.txt",
+        "sha256": "4065d829db4a66b9bac575ac1457bd7444c5466a52a6da70e5fb2a90fbcbede9"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0165.txt",
+        "sha256": "8e8e1c430b036537f4beb99a747dcbcff7749f8dcf4c8c71ad0057b2c725770e"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0166.txt",
+        "sha256": "6269988a86255056bafddc7da725a3a87903e455db74a574b16e24e6242b176b"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0167.txt",
+        "sha256": "84d88d29393828b4dad87906de5525c28b3632402e496b790354a04edf5683cc"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0168.txt",
+        "sha256": "ca0f16c31cf7608392043f729d2a17b8feeba04937c60b56fb2c658752e2efd2"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0169.txt",
+        "sha256": "84c882e14aed6318c0eb2108b83085d151fef916a9172587409915e30a0d3e36"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0170.txt",
+        "sha256": "c6ef18e1e139ae1043871b0f6e86168302a82ac4c88a7b149525090f12d42484"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0171.txt",
+        "sha256": "ead9f46ab0787990314a7efcec7c6ed8b5b4d2e8a4556f4cf268fd67e97a7d0e"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0172.txt",
+        "sha256": "f26b2db4c7605fdd2182c3968468d9ad8581221854eda49a4deccc09b17df667"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0173.txt",
+        "sha256": "3225cd324d9f970cbebfc0f0e71f851262111aa6b03232a65f8ebd4d9d389a15"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0174.txt",
+        "sha256": "3a70f762d96b65aa0823cca8e0522ad07dbc7368dc106a271a9d4bd6ac0055d8"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0175.txt",
+        "sha256": "8bc350b153bf3912fd66b19d0cbcc325e2b0504534079b87813e42a882ddcfc8"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0176.txt",
+        "sha256": "0a2e0ecc532d670d242c10af89908b82f9ec4aca27e0891eb89ff0703764b38c"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0177.txt",
+        "sha256": "c0c37e3924a4e097b2cd5046da4ad0e987d9ecae9bef11de7a616379387444fa"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0178.txt",
+        "sha256": "90d75bd3fb3f943be3d1f558ea47b434fae4f8de3b9cfdc5a6e1bc5ef83c283a"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0179.txt",
+        "sha256": "60ce3c58712232c9a8377b5dc1028ed17a6c181cf1df3a1d33bd44b7c0ec66e9"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0180.txt",
+        "sha256": "1be46066049ddecf693d347c6ed74e0d8397684debb567e1815e442b6f8b26bf"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0181.txt",
+        "sha256": "f581000eb6b9d6c59ddb7d28a543118770152523e8d2a6a42481671f0c62bbcf"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0182.txt",
+        "sha256": "34bbc30685644da46b80aced37e992522c6dd478dec8c1152ef03754fc0d049d"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0183.txt",
+        "sha256": "1fcc3734bc36774f7f1964d9d664fda1ad49177bfc455709bdad32c45e74b720"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0184.txt",
+        "sha256": "c9686f1913dd34866c6546c8c91ef159e02bdd21333e82b53855104f6fdb0d75"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0185.txt",
+        "sha256": "064cd869834b6929b0cba9b314910226a58cc7a2c05d81bf6e03c6640775e10e"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0186.txt",
+        "sha256": "f5ef3ac45d210342ade7d192ce067781e517dace69d730181c03573a98470c4b"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0187.txt",
+        "sha256": "6a9df6b86be2476902510942f33b651f3646f377794f5df8ae0f6e6839f66a67"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0188.txt",
+        "sha256": "e79f052c13dd4367c2e31f9bf73de84e8b4128e928c3534a202b653765204380"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0189.txt",
+        "sha256": "f6e97836041c40ef05da34cb2e8d10c1ec190d4cb85ad43230dee736a3dabdff"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0190.txt",
+        "sha256": "83c5fda0ee0132a5c4519359bf73aa3deede7b97c0b70d64f66b00dab47cce98"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0191.txt",
+        "sha256": "2359424b26d424eabe60209bad5429e009f8e7dfe688ade79f314db7ad4b863f"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0192.txt",
+        "sha256": "ce81cda9783c89e20fc58f0486730e8cb5554687322c2594931d1cd3311a85b8"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0193.txt",
+        "sha256": "330e9b0a980e97d509f1cb95feadcb0f3dc2ef850e23fdb2a1523c0a76d56180"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0194.txt",
+        "sha256": "079c05226a1b6d5109ad880535b27fab2d3d01645fdc29bf6d72c26eeaf4022d"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0195.txt",
+        "sha256": "b1a2944c5cd50830a364daf2c60f7ef7c5d75ef37268bad111ea0c5faf7130d4"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0196.txt",
+        "sha256": "c9ca3a84ea62f51e6014066cd51062173484f31131d9b4d5f7f999cd3111ad65"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0197.txt",
+        "sha256": "a9002e94048d9e988ca60edbebdf72ebe27ee8868af5b0874b2a1a6003da4ece"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0198.txt",
+        "sha256": "c8ed37ed4272179b73fe0bfdd6cde3286c9e5471eaf2761d196dedd0fd485a71"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0199.txt",
+        "sha256": "ed8b963061f16012dd8832341151c6fcdc032b0001c15864e1ad733069a9a22b"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0200.txt",
+        "sha256": "0f4cd49c81deec462a2c95acbe50653a35658ef786d0e96bff2563788056ff3d"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0201.txt",
+        "sha256": "da80eeaad36d73fbd0aad6f3fb3df6b8e40f4f04afe01fd70fec4ba0bd6a9746"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0202.txt",
+        "sha256": "fa1dd340d5ed128f55f2656e6e505b0691a1329581fe7a614b9db5bd31ee2323"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0203.txt",
+        "sha256": "ee07eb1a8cf61d4efa97068e9bdb771e86bc9d9958cb8a169360269a06cfe748"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0204.txt",
+        "sha256": "d3fa64c214b50e1ed7a77f176fca2f917238fe5efd71e38ae13252b3517193e1"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0205.txt",
+        "sha256": "2865311d6b1cd7acb0075293e4ee22051655571c1e24eba38af08a296ca84339"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0206.txt",
+        "sha256": "3fb7fd1c7d4f517e07c50e7d8ee399d247919398463d9e676837ea4f914cea1a"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0207.txt",
+        "sha256": "07f00f360892ecf6217a1943d5a2ac92d087445d27fe06f0d0be4d0a5c1e49b8"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0208.txt",
+        "sha256": "bc037799d8a3943995639c3a60ad6e4d1b46b16273a0efcc7e8aee4ea820e174"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0209.txt",
+        "sha256": "a7358c956b420cc416e1d55045a8d99b0281cb2729d791e20959af7cf9c2507c"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0210.txt",
+        "sha256": "521120ec77057b680e6ed7dd799b85f22cb33a04458402340a3c899b472a0dc7"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0211.txt",
+        "sha256": "e7d3b67805975f6216b1b4d64083da2492506f1a2645366585f69ee101ca76b2"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0212.txt",
+        "sha256": "7fdbd4d0724c517d3c00729b941343465cf72d5c7d5a203742a7e31e9bbb3392"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0213.txt",
+        "sha256": "8b45ea2e5b2bcb31587b38d8c857f66ff4adad964013cf02a1e1a5c8bbe2c21e"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0214.txt",
+        "sha256": "46b9900a259aec156f21a8d8b567b2497b1564ddf353691b550e0195776fc205"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0215.txt",
+        "sha256": "5ab1897eef1066bf8630141a843d0625010958c90d5c14dc53d4fa48f1bf8e01"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0216.txt",
+        "sha256": "b1047aa24e0bfedce9c7a4cefe9f8708aa9c663e7cbbbc5058802a4cbeeec242"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0217.txt",
+        "sha256": "a09f007b771bf5f7965925fb3e664ae0a08bae891c2ad87f2d9db117fcc83573"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0218.txt",
+        "sha256": "86502a45a8815f8ec1e77e54c790ff0de85dc7f12ef33f0f097b287658f32acc"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0219.txt",
+        "sha256": "6a4ad29851ff90f89b4b551c95f277f9fa887deaab313538dc400447d6b6647d"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0220.txt",
+        "sha256": "2a29c8115c2530bee28b8d2df6457d4fd540e9944327cb18d5dacbeb511e18b2"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0221.txt",
+        "sha256": "7afc18844dc1d738300c84f67bbb8b73eb1fb1bc830a283fadf0002ee7a8bf27"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0222.txt",
+        "sha256": "82578f13f1a74f0dc82c168e7fbe93f0e2ea0032a45e8d6895fb0333802b953d"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0223.txt",
+        "sha256": "7f69af3ac89dee8c0a1bb708dd6f5eda0bb1e400574545a598d831353698c559"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0224.txt",
+        "sha256": "4b594134e3ce27a247c21d6db4382703a7bf63cbb635eafadc12c91d46db37b2"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0225.txt",
+        "sha256": "3e693cd837d61f916979039623c60b40680d7b2245e6745c662fc4e99710cdfb"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0226.txt",
+        "sha256": "a0637010490345edd6b1e35e5200374a342cba88f93f4e86099cb5f52e0cd03d"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0227.txt",
+        "sha256": "1100e3076aa6b0c64ad3c433a1a6d1c387c3e5930f6b7177f6f4bd33fba77b42"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0228.txt",
+        "sha256": "5c48889f4ac0ec77b2d66c6a0b3ee4534c2830c19d5a1d038b9008f34e99add1"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0229.txt",
+        "sha256": "a24b8736f5034202bd401d25c9296dd24b5567dde81c7b216a2a83d386371d2e"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0230.txt",
+        "sha256": "cddf1fdd73fbaf29e0461822966a74c3830ce95a27c4f4e367d23d0d91a6c7e8"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0231.txt",
+        "sha256": "5423d40818093fc4fdcb8d27b03cd62d8f608595bcdc1c59465441c5db163166"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0232.txt",
+        "sha256": "e256f8316fc2abeab45bd3b2821ff45669ee799294e8efd679c779cfd53d7f97"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0233.txt",
+        "sha256": "5fc48fd56ab70950bcd480178fd6e237b51a92f99c2c0902a3dc0ead7ba8a31c"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0234.txt",
+        "sha256": "34b42a5156df170f0e900ff2b84e3a530e3e1c88681da5a4b2a9f24fe1d7df6d"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0235.txt",
+        "sha256": "4e6ee7cd49338fbb896e84c80249bad1f0ffa4822b7396126267b3803f8540b1"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0236.txt",
+        "sha256": "0b9743443dddd185663a315b719c437cc4001de90c29e13865250a7df921fd07"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0237.txt",
+        "sha256": "bdfd3ca336c7a6af095246a9c2fe62a27dcb4840eadfde16806864770f02dd35"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0238.txt",
+        "sha256": "235fba235dc4daa00a17626e09efba2cfcf4f07e1f45a58c118f70e67653d2ab"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0239.txt",
+        "sha256": "725239be110544836de8e45832ab15c2839cfd8d8032778182393a6ff270a2db"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0240.txt",
+        "sha256": "98fb2ef65519ca46d9e96de6dd5f4f774e6618810b340e93f6d3668586252b48"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0241.txt",
+        "sha256": "96f4943b205bea1b5491af48c74488199e336181c8afaddb0aa2833b6c7c9980"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0242.txt",
+        "sha256": "e7057f8df1e65e1119834fdaa58001880ac1f6c1de6187c9816d04811467b69d"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0243.txt",
+        "sha256": "34c19e6eb899591539fbe669838a7a674f1901160c37086f80df7a2e0cc6b087"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0244.txt",
+        "sha256": "3bc2b826d42a3cd8af29b079325d8b68f1ca52fb25668b4655be9c80119ad669"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0245.txt",
+        "sha256": "8897dca25582a80947c4a84cfd17b083caa409453562b20152b1325af225fee9"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0246.txt",
+        "sha256": "af342ec400ef5c67d01671308c1b3dee70121771cf2a9e3ca46f90048d93bfa8"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0247.txt",
+        "sha256": "46dfab13bb9a0a68087fdcee8247080d768c35f468e7443206d03d20ce546afe"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0248.txt",
+        "sha256": "f0f9734c45f8f81f54079b686f6ae4d1973dbf5e4e40e410cec5a94e174d7f14"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0249.txt",
+        "sha256": "ee528f634e47c56d01ab133460b00a4ff9af130b09480db488152a8e69ae88cb"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0250.txt",
+        "sha256": "94fc41ff388395b15738bde0e22fe339005f53fbb1bcfa97051860340a30dfdb"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0251.txt",
+        "sha256": "658abdd566c88f1d27594089a0fb9c214405b6c07c8f4ee03a45a411bba769c0"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0252.txt",
+        "sha256": "4d4268e96d65abc96f1f0a58c2c62479b75be8d06c13ee184e5c007445aaccfd"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0253.txt",
+        "sha256": "a7d5ac94ae33feb44932499f2374a47b9321a40bbe8f68a311b765a0ae8ae231"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0254.txt",
+        "sha256": "0bf239738913b417936d1f66558e063c89ccf9a0261404a8ded6abaf491477a7"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0255.txt",
+        "sha256": "0b9d9926886c13f0926e20d62fa6f3a541a71e80c2e4810e859c6f643ded53e1"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0256.txt",
+        "sha256": "b2970be93c6ee749c4d4564dd6fb75dd571d13cc2c1d88129019f6f1e6d439a4"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0257.txt",
+        "sha256": "6a98d95c6e7e4bd223bbde709e632f81080015bbf9c92aac7eaaf7c3f39d0d42"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0258.txt",
+        "sha256": "0f9c23b220e034a01452c4e39b7bdbe820ca614ddb714f509707279a7aeeb858"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0259.txt",
+        "sha256": "3b4eb4fcee7998199966a4ac41d67308dfb2dd44a5d9fed4478e1cf35cef2294"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0260.txt",
+        "sha256": "7d77fb1bc2934872299109671ae5b5f8af8deca6ec04d3bc74424c1f74b4fe81"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0261.txt",
+        "sha256": "6bfeeec20f2faa6d585d8c08b5551bba32c95ecf9ef304c2a3ca1742c038ecb2"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0262.txt",
+        "sha256": "d9ac82f5ea2368c606779b70b2040459019efd2e08337cec20917f82aa9c61ce"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0263.txt",
+        "sha256": "9779b4862cc3a357b97127c486151427f6125dbfebf5a4ff7aa8b79ec9f59e48"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0264.txt",
+        "sha256": "a2c0b77a09e90b106dde217ad932f630c010abdb1b0a949bc78dde5b84c430ab"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0265.txt",
+        "sha256": "97ed3bfecd8940c9a235b1805f1666adebddaa2ce6e5184481e8fed7574b10da"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0266.txt",
+        "sha256": "4d9e25f0a2a7c482c912d596a668abec6f7b66388c9e214909f7ae2dd01bdc52"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0267.txt",
+        "sha256": "895dd0fc8b346d5be37e73f115cb6e942525a42e7e38d54f6bf94f5a524b3947"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0268.txt",
+        "sha256": "4ffac4a560d27d378ab934349b9136e4f983a73c3568686d2194c79e5f05852b"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0269.txt",
+        "sha256": "18af0bf70c728682f9a78500fb5b9cbd189b356bab67a65b34300e0e2c22fddd"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0270.txt",
+        "sha256": "9f84396d5ebd2e7b8e7a13a7b08eaff2cd280319c8f0b3c210bf3bb79a679a8d"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0271.txt",
+        "sha256": "287674b31c83d7cdfca5fd1537d0281657d5b95dcb7408190f808ede4bc0c219"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0272.txt",
+        "sha256": "d75189b9a273cc680fe7227f50faa44d739e181d7ca1a2db4a9e3416a1974d17"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0273.txt",
+        "sha256": "d1b864a18172903ba51844568237f0067ae3da3d2bf9ecd754afa9f2432fea20"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0274.txt",
+        "sha256": "3c29eec3928e471cc0da4d1993a6d0f4ca7a88c10a43df1a687fe2c65e0ebfa2"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0275.txt",
+        "sha256": "29f33e1090fda2e378a54b56aa2033f688b4adf0e532df50de979779d90f85a0"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0276.txt",
+        "sha256": "c795639186515d9de66ceb1337590d9955c31c51dd5b85504d3f5b8b7f0e97ca"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0277.txt",
+        "sha256": "3a97714db3a61c2a4f04ad78c64b8155c5fe5c985832c61eb41f459496b55135"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0278.txt",
+        "sha256": "d1ec20ab6b30a7c36309eb14e1aa97e6408f9bdfb8dbb08b7aaa6a6199f6739b"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0279.txt",
+        "sha256": "d5a70a700765d8ad460c63747325139653a1c94496ffe06ffb5c5a00e496eed3"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0280.txt",
+        "sha256": "643ea7622b591cc17b8927b3a4aa70aabfd779c7f849e8b13567d37cf56d0ff4"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0281.txt",
+        "sha256": "492854168b0ea22960f3d7296eb3fdbd6a259058807907de0e464fda63acb303"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0282.txt",
+        "sha256": "b6edd24fafc7984b2ccc2f64212023ebc75a99038060b49e6e0ee67e020e263e"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0283.txt",
+        "sha256": "f22304bde1f55f405f4a122bf9444fe3845fa6cf92fcb7e1e06130996c20aae7"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0284.txt",
+        "sha256": "4d44929e1d081552d9b51b4230743c9ede75f1ea74a97f967085875f077747c5"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0285.txt",
+        "sha256": "e1c5172252709edbe6a5db8438b5347090c62959d8a97d15a0518de861310829"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0286.txt",
+        "sha256": "8339859c9b5d0bee5e5afd674c30df93370b7156278a2b000c9dcea3040b2fb0"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0287.txt",
+        "sha256": "b234ec6fcb8bc2471be4df4a890c84d573504633c2158a160e1c5ba2c7259d61"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0288.txt",
+        "sha256": "e653eaff4932c697fdba974101d9cf5e2244e1dd1059930727c2f73e7c013028"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0289.txt",
+        "sha256": "25f2b746d0b4c0e24d92dc2152a979171b391935456b2c0602954223808b25f0"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0290.txt",
+        "sha256": "297d6bd0807fee5d93e0a4c721220a9e4fadedce41d8fb7ccdf8a1bcd2ba63d1"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0291.txt",
+        "sha256": "3575f210c93c7097dcc293ce7774fb222f952756103dabe018cbe638cc61fcab"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0292.txt",
+        "sha256": "cda539d31627e81dabbe75412917fbc23ecc40bd9b963a9e504713f26bc21e24"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0293.txt",
+        "sha256": "fe76eb58c815af314d8c4dea48cc465c6e56c6223ab23c9c122157dabddd55b1"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0294.txt",
+        "sha256": "cb4c706740b6eb67d3703886853a88b5cb99dd1eacfc19ae53581d9fac280dfc"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0295.txt",
+        "sha256": "2eb466564d9dc7efd22ad28034407e2b199a3933146cb9846fcd68586e5ccfb4"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0296.txt",
+        "sha256": "bbdbafd313076cc932630d41661b7ff5c44d94cbb47fda2e064b35648870f360"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0297.txt",
+        "sha256": "1a48a0de00d0ee37199d1f92c5079cd8d2641cfcb646ea75ca1ec18c7b687c85"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0298.txt",
+        "sha256": "9170bcb8aad3459636cf5750c39f64fcfcc461dbadb8a27fd35d44dd0da3dfcf"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0299.txt",
+        "sha256": "c541c7bf18ba126620e9a56bab2d563c77117bf71d43f5d6e727d8f2f74bc0ce"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0300.txt",
+        "sha256": "a8524ef23b3fbabd2afc0331b5f6943a5ca298d0393877eab337d8e151ecb781"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0301.txt",
+        "sha256": "e915ada389ca5b9ddf978f2107a19c4d37e778f523b0c9aca61cb7e7e29678b6"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0302.txt",
+        "sha256": "eea39d585c204f39bc729d6307081daf753b090b786e918967254e5e9ae10d9f"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0303.txt",
+        "sha256": "a9500e0bba2a6cfbc5dde353e4f1601301c1b539f6d31ab96229635eb5a741f6"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0304.txt",
+        "sha256": "1b52e17035c241368c0ea962e7a8b44a702717cef281038b46a6a25638ccf283"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0305.txt",
+        "sha256": "efbe6295293ef3f0530144ea8c7c90504f6aa9448939659c0ad65a5f45d461fa"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0306.txt",
+        "sha256": "bb0d277f338deda2f5360bad330140f18160773d5ea4713318654173b58a3582"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0307.txt",
+        "sha256": "3b6135336ca3475295738b14fe08f1c0efd51bc7285ecf04d4890d6af7c71ae3"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0308.txt",
+        "sha256": "125a2f7c62afb19fb9179b6d4c499bb646f63c05844c3d70ec8aebdf062c289d"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0309.txt",
+        "sha256": "b29f2b4733073bc5b4606ae5faa63579392c2f79ccc733cbf153d1c053d2ce09"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0310.txt",
+        "sha256": "cb692e6315c054d5e4959edc570e336f1a1d8b0846b38b1517090feb4b5c601c"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0311.txt",
+        "sha256": "5a7f739a8f7c6d0811eaf157f2db3a160f44a48ee53141265849726e56c8338e"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0312.txt",
+        "sha256": "0220683dccaa923047bc4d416390574242b6eaf87dbb8fb6bb95235c382ca421"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0313.txt",
+        "sha256": "55f2d7987d1941190de0639d1ae5f7b5bf73dfdeab81d944a09a8634201c7055"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0314.txt",
+        "sha256": "d78979ff1827c258acec32c0796fd4ed752bb0f024618a0b4c2fe2ea3fc0dd69"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0315.txt",
+        "sha256": "e23f22d190be85cb2381f543cc839d7e49f95d60c9102a37aa1d6280681ef8bf"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0316.txt",
+        "sha256": "aceccc1e5a163e4948208fe97eb6ea09b55c34b65f786a54e001eab988236201"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0317.txt",
+        "sha256": "4d328d6b5aa8ad5b93570bb9b2fc12da477f85053bae871b8481148757eb0ddb"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0318.txt",
+        "sha256": "07a092bb0656f8e58e80a89bed297f2ae397626e9eca67bcdb0f10de1a0ff535"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0319.txt",
+        "sha256": "92fb3729fe7b7640d6857ea1fea99e14db8f19b152f5b668b2562066a570826e"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0320.txt",
+        "sha256": "68e6f16d8557f985e57cce4f4047e6adc422d8f028c1fc34c4fe6883f0fea744"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0321.txt",
+        "sha256": "6ca14b6e0809d70db0e13e7c3637121545cddb5a183fba3a6cfe87e308a607bb"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0322.txt",
+        "sha256": "61ba194f3edb113c6e4574662252c172713955bf4cac3ae8fb369bb9152b2d28"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0323.txt",
+        "sha256": "3ac85c197fe54f1688c5da9549d1b6405eb316d217f695138028f162dcb39afb"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0324.txt",
+        "sha256": "0664ddde48ba834bccdeeff4ce60c3e444d3ef4c4518bfe3a968cd484f46dcde"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0325.txt",
+        "sha256": "a5e64569f71daf1d47a9af3a671dc30e1ff23fcc696b05b16fa0bb39fd04d1e1"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0326.txt",
+        "sha256": "12dff3a7b08e7cd565b6d93430ef7808be45d92abdb1a3ccd5b6269c9a04889d"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0327.txt",
+        "sha256": "1d85e9d369702a221171bbf9de9a6e6923ee7145187ba990df8ddee56a725d07"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0328.txt",
+        "sha256": "06e17e3a749bbed17bc16fbd36c81d705513d2352f0fa880a5989905cb13e476"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0329.txt",
+        "sha256": "3946e7076106d372eaceaf8621a92f3479be28d1a041b9133f64a37c60e9ffb4"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0330.txt",
+        "sha256": "9cfd6ac7a169627b6a43be8ae55e1f1e76988ecb5025024f2a09ffe405547f33"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0331.txt",
+        "sha256": "0072e44c51f26cdf82ec38400b7a38e4acc92f89ba3d05216c8ac4f792487e1f"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0332.txt",
+        "sha256": "c08c92a1047208c251a958919c693d523588c1489a1e26b4ece3ff7dc8bd45ca"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0333.txt",
+        "sha256": "7465e025c5bc5e0ab9497de7a88929b3b66a5b7ab9c0fcd69511638a9b8d445a"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0334.txt",
+        "sha256": "217cd56db0d98fe84d550020914e1ef926d03a58d846192bec73461938543c08"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0335.txt",
+        "sha256": "7bc0cf46eaf8764cf3190269aea432cb08b8050ab79283f73ca8ab59291b14e6"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0336.txt",
+        "sha256": "a30639af98318b99648f6febb8a70c580a39b19f9cb31e16208de7a396100030"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0337.txt",
+        "sha256": "ccda1894f31b03495805bef63a39f89ef7b9bfde2502a4bef1a769ee55058b86"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0338.txt",
+        "sha256": "1ee6da25979c4d6cbbefc866264e0dc790a98b395e11784b86f889ffe6e7d63a"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0339.txt",
+        "sha256": "5260c386b5ad912c0def659fc25d1a0e32c871b33e894040c1c541f74f407208"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0340.txt",
+        "sha256": "6012a35bdb2d134c3c8107a5934ede417e04703024ebde912f0946867023f171"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0341.txt",
+        "sha256": "ec9c940bb0deb26ca001527756c088f52139bc3fe26be884f21873dcb586ecf2"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0342.txt",
+        "sha256": "9978efff6ea5e5ef0bb551e53a1b05bf6fc707d3401507fd00bcf7d5341df4f2"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0343.txt",
+        "sha256": "ed8b6041e6d77781a9a3355ffaf50ab143f885f70523a5dc5a009c158812e863"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0344.txt",
+        "sha256": "d6324d1eb03f0af203de98d9a53b2c23b4bfc2e0f1450a15f43345b61a5b0289"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0345.txt",
+        "sha256": "424025110e3da670d56320301ac98708ac4cbba849a651a00bba859784fa7dcf"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0346.txt",
+        "sha256": "06bdf3641188b8cf7c6588c20607d78d7492ae089217564785f3a1da0900c747"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0347.txt",
+        "sha256": "015e5e8f3e593e6b4a2606ac9c3a565fe41fc3e7526e2d6bee407820a7680a9e"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0348.txt",
+        "sha256": "9b174b486efb01c26d1e03e0ef71a4c5ce039a7ea56eefbb65029d8e24f03595"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0349.txt",
+        "sha256": "230647ec2b73bccdc03a5960c3692577a04bf50dd2a0b2d2c82e84e7f7bd8922"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0350.txt",
+        "sha256": "54c99b907f5dc4fdafa48d9e6e10f32159b77610393e7bd0a741b2daa761a902"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0351.txt",
+        "sha256": "57458c07a08dceb528a0682bc060700ee71c85feefa8de77b3be9fd8aa67d4a7"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0352.txt",
+        "sha256": "9d8058cfe1cac60aae9939ab99a2402ca49b11d3806585b72328f988097afdb1"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0353.txt",
+        "sha256": "c0de578cedca08719f1517f84af9f2393e969d9a955adf4732083903fb99d29f"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0354.txt",
+        "sha256": "c055efb0f2c892829e47a352fc6a8c57d141654b6f2406ca7c2e4c751f37c504"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0355.txt",
+        "sha256": "d7c963abb168e64b9a37e4fe81cf5667ed5f6e651a47b1a5714dc3df0757b66b"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0356.txt",
+        "sha256": "d9990813c31723b058c45f086dbcb3faeb2e720c8c501bd625fe433c15ae711c"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0357.txt",
+        "sha256": "042a2dd9d88613a917176525cb9b90391fdcb4e16601a1f486a183c3181cb45e"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0358.txt",
+        "sha256": "1af563db3573eaf6e5ca32c65a89e8e3bd2cde50c23266f19c61cae9b14375d5"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0359.txt",
+        "sha256": "996b7daaf1249a2fdd9a3db44c736dfbc810b4f55696b4658d1c5646ccdcdc26"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0360.txt",
+        "sha256": "96165f2a5a0544f7b63bdaccbdcf82c9f7b1ed3cbe8c6113155b9d35f0f3a5c1"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0361.txt",
+        "sha256": "3881bf1ba408ff8e003d0675f99d9a9510fb2c569f9419bab7f76334a0a1007b"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0362.txt",
+        "sha256": "13d0b3dc23239ac58c0ea2f18d54aaf955e61b9d1e8bd24945ab0d882631b1dd"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0363.txt",
+        "sha256": "7f3e6eb2fe37089eef70b64ae12fe800a1dc22d89e843935614101b521132bbe"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0364.txt",
+        "sha256": "dfd3b494069c3d326bf390ba65498b33b08f2de114546b49a465a6a15511d555"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0365.txt",
+        "sha256": "5e427b18babb99570da719ac9a5df63ff360d0e53928745ab39abd1b6df7d697"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0366.txt",
+        "sha256": "1cadd3bcc2acfbd33ed754250ea6fb4b3cec0e399df6ae659610cf6f2b8aaf18"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0367.txt",
+        "sha256": "537087461b76fc9833c0614670721f74d2966b0ada94ff791b80eae06048a61e"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0368.txt",
+        "sha256": "e096bf12217ba26ec3656a68af77480d12eaf6231dbf222034b441a7fef5c86b"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0369.txt",
+        "sha256": "a77efefbe75025e24032b9e50333703b8548c40f06bc83a3c214c391079d437b"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0370.txt",
+        "sha256": "97265e4d0b06c282b50c767800fbc1667e5b6bfa256f43fd31a6d2e81dd9b917"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0371.txt",
+        "sha256": "d87a9b2a456359fc8774998a293b6ed61049ed45155cfebb97b458e1bb17bb84"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0372.txt",
+        "sha256": "fc43e4e1a3e07da37f5755706a1385cb4a73a056dbc3a531a3e5b8d4f652584c"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0373.txt",
+        "sha256": "fb3c3aac7dadf7b6f224d0830f8350f0bbee108e9ad6b5107e41580256dd0d86"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0374.txt",
+        "sha256": "c55e073d0e21143de9abc7af7765b7d2ba9f8c29f95e523061da34697563c7fb"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0375.txt",
+        "sha256": "60d3191dd881d3a168a9a45ad0065d972f48599e6c8a6cbf9f5ef64d7920c5e2"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0376.txt",
+        "sha256": "1ccda7ab78543700a21ef0916bccfa1abb4a8e7e561a5cf0d807f16fc3091668"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0377.txt",
+        "sha256": "e5c31a9057cbb0b102ab06f03ccbb4c5a254c20b58a6cc028251d5cb8a9a0910"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0378.txt",
+        "sha256": "e4ce1ad3c73647e1a574e11ba7b4d62f45ddc06c2ef51b0eee64244c48569494"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0379.txt",
+        "sha256": "28b82e705ea1986851dd80013f003c8cb8c9d25ce93316c05e59160e4d96cd33"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0380.txt",
+        "sha256": "4cc60cf6fc0fb8d32022e438859b077dfd994759944329533aaaa849c88c4622"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0381.txt",
+        "sha256": "c2d78b42adc74f10249193605b87d38d1cdcaebe5dc125dc869bea112210a38e"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0382.txt",
+        "sha256": "732192a01a1dc7931b62972693fa81476b625871195fed7005f12999086fc91c"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0383.txt",
+        "sha256": "4c9fde344c15c8831e40e3cb8198feda0ff9dac5c8498187ab7af8622d18ee0d"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0384.txt",
+        "sha256": "27a47f73ca7f48721c1d80932832838e298b100c5676214c858838fa73e8ba76"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0385.txt",
+        "sha256": "80072e029755a0f0c5997afed2f38a70ff79b184e5f27fa4d4384f6c3cc1c00c"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0386.txt",
+        "sha256": "d84c464e7c845943bff9a17e521885ededb6e5a2615c60fa45225a6034a389f4"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0387.txt",
+        "sha256": "305868a8731fa556ec705a4a9b9f6b13ac3adccd1aeda933aa9df8c1a7a0d2cd"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0388.txt",
+        "sha256": "9d69f6125b59d9ff92c16cfcf79af28a5fdec79961742f750b82ad1d694b419b"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0389.txt",
+        "sha256": "bc334d5f23a05bf4ee8cfd613b7307498ae81d8704ee06c61543b4ed1ee3a474"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0390.txt",
+        "sha256": "32efb66a12224355287aa021076b83fed673c6547af8ea70adb5187f4ba75ec9"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0391.txt",
+        "sha256": "4fc9f0d42a564123cd284804a28156cf6e2d81953440bf19b18979de60362891"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0392.txt",
+        "sha256": "9db230afb2d525971309f4532351dd30d5191f99032277a87d5fd25bc8c36e37"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0393.txt",
+        "sha256": "88fcf23035322f40b1780f9c817fae04f539f0fcc94fdb2940ec7daf0eb3e82f"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0394.txt",
+        "sha256": "3a2ec2c5e74f15402668a1f1a7ab8de91e6307fc0708f98a0ce9666e4ebae7f1"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0395.txt",
+        "sha256": "a34fde751e43234af8d52977d2306d0eef929656095ef3dc6cf006e304ef5f18"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0396.txt",
+        "sha256": "0f2145f14f0ab7107dff836f3383b26e188d6a69c837a181b06c3080c8cafc72"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0397.txt",
+        "sha256": "16dc72a2c18f8f70d93c7bd7929eae52057311f8b53250e72d916ac8d7bf0994"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0398.txt",
+        "sha256": "dca1d5c9cb4ddaa5337e97dd15c06830303ac6cbb03aeffbc1dbf9401fe6e8b1"
+      },
+      {
+        "bytes": 2760,
+        "path": "rho_T3_0399.txt",
+        "sha256": "32c83ac848b0c7ef4b0d4b74066dc3ca4502dbf7a23770305a9197f6dae4ce5c"
+      }
+    ],
+    "selection_input_manifest_sha256": "f05d6fe24e4259fad8d3131a686eefbfcf3874efcfbac4d81cd8cb05b838f3fd",
+    "x_knot_file_sha256": "cb55d7425d01226dcd5b904939b59354b6a59c83d057ae3e05a493145227e316"
+  },
+  "normalization": {
+    "I_0": "q=4 GL4 raw/sqrt(length) fit-time balance MSE at frozen checkpoint",
+    "J_0": "original weighted data+PDE+IC+BC objective at frozen checkpoint",
+    "formula": "lambda_I = gamma * J_0 / I_0",
+    "probe_may_not_optimize": true,
+    "reference_excluded": true
+  },
+  "normalization_probe": {
+    "absolute_gradient_floor": 1e+100,
+    "accepted_update_cap": 0,
+    "purpose": "evaluate J_0 and I_0 at the exact frozen control vector without optimization"
+  },
+  "operator_interface": {
+    "confirmation_token_sha256": "ad2705bcec46df7f2650b2d3273d5213482b389dceae74771df36a7ae8ab2262",
+    "diagnostic_parts_x": [
+      1,
+      2,
+      4
+    ],
+    "diagnostic_quadrature_order": 4,
+    "environment_names": {
+      "diagnostics": "MFA_INT_DIAGNOSTICS",
+      "directional_check": "MFA_INT_DIRECTIONAL_CHECK",
+      "directional_directions": "MFA_INT_DIRECTIONAL_DIRECTIONS",
+      "directional_step": "MFA_INT_DIRECTIONAL_STEP",
+      "directional_tolerance": "MFA_INT_DIRECTIONAL_TOL",
+      "fit_time_file": "MFA_INT_FIT_TIME_INDEX_FILE",
+      "lambda": "MFA_LAMBDA_INT_BALANCE",
+      "parts_x": "MFA_INT_PARTS_X",
+      "qr_certificate": "MFA_QR_CERTIFICATE",
+      "qr_certificate_prefix": "MFA_QR_CERTIFICATE_PREFIX",
+      "qr_pivot_threshold": "MFA_QR_PIVOT_THRESHOLD",
+      "quadrature": "MFA_INT_QUADRATURE",
+      "validation_time_file": "MFA_INT_VALID_TIME_INDEX_FILE"
+    },
+    "fit_and_validation_indices_are_disjoint": true,
+    "fit_parts_x": 4,
+    "quadrature_literal": "gl4",
+    "row_scaling": "raw_balance/sqrt(subinterval_length)",
+    "x_knot_provenance": {
+      "construction": "MFA_Data::uniformKnots cumulative binary64 addition",
+      "control_count": 40,
+      "degree": 3,
+      "file_sha256": "cb55d7425d01226dcd5b904939b59354b6a59c83d057ae3e05a493145227e316",
+      "span_count": 37
+    },
+    "x_quadrature_breakpoints": "exact unique model x knots",
+    "x_unique_knot_count": 38
+  },
+  "optimizer": {
+    "absolute_gradient_floor": 1e-10,
+    "accepted_update_cap": 10000,
+    "all_gamma_candidates_freshly_optimized_from_identical_initializer": true,
+    "eligibility_requires_classified_reason": "gradient_tolerance",
+    "final_gradient_source": "independently_recomputed_gradient_inf",
+    "formula": "max(absolute_gradient_floor, relative_gradient_reduction * initial_gradient_inf)",
+    "rationale": "A relative scale term is retained while a 1e-10 absolute floor avoids the sealed V1 1e-12 L-BFGS step-stagnation artifact; the floor is two orders tighter than the V1 primary campaign.",
+    "relative_gradient_reduction": 1e-08,
+    "selection_requires_complete_finite_converged_operator_verified_family": true,
+    "step_stagnation_is_not_convergence": true,
+    "threads": 1
+  },
+  "paths": {
+    "canonical_v12_common": "historical_source/Revisions/CMAME_minor_revision_v12_corrected_1d_sweep_20260816/experiments/one_d_corrected_sweep_v2/sweep_common.py",
+    "canonical_v12_postselection": "historical_source/Revisions/CMAME_minor_revision_v12_corrected_1d_sweep_20260816/experiments/one_d_corrected_sweep_v2/run_postselection.py",
+    "data_dir": "historical_source/Revisions/CMAME_minor_revision_v12_corrected_1d_sweep_20260816/inputs/one_d_selection_only_v2",
+    "decoder": "historical_source/Revisions/CMAME_minor_revision_v12_corrected_1d_sweep_20260816/code/bin/decode_1d_model",
+    "fit_time_file": "historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/experiments/one_d_integral_balance_v2/design/fit_time_indices.txt",
+    "flowdata": "historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/code/mfa_1d_integral_working/build-v14/examples/pde/flowdata",
+    "selected_checkpoint": "historical_source/Revisions/CMAME_minor_revision_v12_corrected_1d_sweep_20260816/results/one_d_corrected_sweep_v2/selection/candidates/beta_3em5/approx.mfa",
+    "selected_control": "historical_source/Revisions/CMAME_minor_revision_v12_corrected_1d_sweep_20260816/results/one_d_corrected_sweep_v2/selection/candidates/beta_3em5/ctrl_vector_BFGS_step_0000.txt",
+    "selected_run_config": "historical_source/Revisions/CMAME_minor_revision_v12_corrected_1d_sweep_20260816/results/one_d_corrected_sweep_v2/selection/candidates/beta_3em5/run_config.json",
+    "validation_time_file": "historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/experiments/one_d_integral_balance_v2/design/validation_time_indices.txt",
+    "x_knot_file": "historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/experiments/one_d_integral_balance_v2/design/x_unique_knots_nctrl40_p3.txt"
+  },
+  "postselection_reproducibility": {
+    "failure_rule": "no main-text quantitative integral-extension claim",
+    "primary_checkpoint_replaced": false,
+    "repeat": {
+      "absolute_gradient_floor": 1e-10,
+      "accepted_update_cap": 10000,
+      "midpoint_pde_max_ratio_to_gamma0": 1.05,
+      "relative_gradient_reduction": 1e-08,
+      "repeat_count": 2,
+      "require_primary_a_b_bitwise_identical": [
+        "ctrl_vector_BFGS_step_0000.txt",
+        "approx.mfa",
+        "loss_BFGS_var.txt",
+        "BFGS_termination.txt"
+      ],
+      "selection_metrics_bitwise_identical": true,
+      "trace_guard_required": true
+    },
+    "required_after_selection_seal_before_reference_opening": true,
+    "requires_augmented_ls_certificate_pass_seal": true,
+    "same_selected_gamma_lambda_initializer_q4_gl4_threads": true
+  },
+  "runtime": {
+    "numpy_version": "2.3.5",
+    "platform": "macOS-15.7.9-arm64-arm-64bit",
+    "python_full_version": "3.12.13 (main, Aug  7 2026, 02:15:23) [Clang 22.1.3 ]",
+    "python_implementation": "CPython",
+    "python_version": "3.12.13"
+  },
+  "schema": "pimfa-v14-one-d-integral-balance-freeze-v2",
+  "scientific_candidates_executed_by_freeze_helper": false,
+  "selector": {
+    "knee_rule": "maximum signed endpoint-chord distance oriented toward ideal (0,0); if no interior point lies toward ideal, minimum ideal distance",
+    "midpoint_pde_mse_max_ratio_to_gamma0": 1.05,
+    "operator_vs_independent_balance_relative_tolerance": 1e-08,
+    "pareto_coordinates": [
+      "midpoint_low_fidelity_data_mse/gamma0",
+      "q4_heldout_balance_validation_mse/gamma0"
+    ],
+    "positive_claim_requires_heldout_q4_balance_improvement_vs_gamma0": true,
+    "reference_excluded": true,
+    "released_range": 0.8975259646866028,
+    "tie_rule": "smaller gamma",
+    "trace_guard_fraction_of_released_range": 0.01,
+    "trace_guard_rms": 0.008975259646866029
+  },
+  "status": "frozen_before_execution",
+  "time_partition": {
+    "excluded_time_indices": [
+      0
+    ],
+    "fit_count": 279,
+    "fit_sha256": "4b91301246750dfb06c394cae7697920ce57eb2108072e1d81e2b7e88c8fe384",
+    "validation_count": 120,
+    "validation_sha256": "daf23e58620ab86aaba1adba27307ff14dd5bdc478ad0dc40d1e5a724e166649"
+  },
+  "toolchain": {
+    "architecture": "arm64",
+    "cmake_build_type": "Release",
+    "cmake_cache_path": "historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/code/mfa_1d_integral_working/build-v14/CMakeCache.txt",
+    "cmake_cache_sha256": "66f5b3fc7e1834ce6db9b4c13a205e392742343dd8916eba17bc2e82ddb91984",
+    "cmake_cxx_flags": "",
+    "cmake_cxx_flags_release": "-O3 -DNDEBUG",
+    "compiler_path": "/opt/homebrew/bin/mpicxx",
+    "compiler_resolved_target_path": "/opt/homebrew/Cellar/open-mpi/5.0.9/bin/opal_wrapper",
+    "compiler_resolved_target_sha256": "91865d113f579bbf8e14c7d696266fdcf87f5e4845aa75966ad4e31531ebae5d",
+    "compiler_sha256": "91865d113f579bbf8e14c7d696266fdcf87f5e4845aa75966ad4e31531ebae5d",
+    "compiler_version_output": "Apple clang version 17.0.0 (clang-1700.0.13.5)\nTarget: arm64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+    "compiler_wrapper_path": "/opt/homebrew/bin/mpicxx",
+    "compiler_wrapper_symlink_target": "../Cellar/open-mpi/5.0.9/bin/mpicxx",
+    "eigen_macros_header_path": "historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/code/mfa_1d_integral_working/include/eigen3/Eigen/src/Core/util/Macros.h",
+    "eigen_macros_header_sha256": "77d3b41178c4df29a720c1d44c2fb5f10694d3662b03d21f3098f1b7a4b8355b",
+    "eigen_version": "3.3.90",
+    "flowdata_file_description": "Mach-O 64-bit executable arm64",
+    "flowdata_flags_path": "historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/code/mfa_1d_integral_working/build-v14/examples/pde/CMakeFiles/flowdata.dir/flags.make",
+    "flowdata_flags_sha256": "154cd0652a4c2208e47bc86170325aecbcea8a0a24667ea4ee264b52d9d1e0e0",
+    "flowdata_link_command_path": "historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/code/mfa_1d_integral_working/build-v14/examples/pde/CMakeFiles/flowdata.dir/link.txt",
+    "flowdata_link_command_sha256": "9e7febb7f2ab4be3a63a0124a394efc2fa6c7ae5bd1dc388cb9cb164035a267b",
+    "platform": "macOS-15.7.9-arm64-arm-64bit"
+  },
+  "v1_provenance": {
+    "artifacts": {
+      "candidate_manifest": {
+        "bytes": 18660,
+        "path": "historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/results/one_d_integral_balance_v1/selection/CANDIDATE_MANIFEST.tsv",
+        "sha256": "621fba16747f3e7d9078cf93631d8901d72af6748ba8e952891e3c716a7b53a1"
+      },
+      "prelaunch_freeze": {
+        "bytes": 75111,
+        "path": "historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/results/one_d_integral_balance_v1/PRELAUNCH_1D_INTEGRAL_BALANCE_FREEZE_V1.json",
+        "sha256": "96aa6992241caac3b140aff9fc62056275f88f37f054ce14381973401b825aec"
+      },
+      "reproducibility_manifest": {
+        "bytes": 6077,
+        "path": "historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/results/one_d_integral_balance_v1/postselection_reproducibility/REPRODUCIBILITY_MANIFEST.tsv",
+        "sha256": "58289cc39d5a732026526bb023a980f8389c0cf326a22089906ec567c2dc92b4"
+      },
+      "reproducibility_seal": {
+        "bytes": 492,
+        "path": "historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/results/one_d_integral_balance_v1/postselection_reproducibility/REPRODUCIBILITY_SEAL.json",
+        "sha256": "2b06ca2da4e1fcaed24d9c32e97978381acfc95b81e2508dd980b4d6a7a6d0c2"
+      },
+      "reproducibility_summary": {
+        "bytes": 5070,
+        "path": "historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/results/one_d_integral_balance_v1/postselection_reproducibility/reproducibility_summary.json",
+        "sha256": "2faf94276ffb93d51d131fcc417ca5f82bf7420aed904e1e1d8a9d2921b6cea8"
+      },
+      "selection": {
+        "bytes": 12306,
+        "path": "historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/results/one_d_integral_balance_v1/selection/selection.json",
+        "sha256": "c4ee250fecb40be7abb5b2125ee6acb9e898249398533073cc3704bf4ba3c9f4"
+      },
+      "selection_manifest": {
+        "bytes": 19133,
+        "path": "historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/results/one_d_integral_balance_v1/selection/SELECTION_MANIFEST.tsv",
+        "sha256": "6bf7ad42fd8464fd1b17472846b06dd65e4d488fa7127a95bbe2c77c15bd631c"
+      },
+      "selection_seal": {
+        "bytes": 452,
+        "path": "historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/results/one_d_integral_balance_v1/selection/SELECTION_SEAL.json",
+        "sha256": "d211b8cc6fd5f2d8486a59348823d6a8dadc5bc8229a183a7da8a6eda4b8a58c"
+      }
+    },
+    "v1_experiment_root": "historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/experiments/one_d_integral_balance_v1",
+    "v1_main_text_quantitative_claim_authorized": false,
+    "v1_reference_opening_authorized": false,
+    "v1_results_root": "historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/results/one_d_integral_balance_v1",
+    "v1_status": "FAIL"
+  }
+}

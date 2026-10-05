@@ -1,0 +1,17 @@
+family	candidate_id	gamma	admissible	worst_aligned_validation_ratio	aligned_geometric_mean_validation_ratio	within_family_selected	ineligibility_reasons
+strong_only	strong_only__gamma_0p01	0.01	True	0.9831625948652578	0.2949419266312959	False	
+strong_only	strong_only__gamma_0p02	0.02	True	0.9683833819220665	0.2711332189963454	False	
+strong_only	strong_only__gamma_0p03	0.03	True	0.9531105441833005	0.2672220751748308	True	
+strong_only	strong_only__gamma_0p04	0.04	False	0.9384667327482545	0.2632167740547788	False	velocity_v_ratio_guard
+trapezoid_hybrid	trapezoid_hybrid__gamma_0p01	0.01	False	0.9994825418395549	0.3804094303172894	False	optimizer_termination_ineligible
+trapezoid_hybrid	trapezoid_hybrid__gamma_0p02	0.02	False	0.9990505520004661	0.3682108515191946	False	optimizer_termination_ineligible;trace_individual_mixed_max_ratio_guard
+trapezoid_hybrid	trapezoid_hybrid__gamma_0p03	0.03	False	0.9985347714654149	0.3575437311885517	False	optimizer_termination_ineligible
+trapezoid_hybrid	trapezoid_hybrid__gamma_0p04	0.04	False	0.9980046107026	0.33112764652956816	False	optimizer_termination_ineligible
+gl4_conservative_only	gl4_conservative_only__gamma_0p01	0.01	True	0.9803605199172134	0.18943585683532058	False	
+gl4_conservative_only	gl4_conservative_only__gamma_0p02	0.02	True	0.9628335041017205	0.13378752364729618	True	
+gl4_conservative_only	gl4_conservative_only__gamma_0p03	0.03	False	0.9451349210292369	0.14209332403017114	False	trace_individual_mixed_max_ratio_guard
+gl4_conservative_only	gl4_conservative_only__gamma_0p04	0.04	False	0.9285311807382791	0.1276149920164069	False	trace_individual_mixed_max_ratio_guard
+gl4_hybrid	gl4_hybrid__gamma_0p01	0.01	True	0.9937669011581469	0.332763761260823	False	
+gl4_hybrid	gl4_hybrid__gamma_0p02	0.02	True	0.9859781433524675	0.25441806753221224	False	
+gl4_hybrid	gl4_hybrid__gamma_0p03	0.03	True	0.9785576417766573	0.2446904255487846	False	
+gl4_hybrid	gl4_hybrid__gamma_0p04	0.04	True	0.9709933217940947	0.23959598342878805	True	

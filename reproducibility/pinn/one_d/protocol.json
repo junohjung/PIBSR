@@ -1,0 +1,59 @@
+{
+  "protocol": {
+    "seed": 1234,
+    "architecture": [
+      2,
+      64,
+      64,
+      64,
+      64,
+      64,
+      1
+    ],
+    "trainable_parameters": 16897,
+    "interior_observations_without_replacement": 8000,
+    "continuous_interior_pde_points": 12000,
+    "initial_condition_nodes": 60,
+    "boundary_trace_values": 800,
+    "loss_weights_data_pde_ic_bc": [
+      0.1,
+      100.0,
+      100.0,
+      100.0
+    ],
+    "adam_iterations": 500,
+    "adam_initial_learning_rate": 0.001,
+    "adam_decay": "factor 0.5 every 125 iterations",
+    "lbfgs_max_iterations": 300,
+    "lbfgs_function_evaluations": 305,
+    "lbfgs_history_size": 50,
+    "lbfgs_line_search": "strong_wolfe",
+    "device": "cpu",
+    "matplotlib_backend": "Agg",
+    "thread_environment": {
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    },
+    "numpy_version": "2.4.0",
+    "torch_version": "2.9.1"
+  },
+  "manuscript_table_values_final_optimization_point_sets": {
+    "L_data": 0.002160620177164674,
+    "L_pde": 0.0035625032614916563,
+    "L_ic": 0.0037342177238315344,
+    "L_bc": 0.010787085629999638,
+    "L_total_raw_unweighted": 0.020244426792487502,
+    "weighted_training_objective": 1.8085967235499993
+  },
+  "full_60_by_400_grid_diagnostics": {
+    "MSE_data": 0.002428054576739669,
+    "MSE_reference": 0.0023147885221987963,
+    "MSE_pde": 0.012118193320930004,
+    "MSE_ic": 0.00373421935364604,
+    "MSE_bc": 0.010787086561322212,
+    "raw_unweighted_component_sum": 0.029067553812637925,
+    "mass_balance_RMS": 0.023585371673107147,
+    "final_time_L2_reference": 0.04991118237376213,
+    "final_time_Linf_reference": 0.3480501174926758
+  }
+}

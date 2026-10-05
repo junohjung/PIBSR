@@ -1,0 +1,251 @@
+{
+  "solver": "fourth-order centered finite differences plus RK4",
+  "domain": [
+    0.0,
+    2.0,
+    0.0,
+    2.0
+  ],
+  "nu": 0.01,
+  "common_reporting_grid": "41 x 41 nested nodes",
+  "checkpoints": [
+    0.5,
+    1.0,
+    1.5,
+    2.0
+  ],
+  "configurations": {
+    "space_n40_dt2.5e-4": {
+      "cells_x": 40,
+      "cells_y": 40,
+      "dt": 0.00025
+    },
+    "space_n80_dt2.5e-4": {
+      "cells_x": 80,
+      "cells_y": 80,
+      "dt": 0.00025
+    },
+    "space_n160_dt2.5e-4": {
+      "cells_x": 160,
+      "cells_y": 160,
+      "dt": 0.00025
+    },
+    "time_n160_dt1e-3": {
+      "cells_x": 160,
+      "cells_y": 160,
+      "dt": 0.001
+    },
+    "time_n160_dt5e-4": {
+      "cells_x": 160,
+      "cells_y": 160,
+      "dt": 0.0005
+    },
+    "reported_n200_dt5e-4": {
+      "cells_x": 200,
+      "cells_y": 200,
+      "dt": 0.0005
+    }
+  },
+  "comparisons": [
+    {
+      "study": "spatial",
+      "coarser": "space_n40_dt2.5e-4",
+      "finer": "space_n80_dt2.5e-4",
+      "time": 0.5,
+      "relative_l2_u": 0.002946415531295252,
+      "linf_u": 0.00923222035215776,
+      "relative_l2_v": 0.005486427399067366,
+      "linf_v": 0.010005498908986221
+    },
+    {
+      "study": "spatial",
+      "coarser": "space_n40_dt2.5e-4",
+      "finer": "space_n80_dt2.5e-4",
+      "time": 1.0,
+      "relative_l2_u": 0.005682742736127988,
+      "linf_u": 0.013787301642436134,
+      "relative_l2_v": 0.0077867244694957375,
+      "linf_v": 0.009926973935302452
+    },
+    {
+      "study": "spatial",
+      "coarser": "space_n40_dt2.5e-4",
+      "finer": "space_n80_dt2.5e-4",
+      "time": 1.5,
+      "relative_l2_u": 0.005278617679128853,
+      "linf_u": 0.015112427391987038,
+      "relative_l2_v": 0.005767038350254026,
+      "linf_v": 0.007272177266150981
+    },
+    {
+      "study": "spatial",
+      "coarser": "space_n40_dt2.5e-4",
+      "finer": "space_n80_dt2.5e-4",
+      "time": 2.0,
+      "relative_l2_u": 0.0042567133912549265,
+      "linf_u": 0.012717300879908744,
+      "relative_l2_v": 0.00479792537902091,
+      "linf_v": 0.005926188676447425
+    },
+    {
+      "study": "spatial",
+      "coarser": "space_n80_dt2.5e-4",
+      "finer": "space_n160_dt2.5e-4",
+      "time": 0.5,
+      "relative_l2_u": 0.00020444208460597627,
+      "linf_u": 0.0006352919545913327,
+      "relative_l2_v": 0.00039282711661879947,
+      "linf_v": 0.0007529643312818579
+    },
+    {
+      "study": "spatial",
+      "coarser": "space_n80_dt2.5e-4",
+      "finer": "space_n160_dt2.5e-4",
+      "time": 1.0,
+      "relative_l2_u": 0.0003908886396289084,
+      "linf_u": 0.001151637685563256,
+      "relative_l2_v": 0.0005276868657189961,
+      "linf_v": 0.0007199444928602805
+    },
+    {
+      "study": "spatial",
+      "coarser": "space_n80_dt2.5e-4",
+      "finer": "space_n160_dt2.5e-4",
+      "time": 1.5,
+      "relative_l2_u": 0.0003701717044671685,
+      "linf_u": 0.0010454901782993575,
+      "relative_l2_v": 0.0003952288795524648,
+      "linf_v": 0.0004891674873068186
+    },
+    {
+      "study": "spatial",
+      "coarser": "space_n80_dt2.5e-4",
+      "finer": "space_n160_dt2.5e-4",
+      "time": 2.0,
+      "relative_l2_u": 0.00027766822979017296,
+      "linf_u": 0.0007470718841491308,
+      "relative_l2_v": 0.0002908388303952647,
+      "linf_v": 0.0003370645927230631
+    },
+    {
+      "study": "temporal",
+      "coarser": "time_n160_dt1e-3",
+      "finer": "time_n160_dt5e-4",
+      "time": 0.5,
+      "relative_l2_u": 2.9867693582935544e-11,
+      "linf_u": 8.123512973412517e-11,
+      "relative_l2_v": 3.769418129989384e-11,
+      "linf_v": 5.844075223748746e-11
+    },
+    {
+      "study": "temporal",
+      "coarser": "time_n160_dt1e-3",
+      "finer": "time_n160_dt5e-4",
+      "time": 1.0,
+      "relative_l2_u": 2.79035019861276e-11,
+      "linf_u": 8.700118403481838e-11,
+      "relative_l2_v": 3.373217865456206e-11,
+      "linf_v": 5.968042726678391e-11
+    },
+    {
+      "study": "temporal",
+      "coarser": "time_n160_dt1e-3",
+      "finer": "time_n160_dt5e-4",
+      "time": 1.5,
+      "relative_l2_u": 1.3809038081694762e-11,
+      "linf_u": 4.52539672401997e-11,
+      "relative_l2_v": 1.4930435611683105e-11,
+      "linf_v": 2.227457107650821e-11
+    },
+    {
+      "study": "temporal",
+      "coarser": "time_n160_dt1e-3",
+      "finer": "time_n160_dt5e-4",
+      "time": 2.0,
+      "relative_l2_u": 5.794589901832323e-12,
+      "linf_u": 1.3482381877594207e-11,
+      "relative_l2_v": 6.725143172606958e-12,
+      "linf_v": 5.92469129312434e-12
+    },
+    {
+      "study": "temporal",
+      "coarser": "time_n160_dt5e-4",
+      "finer": "space_n160_dt2.5e-4",
+      "time": 0.5,
+      "relative_l2_u": 1.8566697394453295e-12,
+      "linf_u": 4.97990537695614e-12,
+      "relative_l2_v": 2.3338350382329956e-12,
+      "linf_v": 3.5831337896752302e-12
+    },
+    {
+      "study": "temporal",
+      "coarser": "time_n160_dt5e-4",
+      "finer": "space_n160_dt2.5e-4",
+      "time": 1.0,
+      "relative_l2_u": 1.7220713419250866e-12,
+      "linf_u": 5.303146810575754e-12,
+      "relative_l2_v": 2.0727960169127145e-12,
+      "linf_v": 3.649497370972199e-12
+    },
+    {
+      "study": "temporal",
+      "coarser": "time_n160_dt5e-4",
+      "finer": "space_n160_dt2.5e-4",
+      "time": 1.5,
+      "relative_l2_u": 9.236586389140886e-13,
+      "linf_u": 3.151867655759588e-12,
+      "relative_l2_v": 1.0320522198777078e-12,
+      "linf_v": 1.5476508963274682e-12
+    },
+    {
+      "study": "temporal",
+      "coarser": "time_n160_dt5e-4",
+      "finer": "space_n160_dt2.5e-4",
+      "time": 2.0,
+      "relative_l2_u": 5.301188876097416e-13,
+      "linf_u": 1.3703482792948307e-12,
+      "relative_l2_v": 5.98032027854092e-13,
+      "linf_v": 6.164790899987338e-13
+    },
+    {
+      "study": "reported_reference",
+      "coarser": "time_n160_dt5e-4",
+      "finer": "reported_n200_dt5e-4",
+      "time": 0.5,
+      "relative_l2_u": 8.442042121548248e-06,
+      "linf_u": 2.6664781937024706e-05,
+      "relative_l2_v": 1.6334104536857465e-05,
+      "linf_v": 3.21944963482812e-05
+    },
+    {
+      "study": "reported_reference",
+      "coarser": "time_n160_dt5e-4",
+      "finer": "reported_n200_dt5e-4",
+      "time": 1.0,
+      "relative_l2_u": 1.612876162612483e-05,
+      "linf_u": 4.795076508812279e-05,
+      "relative_l2_v": 2.1730989653686773e-05,
+      "linf_v": 2.9233843543252647e-05
+    },
+    {
+      "study": "reported_reference",
+      "coarser": "time_n160_dt5e-4",
+      "finer": "reported_n200_dt5e-4",
+      "time": 1.5,
+      "relative_l2_u": 1.5285941142286e-05,
+      "linf_u": 4.4194405740827225e-05,
+      "relative_l2_v": 1.6279923901152257e-05,
+      "linf_v": 2.0739876190556394e-05
+    },
+    {
+      "study": "reported_reference",
+      "coarser": "time_n160_dt5e-4",
+      "finer": "reported_n200_dt5e-4",
+      "time": 2.0,
+      "relative_l2_u": 1.1454885970691375e-05,
+      "linf_u": 3.019714739721513e-05,
+      "relative_l2_v": 1.1423831194283109e-05,
+      "linf_v": 1.3630856689650361e-05
+    }
+  ]
+}

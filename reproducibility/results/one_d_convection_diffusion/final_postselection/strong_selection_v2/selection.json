@@ -1,0 +1,290 @@
+{
+  "candidate_beta": [
+    0.0,
+    1e-08,
+    3e-08,
+    1e-07,
+    3e-07,
+    1e-06,
+    3e-06,
+    1e-05,
+    3e-05,
+    0.0001,
+    0.0003,
+    0.001,
+    0.003,
+    0.01,
+    0.03,
+    0.1,
+    0.3,
+    1.0,
+    3.0,
+    10.0,
+    30.0,
+    100.0,
+    300.0,
+    1000.0,
+    3000.0,
+    10000.0
+  ],
+  "completed_utc": "2026-08-17T04:42:03.119455+00:00",
+  "eligible_beta": [
+    1e-08,
+    3e-08,
+    1e-07,
+    3e-07,
+    1e-06,
+    3e-06,
+    1e-05,
+    3e-05,
+    0.3,
+    1.0,
+    3.0,
+    10.0,
+    30.0,
+    100.0,
+    300.0,
+    1000.0,
+    3000.0,
+    10000.0
+  ],
+  "front": [
+    {
+      "beta": 3e-06,
+      "chord_or_ideal_distance": 0.0,
+      "data_ratio": 0.6055888682192409,
+      "normalized_log_data": 0.0,
+      "normalized_log_physics": 1.0,
+      "physics_ratio": 0.6206040154408443
+    },
+    {
+      "beta": 1e-05,
+      "chord_or_ideal_distance": 0.07073522720869385,
+      "data_ratio": 1.6293601080691096,
+      "normalized_log_data": 0.1793067316930436,
+      "normalized_log_physics": 0.9207279859630336,
+      "physics_ratio": 0.3494530284485211
+    },
+    {
+      "beta": 3e-05,
+      "chord_or_ideal_distance": 0.1273653640114189,
+      "data_ratio": 4.791757939270794,
+      "normalized_log_data": 0.3747314918665575,
+      "normalized_log_physics": 0.8053903332949772,
+      "physics_ratio": 0.15152495042403358
+    },
+    {
+      "beta": 0.3,
+      "chord_or_ideal_distance": 0.0682226233780703,
+      "data_ratio": 85.71094558407569,
+      "normalized_log_data": 0.8972271361040015,
+      "normalized_log_physics": 0.00629150465405965,
+      "physics_ratio": 0.0004636136050658191
+    },
+    {
+      "beta": 1.0,
+      "chord_or_ideal_distance": 0.03940441211994099,
+      "data_ratio": 109.91981542404324,
+      "normalized_log_data": 0.9422957255328125,
+      "normalized_log_physics": 0.001978020429828193,
+      "physics_ratio": 0.00044934921879059484
+    },
+    {
+      "beta": 3.0,
+      "chord_or_ideal_distance": 0.018353042042413652,
+      "data_ratio": 130.48066498970636,
+      "normalized_log_data": 0.9733608380086031,
+      "normalized_log_physics": 0.0006840410242119502,
+      "physics_ratio": 0.00044515632033340226
+    },
+    {
+      "beta": 10.0,
+      "chord_or_ideal_distance": 0.0064201217954892534,
+      "data_ratio": 143.59537593940559,
+      "normalized_log_data": 0.9907118309183712,
+      "normalized_log_physics": 0.00020874576636077056,
+      "physics_ratio": 0.0004436260589636161
+    },
+    {
+      "beta": 30.0,
+      "chord_or_ideal_distance": 0.00223991538667922,
+      "data_ratio": 148.47130349788074,
+      "normalized_log_data": 0.9967613446969323,
+      "normalized_log_physics": 7.093658465767819e-05,
+      "physics_ratio": 0.0004431833528305401
+    },
+    {
+      "beta": 100.0,
+      "chord_or_ideal_distance": 0.0006791688309529092,
+      "data_ratio": 150.33252259998764,
+      "normalized_log_data": 0.9990182942419443,
+      "normalized_log_physics": 2.1215986180995355e-05,
+      "physics_ratio": 0.00044302373599757345
+    },
+    {
+      "beta": 300.0,
+      "chord_or_ideal_distance": 0.0002229540587166203,
+      "data_ratio": 150.88074872965785,
+      "normalized_log_data": 0.9996777580931002,
+      "normalized_log_physics": 6.93725327660395e-06,
+      "physics_ratio": 0.0004429779079532783
+    },
+    {
+      "beta": 1000.0,
+      "chord_or_ideal_distance": 6.217102255718866e-05,
+      "data_ratio": 151.0744129295717,
+      "normalized_log_data": 0.9999101450956377,
+      "normalized_log_physics": 1.931801075312541e-06,
+      "physics_ratio": 0.0004429618439185522
+    },
+    {
+      "beta": 3000.0,
+      "chord_or_ideal_distance": 1.6126697737603315e-05,
+      "data_ratio": 151.12991726675793,
+      "normalized_log_data": 0.9999766925013138,
+      "normalized_log_physics": 5.009040293335023e-07,
+      "physics_ratio": 0.0004429572518371606
+    },
+    {
+      "beta": 10000.0,
+      "chord_or_ideal_distance": 0.0,
+      "data_ratio": 151.14936187327353,
+      "normalized_log_data": 1.0,
+      "normalized_log_physics": 0.0,
+      "physics_ratio": 0.0004429556443308892
+    }
+  ],
+  "information_excluded": [
+    "analytical reference field",
+    "analytical relative error",
+    "continuous global-balance diagnostic",
+    "cellwise GL2 post-selection grid"
+  ],
+  "input_hashes": {
+    "IC.txt": "1504e4c78e9094b0c702c17ede4eed0aadc74608760d2241a5832a2b2a1574b4",
+    "data_only_checkpoint": "aa9ac0bac241698301660cb9c8765fabdfd144957a2344e5ee90284ad8e3743a",
+    "dataset": "60736ad88054e71eac6ce0e650249e54d07d3819ebb2ade121aee6582ee456bf",
+    "decoder": "f925ac6a9ed26cd44ad6c528624c72d058e8d1dfa20acacec51fa400ff4df798",
+    "flowdata": "f3f2050edb701e8743e19856bf59b8f6eaf34d8cbdd48b27ee1cb58c5eb3867b",
+    "freeze": "042dad0f84f7442d640f6e0c4f45be501c47abbf08833c68ea7b587968fc06ec",
+    "initializer": "86a445ccde9053bff38940700981af9ead3b7ef61353b2df12987799e73d96fa"
+  },
+  "normalization_anchor_beta": 0.0,
+  "normalization_anchor_is_selection_candidate": false,
+  "objective_weights": "(1,beta,beta,beta)",
+  "optimizer": {
+    "absolute_gradient_floor": 1e-08,
+    "accepted_update_cap": 5000,
+    "effective_tolerance": "max(1e-8,1e-6*initial_gradient_infinity_norm)",
+    "objective_change_stopping": false,
+    "parameter_change_stopping": false,
+    "relative_gradient_reduction": 1e-06,
+    "required_termination": "gradient_tolerance",
+    "stagnation_rule": "20 consecutive accepted steps with infinity norm <=1e-14*max(1,coefficient infinity norm); classified nonconverged"
+  },
+  "pareto_beta": [
+    3e-06,
+    1e-05,
+    3e-05,
+    0.3,
+    1.0,
+    3.0,
+    10.0,
+    30.0,
+    100.0,
+    300.0,
+    1000.0,
+    3000.0,
+    10000.0
+  ],
+  "physics_coordinate": "pde_ratio",
+  "released_range": 0.8975259646866028,
+  "robustness": {
+    "aggregate_physics_coordinate": {
+      "selected_beta": 3e-05,
+      "status": "ok"
+    },
+    "leave_one_candidate_out": {
+      "0.3": {
+        "selected_beta": 3e-05,
+        "status": "ok"
+      },
+      "1": {
+        "selected_beta": 3e-05,
+        "status": "ok"
+      },
+      "10": {
+        "selected_beta": 3e-05,
+        "status": "ok"
+      },
+      "100": {
+        "selected_beta": 3e-05,
+        "status": "ok"
+      },
+      "1000": {
+        "selected_beta": 3e-05,
+        "status": "ok"
+      },
+      "10000": {
+        "selected_beta": 3e-05,
+        "status": "ok"
+      },
+      "1e-05": {
+        "selected_beta": 3e-05,
+        "status": "ok"
+      },
+      "3": {
+        "selected_beta": 3e-05,
+        "status": "ok"
+      },
+      "30": {
+        "selected_beta": 3e-05,
+        "status": "ok"
+      },
+      "300": {
+        "selected_beta": 3e-05,
+        "status": "ok"
+      },
+      "3000": {
+        "selected_beta": 3e-05,
+        "status": "ok"
+      },
+      "3e-05": {
+        "selected_beta": 1e-05,
+        "status": "ok"
+      },
+      "3e-06": {
+        "selected_beta": 3e-05,
+        "status": "ok"
+      }
+    },
+    "trace_guard": {
+      "0.5%": {
+        "selected_beta": 3e-06,
+        "status": "ok"
+      },
+      "1%": {
+        "selected_beta": 3e-05,
+        "status": "ok"
+      },
+      "2%": {
+        "selected_beta": 3e-05,
+        "status": "ok"
+      }
+    }
+  },
+  "rule": "maximum_chord_distance",
+  "selected_beta": 3e-05,
+  "selected_beta_literal": "3e-5",
+  "trace_guard_fraction": 0.01,
+  "trace_guard_rms": 0.008975259646866029,
+  "validation_coordinates": {
+    "counts": {
+      "bc_midpoints": 798,
+      "ic_midpoints": 59,
+      "interior_midpoints": 23541
+    },
+    "description": "off-node, off-objective cell midpoints derived from the released low-fidelity archive; not independent observations",
+    "points_sha256": "b5ed2e288bcdba3291b73569835de2a67cda6222955b24339b362fc0101f3086"
+  }
+}

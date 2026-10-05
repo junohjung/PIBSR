@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "case": "two_d_burgers",
+  "metrics": {
+    "selection": {
+      "beta": 0.01,
+      "kappa": 10.0,
+      "gamma": 0.03,
+      "beta_selector_endpoint_chord_distance": 0.08055499770517521,
+      "kappa_trace_screen": {
+        "normalized_rms_limit": 0.001,
+        "kappa_1": {
+          "maximum_normalized_trace_rms": 0.002541214893474761,
+          "passed": false
+        },
+        "kappa_3": {
+          "maximum_normalized_trace_rms": 0.0012000329400248817,
+          "passed": false
+        },
+        "kappa_10": {
+          "maximum_normalized_trace_rms": 0.00043080057509848913,
+          "passed": true
+        },
+        "kappa_30": {
+          "maximum_normalized_trace_rms": 0.00015286033751366293,
+          "passed": true
+        }
+      }
+    },
+    "time_roles": {
+      "optimizer_integral_balance": {
+        "fit_time_count": 140,
+        "validation_time_count": 60
+      },
+      "weight_selection_design_a": {
+        "time_count": 200,
+        "times_sha256": "c1282e01a7f36cc037b6743331dc3443e04b654c7edf7250dbc2e72414f144e4",
+        "gamma_0p01_geometric_ratio": 0.993623396298001,
+        "gamma_0p01_eligible": false,
+        "gamma_0p03_geometric_ratio": 0.9814094073628842,
+        "gamma_0p03_eligible": true,
+        "gamma_0p1_geometric_ratio": 0.9415849819297584,
+        "gamma_0p1_eligible": true
+      },
+      "confirmation_design_b": {
+        "time_count": 200,
+        "times_sha256": "0c3e501c43b1d2c7bd1a4df2a038f6666f77f7934d372da8b3030b0fd33001cf",
+        "gl4_selected_to_matched_geometric_ratio": 0.9814117884022113,
+        "gl8_selected_to_matched_geometric_ratio": 0.9814117884022112
+      }
+    },
+    "balance": {
+      "matched_strong_gamma_0": {
+        "gl4_q4_u_time_rms": 0.031296682762754505,
+        "gl4_q4_v_time_rms": 0.02321204990092108,
+        "gl8_q4_u_time_rms": 0.03129668276275451,
+        "gl8_q4_v_time_rms": 0.023212049900921093,
+        "gl8_q1_u_raw_time_rms": 0.11525358733998348,
+        "gl8_q1_v_raw_time_rms": 0.05383603231770155
+      },
+      "selected_hybrid_gamma_0p03": {
+        "gl4_q4_u_time_rms": 0.030921673187709886,
+        "gl4_q4_v_time_rms": 0.022628270308718734,
+        "gl8_q4_u_time_rms": 0.030921673187709893,
+        "gl8_q4_v_time_rms": 0.022628270308718744,
+        "gl8_q1_u_raw_time_rms": 0.11382895970964915,
+        "gl8_q1_v_raw_time_rms": 0.052149906687662936
+      }
+    },
+    "postselection": {
+      "matched_strong_gamma_0": {
+        "offnode_strong_residual_u_rms": 0.08087500733568274,
+        "offnode_strong_residual_v_rms": 0.062115850477028486,
+        "offnode_velocity_relative_l2": 0.24271343870583403,
+        "offnode_vorticity_relative_l2": 0.3422742527991808,
+        "kinetic_energy_trajectory_relative_l2": 0.11892546212004926,
+        "enstrophy_trajectory_relative_l2": 0.05691104545209167,
+        "legacy_q1_u_time_rms": 0.11342699873967424,
+        "legacy_q1_v_time_rms": 0.053216731137494415,
+        "final_velocity_relative_l2": 0.24375475445877595,
+        "final_vorticity_relative_l2": 0.3399112471063709
+      },
+      "selected_hybrid_gamma_0p03": {
+        "offnode_strong_residual_u_rms": 0.08061892102154809,
+        "offnode_strong_residual_v_rms": 0.06160115796296267,
+        "offnode_velocity_relative_l2": 0.242585331517598,
+        "offnode_vorticity_relative_l2": 0.34221272614444087,
+        "kinetic_energy_trajectory_relative_l2": 0.11877409787193195,
+        "enstrophy_trajectory_relative_l2": 0.05683292896769186,
+        "legacy_q1_u_time_rms": 0.11200413756428101,
+        "legacy_q1_v_time_rms": 0.05154158084983285,
+        "final_velocity_relative_l2": 0.24362735072791009,
+        "final_vorticity_relative_l2": 0.3400979575036454
+      }
+    },
+    "reference_refinement_at_t2": {
+      "n40_to_n80_relative_l2_u": 0.0042567133912549265,
+      "n40_to_n80_relative_l2_v": 0.00479792537902091,
+      "n80_to_n160_relative_l2_u": 0.00027766822979017296,
+      "n80_to_n160_relative_l2_v": 0.0002908388303952647,
+      "n160_to_n200_relative_l2_u": 1.1454885970691375e-05,
+      "n160_to_n200_relative_l2_v": 1.1423831194283109e-05,
+      "dt_5e4_to_2p5e4_max_relative_l2": 2.3338350382329956e-12
+    },
+    "reference_interpolation_sensitivity": {
+      "final_role_omega_quintic_vs_cubic_relative_l2": 0.01211013767697921,
+      "test_a_field_linear_vs_cubic_relative_l2": 0.01650632242477814,
+      "test_a_omega_quintic_vs_cubic_relative_l2": 0.009672531252955497,
+      "test_b_enstrophy_quintic_vs_cubic_relative_l2": 0.0007423853949625991,
+      "test_b_omega_quintic_vs_cubic_relative_l2": 0.01575407953361885
+    }
+  },
+  "packaged_sources": {
+    "beta_selection": "results/two_d_burgers/selection/BETA_SELECTION_SEAL.json",
+    "kappa_selection": "results/two_d_burgers/kappa_screen/KAPPA_SELECTION_SEAL.json",
+    "kappa_1_screen_record": "results/two_d_burgers/kappa_screen/kappa_1/SCREEN_RECORD.json",
+    "kappa_3_screen_record": "results/two_d_burgers/kappa_screen/kappa_3/SCREEN_RECORD.json",
+    "kappa_10_screen_record": "results/two_d_burgers/kappa_screen/kappa_10/SCREEN_RECORD.json",
+    "kappa_30_screen_record": "results/two_d_burgers/kappa_screen/kappa_30/SCREEN_RECORD.json",
+    "final_stage_a_selection": "results/two_d_burgers/selection/STAGE_A_SELECTION_SEAL.json",
+    "stage_a_selector_summary": "results/two_d_burgers/selection/stage_a_design_a/GL_BALANCE_SUMMARY.json",
+    "stage_a_selector_trajectories": "results/two_d_burgers/selection/stage_a_design_a/GL_BALANCE_TRAJECTORIES.tsv",
+    "optimizer_time_roles": "point_sets/two_d_burgers/integral_balance",
+    "balance_trajectories": "results/two_d_burgers/stage_b_interface_compatibility/GL_BALANCE_TRAJECTORIES.tsv",
+    "offnode_and_mechanics": "results/two_d_burgers/postselection/reference_metrics.tsv",
+    "final_role": "results/two_d_burgers/postselection/final_test_metrics.tsv",
+    "reference_interpolation_sensitivity": "results/two_d_burgers/postselection/POSTSELECTION_SUMMARY.json",
+    "reference_refinement": "results/two_d_burgers/reference_refinement/burgers_reference_refinement.json"
+  }
+}

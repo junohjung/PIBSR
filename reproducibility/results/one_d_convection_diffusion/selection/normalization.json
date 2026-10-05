@@ -1,0 +1,9 @@
+{
+  "I0": 0.006518073003959911,
+  "J0": 1.7190092444922495e-05,
+  "formula": "lambda_I = gamma * J0 / I0",
+  "independent_I0": 0.00651807300395993,
+  "probe_checkpoint_sha256": "87d30679198c6304a1b03412cb2f6ce27b6111b82af39b13a45f6ebf10219871",
+  "probe_initializer_sha256": "22d25746cd88d0866ced676fbd4095f73790b8611c84a1497c001b73a34bad86",
+  "relative_difference": 2.927545951717939e-15
+}

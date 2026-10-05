@@ -1,0 +1,81 @@
+{
+  "schema_version": 3,
+  "problem": "lid_driven_cavity",
+  "data_source": "../../data/lid_driven_cavity",
+  "design_file": "design.npz",
+  "design_scope": "coordinates_and_role_indices_only",
+  "target_values": "loaded_from_the_packaged_smooth_ramp_snapshots_at_runtime",
+  "repackaging": {
+    "source_archive_design_sha256": "ebab229249bd217d6183fbeaf18d1d7563bd156368299ef736fa714b9d46ae39",
+    "packaged_design_sha256": "b9f7e5d9e3653ddd9c75b91edbed693785e17879e8900a20ab2106d676863885",
+    "retained_arrays_are_byte_identical": true,
+    "removed_obsolete_arrays": [
+      "bc_values",
+      "data_fit_values",
+      "data_val_values",
+      "final_test_observed_values",
+      "ic_values",
+      "pressure_bc_unique_values",
+      "pressure_bc_unique_xy"
+    ],
+    "reason": "The removed targets and pressure-boundary helper arrays came from an obsolete impulsive-cavity export; final smooth-ramp targets are read from the packaged snapshots and dynamic boundary tables."
+  },
+  "split": {
+    "rule": "deterministic_integer_grid_hash",
+    "validation_fraction_nominal": 0.2,
+    "reference_data_used_for_role_split": false
+  },
+  "portable_index_files": {
+    "data_fit_indices": "data_fit_indices.txt",
+    "initializer_fit_indices": "initializer_fit_indices.txt",
+    "data_validation_indices": "data_val_indices.txt",
+    "collocation_fit_indices": "collocation_fit_indices.txt",
+    "collocation_validation_indices": "collocation_val_indices.txt",
+    "final_test_indices": "final_test_indices.txt",
+    "initial_condition_indices": "ic_indices.txt",
+    "boundary_condition_indices": "bc_indices.txt"
+  },
+  "counts": {
+    "x_nodes": 21,
+    "y_nodes": 21,
+    "t_nodes": 1001,
+    "data_fit_xyz": 126017,
+    "data_fit_indices": 126017,
+    "initializer_fit_indices": 206458,
+    "data_validation_xyz": 35932,
+    "data_validation_indices": 35932,
+    "collocation_fit_xyz": 126886,
+    "collocation_fit_indices": 126886,
+    "collocation_validation_xyz": 35935,
+    "collocation_validation_indices": 35935,
+    "final_test_xyz": 36230,
+    "final_test_indices": 36230,
+    "initial_condition_xyz": 441,
+    "initial_condition_indices": 441,
+    "boundary_condition_xyz": 80000,
+    "boundary_condition_indices": 80000,
+    "evaluation_midpoint_xyz": 400000
+  },
+  "array_sha256": {
+    "field_names": "c11be1ea5c69519e3ff257f4e9761c9af54b838d06f935b88a7bf19f95a3bbf1",
+    "x_nodes": "f1336b23f4d73d449e199a37d414e44352f1c0bc58d9cfcc100d4ad573b231dd",
+    "y_nodes": "f1336b23f4d73d449e199a37d414e44352f1c0bc58d9cfcc100d4ad573b231dd",
+    "t_nodes": "1d59118cd59297a196dbb9f2757d1d4be4e7fa9dcd567db89e3a4b8357efd02c",
+    "data_fit_xyz": "e2bd429921dfc9ed28537da2bc331cb61149a86574d9e1a3c4d9f56e6b8316bf",
+    "data_fit_indices": "da3fb2c5d4397fb3c6a3dcc9dcc1fb07a9084bcfcc56adbb37e2936a2327a931",
+    "initializer_fit_indices": "a2df81c75fa9380016be499523050e2d0c3d8563269f689f290a81e187f8cccc",
+    "data_val_xyz": "16e00fa6448513e2740b38cb75a2ae6efd051f85b63f92dd51e607b006754799",
+    "data_val_indices": "6e14fda42985c18f33f96672edb1d7b461397be61ccae169088d13ffe08021e1",
+    "collocation_fit_xyz": "ab7742e3d98d7d13f7512b905d5504a6d404cdf70d3737cec3ddc9f2ae078399",
+    "collocation_fit_indices": "d7f52e181857a850ceb3b45e2619185d3cf7b497aac5d6c1eabb2ea69e1ca3ac",
+    "collocation_val_xyz": "f246f3e923df1632672589dd83ef5bb98e2d74d1094e432e06705f4eb6c1103a",
+    "collocation_val_indices": "aa3669c4dfa73405ee9c0ffaa6afa955616ae9732e311275adc3ae37ee283f9c",
+    "final_test_xyz": "f2e21516e175fe230c5d3f3cf79dd867e6dc9d36a61f629fbeb24fb164c2e48d",
+    "final_test_indices": "ae4cf17d7e92e1cf7ca1cbb85c2833209bcc668f182d3e16bd8f5485f553b650",
+    "ic_xyz": "2c5fd2a75816483be36720490ebe9170390432e7cf16da05ffd09d90bd51fc25",
+    "ic_indices": "f1627a29e60e01b989c963a758669cd11b2e656f8650a2c2d53a71b3d06af2d9",
+    "bc_xyz": "ee46f85ced8261543723dfff05a3a03b0dfd9d87606b2a5bb8bceb92058c0471",
+    "bc_indices": "5a1d0a6fa32ea070842bf9eea99a5d5a0f329d678cee63f65220e614eb14f61a",
+    "evaluation_midpoint_xyz": "6fb4a136df01e9851fe310abf2b7f835b8e06290203b20760e020f4fcd53b403"
+  }
+}

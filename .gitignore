@@ -1,0 +1,9 @@
+.DS_Store
+**/build*/
+**/install*/
+.build/
+*~
+reproducibility/work/
+**/__pycache__/
+*.py[cod]
+*.tar.gz

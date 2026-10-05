@@ -1,0 +1,9 @@
+{
+  "PINN_archive_read": false,
+  "analytical_or_refined_reference_arrays_read": false,
+  "candidate_count": 8,
+  "canonical_v12_GL8_evaluator_imported": false,
+  "completed_utc": "2026-08-20T00:53:40.509517+00:00",
+  "freeze_sha256": "c58bc4092598a66d892f02e574892b5a4de1efbbdf5bb8c8db3573f424a7c02f",
+  "statement": "Only released low-fidelity arrays and decoded model quantities were used."
+}

@@ -1,0 +1,370 @@
+{
+  "absolute_metrics": {
+    "matched_strong_gamma_i0": {
+      "advective_rmse": {
+        "x_momentum": 0.10849330422835393,
+        "y_momentum": 0.06584510958438217
+      },
+      "conservative_rmse": {
+        "x_momentum": 0.12375037080755087,
+        "y_momentum": 0.07051571276855292
+      },
+      "continuity_correction_rmse": {
+        "x_momentum": 0.03647697426974692,
+        "y_momentum": 0.02153675281794297
+      },
+      "continuity_rmse": 0.151621428214052,
+      "correction_over_advective_ratio": {
+        "x_momentum": 0.33621405974484025,
+        "y_momentum": 0.32708204077545167
+      },
+      "correction_over_conservative_ratio": {
+        "x_momentum": 0.294762545208642,
+        "y_momentum": 0.3054177852336404
+      },
+      "identity_max_abs_error": {
+        "x_momentum": 6.661338147750939e-16,
+        "y_momentum": 2.220446049250313e-16
+      },
+      "identity_rmse": {
+        "x_momentum": 2.178914522313693e-17,
+        "y_momentum": 1.2443712730108597e-17
+      }
+    },
+    "selected_gl4_hybrid": {
+      "advective_rmse": {
+        "x_momentum": 0.08223666904922224,
+        "y_momentum": 0.06903795334337472
+      },
+      "conservative_rmse": {
+        "x_momentum": 0.10245078478141029,
+        "y_momentum": 0.07360780827142324
+      },
+      "continuity_correction_rmse": {
+        "x_momentum": 0.03630731624321293,
+        "y_momentum": 0.021563451264363064
+      },
+      "continuity_rmse": 0.15244510934442188,
+      "correction_over_advective_ratio": {
+        "x_momentum": 0.4414978945886222,
+        "y_momentum": 0.31234198321483725
+      },
+      "correction_over_conservative_ratio": {
+        "x_momentum": 0.3543878782449395,
+        "y_momentum": 0.29295059547010915
+      },
+      "identity_max_abs_error": {
+        "x_momentum": 6.661338147750939e-16,
+        "y_momentum": 2.220446049250313e-16
+      },
+      "identity_rmse": {
+        "x_momentum": 2.1345225558517263e-17,
+        "y_momentum": 1.2288739968682582e-17
+      }
+    }
+  },
+  "diagnostic_contract": {
+    "advective_components": [
+      "x_momentum",
+      "y_momentum"
+    ],
+    "continuity_residual": "r_c = u_x + v_y",
+    "coordinate_role": "fully off-node space-time midpoints",
+    "coordinate_sha256": "f23c82fc44ce5e656f1b71a57304d4cb62462cdf1955aeb2cb6fcd7b5329bc44",
+    "identity": {
+      "x_momentum": "r_x_cons = r_x_adv + u r_c",
+      "y_momentum": "r_y_cons = r_y_adv + v r_c"
+    },
+    "point_count": 80000,
+    "sample_reduction": "unweighted pointwise RMS over all 80,000 samples",
+    "viscosity": 0.001
+  },
+  "hybrid_vs_matched_percent_changes": {
+    "advective_rmse": {
+      "x_momentum": -24.20115726576767,
+      "y_momentum": 4.84902186228553
+    },
+    "conservative_rmse": {
+      "x_momentum": -17.211735114122952,
+      "y_momentum": 4.3849737618326445
+    },
+    "continuity_correction_rmse": {
+      "x_momentum": -0.46510992189038314,
+      "y_momentum": 0.12396690738749605
+    },
+    "continuity_rmse": 0.5432484973080687,
+    "correction_over_advective_ratio": {
+      "x_momentum": 31.314524717878854,
+      "y_momentum": -4.506532222212034
+    },
+    "correction_over_conservative_ratio": {
+      "x_momentum": 20.228259663755075,
+      "y_momentum": -4.082011711922407
+    }
+  },
+  "information_boundary": {
+    "claim_scope": "resolved-scale local form-consistency diagnostic",
+    "fully_offnode_strong_role_opened": true,
+    "higher_resolution_reference_opened": false,
+    "new_training": false,
+    "optimizer_launched": false,
+    "post_selection_reporting": true,
+    "selection_or_ranking_rerun": false,
+    "validation_values_used": false
+  },
+  "one_decimal_table_values": {
+    "advective_percent": [
+      -24.2,
+      4.8
+    ],
+    "conservative_percent": [
+      -17.2,
+      4.4
+    ],
+    "correction_over_advective_percent_of_residual": {
+      "hybrid": [
+        44.1,
+        31.2
+      ],
+      "matched": [
+        33.6,
+        32.7
+      ]
+    },
+    "correction_percent": [
+      -0.5,
+      0.1
+    ],
+    "sign_convention": "negative percentage denotes reduction"
+  },
+  "raw_artifact": {
+    "array_count": 27,
+    "arrays": {
+      "hybrid_advective_x": {
+        "dtype": "float64",
+        "sha256": "5044fc53dd394f03da890e65db0184f80eae175e5cbe3884ec87fa7737aa3563",
+        "shape": [
+          80000
+        ]
+      },
+      "hybrid_advective_y": {
+        "dtype": "float64",
+        "sha256": "a33de1f7804af9c6881c75d72c3d2b7b00f123387fa04a3055e229a041b000f0",
+        "shape": [
+          80000
+        ]
+      },
+      "hybrid_conservative_direct_x": {
+        "dtype": "float64",
+        "sha256": "2ce608b74d07b002c96c71d7c7d7583d09aeb4fb01a6a7ef35cec93f033e0d74",
+        "shape": [
+          80000
+        ]
+      },
+      "hybrid_conservative_direct_y": {
+        "dtype": "float64",
+        "sha256": "1c94f06682680be6870f13a16d66d621e1f36edf6e6bdebf2e140fc66f95d5a9",
+        "shape": [
+          80000
+        ]
+      },
+      "hybrid_conservative_identity_x": {
+        "dtype": "float64",
+        "sha256": "42e2b551cc90358d8445bc054d9847d8c731db0a2238bd7bda09afffe34276ab",
+        "shape": [
+          80000
+        ]
+      },
+      "hybrid_conservative_identity_y": {
+        "dtype": "float64",
+        "sha256": "e7341a3b439ef70aabff0a09d1cf975abd58b827bf56abce1c05d2fc896c6ff7",
+        "shape": [
+          80000
+        ]
+      },
+      "hybrid_continuity": {
+        "dtype": "float64",
+        "sha256": "13aae9da5c478e697c277b60427e52c05ca9bf57709cf3d9e72ea8536b4e289d",
+        "shape": [
+          80000
+        ]
+      },
+      "hybrid_correction_x": {
+        "dtype": "float64",
+        "sha256": "935ecaad2bde9eb6d63dfe1cfa4c91ff530b3e21db451fe44af05c5310bf852b",
+        "shape": [
+          80000
+        ]
+      },
+      "hybrid_correction_y": {
+        "dtype": "float64",
+        "sha256": "4fe7973e6858915835acf3deb300602ffb7b57e26ba670cfe7894d2236ba27c3",
+        "shape": [
+          80000
+        ]
+      },
+      "hybrid_identity_error_x": {
+        "dtype": "float64",
+        "sha256": "6d3a383ecd42301e0f1bdf5622b775b28b8d259a80ea91214930559ad0a1fef8",
+        "shape": [
+          80000
+        ]
+      },
+      "hybrid_identity_error_y": {
+        "dtype": "float64",
+        "sha256": "4058659f53605143a29c927ad4265fd58531bc53064b644b50d194c833ae7e91",
+        "shape": [
+          80000
+        ]
+      },
+      "hybrid_u": {
+        "dtype": "float64",
+        "sha256": "cf4dc87b83ea0e1fb262ff86b012d1badce0d594cdeb2f7ced36208903406bdc",
+        "shape": [
+          80000
+        ]
+      },
+      "hybrid_v": {
+        "dtype": "float64",
+        "sha256": "08f14ff75079a94024fc107c7d695320b175b08472b087692f26eb7e75d8911d",
+        "shape": [
+          80000
+        ]
+      },
+      "matched_advective_x": {
+        "dtype": "float64",
+        "sha256": "7fc448b9dc6ed17078ae7de6c0a7ed7eb77633675c95e5d1ddd8822890987465",
+        "shape": [
+          80000
+        ]
+      },
+      "matched_advective_y": {
+        "dtype": "float64",
+        "sha256": "5d01b7ab1509087f2fe83f64266711987d2d3b3bbbffa09c4744b132cd6ec4e3",
+        "shape": [
+          80000
+        ]
+      },
+      "matched_conservative_direct_x": {
+        "dtype": "float64",
+        "sha256": "c1acf6315bb28a967741393883a6529a688346976ed27e5b532db4a63c0cb03c",
+        "shape": [
+          80000
+        ]
+      },
+      "matched_conservative_direct_y": {
+        "dtype": "float64",
+        "sha256": "29bb66b96e7a3502486d259c9f6be4905487e842f2e65d2a50c3b99a66563298",
+        "shape": [
+          80000
+        ]
+      },
+      "matched_conservative_identity_x": {
+        "dtype": "float64",
+        "sha256": "6db047300e3a41eb33c7351cb0ee6a964a7b8fd616395378ccdf1052fada14fb",
+        "shape": [
+          80000
+        ]
+      },
+      "matched_conservative_identity_y": {
+        "dtype": "float64",
+        "sha256": "7fddcb6682d66f294873a4aded5785d40186dc9d35c86baf0e8f09cfbbec1be9",
+        "shape": [
+          80000
+        ]
+      },
+      "matched_continuity": {
+        "dtype": "float64",
+        "sha256": "b153935d5759efcebe59b1a2922aa399eb13058a1f04efd11372ff4871db5afe",
+        "shape": [
+          80000
+        ]
+      },
+      "matched_correction_x": {
+        "dtype": "float64",
+        "sha256": "b4458a33884fb968d766aef7ce8982d87974148ae0084fc03d3119dfe74b4b75",
+        "shape": [
+          80000
+        ]
+      },
+      "matched_correction_y": {
+        "dtype": "float64",
+        "sha256": "29f95fd6ca4a186fac8ccb059eb64ca1a3e91983ec2e5b7ce88e9930bda8f976",
+        "shape": [
+          80000
+        ]
+      },
+      "matched_identity_error_x": {
+        "dtype": "float64",
+        "sha256": "160fc315c0ca0dc14170a8dbfcbab12679506317612da3d561729c09f0960c78",
+        "shape": [
+          80000
+        ]
+      },
+      "matched_identity_error_y": {
+        "dtype": "float64",
+        "sha256": "2af63a0c70386480f644dbd6042fb1572f3dc0df227a8c9d5e3dbc9e598abd9e",
+        "shape": [
+          80000
+        ]
+      },
+      "matched_u": {
+        "dtype": "float64",
+        "sha256": "a9a47dbd91a35fb2d44b7f2f37d12292305f90709e9c731cf62633ba59f727c3",
+        "shape": [
+          80000
+        ]
+      },
+      "matched_v": {
+        "dtype": "float64",
+        "sha256": "59f9857ce052103546c802d9bf11f6393e8245530c3c165ac4feb1a4ec2e1339",
+        "shape": [
+          80000
+        ]
+      },
+      "offnode_xyz": {
+        "dtype": "float64",
+        "sha256": "f23c82fc44ce5e656f1b71a57304d4cb62462cdf1955aeb2cb6fcd7b5329bc44",
+        "shape": [
+          80000,
+          3
+        ]
+      }
+    },
+    "path": "RAW_FORM_CONSISTENCY.npz",
+    "sha256": "09257b343e2cb0f53017f8703a2575a9c608d3320a186df942a21adc46573b3c"
+  },
+  "replay": {
+    "all_new_raw_arrays_bitwise_equal": true,
+    "all_new_scalar_metrics_exactly_equal": true,
+    "each_model_evaluated_twice": true,
+    "exact_expected_metric_contract_reproduced": true,
+    "upstream_full_read_only_replay": {
+      "audit_sha256": "b2ada6fb5c8900258a06a65eab1e60ccd623a38a223f34126b1ba95178a9e159",
+      "raw_sha256": "0dbdaaa488feda79163b60b107e277f7712ae48ffb9e592ecdf8e828de246f2f",
+      "result_manifest_sha256": "697340c0bbd4950dba82e568342a05d49d6f3c17daba18a8a6de25335de1a1dd",
+      "result_root": "historical_source/Revisions/CMAME_minor_revision_v14_integral_balance_extension_20260819/results/ramped_cavity_matched_strong_field_diagnostics_v1",
+      "source_manifest_sha256": "a65bf0febc567997397a7e38b99c6cc2ff2da5abf234f1f302d5553d0241f2a3",
+      "status": "PASS_READ_ONLY_REPLAY",
+      "summary_sha256": "c74f1ab296d954ab13ab5cb00deb7ff1a32ff66c2d5fb732fc899e76415fa172",
+      "upstream_manifest_sha256": "c7c92d0c1c41c18464eee6cb2f27d8d7e344a9f3f3a1613c1bb1609307d7b19e"
+    }
+  },
+  "roles": {
+    "matched_strong_gamma_i0": {
+      "candidate_id": "strong_only__gamma_0p02",
+      "checkpoint_sha256": "ae299d4f9d3837846eedb71d28011bd0b80ae822bcf5c145e8b942b86f28984f",
+      "gamma_I": 0.0,
+      "gamma_S": 0.02
+    },
+    "selected_gl4_hybrid": {
+      "candidate_id": "gl4_hybrid__gamma_0p04",
+      "checkpoint_sha256": "f770ca1417adc5992e200499338cd7111676f0cd05f7b37c3ff9214b873fba5c",
+      "gamma_I": 0.02,
+      "gamma_S": 0.02
+    },
+    "strong_weights_exactly_equal": true
+  },
+  "schema": "pimfa.ramped_cavity_advective_conservative_consistency.v1",
+  "status": "COMPLETE_POSTSELECTION_REPORTING_ONLY"
+}
